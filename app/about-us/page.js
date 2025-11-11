@@ -24,42 +24,42 @@ export default function About(){
 		    			</div>
 		    			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
 							<div className="bg-[#fff] rounded-[14px] p-[28px] border border-gray-200 text-center">
-								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/industry.webp" width={50} height={50} alt="" className="h-12 w-12"/></div>
+								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/industry.webp" width={50} height={50} alt="25+ Years in Industry" className="h-12 w-12"/></div>
 								<h3 className="text-3xl text-gray-600 font-bold mt-0 barlofamilty">25+</h3>
 								<p className="text-2xl text-gray-500 barlofamilty">Years in Industry</p>
 							</div>
 							<div className="bg-[#fff] rounded-[14px] p-[28px] border border-gray-200 text-center">
-								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/projects1.webp" width={50} height={50} alt="" className="h-12 w-12"/></div>
+								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/projects1.webp" width={50} height={50} alt="20,900+ Projects Delivered" className="h-12 w-12"/></div>
 								<h3 className="text-3xl text-gray-600 font-bold mt-0 barlofamilty">20,900+</h3>
 								<p className="text-2xl text-gray-500 barlofamilty">Projects Delivered</p>
 							</div>
 							<div className="bg-[#fff] rounded-[14px] p-[28px] border border-gray-200 text-center">
-								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/clients.webp" width={50} height={50} alt="" className="h-12 w-12"/></div>
+								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/clients.webp" width={50} height={50} alt="5000+ Happy Clients" className="h-12 w-12"/></div>
 								<h3 className="text-3xl text-gray-600 font-bold mt-0 barlofamilty">5,000+</h3>
 								<p className="text-2xl text-gray-500 barlofamilty">Happy Clients</p>
 							</div>
 							<div className="bg-[#fff] rounded-[14px] p-[28px] border border-gray-200 text-center">
-								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/support.webp" width={50} height={50} alt="" className="h-12 w-12"/></div>
+								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/facility.webp" width={50} height={50} alt="80,000+ Sq. Ft. Production Facility" className="h-12 w-12"/></div>
 								<h3 className="text-3xl text-gray-600 font-bold mt-0 barlofamilty">80,000+</h3>
 								<p className="text-2xl text-gray-500 barlofamilty">Sq. Ft. Production Facility</p>
 							</div>
 							<div className="bg-[#fff] rounded-[14px] p-[28px] border border-gray-200 text-center">
-								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/repeat-client.webp" width={50} height={50} alt="" className="h-12 w-12"/></div>
+								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/repeat-client.webp" width={50} height={50} alt="89% Repeat clients" className="h-12 w-12"/></div>
 								<h3 className="text-3xl text-gray-600 font-bold mt-0 barlofamilty">89%</h3>
 								<p className="text-2xl text-gray-500 barlofamilty">Repeat clients</p>
 							</div>
 							<div className="bg-[#fff] rounded-[14px] p-[28px] border border-gray-200 text-center">
-								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/worldwide.webp" width={50} height={50} alt="" className="h-12 w-12"/></div>
+								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/worldwide.webp" width={50} height={50} alt="30+ Countries Served" className="h-12 w-12"/></div>
 								<h3 className="text-3xl text-gray-600 font-bold mt-0 barlofamilty">30+</h3>
 								<p className="text-2xl text-gray-500 barlofamilty">Countries Served</p>
 							</div>
 							<div className="bg-[#fff] rounded-[14px] p-[28px] border border-gray-200 text-center">
-								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/quality.webp" width={50} height={50} alt="" className="h-12 w-12"/></div>
+								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/quality.webp" width={50} height={50} alt="99% Quality Assurance" className="h-12 w-12"/></div>
 								<h3 className="text-3xl text-gray-600 font-bold mt-0 barlofamilty">99%</h3>
 								<p className="text-2xl text-gray-500 barlofamilty">Quality Assurance</p>
 							</div>
 							<div className="bg-[#fff] rounded-[14px] p-[28px] border border-gray-200 text-center">
-								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/flexible-pricing.webp" width={50} height={50} alt="" className="h-12 w-12"/></div>
+								<div className="w-[64px] h-[64px] rounded-[12px] bg-[#fff] flex items-center justify-center text-[24px] mx-auto"><Image src="/images/professional.webp" width={50} height={50} alt="260+ Skilled In-House Professionals" className="h-12 w-12"/></div>
 								<h3 className="text-3xl text-gray-600 font-bold mt-0 barlofamilty">260+</h3>
 								<p className="text-2xl text-gray-500 barlofamilty">Skilled In-House Professionals</p>
 							</div>
@@ -85,15 +85,15 @@ export default function About(){
 		    			</div>
 		    			<div className="contentt items-center self-center px-4 py-12 xl:py-0 md:px-6 lg:px-12 xl:px-20">
 		    				<div className="grid grid-cols-12 gap-4">
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/samsung1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/google.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/lg.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/tata-motors1.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/etihad.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/hangcha1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/indian-oil1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/byd.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/proponent.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/samsung1.webp" width={200} height={94} alt="samsung client logo" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/google.webp" width={200} height={94} alt="google client logo" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/lg.webp" width={200} height={94} alt="LG client logo" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/tata-motors1.webp" width={200} height={94} alt="Tata Motors client logo" className="w-full h-auto p-2  border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/etihad.webp" width={200} height={94} alt="etihad client logo" className="w-full h-auto p-2  border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/hangcha1.webp" width={200} height={94} alt="hangcha client logo" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/indian-oil1.webp" width={200} height={94} alt="Indian Oil client logo" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/byd.webp" width={200} height={94} alt="BYD client logo" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/proponent.webp" width={200} height={94} alt="Proponent client logo" className="w-full h-auto p-2 border border-gray-500"/></div>
 	    					</div>
 		    			</div>
 		    		</div>
