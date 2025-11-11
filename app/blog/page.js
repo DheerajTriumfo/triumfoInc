@@ -244,10 +244,28 @@ export default function Blog() {
 
 	// Only load initial data once on mount
 	useEffect(() => {
-		if (!initialLoadDone.current) {
-			loadInitialData();
-		}
-	}, []); // Empty dependency array - only run once on mount
+	if (initialLoadDone.current) return;
+
+	// Try reading cached posts from sessionStorage
+	const cached = sessionStorage.getItem('blog_posts');
+	if (cached) {
+		try {
+			const parsed = JSON.parse(cached);
+			if (Array.isArray(parsed) && parsed.length > 0) {
+				setPosts(parsed);
+				initialLoadDone.current = true;
+				return; // Stop here — no API call needed
+			}
+		} catch {}
+	}
+
+	// Otherwise, fetch fresh data and cache it
+	loadInitialData().then(() => {
+		setTimeout(() => {
+			sessionStorage.setItem('blog_posts', JSON.stringify(posts));
+		}, 1000);
+	});
+}, []); // run once // Empty dependency array - only run once on mount
 
 	// Scroll handler - only created once, uses refs for state
 	// useEffect(() => {

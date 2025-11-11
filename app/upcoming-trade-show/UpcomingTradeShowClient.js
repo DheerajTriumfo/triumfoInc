@@ -93,8 +93,21 @@ export default function UpcomingTradeShowClient() {
 	}, [currentPage, hasMore, loading, search, fetchShows]);
 
 	useEffect(() => {
-		loadInitialData();
-	}, [loadInitialData]);
+  const cached = sessionStorage.getItem('tradeShows');
+
+  if (cached) {
+    // Load cached data
+    const parsed = JSON.parse(cached);
+    setShows(parsed);
+  } else {
+    // Fetch from API, then cache it
+    loadInitialData().then(() => {
+      setTimeout(() => {
+        sessionStorage.setItem('tradeShows', JSON.stringify(shows));
+      }, 500); // small delay to ensure shows state updates
+    });
+  }
+}, [loadInitialData]);
 
 	// useEffect(() => {
 	// 	let timeoutId;
