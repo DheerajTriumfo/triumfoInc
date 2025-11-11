@@ -4,6 +4,7 @@ const nextConfig = {
     domains: ['triumfous.mobel.us', 'triumfous.mobel.us'], // add your domain here
   },
   trailingSlash: true,
+  optimizeFonts: true,
   async headers() {
     return [
       // ✅ Cache static assets aggressively (1 year, immutable)
