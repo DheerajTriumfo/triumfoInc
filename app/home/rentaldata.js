@@ -77,7 +77,7 @@ export default function GetRentaldata() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="maintitle text-white mb-6 max-w-2xl mx-auto">
-                Choose  Booth Designs by Size
+                Choose Booth Designs Based on Size
               </h2>
               <p className="text-xl text-[#9A3220] mb-6 font-bold">{totalCount}+ DESIGNS. ANY SIZE. FULLY CUSTOMIZABLE.</p>
               <p className="text-xl text-white">
