@@ -208,18 +208,18 @@ export default function Home() {
       <div className="grid grid-cols-12 gap-2">
         <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
-            src="images/home-portfolio1.webp"
-            alt="Custom Trade Show Booth for Network Optix at EVS 2025"
+            src="images/home-portfolio6.webp"
+            alt="Custom Trade Show Booth for Actus at NAB Show 2025"
             className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
               <div className="cursor-pointer">
                 <h2 className="text-white font-semibold text-4xl mb-4">
-                  Network Optix
+                  Actus
                 </h2>
                 <p className="text-white text-base">
-                  EVS 2025 Bespoke Booth
+                  NAB Show 2025 Trade Show Booth
                 </p>
               </div>
             </div>

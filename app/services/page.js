@@ -21,36 +21,36 @@ export default function Service()
 		    <section>
 		    	<div className="servcbg py-12">
 			    	<div className="container mx-auto px-4">
-			    		<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center">
+			    		<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch justify-center">
 			    			<div className="bg-[#E8EEF7] px-8 py-6 md:py-12 lg:py-20 rounded-md border border-gray-300 text-center">
 			    				<h3 className="icon w-[75px] h-[75px] mx-auto"><Image src="/images/srv1.webp" width={75} height={75} alt="" className="w-full h-auto"/></h3>
-			    				<div className="title text-gray-800 font-bold leading-tight my-2 text-2xl">3D Design and Concept</div>
-			    				<p className="text-gray-500 text-lg">We have a team of experienced and skillful designers that can easily comprehend your requirements and develop a 3D Design of your trade show booth as per your specifications.</p>
+			    				<div className="title text-gray-800 font-bold leading-tight my-2 text-2xl">3D Design & Concept Development</div>
+			    				<p className="text-gray-500 text-lg">Our experienced design team specialises in creating 3D booth concepts according to your booth needs. We have 30+ talented 3D booth designers. They ensure your brand vision is realized through accurate 3D designs before booth fabrication begins.</p>
 			    			</div>
 			    			<div className="bg-[#E8EEF7] px-8 py-6 md:py-12 lg:py-20 rounded-md border border-gray-300 text-center">
 			    				<h3 className="icon w-[75px] h-[75px] mx-auto"><Image src="/images/srv2.webp" width={75} height={75} alt="" className="w-full h-auto"/></h3>
 			    				<div className="title text-gray-800 font-bold leading-tight my-2 text-2xl">Booth Production</div>
-			    				<p className="text-gray-500 text-lg">We have an in-house manufacturing unit equipped with the latest and state-of-the-art equipment to carry out all the processes of your trade show booth production with ease.</p>
+			    				<p className="text-gray-500 text-lg">We own a booth fabrication facility that is equipped with the latest machinery. We manage every stage of booth production efficiently in this facility with our 80+ booth builders. These capabilities give us quality control on our booth production process.</p>
 			    			</div>
 			    			<div className="bg-[#E8EEF7] px-8 py-6 md:py-12 lg:py-20 rounded-md border border-gray-300 text-center">
 			    				<h3 className="icon w-[75px] h-[75px] mx-auto"><Image src="/images/srv3.webp" width={75} height={75} alt="" className="w-full h-auto"/></h3>
 			    				<div className="title text-gray-800 font-bold leading-tight my-2 text-2xl">Graphic Design & Printing</div>
-			    				<p className="text-gray-500 text-lg">Our in-house graphic production unit and our team of proficient graphic designers can provide you with innovative and stunning custom graphics to enhance the look of your trade show booth.</p>
+			    				<p className="text-gray-500 text-lg">Our graphic production team has 10+ creative graphic design and printing experts. They smartly craft custom visuals to add a unique appeal to your trade show booth. We ensure your brand messaging is clear and visually stunning while being consistent.</p>
 			    			</div>
 			    			<div className="bg-[#E8EEF7] px-8 py-6 md:py-12 lg:py-20 rounded-md border border-gray-300 text-center">
 			    				<h3 className="icon w-[75px] h-[75px] mx-auto"><Image src="/images/srv4.webp" width={75} height={75} alt="" className="w-full h-auto"/></h3>
 			    				<div className="title text-gray-800 font-bold leading-tight my-2 text-2xl">Transportation & Logistics</div>
-			    				<p className="text-gray-500 text-lg">Our Logistics Department resolves the stress of shipping your trade show booth and deliver it safely to the venue of your event from our manufacturing unit at your preferred time.</p>
+			    				<p className="text-gray-500 text-lg">Our logistics team handles the complete booth shipping process. We deliver your trade show booth on time and safely to the event venue. You can have a stress-free trade show journey while we manage your booth transportation needs.</p>
 			    			</div>
 			    			<div className="bg-[#E8EEF7] px-8 py-6 md:py-12 lg:py-20 rounded-md border border-gray-300 text-center">
 			    				<h3 className="icon w-[75px] h-[75px] mx-auto"><Image src="/images/srv5.webp" width={75} height={75} alt="" className="w-full h-auto"/></h3>
 			    				<div className="title text-gray-800 font-bold leading-tight my-2 text-2xl">Installation & Dismantling</div>
-			    				<p className="text-gray-500 text-lg">We own a team of expert mechanics that will swiftly handle the complexities related to the installation and dismantling of your trade show booth at the venue of the event.</p>
+			    				<p className="text-gray-500 text-lg">Our experienced professionals install and dismantle your trade show booth without any hassle. We have 40+ trained and well-equipped professionals for I&D services. They ensure a smooth and accurate booth setup before the event. Then, they carefully dismantle it after the show. </p>
 			    			</div>
 			    			<div className="bg-[#E8EEF7] px-8 py-6 md:py-12 lg:py-20 rounded-md border border-gray-300 text-center">
 			    				<h3 className="icon w-[75px] h-[75px] mx-auto"><Image src="/images/srv6.webp" width={75} height={75} alt="" className="w-full h-auto"/></h3>
 			    				<div className="title text-gray-800 font-bold leading-tight my-2 text-2xl">Project Management</div>
-			    				<p className="text-gray-500 text-lg">We offer comprehensive project management services including on-site supervision by our professionals to tackle any emergencies on the floor and ensure a smooth exhibiting experience for you.</p>
+			    				<p className="text-gray-500 text-lg">We provide end-to-end booth project management services. We quickly address any booth issues that arise during the event. Our team pays attention to every detail to deliver you a stress-free exhibiting experience.</p>
 			    			</div>
 			    		</div>
 			    	</div>

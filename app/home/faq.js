@@ -47,7 +47,7 @@ export default function Faqtab(){
                     <p>You start trade show booth planning 3 to 6 months before the event. This allows enough time for booth design, approval, fabrication, logistics, and any last-minute modifications. </p>
                   </div>
                 </div>
-                <div className="borbg mb-6 rounded-xl overflow-hidden">
+                <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
@@ -56,7 +56,7 @@ export default function Faqtab(){
                     <p>Yes. We provide on-site management, including supervision during installation, dismantling, and any technical adjustments during the event. </p>
                   </div>
                 </div>
-                <div className="borbg mb-6 rounded-xl overflow-hidden">
+                <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
@@ -65,7 +65,7 @@ export default function Faqtab(){
                     <p>The most common booth sizes are 10x10, 10x20, 20x20, and 30x30 ft. However, larger booths, i.e, 40x40 ft. and above, can be easily seen at major expos in the USA. </p>
                   </div>
                 </div>
-                <div className="borbg mb-6 rounded-xl overflow-hidden">
+                <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
@@ -74,7 +74,7 @@ export default function Faqtab(){
                     <p>The cost of a trade show booth depends on its size, materials, and customization. Smaller booth rentals start at a few thousand dollars. Large custom booths with lighting, graphics, and double decks demand a significant budget.</p>
                   </div>
                 </div>
-                <div className="borbg mb-6 rounded-xl overflow-hidden">
+                <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
@@ -94,7 +94,7 @@ export default function Faqtab(){
                 </div>
                 
               </div>
-              <div className="self-center hidden lg:block"><Image src="/images/home-faq.webp" width="602" height="650" alt="Trade Show Booth with large hanging & LED strip" className="w-full h-auto rounded-xl"/></div>
+              <div className="self-center hidden lg:block"><Image src="/images/home-faq2.webp" width="602" height="650" alt="Trade Show Booth with large hanging & LED strip" className="w-full h-auto rounded-xl"/></div>
             </div>
           </div>
         </div>
