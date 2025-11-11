@@ -196,15 +196,15 @@ export default function About(){
 		    			</div>
 		    			<div className="contentt items-center self-center px-4 py-12 xl:py-0 md:px-6 lg:px-12 xl:px-20">
 		    				<div className="grid grid-cols-12 gap-4">
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/samsung.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/dexon.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/amec.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/tata-motors.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/emtensor.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/fpc.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/indian-oil.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/amec.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/plum.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/samsung1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/google.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/lg.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/tata-motors1.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/etihad.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/hangcha1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/indian-oil1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/byd.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/plum.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
 	    					</div>
 		    			</div>
 		    		</div>
