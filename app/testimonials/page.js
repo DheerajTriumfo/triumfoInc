@@ -50,9 +50,9 @@ export default function Testimonial()
 	    if (e.target.id === "videoModal") closeModal();
 	  };
   const reviews = [
-    { img: "/images/newchef.webp", name: "G. Lucien Salama.", role: "CEO – New Chef", text: "I want to thank Triumfo Inc. for making our National Restaurant Association Booth really stand out this year. The team worked great under pressure, never lost their focus and delivered beautiful designs for us. The floor you recommended made a statement, thank you for your help and such a beautiful visual result." },
-    { img: "/images/hangchas.webp", name: "Bob Wang", role: "Marketing Manager", text: "All in all, it was a huge success and I appreciate Triumfo’s professional work. The construction of the booth was really good." },
-    { img: "/images/vidyaherb.webp", name: "Arnaud ANANDANE.", role: "C.O.O", text: "We would like to express our thanks for all the stall construction services you have provided for SSW 2019. There are a few things that we would like to bring to your attention about the service and for any possible future cooperation with." },
+    { img: "/images/newchef-logo.webp", name: "G. Lucien Salama.", role: "CEO – New Chef", text: "I want to thank Triumfo Inc. for making our National Restaurant Association Booth really stand out this year. The team worked great under pressure, never lost their focus and delivered beautiful designs for us. The floor you recommended made a statement, thank you for your help and such a beautiful visual result." },
+    { img: "/images/hangcha-logo.webp", name: "Bob Wang", role: "Marketing Manager", text: "All in all, it was a huge success and I appreciate Triumfo’s professional work. The construction of the booth was really good." },
+    { img: "/images/vidyaherb-logo.webp", name: "Arnaud ANANDANE.", role: "C.O.O", text: "We would like to express our thanks for all the stall construction services you have provided for SSW 2019. There are a few things that we would like to bring to your attention about the service and for any possible future cooperation with." },
   ];
 	return(
 		<>
