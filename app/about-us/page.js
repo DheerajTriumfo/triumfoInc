@@ -71,87 +71,29 @@ export default function About(){
 		    	<div className="heppyclients bg-[#34343C]">
 		    		<div className="grid grid-cols-1 xl:grid-cols-2">
 		    			<div className="figure relative overflow-hidden transition-transform duration-500 group-hover:scale-105 group">
-		    				<Image src="/images/about-clients.webp" width="1366" height="1025" alt="" className="w-full h-auto"/>
-		    				<div className="absolute top-0 left-0 z-20 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+		    				<Image src="/images/happy-client.webp" width="1366" height="1025" alt="" className="w-full h-auto"/>
+		    				<div className="absolute top-0 left-0 z-20 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-100 group-hover:opacity-0 transition-opacity duration-500">
 						      <div className="flex items-center justify-center w-full h-full text-center">
-						        <div className="">
+						        <div className="px-4 md:px-12 lg:px-16">
 						          <h2 className="text-white maintitle text-4xl mb-4">
-						            We Are Global
+						            Trusted By
 						          </h2>
+						          <h2 className="text-white font-bold text-6xl md:text-7xl lg:text-8xl">Global Brands</h2>
 						        </div>
 						      </div>
 						    </div>
 		    			</div>
 		    			<div className="contentt items-center self-center px-4 py-12 xl:py-0 md:px-6 lg:px-12 xl:px-20">
 		    				<div className="grid grid-cols-12 gap-4">
-	    						<div className="grid col-span-12 md:col-span-6">
-	    							<div className="bg-transparent p-4 rounded-xl text-white border border-gray-500">
-				    					<h3 className=" font-semibold text-4xl mb-2">America</h3>
-				    					<div className="flex items-center gap-x-4 mb-2 text-sm">
-				    						<Image src="/images/addressmarker3.webp" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						5071 N. Rainbow Blvd, Suite 170, Las Vegas, NV 89130, United States
-				    					</div>
-				    					<div className="flex items-center gap-x-4 mb-2">
-				    						<Image src="/images/tele.png" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						<Link href="tel:+1 702 992 0440" className="font-semibold">+1 702 992 0440</Link>
-				    					</div>
-				    					<div className="flex items-center gap-x-4">
-				    						<Image src="/images/emailn.png" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						<Link href="mailto:enquiry@triumfo.us" className="font-semibold">enquiry@triumfo.us</Link>
-				    					</div>
-				    				</div>
-	    						</div>
-	    						<div className="grid col-span-12 md:col-span-6">
-	    							<div className="bg-transparent p-4 rounded-xl text-white border border-gray-500">
-				    					<h3 className=" font-semibold text-4xl mb-2">Europe</h3>
-				    					<div className="flex items-center gap-x-4 mb-2 text-sm">
-				    						<Image src="/images/addressmarker3.webp" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						Triumfo International GmbH, Zum See 7, 14542 Werder (Havel), Germany
-				    					</div>
-				    					<div className="flex items-center gap-x-4 mb-2">
-				    						<Image src="/images/tele.png" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						<Link href="tel:+49 33 2774 99-100" className="font-semibold">+49 (0) 33 2774 99-100</Link>
-				    					</div>
-				    					<div className="flex items-center gap-x-4">
-				    						<Image src="/images/emailn.png" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						<Link href="mailto:enquiry@triumfo.de" className="font-semibold">enquiry@triumfo.de</Link>
-				    					</div>
-				    				</div>
-	    						</div>
-	    						<div className="grid col-span-12 md:col-span-6">
-	    							<div className="bg-transparent p-4 rounded-xl text-white border border-gray-500">
-				    					<h3 className=" font-semibold text-4xl mb-2">Middle East</h3>
-				    					<div className="flex items-center gap-x-4 mb-2 text-sm">
-				    						<Image src="/images/addressmarker3.webp" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						Al Qouz Industrial Area 1st. No. 5B, Warehouse 14 P.O. Box 128046, Dubai – UAE
-				    					</div>
-				    					<div className="flex items-center gap-x-4 mb-2">
-				    						<Image src="/images/tele.png" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						<Link href="tel:+971 588 040731" className="font-semibold">+971 (588) - 040731</Link>
-				    					</div>
-				    					<div className="flex items-center gap-x-4">
-				    						<Image src="/images/emailn.png" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						<Link href="mailto:enquiry@triumfo.ae" className="font-semibold">enquiry@triumfo.ae</Link>
-				    					</div>
-				    				</div>
-	    						</div>
-	    						<div className="grid col-span-12 md:col-span-6">
-	    							<div className="bg-transparent p-4 rounded-xl text-white border border-gray-500">
-				    					<h3 className=" font-semibold text-4xl mb-2">Asia</h3>
-				    					<div className="flex items-center gap-x-4 mb-2 text-sm">
-				    						<Image src="/images/addressmarker3.webp" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						A-65 Sector-83, Phase II, Noida – 201305, India
-				    					</div>
-				    					<div className="flex items-center gap-x-4 mb-2">
-				    						<Image src="/images/tele.png" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						<Link href="tel:+91 0120 4690699" className="font-semibold">+91-0120-4690699</Link>
-				    					</div>
-				    					<div className="flex items-center gap-x-4">
-				    						<Image src="/images/emailn.png" width={20} height={20} alt="" className="invert w-[20px]"/>
-				    						<Link href="mailto:enquiry@triumfo.in" className="font-semibold">enquiry@triumfo.in</Link>
-				    					</div>
-				    				</div>
-	    						</div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/samsung1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/google.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/lg.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/tata-motors1.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/etihad.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/hangcha1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/indian-oil1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/byd.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/proponent.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
 	    					</div>
 		    			</div>
 		    		</div>
@@ -179,37 +121,7 @@ export default function About(){
 		    		</div>
 		    	</div>
 		    </section>
-		    <section>
-		    	<div className="heppyclients bg-[#34343C]">
-		    		<div className="grid grid-cols-1 xl:grid-cols-2">
-		    			<div className="figure relative overflow-hidden transition-transform duration-500 group-hover:scale-105 group">
-		    				<Image src="/images/happy-client.webp" width="1366" height="1025" alt="" className="w-full h-auto"/>
-		    				<div className="absolute top-0 left-0 z-20 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-						      <div className="flex items-center justify-center w-full h-full text-center">
-						        <div className="px-4 md:px-12 lg:px-16">
-						          <h2 className="text-white maintitle text-4xl mb-4">
-						            Trusted By Global Brands
-						          </h2>
-						        </div>
-						      </div>
-						    </div>
-		    			</div>
-		    			<div className="contentt items-center self-center px-4 py-12 xl:py-0 md:px-6 lg:px-12 xl:px-20">
-		    				<div className="grid grid-cols-12 gap-4">
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/samsung1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/google.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/lg.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/tata-motors1.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/etihad.webp" width={200} height={94} alt="" className="w-full h-auto p-2  border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/hangcha1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/indian-oil1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/byd.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/proponent.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    					</div>
-		    			</div>
-		    		</div>
-		    	</div>
-		    </section>
+		    
 		    
 		    <div className="ctaction bg-[#E9EEF7] py-6">
 		        <div className="container mx-auto px-4">
