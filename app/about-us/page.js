@@ -204,7 +204,7 @@ export default function About(){
 	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/hangcha1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
 	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/indian-oil1.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
 	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/byd.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
-	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/plum.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
+	    						<div className="col-span-6 md:col-span-4"><Image src="/images/client-logo/proponent.webp" width={200} height={94} alt="" className="w-full h-auto p-2 border border-gray-500"/></div>
 	    					</div>
 		    			</div>
 		    		</div>
