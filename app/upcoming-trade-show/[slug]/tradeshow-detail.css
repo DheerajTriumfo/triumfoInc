@@ -1,0 +1,23 @@
+.owl-carousel { position: relative; }
+.owl-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display:flex;
+  gap: 10px;
+  z-index: 50;
+  pointer-events: auto;
+}
+.owl-dots .owl-dot {
+  width: 35px;
+  height: 5px;
+  background: rgba(255,255,255,0.35) !important;
+  transition: all .22s ease;
+  cursor: pointer;
+  outline: none;
+}
+.owl-dots .owl-dot.active,
+.owl-dots .owl-dot:focus {
+  background: rgba(255,255,255,0.65) !important;
+}

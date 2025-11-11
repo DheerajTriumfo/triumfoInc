@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Triumfo Inc.</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- <script src="https://kit.fontawesome.com/f85da4f185.js" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+	<div class="topheader">
+		<div class="container mx-auto px-4">
+			<div class="innerheader">
+				<div class="logo"><img src="images/logo.webp" width="135" height="71" alt=""></div>
+				<div class="flex items-center gap-x-4 mr-12 lg:mr-0">
+					<a href="" class="flex text-white text-l items-center gap-x-1 hidden md:flex"><img src="images/mailicon.webp" width="36" height="17" alt=""> enquiry@triumfo.us</a>
+					<div><a href="" class="px-6 py-3 bg-[#A02C1C] rounded-xl border-2 border-[#A02C1C] text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300">Get Booth Quotation</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav>
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center gap-x-4">
+                <div class="main_menu">
+                	<div class="mobile_btn"><span></span></div>
+	                <ul>
+	                    <li><a href="{{ url('/') }}/">HOME</a></li>
+	                    <li class="has_dropdown">
+	                        <a href="javascript:void(0)">EXHIBIT RENAL <i class="fa fa-angle-down"></i></a>
+	                        <ul class="sub_menu">
+	                            <li><a href="#">10x10 Booth Rental</a></li>
+	                            <li><a href="#">10x20 Booth Rental</a></li>
+	                            <li><a href="#">10x30 Booth Rental</a></li>
+	                            <li><a href="#">20x20 Booth Rental</a></li>
+	                            <li><a href="#">20x30 Booth Rental</a></li>
+	                            <li><a href="#">20x40 Booth Rental</a></li>
+	                            <li><a href="#">30x30 Booth Rental</a></li>
+	                            <li><a href="#">30x40 Booth Rental</a></li>
+	                            <li><a href="#">40x40 Booth Rental</a></li>
+	                            <li><a href="#">40x50 Booth Rental</a></li>
+	                        </ul>
+	                    </li>
+	                    <li><a href="#">FULL SERVICES</a></li>
+	                    <li><a href="#">OUR WORK</a></li>
+	                    <li><a href="#">LOCATIONS</a></li>
+	                    <li><a href="#">CONTACT US</a></li>
+	                </ul>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <!--content part-->
+    <section>
+    	<div class="bannerbg bg-[#34343C] py-36">
+    		<div class="container mx-auto px-4">
+    			<div class="max-w-3xl mx-auto">
+    				<div class="text-center">
+    					<h1 class="text-white font-semibold text-7xl mb-4">Find the Right Booth Size for Chicago Events</h1>
+    					<p class="text-white text-xl">Explore our wide range of trade show exhibit designs in Chicago and find the best match according to your brand and size requirements.</p>
+    				</div>
+    			</div>
+    			<div class="searchbar mt-8 mx-auto w-full max-w-4xl px-4">
+  <div class="flex flex-wrap items-center justify-between border border-gray-500 p-3 rounded-xl">
+    
+    <!-- City Select -->
+    <div class="relative flex-1 min-w-[200px]">
+      <select
+        class="w-full bg-transparent text-white font-medium px-4 py-3 pr-10 rounded-md focus:outline-none cursor-pointer appearance-none text-center"
+      >
+        <option selected disabled style="color: #9ca3af;">Select City</option>
+        <option style="color: #374151;">Las Vegas</option>
+        <option style="color: #374151;">Chicago</option>
+        <option style="color: #374151;">Orlando</option>
+      </select>
+
+      <!-- Thin Chevron Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg"
+        class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white pointer-events-none"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+      </svg>
+    </div>
+
+    <!-- Divider -->
+    <div class="hidden md:block w-px h-8 bg-gray-500 mx-2"></div>
+
+    <!-- Booth Size Select -->
+    <div class="relative flex-1 min-w-[200px]">
+      <select
+        class="w-full bg-transparent text-white font-medium px-4 py-3 pr-10 rounded-md focus:outline-none cursor-pointer appearance-none text-center"
+      >
+        <option selected disabled style="color: #9ca3af;">Select Boothsize</option>
+        <option style="color: #374151;" class="focus:bg-gray-700">10x10</option>
+        <option style="color: #374151;">20x20</option>
+        <option style="color: #374151;">30x30</option>
+      </select>
+
+      <!-- Thin Chevron Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg"
+        class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white pointer-events-none"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+      </svg>
+    </div>
+
+    <!-- Search Button -->
+    <button
+      class="bg-[#9A3220] hover:bg-[#a51f23] text-white font-semibold px-8 py-3 rounded-md transition-colors duration-300 flex-shrink-0 mt-3 md:mt-0"
+    >
+      Search
+    </button>
+  </div>
+</div>
+
+    		</div>
+    	</div>
+    </section>
+    <section>
+    	<div class="stepbg bg-white py-20">
+    		<div class="container mx-auto px-4">
+    			<div class="max-w-3xl mx-auto">
+    				<div class="text-center">
+    					<h1 class="maintitle text-gray-700 mb-6">Rent Your Booth in Just 4 Easy Steps</h1>
+    					<p class="text-gray-600 text-lg">Follow these simple steps to select, design, and customize your rental booth—then hit the trade show floor with confidence.</p>
+    				</div>
+    			</div>
+    			<div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+					<div class="rounded-[14px] border border-gray-300 text-center bg-white">
+						<h4 class="text-gray-700 font-semibold text-3xl px-[28px] py-24">Pick Your Booth Size</h4>
+					</div>
+					<div class="rounded-[14px] border border-gray-300 text-center bg-white">
+						<h4 class="text-gray-700 font-semibold text-3xl px-[28px] py-24">Choose the Perfect Design</h4>
+					</div>
+					<div class="rounded-[14px] border border-gray-300 text-center bg-white">
+						<h4 class="text-gray-700 font-semibold text-3xl px-[28px] py-24">Customize with Your Branding</h4>
+					</div>
+					<div class="rounded-[14px] border border-gray-300 text-center bg-white">
+						<h4 class="text-gray-700 font-semibold text-3xl px-[28px] py-24">Finalize & Hit the Floor</h4>
+					</div>
+				</div>
+    		</div>
+    	</div>
+    </section>
+    <section>
+    	<div class="servicebg bg-[#E9EEF7] py-20">
+    		<div class="container mx-auto px-4">
+    			<div class="max-w-3xl mx-auto text-center">
+					<h1 class="maintitle text-gray-700 mb-6">Why Rent a Trade Show Booth?</h1>
+					<p class="text-gray-600 text-lg">Enjoy a stress-free trade show experience with a solution that’s practical, convenient, and designed to keep your exhibition hassle-free from start to finish.</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
+    				<div class="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 class="title text-4xl font-semibold mb-6">Save on <br>Costs</h3>
+    					<p class="text-lg mb-0 pt-6 border-t border-gray-200">Reduce overall exhibiting expenses by renting instead of purchasing, eliminating long-term investment and maintenance liabilities.</p>
+    				</div>
+    				<div class="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 class="title text-4xl font-semibold mb-6">Fast Setup & Teardown</h3>
+    					<p class="text-lg mb-0 pt-6 border-t border-gray-200">Pre-engineered booth systems ensure quick installation and dismantling, minimizing downtime and avoiding labor-intensive processes onsite.</p>
+    				</div>
+    				<div class="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 class="title text-4xl font-semibold mb-6">Flexible <br>Designs</h3>
+    					<p class="text-lg mb-0 pt-6 border-t border-gray-200">Adaptable modular layouts adjust to various booth sizes, branding goals, marketing messages, and exhibit environments.</p>
+    				</div>
+    				<div class="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 class="title text-4xl font-semibold mb-6">No Storage <br>Worries</h3>
+    					<p class="text-lg mb-0 pt-6 border-t border-gray-200">Eliminate storage, maintenance, and long-term warehousing issues since rentals return after every event without responsibility.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section>
+		<div class="contentbg py-36">
+			<div class="container mx-auto px-4">
+				<div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-24 items-center">
+					<div class="mb-8 m:mb-0">
+						<div class="figure"><img src="images/brign-design.webp" width="" height="" class="w-full h-auto rounded-xl"></div>
+					</div>
+					<div class="contents self-center">
+						<div>
+							<h2 class="maintitle text-gray-700 mb-4">Custom Exhibits Built for Your Brand</h2>
+							<p class="text-xl text-gray-500 leading-relaxed">Design your booth from the ground up — tailored layouts, finishes, and experiences for maximum impact at every show. Design your booth from the ground up — tailored layouts, finishes, and experiences for maximum impact at every show.</p>
+
+							<div class="flex flex-col sm:flex-row gap-4 mt-12">
+							  <a href="#" class="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+							    Explore Services
+							  </a>
+							  <a href="#" class="w-full sm:w-auto px-6 py-3 border-2 border-custom rounded-xl text-black text-center hover:bg-custom hover:text-white transition duration-300">
+							    View Recent Work
+							  </a>
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section>
+		<div class="homeportfolio bg-[#34343C] py-20">
+			<div class="container mx-auto px-4 text-center text-white pb-20">
+				<h2 class="maintitle">Our Portfolio</h2>
+				<div class="max-w-3xl mx-auto mt-4">
+					<p class="text-xl text-white leading-relaxed">Tell us what your brand stands for, and we’ll turn it into a booth that commands attention. Receive 3 free custom exhibit design options from Triumfo’s expert design team — made exclusively around your brand message and show requirements.</p>
+				</div>
+			</div>
+			<div class="px-4 sm:px-2 py-2">
+				<div class="grid grid-cols-12 gap-2">
+					<div class="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+					  <img src="images/pt1.webp" alt="TemperPack" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+					  <div class="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+					    <div class="flex items-center justify-center w-full h-full text-center">
+					      <div class="cursor-pointer">
+					        <h2 class="text-white font-semibold text-4xl mb-4">TemperPack</h2>
+					        <p class="text-white text-base">20x30 Trade Show Booth at Pack Expo 2025, Las Vegas, NV</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+					  <img src="images/pt2.webp" alt="TemperPack" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+					  <div class="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+					    <div class="flex items-center justify-center w-full h-full text-center">
+					      <div class="cursor-pointer">
+					        <h2 class="text-white font-semibold text-4xl mb-4">TemperPack</h2>
+					        <p class="text-white text-base">20x30 Trade Show Booth at Pack Expo 2025, Las Vegas, NV</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+					  <img src="images/pt3.webp" alt="TemperPack" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+					  <div class="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+					    <div class="flex items-center justify-center w-full h-full text-center">
+					      <div class="cursor-pointer">
+					        <h2 class="text-white font-semibold text-4xl mb-4">TemperPack</h2>
+					        <p class="text-white text-base">20x30 Trade Show Booth at Pack Expo 2025, Las Vegas, NV</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+					  <img src="images/pt4.webp" alt="TemperPack" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+					  <div class="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+					    <div class="flex items-center justify-center w-full h-full text-center">
+					      <div class="cursor-pointer">
+					        <h2 class="text-white font-semibold text-4xl mb-4">TemperPack</h2>
+					        <p class="text-white text-base">20x30 Trade Show Booth at Pack Expo 2025, Las Vegas, NV</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+					  <img src="images/pt5.webp" alt="TemperPack" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+					  <div class="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+					    <div class="flex items-center justify-center w-full h-full text-center">
+					      <div class="cursor-pointer">
+					        <h2 class="text-white font-semibold text-4xl mb-4">TemperPack</h2>
+					        <p class="text-white text-base">20x30 Trade Show Booth at Pack Expo 2025, Las Vegas, NV</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+					  <img src="images/pt6.webp" alt="TemperPack" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+					  <div class="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+					    <div class="flex items-center justify-center w-full h-full text-center">
+					      <div class="cursor-pointer">
+					        <h2 class="text-white font-semibold text-4xl mb-4">TemperPack</h2>
+					        <p class="text-white text-base">20x30 Trade Show Booth at Pack Expo 2025, Las Vegas, NV</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="flex flex-col sm:flex-row gap-4 mt-12 justify-center">
+				  <a href="#" class="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-custom rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:border-gray-500 hover:text-white transition duration-300">
+				    View Portfolio
+				  </a>
+				  <a href="#" class="w-full sm:w-auto px-6 py-3 border-2 bg-white border-white rounded-xl text-black text-center hover:bg-custom hover:text-white hover:border-custom transition duration-300">
+				    View Recent Work
+				  </a>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section>
+		<div class="bg-[#E9EEF7] py-20">
+			<div class="container mx-auto px-4">
+				<div class="max-w-3xl mx-auto text-center">
+					<h2 class="maintitle text-gray-700 mb-6">Innovating Ideas. Elevating Experiences</h2>
+					<p class="text-xl text-gray-500">With 25+ years of expertise in trade show booth design and production, we transform your ideas into immersive brand spaces. Choose from custom exhibits, rentals, double-deck booths, or country pavilions — all managed under one roof.</p>
+				</div>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+					<div>
+						<a href="" class="bg-white rounded-[14px] p-[68px] border border-gray-300 text-center block"><h3 class="text-3xl text-gray-600  barlofamilty flex items-center justify-center">Las Vegas</h3></a>
+					</div>
+					<div>
+						<a href="" class="bg-white rounded-[14px] p-[68px] border border-gray-300 text-center block"><h3 class="text-3xl text-gray-600 barlofamilty flex items-center justify-center">Chicago</h3></a>
+					</div>
+					<div>
+						<a href="" class="bg-white rounded-[14px] p-[68px] border border-gray-300 text-center block"><h3 class="text-3xl text-gray-600 barlofamilty flex items-center justify-center">Orlando</h3></a>
+					</div>
+					<div>
+						<a href="" class="bg-white rounded-[14px] p-[68px] border border-gray-300 text-center block"><h3 class="text-3xl text-gray-600 barlofamilty flex items-center justify-center">Anaheim</h3></a>
+					</div>
+					<div>
+						<a href="" class="bg-white rounded-[14px] p-[68px] border border-gray-300 text-center block"><h3 class="text-3xl text-gray-600 barlofamilty flex items-center justify-center">San Diego</h3></a>
+					</div>
+					<div>
+						<a href="" class="bg-white rounded-[14px] p-[68px] border border-gray-300 text-center block"><h3 class="text-3xl text-gray-600 barlofamilty flex items-center justify-center">Los Angeles</h3></a>
+					</div>
+					<div>
+						<a href="" class="bg-white rounded-[14px] p-[68px] border border-gray-300 text-center block"><h3 class="text-3xl text-gray-600 barlofamilty flex items-center justify-center">Atlanta</h3></a>
+					</div>
+					<div>
+						<a href="" class="bg-white rounded-[14px] p-[68px] border border-gray-300 text-center block"><h3 class="text-3xl text-gray-600 barlofamilty flex items-center justify-center">New York</h3></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+	<section>
+        <div class="faqbg bg-white py-20">
+          <div class="container mx-auto px-4">
+            <div class="max-w-4xl mb-12 text-center mx-auto">
+                <h2 class="text-gray-700 text-6xl font-bold mb-4">FAQs</h2>
+                <p class="text-gray-600 mb-6 text-base">Got questions? We’ve got answers. Explore our FAQs to quickly find insights about our trade show services, processes, and solutions.</p>
+              </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-12">
+              <div class="self-center">
+                  <div class="borbg mb-4 rounded-xl overflow-hidden bg-gray-100">
+                  <div class="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
+                  	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
+							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
+							    	</svg> Should I rent or buy a trade show booth?</div>
+                  <div class="tab-caption px-6 py-4 text-base text-gray-600">
+                    <p>Renting is ideal for occasional shows; buying is better for frequent exhibitors seeking consistent branding.</p>
+                  </div>
+                </div>
+                <div class="borbg mb-2 rounded-xl overflow-hidden bg-white">
+                  <div class="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
+                  	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
+							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
+							    	</svg> How much does a trade show booth cost?</div>
+                  <div class="tab-caption px-6 py-4 text-base text-gray-600">
+                    <p>The cost varies based on size, materials, and customization. Smaller rentals start at a few thousand dollars, while large custom booths with lighting, graphics, and double decks can go much higher.</p>
+                  </div>
+                </div>
+                <div class="borbg mb-2 rounded-xl overflow-hidden bg-white">
+                  <div class="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
+                  	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
+							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
+							    	</svg> How long does it take to build a booth?</div>
+                  <div class="tab-caption px-6 py-4 text-base text-gray-600">
+                    <p>Rental booths can be ready within 1–3 weeks, while custom-built designs typically require 6–12 weeks for design, approval, and fabrication.</p>
+                  </div>
+                </div>
+                <div class="borbg mb-2 rounded-xl overflow-hidden bg-white">
+                  <div class="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
+                  	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
+							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
+							    	</svg> What’s included in your booth services?</div>
+                  <div class="tab-caption px-6 py-4 text-base text-gray-600">
+                    <p>We provide complete end-to-end services — including design, fabrication, printing, logistics, installation, dismantling, and storage — all handled by our in-house team.</p>
+                  </div>
+                </div>
+                <div class="borbg mb-2 rounded-xl overflow-hidden bg-gray-100">
+                  <div class="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
+                  	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
+							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
+							    	</svg> Do you handle booth setup and dismantling?</div>
+                  <div class="tab-caption px-6 py-4 text-base text-gray-600">
+                    <p>Yes, our skilled team manages everything from on-site installation to dismantling after the show, ensuring a smooth, hassle-free experience for you.</p>
+                  </div>
+                </div>
+                <div class="borbg mb-2 rounded-xl overflow-hidden bg-gray-100">
+                  <div class="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
+                  	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
+							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
+							    	</svg> Can you design booths for international shows?</div>
+                  <div class="tab-caption px-6 py-4 text-base text-gray-600">
+                    <p>Absolutely. We manage global trade show projects with reliable local partners to ensure timely delivery and seamless execution at international venues.</p>
+                  </div>
+                </div>
+                <div class="borbg mb-2 rounded-xl overflow-hidden bg-gray-100">
+                  <div class="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
+                  	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
+							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
+							    	</svg> Do you handle booth setup and dismantling?</div>
+                  <div class="tab-caption px-6 py-4 text-base text-gray-600">
+                    <p>Yes, our skilled team manages everything from on-site installation to dismantling after the show, ensuring a smooth, hassle-free experience for you.</p>
+                  </div>
+                </div>
+                <div class="borbg mb-2 rounded-xl overflow-hidden bg-gray-100">
+                  <div class="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
+                  	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
+							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
+							    	</svg> Do you handle booth setup and dismantling?</div>
+                  <div class="tab-caption px-6 py-4 text-base text-gray-600">
+                    <p>Yes, our skilled team manages everything from on-site installation to dismantling after the show, ensuring a smooth, hassle-free experience for you.</p>
+                  </div>
+                </div>
+              </div>
+              <div class=""><img src="images/faq5.webp" width="602" height="650" alt="" class="w-full h-auto rounded-xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ctaction bg-[#E9EEF7] py-10 ">
+		<div class="container mx-auto px-4">
+			<div class="bg-gray-900 text-white rounded-xl p-6 md:p-10 mx-4 md:mx-auto max-w-7xl my-10">
+  				<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+				    <div>
+				      <h2 class="text-xl md:text-4xl font-semibold mb-3 barlofamilty">
+				        Ready to plan your next show?
+				      </h2>
+				      <p class="text-sm md:text-base text-gray-300">
+				        Tell us your goals — we’ll recommend the ideal booth solution.
+				      </p>
+				    </div>
+				    <div class="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
+				      <a href="#" class="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
+				        Schedule a Call
+				      </a>
+				      <a href="#" class="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
+				        Get a Quote
+				      </a>
+				    </div>
+  				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="container mx-auto px-4">
+				<div class="footerinner">
+					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8">
+						<div>
+							<h4 class="text-white font-semibold text-2xl mb-4">COMPANY</h4>
+							<div class="footermenu">
+								<ul>
+									<li><a href="">Home</a></li>
+									<li><a href="">Our Services</a></li>
+									<li><a href="">Custom Trade Show Displays</a></li>
+									<li><a href="">Exhibition Stand Builders</a></li>
+									<li><a href="">Portfolio</a></li>
+									<li><a href="">Testimonials</a></li>
+									<li><a href="">FAQ</a></li>
+									<li><a href="">Top Trade Shows</a></li>
+									<li><a href="">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<h4 class="text-white font-semibold text-2xl mb-4">BOOTH BY SIZE</h4>
+							<div class="footermenu">
+								<ul>
+									<li><a href="">10×10 Trade Show Booth </a></li>
+									<li><a href="">10×20 Trade Show Booth </a></li>
+									<li><a href="">10×30 Trade Show Booth </a></li>
+									<li><a href="">20×20 Trade Show Booth </a></li>
+									<li><a href="">20×30 Trade Show Booth </a></li>
+									<li><a href="">20×40 Trade Show Booth </a></li>
+									<li><a href="">30×30 Trade Show Booth </a></li>
+									<li><a href="">30×40 Trade Show Booth </a></li>
+									<li><a href="">40×40 Trade Show Booth </a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<h4 class="text-white font-semibold text-2xl mb-4">LOCATIONS</h4>
+							<div class="footermenu">
+								<ul>
+									<li><a href="">Las Vegas</a></li>
+									<li><a href="">Chicago</a></li>
+									<li><a href="">Orlando</a></li>
+									<li><a href="">Anaheim</a></li>
+									<li><a href="">San Diego</a></li>
+									<li><a href="">Los Angeles</a></li>
+									<li><a href="">Atlanta</a></li>
+									<li><a href="">New York</a></li>
+									<li><a href="">View More Cities</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<h4 class="text-white font-semibold text-2xl mb-4">RESOURCES</h4>
+							<div class="footermenu">
+								<ul>
+									<li><a href="">Blog</a></li>
+									<li><a href="">Get Booth Quotation</a></li>
+									<li><a href="">Schedule A Call</a></li>
+									<li><a href="">Get Free 3D Design</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" defer=""></script>
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+	  $('#rental').owlCarousel({
+		  loop: true,
+		  margin: 20,
+		  nav: false,
+		  dots: true,
+		  autoplay: true,
+		  autoplayTimeout: 2500,
+		  smartSpeed: 1000,
+		  autoplayHoverPause:true,
+		  navText: [
+		    '<span class="carousel-nav prev"><i class="fa fa-angle-left"></i></span>',
+		    '<span class="carousel-nav next"><i class="fa fa-angle-right"></i></span>'
+		  ],
+		  responsive: {
+		    0: { items: 1 },
+		    768: { items: 2 },
+		    1200: { items: 4 }
+		  }
+		});
+	</script>
+	<script>
+	  $('#client').owlCarousel({
+		  loop: true,
+		  margin: 20,
+		  nav: false,
+		  dots: true,
+		  autoplay: true,
+		  autoplayTimeout: 2500,
+		  smartSpeed: 1000,
+		  autoplayHoverPause:true,
+		  navText: [
+		    '<span class="carousel-nav prev"><i class="fa fa-angle-left"></i></span>',
+		    '<span class="carousel-nav next"><i class="fa fa-angle-right"></i></span>'
+		  ],
+		  responsive: {
+		    0: { items: 2 },
+		    768: { items: 4 },
+		    1200: { items: 6 }
+		  }
+		});
+	</script>
+	<script type="text/javascript">
+     $(document).ready(function () {
+        $(".faqbg").each(function () {
+           var $this = $(this);
+
+           $this.find(".tab-button").click(function () {
+           $this.find(".tab-button").removeClass("on");
+           $this.find(".tab-caption").slideUp("normal");
+
+           if ($(this).next().is(":hidden") == true) {
+             $(this).addClass("on");
+             $(this).next().slideDown("normal");
+           }
+           });
+
+           $this.find(".tab-caption").hide();
+           $this.find(".tab-caption:first").show();
+           $this.find(".tab-button:first").addClass("on");
+        });
+     });
+  	</script> 
+	<script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabs = document.querySelectorAll("[data-tab]");
+      const contents = document.querySelectorAll("[data-content]");
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          // Remove active classes from all tabs
+          tabs.forEach(t => t.classList.remove("text-gray-600", "font-bold"));
+          tabs.forEach(t => t.classList.add("text-gray-700"));
+
+          // Hide all content
+          contents.forEach(c => c.classList.add("hidden"));
+
+          // Activate clicked tab
+          tab.classList.add( "font-bold");
+          tab.classList.remove("text-gray-600");
+
+          // Show corresponding content
+          const target = tab.dataset.tab;
+          document.getElementById(target).classList.remove("hidden");
+        });
+      });
+    });
+  </script>
+	<style>
+		select option {
+	  background-color: #fff !important;
+	  color: #414141;
+	}
+	
+select option:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.contentbg{
+	display: block;
+}
+.contentbg .figure{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.contentbg .figure::before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: -10px;
+	top: -7px;
+	width: calc(100% - 50px);
+	height: calc(100% + 14px);
+	background: #34343C;
+	border-radius: 8px;
+}
+.contentbg .figure img{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+}
+.contentbg .contents{
+	display: block;
+	position: relative;
+/*	padding-top: 1.5rem;*/
+}
+	</style>
+</body>
+</html>
