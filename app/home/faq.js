@@ -94,7 +94,7 @@ export default function Faqtab(){
                 </div>
                 
               </div>
-              <div className="self-center hidden lg:block"><Image src="/images/faq6.webp" width="602" height="650" alt="Trade Show Booth with large hanging & LED strip" className="w-full h-auto rounded-xl"/></div>
+              <div className="self-center hidden lg:block"><Image src="/images/home-faq.webp" width="602" height="650" alt="Trade Show Booth with large hanging & LED strip" className="w-full h-auto rounded-xl"/></div>
             </div>
           </div>
         </div>
