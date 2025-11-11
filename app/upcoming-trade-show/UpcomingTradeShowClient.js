@@ -96,45 +96,19 @@ export default function UpcomingTradeShowClient() {
   const cached = sessionStorage.getItem('tradeShows');
 
   if (cached) {
-    // Load cached data
     const parsed = JSON.parse(cached);
     setShows(parsed);
-  } else {
-    // Fetch from API, then cache it
-    loadInitialData().then(() => {
-      setTimeout(() => {
-        sessionStorage.setItem('tradeShows', JSON.stringify(shows));
-      }, 500); // small delay to ensure shows state updates
-    });
   }
-}, [loadInitialData]);
 
-	// useEffect(() => {
-	// 	let timeoutId;
-	// 	let lastScrollTime = 0;
-	// 	const SCROLL_THROTTLE = 500;
+  // Always fetch latest from API
+  loadInitialData().then(result => {
+    if (result?.data?.length > 0) {
+      sessionStorage.setItem('tradeShows', JSON.stringify(result.data));
+    }
+  });
+}, [search]);
 
-	// 	const handleScroll = () => {
-	// 		const now = Date.now();
-	// 		if (now - lastScrollTime < SCROLL_THROTTLE) {
-	// 			return;
-	// 		}
-
-	// 		if (timeoutId) clearTimeout(timeoutId);
-	// 		timeoutId = setTimeout(() => {
-	// 			if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 1000) {
-	// 				lastScrollTime = Date.now();
-	// 				loadMore();
-	// 			}
-	// 		}, 300);
-	// 	};
-
-	// 	window.addEventListener('scroll', handleScroll, { passive: true });
-	// 	return () => {
-	// 		window.removeEventListener('scroll', handleScroll);
-	// 		if (timeoutId) clearTimeout(timeoutId);
-	// 	};
-	// }, [loadMore]);
+	
 
 	useEffect(() => {
 		setInputValue(search);

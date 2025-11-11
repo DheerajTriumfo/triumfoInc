@@ -65,18 +65,21 @@ export default function GetImageCarousel() {
             <div className="relative mb-12">
               <div className="owl-carousel owl-theme" id="tradeshwoslider">
                 <div className="item">
-                  <Image src="/images/tradeshow1.webp" width="1366" height="886" alt="" className="w-full h-auto"/>
+                  <Image src="/images/tradeshow-detail1.webp" width="1366" height="886" alt="" className="w-full h-auto"/>
                 </div>
                 <div className="item">
-                  <Image src="/images/tradeshow2_1.webp" width="1366" height="886" alt="" className="w-full h-auto"/>
+                  <Image src="/images/tradeshow-detail3.webp" width="1366" height="886" alt="" className="w-full h-auto"/>
+                </div>
+                <div className="item">
+                  <Image src="/images/tradeshow-detail2.webp" width="1366" height="886" alt="" className="w-full h-auto"/>
                 </div>
               </div>
             </div>
 
             <div className="flex-col md:flex-row flex items-center justify-center gap-6 px-4">
-              <Link className="w-full sm:w-auto px-6 py-4 border-2 bg-white border-[#943724] rounded-xl text-black text-center hover:bg-custom hover:text-white hover:border-custom transition duration-300" href="/portfolio">Custom Trade Show Booth</Link>
-              <Link className="w-full sm:w-auto px-6 py-4 border-2 bg-[#943724] border-[#943724] rounded-xl text-white text-center hover:bg-custom hover:text-white hover:border-custom transition duration-300" href="/portfolio">Rental Trade Show Booth</Link>
-              <Link className="w-full sm:w-auto px-6 py-4 border-2 bg-white border-[#943724] rounded-xl text-black text-center hover:bg-custom hover:text-white hover:border-custom transition duration-300" href="/portfolio">Turnkey Booth Services</Link>
+              <Link className="w-full sm:w-auto px-6 py-4 border-2 bg-white border-[#943724] rounded-xl text-black text-center hover:bg-custom hover:text-white hover:border-custom transition duration-300" href="/">Custom Trade Show Booth</Link>
+              <Link className="w-full sm:w-auto px-6 py-4 border-2 bg-[#943724] border-[#943724] rounded-xl text-white text-center hover:bg-custom hover:text-white hover:border-custom transition duration-300" href="/trade-show-booth-display-rentals/">Rental Trade Show Booth</Link>
+              <Link className="w-full sm:w-auto px-6 py-4 border-2 bg-white border-[#943724] rounded-xl text-black text-center hover:bg-custom hover:text-white hover:border-custom transition duration-300" href="/services/">Turnkey Booth Services</Link>
             </div>
           </div>
         </div>
