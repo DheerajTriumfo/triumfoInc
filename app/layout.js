@@ -55,6 +55,13 @@ export default function RootLayout({ children }) {
     `,
   }}
 />
+        <link
+        rel="preload"
+        as="font"
+        type="font/woff2"
+        href="/fonts/poppins.woff2"
+        crossorigin="anonymous"
+      />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link
