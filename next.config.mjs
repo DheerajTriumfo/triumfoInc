@@ -1,24 +1,31 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ['triumfous.mobel.us', 'triumfous.mobel.us'], // add your domain here
-  },
+  reactStrictMode: true,
   trailingSlash: true,
   optimizeFonts: true,
+
+  images: {
+    domains: ['triumfous.mobel.us'],
+    formats: ['image/avif', 'image/webp'], // ✅ serve modern formats automatically
+    minimumCacheTTL: 31536000,
+  },
+
+  experimental: {
+    optimizeCss: true, // ✅ reduce blocking CSS
+    scrollRestoration: true,
+  },
+
   async headers() {
     return [
-      // ✅ Cache static assets aggressively (1 year, immutable)
       {
+        // Cache static assets aggressively
         source: "/:all*(svg|jpg|jpeg|png|webp|ico|css|js|woff2|ttf|eot|otf)",
         headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
-      // ✅ Security headers (apply to all routes/pages)
       {
+        // Security headers for all routes
         source: "/(.*)",
         headers: [
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
@@ -28,16 +35,6 @@ const nextConfig = {
           {
             key: "Strict-Transport-Security",
             value: "max-age=63072000; includeSubDomains; preload",
-          },
-        ],
-      },
-      // ✅ Update MIME types for font files
-      {
-        source: "/:all*(woff|woff2|ttf|eot|otf)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
           },
         ],
       },
