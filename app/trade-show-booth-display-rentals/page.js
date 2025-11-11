@@ -386,7 +386,7 @@ export default function TradeShowBoothDisplayRentals() {
 									<h2 className="maintitle text-gray-700 mb-4">Let’s Build Your Rental Booth</h2>
 									<p className="text-xl text-gray-500 leading-relaxed">Need a unique design tailored to your brand and goals? Contact us — we’ll create one for free within 48 hours.</p>
 									<div className="flex flex-col sm:flex-row gap-4 mt-12">
-										<Link href="/get-booth-quotation/" className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+										<Link href="/get-free-3d-design/" className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
 											Claim Your Free Design
 										</Link>
 									</div>

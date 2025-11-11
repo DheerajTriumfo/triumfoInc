@@ -184,7 +184,7 @@ export default function Home() {
                   <p className="text-xl text-gray-500 leading-relaxed">{data?.contentBlock?.description || 'Get a personalized booth design concept tailored to your brand—delivered in just 48 hours, completely free and without commitment.'}</p>
 
                   <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                    <a href={data?.contentBlock?.primaryCta?.href || '/get-booth-quotation/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+                    <a href={data?.contentBlock?.primaryCta?.href || '/get-free-3d-design/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
                       {data?.contentBlock?.primaryCta?.label || 'Claim Your Free Design'}
                     </a>
                     
