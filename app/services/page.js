@@ -56,6 +56,28 @@ export default function Service()
 			    	</div>
 			    </div>
 		    </section>
+		    <div className="ctaction bg-[#E9EEF7] py-6">
+	        <div className="container mx-auto px-4">
+	          <div className="text-gray-700 rounded-xl max-w-5xl mx-auto py-16">
+	              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+	                <div>
+	                  <h2 className="text-5xl md:text-5xl font-semibold mb-3 font-heading">
+	                    {'Let’s Plan Your Next Show'}
+	                  </h2>
+	                  <p className="text-lg text-gray-500">Share your trade show goals, and we will suggest the finest booth approach according to your budget and booth size. Let’s create a memorable brand experience for your next show.</p>
+	                </div>
+	                <div className="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
+	                  <Link href={'/schedule-a-call/'} className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
+	                    {'Schedule A Call'}
+	                  </Link>
+	                  <Link href={'/get-booth-quotation/'} className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
+	                    {'Get A Quote'}
+	                  </Link>
+	                </div>
+	              </div>
+	          </div>
+	        </div>
+	      </div>
 		</>
 		);
 }
