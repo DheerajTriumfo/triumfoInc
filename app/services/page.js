@@ -11,7 +11,7 @@ export default function Service()
 		    			<div className="max-w-3xl mx-auto">
 		    				<div className="text-center">
 		    					<h1 className="text-white font-semibold text-7xl mb-6">Turnkey Trade Show Booth Services</h1>
-		    					<p className="text-white font-semibold text-base">Triumfo Inc. is one of the leading trade show booth construction companies known to provide high-quality and eye-catchy custom trade show booths and rentals.</p>
+		    					<p className="text-white font-normal text-lg">Backed by in-house production and experienced project teams, we manage every stage of your trade show booth—design, build, logistics, and on-site support.</p>
 		    					<div className="mt-8"><a href="/get-booth-quotation" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</a></div>
 		    				</div>
 		    			</div>

@@ -16,7 +16,7 @@ export default function UpcomingTradeShowClient() {
 	const [loading, setLoading] = useState(false);
 	const [rateLimited, setRateLimited] = useState(false);
 	const [inputValue, setInputValue] = useState('');
-	const limit = 12;
+	const limit = 20;
 	const fetchInProgress = useRef(false);
 
 	const fetchShows = useCallback(async (page, searchValue = '', retryCount = 0) => {
@@ -96,32 +96,32 @@ export default function UpcomingTradeShowClient() {
 		loadInitialData();
 	}, [loadInitialData]);
 
-	useEffect(() => {
-		let timeoutId;
-		let lastScrollTime = 0;
-		const SCROLL_THROTTLE = 500;
+	// useEffect(() => {
+	// 	let timeoutId;
+	// 	let lastScrollTime = 0;
+	// 	const SCROLL_THROTTLE = 500;
 
-		const handleScroll = () => {
-			const now = Date.now();
-			if (now - lastScrollTime < SCROLL_THROTTLE) {
-				return;
-			}
+	// 	const handleScroll = () => {
+	// 		const now = Date.now();
+	// 		if (now - lastScrollTime < SCROLL_THROTTLE) {
+	// 			return;
+	// 		}
 
-			if (timeoutId) clearTimeout(timeoutId);
-			timeoutId = setTimeout(() => {
-				if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 1000) {
-					lastScrollTime = Date.now();
-					loadMore();
-				}
-			}, 300);
-		};
+	// 		if (timeoutId) clearTimeout(timeoutId);
+	// 		timeoutId = setTimeout(() => {
+	// 			if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 1000) {
+	// 				lastScrollTime = Date.now();
+	// 				loadMore();
+	// 			}
+	// 		}, 300);
+	// 	};
 
-		window.addEventListener('scroll', handleScroll, { passive: true });
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-			if (timeoutId) clearTimeout(timeoutId);
-		};
-	}, [loadMore]);
+	// 	window.addEventListener('scroll', handleScroll, { passive: true });
+	// 	return () => {
+	// 		window.removeEventListener('scroll', handleScroll);
+	// 		if (timeoutId) clearTimeout(timeoutId);
+	// 	};
+	// }, [loadMore]);
 
 	useEffect(() => {
 		setInputValue(search);
@@ -160,7 +160,7 @@ export default function UpcomingTradeShowClient() {
 						<div className="max-w-3xl mx-auto">
 							<div className="text-center">
 								<h1 className="text-white font-semibold text-7xl mb-4">Upcoming Trade Shows</h1>
-								<p className="text-white text-xl">With 25+ years of expertise in trade show booth design and production, we transform your ideas into immersive brand spaces.</p>
+								<p className="text-white text-xl">Stay updated with the latest trade shows where we’ll be showcasing our innovative booth designs and solutions.</p>
 								<form className="flex flex-col sm:inline-flex sm:flex-row items-center justify-center mt-12 border border-[rgba(255,255,255,0.3)] p-1 rounded-lg w-auto max-w-md sm:max-w-lg mx-auto relative" onSubmit={handleSearch}>
 									<div className="relative w-full sm:w-96 mb-2 sm:mb-0">
 										<input style={{ color: 'white' }} name="search" value={inputValue} onChange={(e) => setInputValue(e.target.value)} type="text" placeholder="Search Trade Fairs..." className="w-full py-3 px-4 pr-10 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-0 focus:ring-gray-500 focus:border-gray-500" />
@@ -214,7 +214,16 @@ export default function UpcomingTradeShowClient() {
 								})
 							)}
 						</div>
-
+						{shows.length >= 20 && hasMore && !loading && (
+						  <div className="text-center mt-8">
+						    <button
+						      onClick={loadMore}
+						      className="px-6 py-3 bg-[#943724] text-white text-lg rounded-md hover:bg-gray-700 hover:text-red border-2 border-[#943724] hover:border-gray-700 transition duration-300 cursor-pointer"
+						    >
+						      Load More Posts
+						    </button>
+						  </div>
+						)}
 						{loading && (
 							<div className="flex justify-center items-center py-8">
 								<div className="text-gray-500 text-lg">Loading more trade shows...</div>

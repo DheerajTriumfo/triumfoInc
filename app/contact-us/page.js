@@ -11,7 +11,7 @@ export default function ContactUs(){
 		    			<div className="max-w-3xl mx-auto">
 		    				<div className="text-center">
 		    					<h1 className="text-white font-semibold text-7xl mb-6">We Ready To Help You</h1>
-		    					<p className="text-white font-semibold text-base">Get exhibit ideas from this collection of actual booths from our clients.</p>
+		    					<p className="text-white font-normal text-lg">Connect with us to bring your trade show vision to life.</p>
 		    				</div>
 		    			</div>
 		    		</div>

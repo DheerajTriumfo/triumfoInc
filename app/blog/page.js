@@ -57,7 +57,7 @@ export default function Blog() {
 	const [loading, setLoading] = useState(false);
 	const [rateLimited, setRateLimited] = useState(false);
 	const [waitingForRateLimit, setWaitingForRateLimit] = useState(false);
-	const perPage = 9;
+	const perPage = 30;
 	const fetchInProgress = useRef(false);
 
 	const fetchPosts = useCallback(async (page, retryCount = 0) => {
@@ -250,79 +250,79 @@ export default function Blog() {
 	}, []); // Empty dependency array - only run once on mount
 
 	// Scroll handler - only created once, uses refs for state
-	useEffect(() => {
-		let timeoutId;
-		let lastScrollCheck = 0;
-		const SCROLL_THROTTLE = 500; // Minimum 500ms between scroll checks
+	// useEffect(() => {
+	// 	let timeoutId;
+	// 	let lastScrollCheck = 0;
+	// 	const SCROLL_THROTTLE = 500; // Minimum 500ms between scroll checks
 
-		const handleScroll = () => {
-			const now = Date.now();
-			if (now - lastScrollCheck < SCROLL_THROTTLE) {
-				return; // Throttle scroll events
-			}
-			lastScrollCheck = now;
+	// 	const handleScroll = () => {
+	// 		const now = Date.now();
+	// 		if (now - lastScrollCheck < SCROLL_THROTTLE) {
+	// 			return; // Throttle scroll events
+	// 		}
+	// 		lastScrollCheck = now;
 
-			// Clear existing timeout
-			if (timeoutId) clearTimeout(timeoutId);
+	// 		// Clear existing timeout
+	// 		if (timeoutId) clearTimeout(timeoutId);
 
-			// Debounce the actual check
-			timeoutId = setTimeout(async () => {
-				// Check if we're near the bottom and conditions are met
-				const scrollPosition = window.innerHeight + window.scrollY;
-				const documentHeight = document.documentElement.scrollHeight;
-				const threshold = 1000; // Load when 1000px from bottom
+	// 		// Debounce the actual check
+	// 		timeoutId = setTimeout(async () => {
+	// 			// Check if we're near the bottom and conditions are met
+	// 			const scrollPosition = window.innerHeight + window.scrollY;
+	// 			const documentHeight = document.documentElement.scrollHeight;
+	// 			const threshold = 1000; // Load when 1000px from bottom
 
-				if (scrollPosition >= documentHeight - threshold) {
-					// Use refs to check current state (always up-to-date)
-					const { currentPage: page, loading: isLoading, hasMore: more } = stateRefs.current;
+	// 			if (scrollPosition >= documentHeight - threshold) {
+	// 				// Use refs to check current state (always up-to-date)
+	// 				const { currentPage: page, loading: isLoading, hasMore: more } = stateRefs.current;
 					
-					// Only call if not already loading and conditions are met
-					if (!isLoading && more && !fetchInProgress.current && !loadMoreInProgress.current) {
-						const timeSinceLastLoad = Date.now() - lastLoadTime.current;
-						if (timeSinceLastLoad >= MIN_LOAD_INTERVAL) {
-							// Inline the load logic to avoid dependency on loadMore callback
-							loadMoreInProgress.current = true;
-							lastLoadTime.current = Date.now();
+	// 				// Only call if not already loading and conditions are met
+	// 				if (!isLoading && more && !fetchInProgress.current && !loadMoreInProgress.current) {
+	// 					const timeSinceLastLoad = Date.now() - lastLoadTime.current;
+	// 					if (timeSinceLastLoad >= MIN_LOAD_INTERVAL) {
+	// 						// Inline the load logic to avoid dependency on loadMore callback
+	// 						loadMoreInProgress.current = true;
+	// 						lastLoadTime.current = Date.now();
 
-							const nextPage = page + 1;
-							const fetchFn = fetchPostsRef.current;
-							if (!fetchFn) {
-								loadMoreInProgress.current = false;
-								return;
-							}
-							const result = await fetchFn(nextPage);
+	// 						const nextPage = page + 1;
+	// 						const fetchFn = fetchPostsRef.current;
+	// 						if (!fetchFn) {
+	// 							loadMoreInProgress.current = false;
+	// 							return;
+	// 						}
+	// 						const result = await fetchFn(nextPage);
 
-							if (result.data.length > 0) {
-								const newPosts = result.data.map((p, idx) => {
-									const title = p.blogtitle || `Post ${idx + 1}`;
-									const slug = p.url || '';
-									const date = p.created_at ? p.created_at : p.updated_at || '';
-									const excerpt = stripHtml(p.blogdesc || '').slice(0, 180);
-									const thumbRaw = p.blogimg || '';
-									let thumb = '/images/pt1.webp';
-									if (thumbRaw) thumb = /^https?:/i.test(thumbRaw) ? thumbRaw : `${apiBase}/images/uploads/blog/${thumbRaw}`;
-									return { title, slug, date, excerpt, thumb };
-								});
-								setPosts(prev => [...prev, ...newPosts]);
-								setCurrentPage(nextPage);
-								setHasMore(result.hasMore);
-							} else {
-								setHasMore(false);
-							}
+	// 						if (result.data.length > 0) {
+	// 							const newPosts = result.data.map((p, idx) => {
+	// 								const title = p.blogtitle || `Post ${idx + 1}`;
+	// 								const slug = p.url || '';
+	// 								const date = p.created_at ? p.created_at : p.updated_at || '';
+	// 								const excerpt = stripHtml(p.blogdesc || '').slice(0, 180);
+	// 								const thumbRaw = p.blogimg || '';
+	// 								let thumb = '/images/pt1.webp';
+	// 								if (thumbRaw) thumb = /^https?:/i.test(thumbRaw) ? thumbRaw : `${apiBase}/images/uploads/blog/${thumbRaw}`;
+	// 								return { title, slug, date, excerpt, thumb };
+	// 							});
+	// 							setPosts(prev => [...prev, ...newPosts]);
+	// 							setCurrentPage(nextPage);
+	// 							setHasMore(result.hasMore);
+	// 						} else {
+	// 							setHasMore(false);
+	// 						}
 
-							loadMoreInProgress.current = false;
-						}
-					}
-				}
-			}, 300); // Debounce scroll handler
-		};
+	// 						loadMoreInProgress.current = false;
+	// 					}
+	// 				}
+	// 			}
+	// 		}, 300); // Debounce scroll handler
+	// 	};
 
-		window.addEventListener('scroll', handleScroll, { passive: true });
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-			if (timeoutId) clearTimeout(timeoutId);
-		};
-	}, []); // Empty dependency array - handler is created once and uses refs for state
+	// 	window.addEventListener('scroll', handleScroll, { passive: true });
+	// 	return () => {
+	// 		window.removeEventListener('scroll', handleScroll);
+	// 		if (timeoutId) clearTimeout(timeoutId);
+	// 	};
+	// }, []); // Empty dependency array - handler is created once and uses refs for state
 
 	return (
 		<>
@@ -384,7 +384,16 @@ export default function Blog() {
 								))
 							)}
 						</div>
-
+						{posts.length >= 30 && hasMore && !loading && (
+						  <div className="text-center mt-8">
+						    <button
+						      onClick={loadMore}
+						      className="px-6 py-3 bg-[#943724] text-white text-lg rounded-md hover:bg-gray-700 hover:text-red border-2 border-[#943724] hover:border-gray-700 transition duration-300 cursor-pointer"
+						    >
+						      Load More Posts
+						    </button>
+						  </div>
+						)}
 						{loading && (
 							<div className="text-center mt-8 text-gray-500">
 								Loading more posts...
