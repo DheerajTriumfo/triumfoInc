@@ -285,6 +285,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/trade-show-booth-rental-and-exhibits-seattle/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
         source: "/exhibition-stand-germany/",
         destination: "https://www.triumfo.de/",
         permanent: true,
