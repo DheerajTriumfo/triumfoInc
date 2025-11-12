@@ -2,8 +2,8 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: 'Our Creative Work | Check Out Our Exhibition Stand Projects',
-    description: 'Take a closer look at our creative journey! Browse a curated selection of exhibition stand projects we&#039;ve delivered worldwide—designed to inspire and built to impress.',
+    title: 'Trade Show Booth Design Portfolio',
+    description: 'Explore our booth design portfolio featuring projects we’ve designed and built for clients worldwide. Real work for real clients.',
     pathname: '/portfolio/',
   });
 }

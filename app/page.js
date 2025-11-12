@@ -10,8 +10,6 @@ import Faqtab from './home/faq.js';
 import GetRentaldata from './home/rentaldata.js';
 
 
-
-
 export default function Home() {
   const { data, isLoading } = useHomeQuery();
   const [hpPortfolio, setHpPortfolio] = useState([]);

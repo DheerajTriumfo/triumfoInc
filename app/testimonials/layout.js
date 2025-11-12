@@ -3,8 +3,8 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: 'Client Testimonials, What Clients Are Saying About Our Trade Show',
-    description: 'Take a glance at our client testimonial section to know what our clients have to say about us. Triumfo Inc. is the world’s renowned trade show rental specialist in Las Vegas.',
+    title: 'Client Video Testimonials | Real Stories, Real Results',
+    description: 'Watch client video testimonials showcasing real stories and real results. See how Triumfo Inc. delivers exceptional trade show booth design and exhibit solutions.',
     pathname: '/testimonials/',
   });
 }

@@ -4,8 +4,8 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: 'Upcoming Trade Show Archives - Triumfo Inc.',
-    description: 'Triumfo Inc. is a leading trade show booth design display manufacturers companies in the USA. Offering complete exhibition booth service all around the world.',
+    title: 'Don’t Miss These Upcoming Trade Shows in the USA',
+    description: 'Stay ahead with our list of upcoming trade shows in the USA. Discover key exhibitions, plan your visit, and maximize your trade show experience with Triumfo Inc.',
     pathname: '/upcoming-trade-show/',
     openGraph: {
       type: 'website',
