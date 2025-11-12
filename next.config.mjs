@@ -12,6 +12,7 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'triumfous.mobel.us',
+        pathname: '/**',
       },
     ],
   },
