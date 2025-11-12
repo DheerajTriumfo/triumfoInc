@@ -14,20 +14,7 @@ function formatDate(dateLike) {
 		return '';
 	}
 }
-export async function generateMetadata({ params }) {
-  params = await params;
-  const res = await fetch(`${baseUrl}/api/blogdetail/${params.slug}`, { cache: "no-store" });
-  if (!res.ok) return { title: "Blog Detail", description: "Unable to load blog data" };
 
-  const data = await res.json();
-  const blog = data.data;
-
-  return {
-    title: blog?.meta_title || blog?.blogtitle || "Blog Detail",
-    description: blog?.metadesc?.replace(/<[^>]*>/g, "").slice(0, 150) || "Blog details",
-    alternates: { canonical: `https://radonexhibition.com/blog/${params.slug}/` },
-  };
-}
 export default async function BlogDetail(props) {
 	const params = await props.params;
 	const slug = params?.slug;
