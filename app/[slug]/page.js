@@ -96,6 +96,9 @@ export async function generateMetadata(props) {
     return {
       title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
       description: data?.meta_description || 'Explore our trade show displays',
+      alternates: {
+	      canonical: `https://www.triumfo.us/${slug}/`,
+	    },
     };
   } catch (err) {
     return {};
