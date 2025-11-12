@@ -3,7 +3,7 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   const title = 'Rent Trade Show Booth Any Where in The USA';
-  const description = 'Looking for easy and affordable trade show booth rentals? Check out our creative trade show display rentals and booth ideas that help you stand out and make a lasting impression.';
+  const description = 'Trade show booth rental services available in Las Vegas, Chicago, Orlando, Anaheim, San Diego, Los Angeles, Atlanta, New York, and throughout the USA.';
   const image = 'https://triumfous.mobel.us/web/images/bgtopn.webp';
   return await buildMetadata({
     title,

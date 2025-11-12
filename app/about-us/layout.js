@@ -2,8 +2,8 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: 'About Triumfo Inc. | Trade Show Exhibit Specialists',
-    description: 'Learn about Triumfo Inc., a trusted trade show exhibit design and rental company delivering turnkey solutions across the United States.',
+    title: 'About Us | Triumfo Inc.',
+    description: 'Learn how Triumfo Inc. helps exhibitors make their trade show participation easier and more cost-effective with solutions designed for better results.',
     pathname: '/about-us/',
   });
 }

@@ -14,6 +14,57 @@ function formatDate(dateLike) {
 		return '';
 	}
 }
+export async function generateMetadata({ params }) {
+  // Await params since it's a Promise
+  const resolvedParams = await params;
+  const slug = resolvedParams?.slug;
+
+  if (!slug || typeof slug !== "string") {
+    console.error("Slug is missing or invalid:", slug);
+    return {
+      title: "Blog Detail",
+      description: "Invalid blog slug",
+    };
+  }
+
+  const apiUrl = `https://triumfous.mobel.us/api/blog/${encodeURIComponent(slug)}/`;
+
+  const res = await fetch(apiUrl, { cache: "no-store" });
+  if (!res.ok) {
+    console.error("Metadata fetch failed:", res.status, apiUrl);
+    return {
+      title: "Blog Detail",
+      description: "Unable to load blog data",
+    };
+  }
+
+  const json = await res.json();
+  const blog = json?.data?.blog;
+
+  if (!blog) {
+    return {
+      title: "Blog Detail",
+      description: "Blog data not found",
+    };
+  }
+
+  const cleanDescription = blog.metadesc
+    ? blog.metadesc.replace(/<[^>]*>/g, "").slice(0, 150)
+    : "Blog details";
+
+  return {
+    title: blog.meta_title || blog.blogtitle || "Blog Detail",
+    description: cleanDescription,
+    alternates: {
+      canonical: `https://www.triumfo.us/blog/${slug}/`,
+    },
+  };
+}
+
+
+
+
+
 
 export default async function BlogDetail(props) {
 	const params = await props.params;

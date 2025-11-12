@@ -2,8 +2,8 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: 'Full Trade Show Booth Services And Setup across USA',
-    description: 'As a leading trade show booth service provider in USA, we offer full trade show booth services across the nation.',
+    title: 'Full Trade Show Services  By Triumfo Inc.',
+    description: 'From planning and design to installation, execution, and breakdown — everything under one roof for a seamless exhibiting experience.',
     pathname: '/services/',
   });
 }
