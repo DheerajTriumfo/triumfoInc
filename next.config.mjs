@@ -60,6 +60,111 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/trade-show-booth-rental-and-exhibits-atlanta/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-austin/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-baltimore/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-anaheim/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-boston/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-chicago/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-denver/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-dallas/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-detroit/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-houston/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-indianapolis/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-los-angeles/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-miami/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-long-beach/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-new-orleans/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-new-york/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-kansas-city/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-minneapolis/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-milwaukee/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-nashville/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-rental-and-exhibits-louisville/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
         source: "/trade-show-booth-rental-and-exhibits-novi/",
         destination: "/trade-show-booth-display-rentals/",
         permanent: true,
