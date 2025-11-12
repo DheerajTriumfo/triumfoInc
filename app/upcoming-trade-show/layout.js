@@ -1,4 +1,5 @@
 import Script from 'next/script';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {

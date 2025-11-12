@@ -6,6 +6,7 @@ import Navigation from '../components/navigation.js';
 import Footer from '../components/footer.js';
 import Providers from '../components/Providers';
 import { buildMetadata } from '../lib/seo';
+import { notFound } from 'next/navigation';
 
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
@@ -38,6 +39,11 @@ export async function generateMetadata() {
 }
 
 export default function RootLayout({ children }) {
+  const siteData = true;
+  if (!siteData) {
+    notFound(); // triggers 404 page
+  }
+
   return (
     <html lang="en">
       <head>
