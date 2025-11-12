@@ -5,11 +5,16 @@ const nextConfig = {
   optimizeFonts: true,
 
   images: {
-    domains: ['triumfous.mobel.us'],
-    formats: ['image/avif', 'image/webp'], // ✅ serve modern formats automatically
-    minimumCacheTTL: 31536000,
+    domains: ['triumfous.mobel.us'], // ✅ allow this domain
+    formats: ['image/avif', 'image/webp'], // ✅ modern formats
+    minimumCacheTTL: 31536000, // ✅ cache images for 1 year
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'triumfous.mobel.us',
+      },
+    ],
   },
-
   experimental: {
     optimizeCss: true, // ✅ reduce blocking CSS
     scrollRestoration: true,
