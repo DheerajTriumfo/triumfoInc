@@ -47,7 +47,7 @@ export default  async function Viewboothdetail(props){
 						))}
 					</div>
 								</div>
-					<div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-12 relative scroll-mt-24">
+					<div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-3 relative scroll-mt-24">
 						<QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
 					</div>
 							</div>

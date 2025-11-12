@@ -4,7 +4,7 @@ import Link from 'next/link';
 import parse from 'html-react-parser';
 import OwlInit from '../../components/OwlInit';
 import BoothDesignCard from '../components/BoothDesignCard';
-
+import BoothGrid from './BoothGrid';
 const fallbackBase = 'https://triumfous.mobel.us/api';
 const baseUrl = 'http://192.168.0.180:8020';
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || fallbackBase;
@@ -442,20 +442,8 @@ export default async function Getlocation(props)
     		</div>
     	</section>
 			<section>
-	    		<div className="videosection bg-white py-20">
-	    			<div className="container mx-auto px-4">
-	    				{rentalData.length === 0 ? (
-	    					<div className="text-center text-gray-500">No booths found for this size. Please check back later.</div>
-	    				) : (
-	    					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-	    						{rentalData.map((row, index) => (
-	    							<BoothDesignCard key={row.id || index} row={row} index={index} apiBase={apiBase} parentSlug={slug} />
-	    						))}
-	    					</div>
-	    				)}
-	    			</div>
-	    		</div>
-	    	</section>
+  <BoothGrid booths={rentalData} apiBase={apiBase} parentSlug={slug} />
+</section>
 	    	<section>
 	    		<div className="ctaction bg-[#E7EEF7] py-10 ">
 					<div className="container mx-auto px-4">
