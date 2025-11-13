@@ -77,6 +77,9 @@ export default function Contactform() {
       const res = await fetch('https://triumfous.mobel.us/api/submitcontactform', {
         method: 'POST',
         body: fd,
+         headers: {
+		    'Accept': 'application/json',
+		  },
       });
       const data = await res.json();
 

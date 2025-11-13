@@ -19,9 +19,9 @@ export default function ThankYouPage() {
     </section>
     <div className="bg-white shadow-lg rounded-lg text-center p-10 max-w-2xl mx-auto py-8 my-8">
     <div className="flex justify-center mb-6">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#943724" className="w-[120px] h-[120px]">
-        <circle cx="12" cy="12" r="10" stroke="#943724" stroke-width="2" fill="none"></circle>
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 12l3 3 5-6" />
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="#943724" className="w-[120px] h-[120px]">
+        <circle cx="12" cy="12" r="10" stroke="#943724" strokeWidth="2" fill="none"></circle>
+        <path strokeLinecap="round" strokeLinecap="round" d="M8 12l3 3 5-6" />
       </svg>
     </div>
 
