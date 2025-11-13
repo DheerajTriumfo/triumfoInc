@@ -12,7 +12,7 @@ export default function Navigation()
 						<div className="logo"><Link href="/"><Image src="/images/logo.webp" width={135} height={71} alt="" loading="eager" /></Link></div>
 						<div className="flex items-center gap-x-4 mr-12 lg:mr-0">
 							<Link href="" className="flex text-white text-l items-center gap-x-1 hidden md:flex"><Image src="/images/mailicon.webp" width={36} height={17} alt="" /> enquiry@triumfo.us</Link>
-							<div><Link href="/get-booth-quotation/" className="px-6 py-3 bg-[#A02C1C] rounded-xl border-2 border-[#A02C1C] text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300">Get A Quote</Link></div>
+							<div><Link href="/contact-us/" className="px-6 py-3 bg-[#A02C1C] rounded-xl border-2 border-[#A02C1C] text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300">Get A Quote</Link></div>
 						</div>
 					</div>
 				</div>
