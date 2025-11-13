@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
 
   const apiUrl = `https://triumfous.mobel.us/api/blog/${encodeURIComponent(slug)}/`;
 
-  const res = await fetch(apiUrl, { cache: "no-store" });
+  const res = await fetch(apiUrl, { next: { revalidate: 300 } });
   if (!res.ok) {
     console.error("Metadata fetch failed:", res.status, apiUrl);
     return {
@@ -72,7 +72,7 @@ export default async function BlogDetail({ params }) {
   let latest = [];
 
   try {
-    const res = await fetch(`${apiBase}/blog/${encodeURIComponent(slug)}`, { cache: 'no-store' });
+    const res = await fetch(`${apiBase}/blog/${encodeURIComponent(slug)}`, { next: { revalidate: 300 } });
     if (!res.ok) return notFound();
     const json = await res.json();
     blog = json?.data?.blog || null;
