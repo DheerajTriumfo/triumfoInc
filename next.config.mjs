@@ -51,6 +51,16 @@ const nextConfig = {
     return [
       // Real old → new path mappings only (keep these!)
       {
+        source: '/index',
+        destination: '/', // Redirect /index to root
+        permanent: true,  // 301 redirect
+      },
+      {
+        source: '/index/', // Also handle trailing slash
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: "/custom-exhibit-rental/",
         destination: "/",
         permanent: true,
