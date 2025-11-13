@@ -15,15 +15,18 @@ function formatDate(dateLike) {
 	}
 }
 export async function generateMetadata({ params }) {
-  const slug = params?.slug;
+  const resolvedParams = await params; 
+  const slug = resolvedParams?.slug;
 
-  if (!slug || typeof slug !== "string") {
-    console.error("Slug is missing or invalid:", slug);
-    return {
-      title: "Blog Detail",
-      description: "Invalid blog slug",
-    };
-  }
+  if (!slug || typeof slug !== "string") { 
+  	console.error("Slug is missing or invalid:", slug); 
+  	return { 
+  		title: "Blog Detail", 
+  		description: "Invalid blog slug",
+  		 }; 
+  	}
+
+  //const apiUrl = https://triumfous.mobel.us/api/blog/${encodeURIComponent(slug)}/;
 
   const apiUrl = `https://triumfous.mobel.us/api/blog/${encodeURIComponent(slug)}/`;
 
@@ -64,7 +67,8 @@ export async function generateMetadata({ params }) {
 
 
 
-export default async function BlogDetail({ params }) {
+export default async function BlogDetail(props) {
+  const params = await props.params; 
   const slug = params?.slug;
   if (!slug || typeof slug !== 'string') return notFound();
 
@@ -72,14 +76,14 @@ export default async function BlogDetail({ params }) {
   let latest = [];
 
   try {
-    const res = await fetch(`${apiBase}/blog/${encodeURIComponent(slug)}`, { next: { revalidate: 300 } });
-    if (!res.ok) return notFound();
-    const json = await res.json();
-    blog = json?.data?.blog || null;
-    latest = Array.isArray(json?.data?.latest) ? json.data.latest : [];
-  } catch {
-    return notFound();
-  }
+  const res = await fetch(`${apiBase}/blog/${encodeURIComponent(slug)}`, { cache: 'no-store' });
+  if (!res.ok) return notFound();
+  const json = await res.json();
+  blog = json?.data?.blog || null;
+  latest = Array.isArray(json?.data?.latest) ? json.data.latest : [];
+} catch {
+  return notFound();
+}
 
   if (!blog) return notFound();
 
