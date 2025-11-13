@@ -72,7 +72,7 @@ export default function Home() {
           <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.4)] relative md:absolute top-0 left-0 z-20 w-full h-full">
             <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
               <div className="grid grid-cols-1 justify-items-center ">
-                <h1 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[8rem]">{banner?.title || 'Dream. Build. Belong'}</h1>
+                <h2 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[8rem]">{banner?.title || 'Dream. Build. Belong'}</h2>
                 <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
                 <div className="flex justify-center items-center mt-0">
                   <img
@@ -119,7 +119,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-2xl text-red-700 text-center font-semibold barlofamilty leading-tight">{data?.intro?.eyebrow || 'Triumfo Inc.'}</p>
-              <h2 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Innovating Ideas. Elevating Experiences'}</h2>
+              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Custom Trade Show Booth Design & Build Company Since 1999'}</h1>
               <p className="text-xl text-gray-500">{data?.intro?.description || 'Since 1999, we’ve been crafting custom trade show booths that empower exhibitors to create memorable brand experiences. We simplify your entire trade show exhibit journey by eliminating stress and last-minute hassles. With every service managed in-house — no third parties, no surprises — we deliver consistent quality, on time and on budget.'}</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">

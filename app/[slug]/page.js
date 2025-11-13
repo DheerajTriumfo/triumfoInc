@@ -88,9 +88,8 @@ function formatRichText(html, { variant = 'default' } = {}) {
     },
   });
 }
-
-export async function generateMetadata(props) {
-  const params = await props.params;
+export const dynamic = 'force-dynamic';
+export async function generateMetadata({ params }) {
   const slug = params?.slug;
   if (!slug) return {};
 
@@ -98,6 +97,7 @@ export async function generateMetadata(props) {
     const res = await fetch(`${apiBase}/meta/${encodeURIComponent(slug)}`, { cache: 'no-store' });
     if (!res.ok) return {};
     const data = await res.json();
+
     return {
       title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
       description: data?.meta_description || 'Explore our trade show displays',
@@ -105,7 +105,7 @@ export async function generateMetadata(props) {
         canonical: `https://www.triumfo.us/${slug}/`,
       },
     };
-  } catch (err) {
+  } catch {
     return {};
   }
 }
