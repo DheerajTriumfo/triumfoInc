@@ -137,7 +137,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex justify-center gap-x-4 mt-12">
-                  <div><a href={data?.cta?.primary?.href || "/get-booth-quotation/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.cta?.primary?.label || 'Get A Quote'}</a></div>
+                  <div><a href={data?.cta?.primary?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.cta?.primary?.label || 'Get A Quote'}</a></div>
                   <div><a href={data?.cta?.secondary?.href || "/about-us/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.cta?.secondary?.label || 'About Us'}</a></div>
                 </div>
           </div>
@@ -164,8 +164,8 @@ export default function Home() {
               ))}
             </div>
             <div className="flex justify-center gap-x-4 mt-12">
-                  <div><Link href={data?.locationsIntro?.primaryCta?.href || "/get-booth-quotation/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.locationsIntro?.primaryCta?.label || 'Get A Quote'}</Link></div>
-                  <div><Link href={data?.locationsIntro?.secondaryCta?.href || "/about-us/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.locationsIntro?.secondaryCta?.label || 'About Us'}</Link></div>
+                  <div><Link href={data?.locationsIntro?.primaryCta?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.locationsIntro?.primaryCta?.label || 'Get A Quote'}</Link></div>
+                  <div><Link href={data?.locationsIntro?.secondaryCta?.href || "/services/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.locationsIntro?.secondaryCta?.label || 'Services'}</Link></div>
                 </div>
           </div>
         </div>
@@ -185,8 +185,8 @@ export default function Home() {
                   <p className="text-xl text-gray-500 leading-relaxed">{data?.contentBlock?.description || 'Get a personalized booth design concept tailored to your brand—delivered in just 48 hours, completely free and without commitment.'}</p>
 
                   <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                    <a href={data?.contentBlock?.primaryCta?.href || '/get-free-3d-design/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
-                      {data?.contentBlock?.primaryCta?.label || 'Claim Your Free Design'}
+                    <a href={data?.contentBlock?.primaryCta?.href || '/contact-us/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+                      {data?.contentBlock?.primaryCta?.label || 'Contact Us'}
                     </a>
                     
                   </div>
@@ -324,7 +324,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center">
         <a
-          href={data?.portfolioIntro?.primaryCta?.href || "/get-booth-quotation/"}
+          href={data?.portfolioIntro?.primaryCta?.href || "/contact-us/"}
           className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-custom rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300"
         >
           Get A Quote
@@ -384,7 +384,7 @@ export default function Home() {
 				            </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center">
-              <Link href={data?.testimonialsIntro?.primaryCta?.href || "/get-booth-quotation/"} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+              <Link href={data?.testimonialsIntro?.primaryCta?.href || "/contact-us/"} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
                 {data?.testimonialsIntro?.primaryCta?.label || 'Get A Quote'}
               </Link>
               <Link href={data?.testimonialsIntro?.secondaryCta?.href || "/testimonials/"} className="w-full sm:w-auto px-6 py-3 border-2 border-custom rounded-xl text-black text-center hover:bg-custom hover:text-white transition duration-300">
@@ -430,10 +430,10 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
-                  <Link href={data?.ctaBottom?.primary?.href || '/schedule-a-call/'} className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
-                    {data?.ctaBottom?.primary?.label || 'Schedule A Call'}
+                  <Link href="tel:+1 775 927 6412" className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
+                    Call Us
                   </Link>
-                  <Link href={data?.ctaBottom?.secondary?.href || '/get-booth-quotation/'} className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
+                  <Link href={data?.ctaBottom?.secondary?.href || '/contact-us/'} className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
                     {data?.ctaBottom?.secondary?.label || 'Get A Quote'}
                   </Link>
                 </div>
