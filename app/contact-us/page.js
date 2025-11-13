@@ -10,8 +10,8 @@ export default function ContactUs(){
 		    		<div className="container mx-auto px-4">
 		    			<div className="max-w-3xl mx-auto">
 		    				<div className="text-center">
-		    					<h1 className="text-white font-semibold text-7xl mb-6">We Ready To Help You</h1>
-		    					<p className="text-white font-normal text-lg">Connect with us to bring your trade show vision to life.</p>
+		    					<h1 className="text-white font-semibold text-7xl mb-6">We’d Love to Hear From You!</h1>
+		    					<p className="text-white font-normal text-lg">Have a question, idea, or project in mind? Drop us a message — our team will reach out faster than you expect.</p>
 		    				</div>
 		    			</div>
 		    		</div>
