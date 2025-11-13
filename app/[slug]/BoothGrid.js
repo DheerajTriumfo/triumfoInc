@@ -34,10 +34,10 @@ export default function BoothGrid({ booths, apiBase, parentSlug }) {
             </div>
 
             {visibleCount < booths.length && (
-              <div className="text-center mt-12">
+              <div className="text-center mt-10">
                 <button
                   onClick={handleLoadMore}
-                  className="px-6 py-3 bg-[#943724] text-white text-lg rounded-md hover:bg-gray-700 hover:text-red border-2 border-[#943724] hover:border-gray-700 transition duration-300 cursor-pointer"
+                  className="px-6 py-3 bg-custom text-white rounded-md text-lg hover:bg-red-600 transition"
                 >
                   Load More
                 </button>

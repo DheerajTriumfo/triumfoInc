@@ -15,9 +15,7 @@ function formatDate(dateLike) {
 	}
 }
 export async function generateMetadata({ params }) {
-  // Await params since it's a Promise
-  const resolvedParams = await params;
-  const slug = resolvedParams?.slug;
+  const slug = params?.slug;
 
   if (!slug || typeof slug !== "string") {
     console.error("Slug is missing or invalid:", slug);
@@ -66,28 +64,29 @@ export async function generateMetadata({ params }) {
 
 
 
-export default async function BlogDetail(props) {
-	const params = await props.params;
-	const slug = params?.slug;
-	if (!slug || typeof slug !== 'string') return notFound();
+export default async function BlogDetail({ params }) {
+  const slug = params?.slug;
+  if (!slug || typeof slug !== 'string') return notFound();
 
-	let blog = null;
-	let latest = [];
-	try {
-		const res = await fetch(`${apiBase}/blog/${encodeURIComponent(slug)}`, { cache: 'no-store' });
-		if (!res.ok) return notFound();
-		const json = await res.json();
-		blog = json?.data?.blog || null;
-		latest = Array.isArray(json?.data?.latest) ? json.data.latest : [];
-	} catch {
-		return notFound();
-	}
-	if (!blog) return notFound();
+  let blog = null;
+  let latest = [];
 
-	const title = blog.blogtitle || slug;
-	const dateText = formatDate(blog.created_at || blog.updated_at);
-	const heroSrc = blog.blogimg ? `${apiBase}/images/uploads/blog/${blog.blogimg}` : '/images/blog1.webp';
-	const contentHtml = blog.blogdesc || '';
+  try {
+    const res = await fetch(`${apiBase}/blog/${encodeURIComponent(slug)}`, { cache: 'no-store' });
+    if (!res.ok) return notFound();
+    const json = await res.json();
+    blog = json?.data?.blog || null;
+    latest = Array.isArray(json?.data?.latest) ? json.data.latest : [];
+  } catch {
+    return notFound();
+  }
+
+  if (!blog) return notFound();
+
+  const title = blog.blogtitle || slug;
+  const dateText = formatDate(blog.created_at || blog.updated_at);
+  const heroSrc = blog.blogimg ? `${apiBase}/images/uploads/blog/${blog.blogimg}` : '/images/blog1.webp';
+  const contentHtml = blog.blogdesc || '';
 	
 	return (
 		<>
