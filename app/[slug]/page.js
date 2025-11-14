@@ -114,6 +114,9 @@ export default async function Getlocation(props) {
   const params = await props.params;
   const slug = params?.slug;
   if (!slug || typeof slug !== 'string') return notFound();
+  // We allow all slugs — they will be validated by API below
+
+ 
 
   let pageData = null;
   let pageType = null;
@@ -139,7 +142,23 @@ export default async function Getlocation(props) {
     } catch (e2) {}
   }
 
-  if (!pageData) return notFound();
+  const isEmptyObject =
+  typeof pageData === "object" &&
+  !Array.isArray(pageData) &&
+  Object.keys(pageData).length === 0;
+
+const isEmptyArray = Array.isArray(pageData) && pageData.length === 0;
+
+if (
+  !pageData ||
+  pageType === null ||
+  pageType === undefined ||
+  isEmptyArray ||
+  isEmptyObject ||
+  (pageType === "menu" && isEmptyArray) // API placeholder for invalid URLs
+) {
+  return notFound();
+}
 
   // Prepare rental data and merge images
   const rentalData = Array.isArray(pageData)
