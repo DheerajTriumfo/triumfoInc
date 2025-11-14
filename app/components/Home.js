@@ -188,7 +188,7 @@ export default function Home() {
 
                   <div className="flex flex-col sm:flex-row gap-4 mt-8">
                     <a href={data?.contentBlock?.primaryCta?.href || '/contact-us/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
-                      {data?.contentBlock?.primaryCta?.label || 'Contact Us'}
+                      {data?.contentBlock?.primaryCta?.label || 'Claim Your Free Design'}
                     </a>
                     
                   </div>

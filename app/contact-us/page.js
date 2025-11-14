@@ -30,7 +30,7 @@ export default function ContactUs(){
 		    			    		</div>
 		    			    		<div className="flex gap-x-4 mb-2">
 		    			    			<Image src="/images/tele.png" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>
-		    			    			<Link href="tel:+1 702 992 0440" className="font-semibold">+1 702 992 0440</Link>
+		    			    			<Link href="tel:+1 775 927 6412" className="font-semibold">+1 775 927 6412</Link>
 		    			    		</div>
 		    			    		<div className="flex items-center gap-x-4">
 		    			    			<Image src="/images/emailn.png" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>

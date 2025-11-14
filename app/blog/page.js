@@ -267,80 +267,7 @@ export default function Blog() {
 	});
 }, []); // run once // Empty dependency array - only run once on mount
 
-	// Scroll handler - only created once, uses refs for state
-	// useEffect(() => {
-	// 	let timeoutId;
-	// 	let lastScrollCheck = 0;
-	// 	const SCROLL_THROTTLE = 500; // Minimum 500ms between scroll checks
-
-	// 	const handleScroll = () => {
-	// 		const now = Date.now();
-	// 		if (now - lastScrollCheck < SCROLL_THROTTLE) {
-	// 			return; // Throttle scroll events
-	// 		}
-	// 		lastScrollCheck = now;
-
-	// 		// Clear existing timeout
-	// 		if (timeoutId) clearTimeout(timeoutId);
-
-	// 		// Debounce the actual check
-	// 		timeoutId = setTimeout(async () => {
-	// 			// Check if we're near the bottom and conditions are met
-	// 			const scrollPosition = window.innerHeight + window.scrollY;
-	// 			const documentHeight = document.documentElement.scrollHeight;
-	// 			const threshold = 1000; // Load when 1000px from bottom
-
-	// 			if (scrollPosition >= documentHeight - threshold) {
-	// 				// Use refs to check current state (always up-to-date)
-	// 				const { currentPage: page, loading: isLoading, hasMore: more } = stateRefs.current;
-					
-	// 				// Only call if not already loading and conditions are met
-	// 				if (!isLoading && more && !fetchInProgress.current && !loadMoreInProgress.current) {
-	// 					const timeSinceLastLoad = Date.now() - lastLoadTime.current;
-	// 					if (timeSinceLastLoad >= MIN_LOAD_INTERVAL) {
-	// 						// Inline the load logic to avoid dependency on loadMore callback
-	// 						loadMoreInProgress.current = true;
-	// 						lastLoadTime.current = Date.now();
-
-	// 						const nextPage = page + 1;
-	// 						const fetchFn = fetchPostsRef.current;
-	// 						if (!fetchFn) {
-	// 							loadMoreInProgress.current = false;
-	// 							return;
-	// 						}
-	// 						const result = await fetchFn(nextPage);
-
-	// 						if (result.data.length > 0) {
-	// 							const newPosts = result.data.map((p, idx) => {
-	// 								const title = p.blogtitle || `Post ${idx + 1}`;
-	// 								const slug = p.url || '';
-	// 								const date = p.created_at ? p.created_at : p.updated_at || '';
-	// 								const excerpt = stripHtml(p.blogdesc || '').slice(0, 180);
-	// 								const thumbRaw = p.blogimg || '';
-	// 								let thumb = '/images/pt1.webp';
-	// 								if (thumbRaw) thumb = /^https?:/i.test(thumbRaw) ? thumbRaw : `${apiBase}/images/uploads/blog/${thumbRaw}`;
-	// 								return { title, slug, date, excerpt, thumb };
-	// 							});
-	// 							setPosts(prev => [...prev, ...newPosts]);
-	// 							setCurrentPage(nextPage);
-	// 							setHasMore(result.hasMore);
-	// 						} else {
-	// 							setHasMore(false);
-	// 						}
-
-	// 						loadMoreInProgress.current = false;
-	// 					}
-	// 				}
-	// 			}
-	// 		}, 300); // Debounce scroll handler
-	// 	};
-
-	// 	window.addEventListener('scroll', handleScroll, { passive: true });
-	// 	return () => {
-	// 		window.removeEventListener('scroll', handleScroll);
-	// 		if (timeoutId) clearTimeout(timeoutId);
-	// 	};
-	// }, []); // Empty dependency array - handler is created once and uses refs for state
+	
 
 	return (
 		<>
@@ -351,7 +278,7 @@ export default function Blog() {
 							<div className="text-center">
 								<h1 className="text-white font-semibold text-7xl mb-4">The Ultimate Exhibitor’s Guide to Trade Shows</h1>
 								<p className="text-white text-lg">Your essential guide to planning, designing, and running a successful trade show booth.</p>
-								<div className="mt-8"><Link href="/get-booth-quotation/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</Link></div>
+								<div className="mt-8"><Link href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</Link></div>
 							</div>
 						</div>
 					</div>

@@ -203,10 +203,10 @@ export default async function TradeShowDetail(props) {
 									</p>
 								</div>
 								<div className="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
-									<Link href="/schedule-a-call/" className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
-										Schedule a Call
-									</Link>
-									<Link href="/get-booth-quotation/" className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
+									<Link href="tel:+1 775 927 6412" className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
+                    Call Us
+                  </Link>
+									<Link href="/contact-us/" className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
 										Get a Quote
 									</Link>
 								</div>

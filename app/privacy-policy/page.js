@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
 							<div className="text-center">
 								<h1 className="text-white font-semibold text-7xl mb-4">Privacy Policy</h1>
 								<p className="text-white text-lg">Triumfo.us ("Triumfo", "we", "us", or "our") is committed to protecting the privacy of our users ("you" or "your"). This Privacy Policy explains what information we collect, how we use it, and how we protect it.</p>
-								<div className="mt-8"><Link href="/get-booth-quotation/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</Link></div>
+								<div className="mt-8"><Link href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</Link></div>
 							</div>
 						</div>
 					</div>

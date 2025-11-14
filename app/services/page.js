@@ -12,7 +12,7 @@ export default function Service()
 		    				<div className="text-center">
 		    					<h1 className="text-white font-semibold text-7xl mb-6">Turnkey Trade Show Booth Services</h1>
 		    					<p className="text-white font-normal text-lg">Backed by in-house production and experienced project teams, we manage every stage of your trade show booth—design, build, logistics, and on-site support.</p>
-		    					<div className="mt-8"><a href="/get-booth-quotation" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</a></div>
+		    					<div className="mt-8"><a href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</a></div>
 		    				</div>
 		    			</div>
 		    		</div>
@@ -67,10 +67,10 @@ export default function Service()
 	                  <p className="text-lg text-gray-500">Share your trade show goals, and we will suggest the finest booth approach according to your budget and booth size. Let’s create a memorable brand experience for your next show.</p>
 	                </div>
 	                <div className="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
-	                  <Link href={'/schedule-a-call/'} className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
-	                    {'Schedule A Call'}
+	                  <Link href="tel:+1 775 927 6412" className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
+	                    Call Us
 	                  </Link>
-	                  <Link href={'/get-booth-quotation/'} className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
+	                  <Link href={'/contact-us/'} className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
 	                    {'Get A Quote'}
 	                  </Link>
 	                </div>

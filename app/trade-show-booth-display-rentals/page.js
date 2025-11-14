@@ -169,7 +169,7 @@ export default function TradeShowBoothDisplayRentals() {
         if ($(this).text().trim() === "Read more") {
           $(this).text("Load More");
         } else {
-          $(this).html('<a href="/get-booth-quotation/" class="less-link" style="color:#fff;">Contact For Turnkey Services</a>');
+          $(this).html('<a href="/contact-us/" class="less-link" style="color:#fff;">Contact For Turnkey Services</a>');
         }
       });
     });
@@ -386,7 +386,7 @@ export default function TradeShowBoothDisplayRentals() {
 									<h2 className="maintitle text-gray-700 mb-4">Let’s Build Your Rental Booth</h2>
 									<p className="text-xl text-gray-500 leading-relaxed">Need a unique design tailored to your brand and goals? Contact us — we’ll create one for free within 48 hours.</p>
 									<div className="flex flex-col sm:flex-row gap-4 mt-12">
-										<Link href="/get-free-3d-design/" className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+										<Link href="/contact-us/" className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
 											Claim Your Free Design
 										</Link>
 									</div>
@@ -421,7 +421,7 @@ export default function TradeShowBoothDisplayRentals() {
 							))}
 						</div>
 						<div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center">
-							<Link href="/get-booth-quotation/" className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-custom rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:border-gray-500 hover:text-white transition duration-300">
+							<Link href="/contact-us/" className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-custom rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:border-gray-500 hover:text-white transition duration-300">
 								Get A Quote
 							</Link>
 							<Link href="/portfolio/" className="w-full sm:w-auto px-6 py-3 border-2 bg-white border-white rounded-xl text-black text-center hover:bg-custom hover:text-white hover:border-custom transition duration-300">
@@ -565,9 +565,13 @@ export default function TradeShowBoothDisplayRentals() {
       </div>
     </div>
     <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center px-4">
-		<Link href="#" className="moreless-button w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
-			View More
-		</Link>
+		<button
+		  type="button"
+		  onClick={() => {}}
+		  className="moreless-button w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300 cursor-pointer"
+		>
+		  View More
+		</button>
 	</div>
   </div>
 </section>
@@ -618,10 +622,10 @@ export default function TradeShowBoothDisplayRentals() {
 								</p>
 							</div>
 							<div className="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
-								<Link href="/schedule-a-call/" className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
-									Schedule a Call
-								</Link>
-								<Link href="/get-booth-quotation/" className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
+								<Link href="tel:+1 775 927 6412" className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
+                    Call Us
+                  </Link>
+								<Link href="/contact-us/" className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
 									Get a Quote
 								</Link>
 							</div>
