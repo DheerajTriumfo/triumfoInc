@@ -55,7 +55,7 @@ export default function BoothDesignCard({ row, index, apiBase: apiBaseUrl, paren
 				<h4 className="text-gray-700 font-semibold text-2xl">{row.skucode || 'Trade Show Title'}</h4>
 				<span className="text-gray-700 font-normal text-sm">{row.boothsize || ''}</span>
 				<div className="w-full pt-4">
-					<Link href={contactHref} className="w-full block py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-gray-700 hover:border-2 hover:border-gray-700 hover:text-white transition duration-300 text-base">
+					<Link href={contactHref} className="w-full block py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-gray-700 hover:border-2 hover:border-gray-700 hover:text-white transition duration-300 text-base cursor-pointer">
 						Contact Us
 					</Link>
 				</div>

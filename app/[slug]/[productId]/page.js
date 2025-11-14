@@ -20,7 +20,9 @@ export default  async function Viewboothdetail(props){
 	const payload = await res.json();
 	const list = Array.isArray(payload?.data?.rental_data) ? payload.data.rental_data : [];
 	const images = Array.isArray(payload?.data?.imagedata) ? payload.data.imagedata : [];
-	const selected = list.find(r => (r.skucode || '').toLowerCase() === productId.toLowerCase()) || list[0];
+	const selected = list.find(
+	    r => (r.skucode || '').toLowerCase() === productId.toLowerCase()
+	);
 	if (!selected) return notFound();
 
 	const title = selected.skucode || 'Trade Show Booth';
