@@ -3,11 +3,41 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: 'Client Video Testimonials | Real Stories, Real Results',
-    description: 'Watch client video testimonials showcasing real stories and real results. See how Triumfo Inc. delivers exceptional trade show booth design and exhibit solutions.',
-    pathname: '/testimonials/',
+    title: "Client Video Testimonials | Real Stories, Real Results",
+    description:"Watch client video testimonials showcasing real stories and real results. See how Triumfo Inc. delivers exceptional trade show booth design and exhibit solutions.",
+    alternates: {
+      canonical: "/testimonials/",
+    },
+
+    openGraph: {
+      title: "Client Video Testimonials | Real Stories, Real Results",
+      description:"Watch client video testimonials showcasing real stories and real results. See how Triumfo Inc. delivers exceptional trade show booth design and exhibit solutions.",
+      url: "/testimonials/",
+      siteName: "Triumfo Inc.",
+      locale: "en_US",
+      type: "website",
+      images: [
+        {
+          url: "https://triumfous.mobel.us/api/images/portfolio/1720080379.webp",
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      site: "@triumfoinc",
+      creator: "@triumfoinc",
+      title: "Client Video Testimonials | Real Stories, Real Results",
+      description:"Watch client video testimonials showcasing real stories and real results. See how Triumfo Inc. delivers exceptional trade show booth design and exhibit solutions.",
+      images: [
+        "https://triumfous.mobel.us/api/images/portfolio/1720080379.webp",
+      ],
+    },
   });
-}
+};
+
 
 export default function Layout({ children }) {
   return (
