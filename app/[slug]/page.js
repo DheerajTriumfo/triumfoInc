@@ -8,7 +8,26 @@ const fallbackBase = 'https://triumfous.mobel.us/api';
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || fallbackBase;
 
 
+export async function generateMetadata(props) {
+  const params = await props.params;
+  const slug = params?.slug;
+  if (!slug) return {};
 
+  try {
+    const res = await fetch(`${apiBase}/meta/${encodeURIComponent(slug)}`, { cache: 'no-store' });
+    if (!res.ok) return {};
+    const data = await res.json();
+    return {
+      title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
+      description: data?.meta_description || 'Explore our trade show displays',
+      alternates: {
+        canonical: `https://www.triumfo.us/${slug}/`,
+      },
+    };
+  } catch (err) {
+    return {};
+  }
+}
 
 async function getPageData(slug) {
     if (slug.endsWith('-trade-show-booth')) {
