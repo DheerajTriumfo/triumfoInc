@@ -29,14 +29,7 @@ const opensans = Open_Sans({
   display: "swap",
 });
 
-export async function generateMetadata(_props, parent) {
-  const previous = await parent;
-
-  // If the route is the built-in 404 page, use its metadata instead of default SEO
-  if (previous?.title === "404 - Page Not Found") {
-    return previous; // ← keeps not-found.js metadata
-  }
-
+export async function generateMetadata() {
   return await buildMetadata({
     pathname: '/',
     openGraph: {
