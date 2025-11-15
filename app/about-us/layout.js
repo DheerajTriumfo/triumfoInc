@@ -3,7 +3,7 @@ import { buildMetadata } from '../../lib/seo';
 export async function generateMetadata() {
   return await buildMetadata({
     title: "About Us | Triumfo Inc.",
-    description:"Designing and building trade show booths for national and international exhibitors across the USA. Choose from over 500 booth designs.",
+    description:"Learn how Triumfo Inc. helps exhibitors make their trade show participation easier and more cost-effective with solutions designed for better results.",
     alternates: {
       canonical: "/about-us/",
     },
