@@ -66,8 +66,7 @@ export default function Page() {
           "postalCode": "89130",
           "addressCountry": "USA"
         },
-        "description":
-          "Triumfo Inc. is a leading trade show booth design and exhibit rental company in the USA, providing end-to-end custom booth solutions since 1999.",
+        "description": "Triumfo Inc. is a leading trade show booth design and exhibit rental company in the USA, providing end-to-end custom booth solutions since 1999.",
         "areaServed": "USA",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -78,8 +77,7 @@ export default function Page() {
               "itemOffered": {
                 "@type": "Service",
                 "name": "Custom Trade Show Booth Design",
-                "description":
-                  "Fully customized trade show booths for exhibitions, ensuring brand impact."
+                "description": "Fully customized trade show booths for exhibitions, ensuring brand impact."
               }
             },
             {
@@ -87,8 +85,7 @@ export default function Page() {
               "itemOffered": {
                 "@type": "Service",
                 "name": "Exhibit Booth Rental",
-                "description":
-                  "Short-term rental solutions for trade show booths, tailored to your requirements."
+                "description": "Short-term rental solutions for trade show booths, tailored to your requirements."
               }
             },
             {
@@ -96,44 +93,21 @@ export default function Page() {
               "itemOffered": {
                 "@type": "Service",
                 "name": "Full-Service Trade Show Management",
-                "description":
-                  "Complete management from concept to installation and teardown."
+                "description": "Complete management from concept to installation and teardown."
               }
             }
           ]
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "author": "John Doe",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "reviewBody":
-              "Triumfo Inc. provided an exceptional trade show booth design and rental service. Highly recommended!"
-          },
-          {
-            "@type": "Review",
-            "author": "Jane Smith",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "reviewBody":
-              "The team handled our exhibition from start to finish. Professional and efficient!"
-          }
-        ],
+        }
+      },
+      {
+        "@type": "FAQPage",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "Do you offer custom trade show booth designs?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text":
-                "Yes, Triumfo Inc. provides fully customized trade show booth designs tailored to your brand and exhibition requirements."
+              "text": "Yes, Triumfo Inc. provides fully customized trade show booth designs tailored to your brand and exhibition requirements."
             }
           },
           {
@@ -141,8 +115,7 @@ export default function Page() {
             "name": "Can I rent a trade show booth instead of buying?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text":
-                "Absolutely! We offer flexible exhibit booth rental solutions for short-term or long-term events."
+              "text": "Absolutely! We offer flexible exhibit booth rental solutions for short-term or long-term events."
             }
           },
           {
@@ -150,8 +123,7 @@ export default function Page() {
             "name": "Do you handle installation and teardown?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text":
-                "Yes, our team manages the complete setup and dismantling process for all trade show booths."
+              "text": "Yes, our team manages the complete setup and dismantling process for all trade show booths."
             }
           },
           {
@@ -159,8 +131,7 @@ export default function Page() {
             "name": "Which states in the USA do you serve?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text":
-                "Triumfo Inc. provides trade show booth design and rental services across all 50 states in the USA."
+              "text": "Triumfo Inc. provides trade show booth design and rental services across all 50 states in the USA."
             }
           }
         ]
@@ -168,11 +139,36 @@ export default function Page() {
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.triumfo.us/" },
-          { "@type": "ListItem", "position": 2, "name": "About Triumfo Inc.", "item": "https://www.triumfo.us/about-us/" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.triumfo.us/services/" },
-          { "@type": "ListItem", "position": 2, "name": "Trade Show Booth Rental", "item": "https://www.triumfo.us/trade-show-booth-display-rentals/" },
-          { "@type": "ListItem", "position": 3, "name": "Contact", "item": "https://www.triumfo.us/contact" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.triumfo.us/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Triumfo Inc.",
+            "item": "https://www.triumfo.us/about-us/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Services",
+            "item": "https://www.triumfo.us/services/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Trade Show Booth Rental",
+            "item": "https://www.triumfo.us/trade-show-booth-display-rentals/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Contact",
+            "item": "https://www.triumfo.us/contact"
+          }
         ]
       }
     ]

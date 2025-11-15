@@ -212,7 +212,7 @@ export default async function BlogDetail(props) {
 				    transform: rotate(145deg);
 				}
 				 .blog-content table{
-				    width: 100% !important;
+				    width: auto;
 				    margin-bottom: 10px;
 				}
 				.blog-content table tr:nth-child(odd) {
