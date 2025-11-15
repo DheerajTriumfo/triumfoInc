@@ -70,7 +70,7 @@ export default function Home() {
       
       <section>
         <div className="bannerbg relative">
-          <Image src={(banner?.imageUrl) || "/images/booth-design-banner.webp"} width={1920} height={813} alt="" />
+          <Image src={(banner?.imageUrl) || "/images/booth-design-banner.webp"} width={1920} height={813} priority={true} alt="Dream. Build. Belong" />
           <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.4)] relative md:absolute top-0 left-0 z-20 w-full h-full">
             <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
               <div className="grid grid-cols-1 justify-items-center ">
