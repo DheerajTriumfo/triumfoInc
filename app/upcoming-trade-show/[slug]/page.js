@@ -37,9 +37,9 @@ export async function generateMetadata({ params }) {
           canonical: `https://www.triumfo.us/upcoming-trade-show/${slug}/`,
       },
       openGraph: {
-      title: "tradeshow?.meta_title || 'Trade Show Detail",
-      description:"tradeshow?.meta_desc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details",
-      url: "/upcoming-trade-show/${slug}/",
+      title: tradeshow?.meta_title || 'Trade Show Detail',
+      description: tradeshow?.meta_desc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details',
+      url: "https://www.triumfo.us/upcoming-trade-show/${slug}/",
       siteName: "Triumfo Inc.",
       locale: "en_US",
       type: "website",
@@ -56,8 +56,8 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       site: "@triumfoinc",
       creator: "@triumfoinc",
-      title: "tradeshow?.meta_title || 'Trade Show Detail",
-      description:"tradeshow?.meta_desc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details",
+      title: tradeshow?.meta_title || 'Trade Show Detail',
+      description: tradeshow?.meta_desc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details',
       images: [
         "https://www.triumfo.us/images/tradeshow-detail1.webp",
       ],
