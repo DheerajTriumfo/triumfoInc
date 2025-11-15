@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import parse from 'html-react-parser';
+import parse, { domToReact } from 'html-react-parser';
 import BoothGrid from './BoothGrid';
 
 const fallbackBase = 'https://triumfous.mobel.us/api';
@@ -65,7 +65,6 @@ async function getPageData(slug) {
         if (!res.ok) return null;
         const data = await res.json();
         if (!data?.data?.length) return null;
-        console.log(boothtitle);
         return { type: 'booth', boothSize, ...data };
 
     }
@@ -89,8 +88,62 @@ export default async function LocationDetail({ params }) {
   const boothdata = data.data;
   const pagendata = data.pagedata?.[0];
   const booth = data.data[0];
-  //console.log(boothdata);
   
+  //console.log(boothdata);
+  const descritpionwithTailwind = (html) =>
+    parse(html || '', {
+      replace: (domNode) => {
+        if (domNode.name === 'p') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'mb-4 text-gray-600 text-lg leading-7 text-justify',
+          };
+        }
+        if (domNode.name === 'h2') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'text-3xl lg:text-5xl font-semibold font-heading text-gray-700 mb-6',
+          };
+        }
+        if (domNode.name === 'h3') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'text-3xl lg:text-4xl font-semibold font-heading text-gray-700 mb-6',
+          };
+        }
+        if (domNode.name === 'ul') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'list-none space-y-2 mb-4',
+          };
+        }
+        if (domNode.name === 'li') {
+        return (
+          <li className="flex  gap-2 text-gray-600 font-medium text-lg ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#9A3220"
+              strokeWidth="3"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>{domToReact(domNode.children, { replace: () => null })}</span>
+          </li>
+        );
+      }
+        if (domNode.name === 'a') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'text-blue-600  hover:text-blue-800',
+            style: 'color: #2563eb;',
+          };
+        }
+        return domNode;
+      },
+    });
     return (
       <>
         <section>
@@ -111,6 +164,14 @@ export default async function LocationDetail({ params }) {
         </section>
         <section>
         <BoothGrid booths={boothdata} apiBase={apiBase} parentSlug={slug} />
+        </section>
+
+        <section>
+          <div className="clientsection pb-20">
+            <div className="container mx-auto px-4">
+              <div>{descritpionwithTailwind(pagendata.p_description)}</div>
+            </div>
+          </div>
         </section>
       </>
   
