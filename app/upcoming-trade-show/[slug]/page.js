@@ -36,6 +36,32 @@ export async function generateMetadata({ params }) {
       alternates: {
           canonical: `https://www.triumfo.us/upcoming-trade-show/${slug}/`,
       },
+      openGraph: {
+      title: "tradeshow?.meta_title || 'Trade Show Detail",
+      description:"tradeshow?.meta_desc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details",
+      url: "/upcoming-trade-show/${slug}/",
+      siteName: "Triumfo Inc.",
+      locale: "en_US",
+      type: "website",
+      images: [
+        {
+          url: "https://www.triumfo.us/images/tradeshow-detail1.webp",
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      site: "@triumfoinc",
+      creator: "@triumfoinc",
+      title: "tradeshow?.meta_title || 'Trade Show Detail",
+      description:"tradeshow?.meta_desc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details",
+      images: [
+        "https://www.triumfo.us/images/tradeshow-detail1.webp",
+      ],
+    },
     };
   } catch (error) {
     return {
