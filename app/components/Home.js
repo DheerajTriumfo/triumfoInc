@@ -211,7 +211,7 @@ export default function Home() {
       <div className="grid grid-cols-12 gap-2">
         <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
-            src="images/home-portfolio6.webp"
+            src="images/home-portfolio6.webp" width={767}  height={530}
             alt="Custom Trade Show Booth for Actus at NAB Show 2025"
             className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
@@ -230,7 +230,7 @@ export default function Home() {
         </div>
         <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
-            src="images/pt2.webp"
+            src="images/pt2.webp" width={767}  height={530}
             alt="Custom Trade Show Booth for AutoStore at Promat 2019"
             className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
@@ -249,7 +249,7 @@ export default function Home() {
         </div>
         <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
-            src="images/home-portfolio2.webp"
+            src="images/home-portfolio2.webp" width={767}  height={530}
             alt="Trade Show Booth for Dexon Systems at InfoComm 2018"
             className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
@@ -268,7 +268,7 @@ export default function Home() {
         </div>
         <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
-            src="images/home-portfolio5.webp"
+            src="images/home-portfolio5.webp" width={767}  height={530}
             alt="Trade Show Booth for ION8 at IHS 2025"
             className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
@@ -287,7 +287,7 @@ export default function Home() {
         </div>
         <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
-            src="images/home-portfolio3.webp"
+            src="images/home-portfolio3.webp" width={767}  height={530}
             alt="Custom Wooden Trade Show Booth for ProtoChips at M&M 2025"
             className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
@@ -306,7 +306,7 @@ export default function Home() {
         </div>
         <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
-            src="images/home-portfolio4.webp"
+            src="images/home-portfolio4.webp" width={767}  height={530}
             alt="Trade Show Booth for FPC at IFAI 2018"
             className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
