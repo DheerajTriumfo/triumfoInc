@@ -17,12 +17,39 @@ export async function generateMetadata(props) {
     const res = await fetch(`${apiBase}/meta/${encodeURIComponent(slug)}`, { cache: 'no-store' });
     if (!res.ok) return {};
     const data = await res.json();
+    const rentalimg = data?.banner_img
     return {
       title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
       description: data?.meta_description || 'Explore our trade show displays',
       alternates: {
         canonical: `https://www.triumfo.us/${slug}/`,
       },
+      openGraph: {
+      title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
+      description: data?.meta_description || 'Explore our trade show displays',
+      url: `https://www.triumfo.us/${slug}/`,
+      siteName: "Triumfo Inc.",
+      locale: "en_US",
+      type: "website",
+      images: [
+        {
+          url: `https://triumfous.mobel.us/rentalexhibition/${rentalimg}`,
+          width: 1024,
+          height: 570,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      site: "@triumfoinc",
+      creator: "@triumfoinc",
+      title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
+      description: data?.meta_description || 'Explore our trade show displays',
+      images: [
+        `https://triumfous.mobel.us/rentalexhibition/${data?.banner_img}`,
+      ],
+    },
     };
   } catch (err) {
     return {};

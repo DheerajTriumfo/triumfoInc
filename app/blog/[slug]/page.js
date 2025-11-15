@@ -71,8 +71,8 @@ export async function generateMetadata({ params }) {
     images: [
       {
         url: `https://triumfous.mobel.us/api/images/uploads/blog/${nblogimg}`,
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 570,
       },
     ],
   },
