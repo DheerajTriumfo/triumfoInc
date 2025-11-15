@@ -222,12 +222,12 @@ export default async function BlogDetail(props) {
 				    font-size: 17px;
 				    line-height: 30px;
 				    color: #414141 !important;
-				    text-align: center;
 				}
 				table,
 				td,
 				th {
 				    border: 1px solid #000;
+				    padding:0.4rem 0.8rem;
 				}
 			`}
 			</style>
