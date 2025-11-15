@@ -12,7 +12,7 @@ import { notFound } from 'next/navigation';
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600", "700", "800", "900"],
   display: "optional",
 });
 
@@ -21,7 +21,7 @@ const barlowCondensed = Barlow_Condensed({
 const opensans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "700", "800"],
   display: "optional",
 });
 
