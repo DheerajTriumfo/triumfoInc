@@ -18,9 +18,9 @@ export async function generateMetadata() {
       type: "website",
       images: [
         {
-          url: "http://192.168.0.86:3000/images/home-portfolio5.webp",
-          width: 1200,
-          height: 630,
+          url: "https://www.triumfo.us/images/home-portfolio5.webp",
+          width: 767,
+          height: 530,
         },
       ],
     },
@@ -32,7 +32,7 @@ export async function generateMetadata() {
       title: "Exhibitor’s Guide to Trade Shows | Booth Planning & Design Tips",
       description:"Master trade show success with our comprehensive exhibitor’s guide. Learn how to plan, design, and execute a standout booth for maximum impact.",
       images: [
-        "http://192.168.0.86:3000/images/home-portfolio5.webp",
+        "https://www.triumfo.us/images/home-portfolio5.webp",
       ],
     },
   });
