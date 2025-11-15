@@ -34,8 +34,8 @@ export async function generateMetadata(props) {
       images: [
         {
           url: `https://triumfous.mobel.us/rentalexhibition/${rentalimg}`,
-          width: 1024,
-          height: 570,
+          width: 358,
+          height: 443,
         },
       ],
     },
