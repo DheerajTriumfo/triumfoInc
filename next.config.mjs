@@ -81,6 +81,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/trade-show-booth-rental-exhibits-booth-design-in-louisville/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
+        source: "/trade-show-booth-company-san-jose/",
+        destination: "/trade-show-booth-display-rentals/",
+        permanent: true,
+      },
+      {
         source: "/trade-show-booth-rental-and-exhibits-austin/",
         destination: "/trade-show-booth-display-rentals/",
         permanent: true,
