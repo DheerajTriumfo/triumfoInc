@@ -134,7 +134,7 @@ export default async function BlogDetail(props) {
 					<h1 className="maintitle text-gray-700 my-6">{title}</h1>
 					<div className="flex gap-2 items-center justify-between my-4 border-t border-gray-300 py-2">
 						<span className="text-sm text-gray-700 font-semibold">{dateText}</span>
-						<a href="#" className="text-sm text-gray-700 font-bold">By: Triumfo Inc.</a>
+						<span className="text-sm text-gray-700 font-bold">By: Triumfo Inc.</span>
 					</div>
 				</div>
 			</div>
@@ -176,6 +176,58 @@ export default async function BlogDetail(props) {
 				.blog-content a,
 				.blog-content a:hover {
 				    color: #2563eb
+				}
+				.blog-content ul,
+				.blog-content ol {
+				    display: block;
+				    margin: 1rem 0;
+				    padding-left:0;
+				}
+				.blog-content ol li,
+				.blog-content ul li {
+				    display: block;
+				    padding-left: 30px;
+				    color: #414141;
+				    position: relative;
+				    font-size: 0.95rem;
+				    line-height: 1.5;
+				    margin-bottom: 0.5rem;
+				    text-align: justify;
+				}
+				.blog-content ol li::after,
+				.blog-content ul li::after {
+				    display: inline-block;
+				    position: absolute;
+				    width: 12px;
+				    height: 12px;
+				    background: 0 0;
+				    top: 5px;
+				    left: 0;
+				    border: 2px solid #c22c2b;
+				    border-radius: 50%;
+				    transition: 250ms ease-in-out;
+				    text-decoration: none;
+				    color: #fff0;
+				    content: "";
+				    transform: rotate(145deg);
+				}
+				 .blog-content table{
+				    width: 100% !important;
+				    margin-bottom: 10px;
+				}
+				.blog-content table tr:nth-child(odd) {
+				    background: #f4f4f4;
+				}
+				.blog-content table td {
+				    font-size: 17px;
+				    line-height: 30px;
+				    color: #414141 !important;
+				    text-align: center;
+				}
+				table,
+				td,
+				th {
+				    border: 1px solid #000;
 				}
 			`}
 			</style>
