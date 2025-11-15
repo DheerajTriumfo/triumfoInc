@@ -50,43 +50,44 @@ export async function generateMetadata({ params }) {
     };
   }
   //console.log(blog.blogimg);
+  const nblogimg = blog.blogimg;
   const cleanDescription = blog.metadesc
     ? blog.metadesc.replace(/<[^>]*>/g, "").slice(0, 150)
     : "Blog details";
 
   return {
+  title: blog.meta_title || blog.blogtitle || "Blog Detail",
+  description: cleanDescription,
+  alternates: {
+    canonical: `https://www.triumfo.us/blog/${slug}/`,
+  },
+  openGraph: {
     title: blog.meta_title || blog.blogtitle || "Blog Detail",
     description: cleanDescription,
-    alternates: {
-      canonical: `https://www.triumfo.us/blog/${slug}/`,
-    },
-    openGraph: {
-      title: blog.meta_title || blog.blogtitle || "Blog Detail",
-      description: cleanDescription,
-      url: "https://www.triumfo.us/blog/${slug}/",
-      siteName: "Triumfo Inc.",
-      locale: "en_US",
-      type: "website",
-      images: [
-        {
-          url: "https://triumfous.mobel.us/api/images/uploads/blog/{blog.blogimg}",
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
+    url: `https://www.triumfo.us/blog/${slug}/`,
+    siteName: "Triumfo Inc.",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: `https://triumfous.mobel.us/api/images/uploads/blog/${nblogimg}`,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 
-    twitter: {
-      card: "summary_large_image",
-      site: "@triumfoinc",
-      creator: "@triumfoinc",
-      title: blog.meta_title || blog.blogtitle || "Blog Detail",
-      description: cleanDescription,
-      images: [
-        "https://triumfous.mobel.us/api/images/uploads/blog/{blog.blogimg}",
-      ],
-    },
-  };
+  twitter: {
+    card: "summary_large_image",
+    site: "@triumfoinc",
+    creator: "@triumfoinc",
+    title: blog.meta_title || blog.blogtitle || "Blog Detail",
+    description: cleanDescription,
+    images: [
+      `https://triumfous.mobel.us/api/images/uploads/blog/${blog.blogimg}`,
+    ],
+  },
+};
 }
 
 
