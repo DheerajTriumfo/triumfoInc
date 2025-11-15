@@ -15,12 +15,7 @@ const barlowCondensed = Barlow_Condensed({
   weight: ["400", "600", "700", "800", "900"],
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800"],
-  display: "swap",
-});
+
 
 const opensans = Open_Sans({
   variable: "--font-open-sans",
@@ -61,14 +56,14 @@ export default function RootLayout({ children }) {
       })(window,document,'script','dataLayer','GTM-56H86N7');
     `,
   }}
-/>
-        <link
-        rel="preload"
-        as="font"
-        type="font/woff2"
-        href="/fonts/poppins.woff2"
-        crossOrigin="anonymous"
-      />
+/>      <link
+          rel="preload"
+          href="/_next/static/media/5b0229109f6656bb-s.6c710ca8.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous"
+        />
+        
         <link rel="icon" href="/favicon.png" />
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -84,7 +79,7 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
       </head>
-      <body className={`${barlowCondensed.variable} ${poppins.variable} ${opensans.variable} antialiased`}>
+      <body className={`${barlowCondensed.variable} ${opensans.variable} antialiased`}>
         <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=GTM-56H86N7`}
