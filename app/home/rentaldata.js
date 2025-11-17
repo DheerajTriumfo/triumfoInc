@@ -107,7 +107,7 @@ export default function GetRentaldata() {
                     <div className="caption text-center absolute left-0 bottom-[40px] block w-full">
                       <Link href={r.href || ""}>
                         <div className="captitile text-white font-heading font-bold text-4xl">{r.title}</div>
-                        <div className="eyeebrow text-white text-base font-heading font-semibold">EXPLORE <span className="text-red-600 text-xl">{r.count}</span> BOOTH DESIGN{r.count !== 1 ? 'S' : ''}</div>
+                        <div className="eyeebrow text-white text-base font-heading font-semibold">EXPLORE <span className="text-red-600 text-xl">{r.count}</span> BOOTH DESIGN IDEAS</div>
                       </Link>
                     </div>
                   </div>
