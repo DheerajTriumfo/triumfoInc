@@ -1,14 +1,14 @@
 // app/page.js  (SERVER COMPONENT)
 import Home from './components/Home.js';
 export const metadata = {
-    title: "Trade Show Booth Design & Exhibit Rental in USA | Triumfo Inc",
+    title: "Trade Show Booth Design & Exhibit Builders | Triumfo Inc.",
     description:"Designing and building trade show booths for national and international exhibitors across the USA. Choose from over 500 booth designs.",
     alternates: {
       canonical: "/",
     },
 
     openGraph: {
-      title: "Trade Show Booth Design & Exhibit Rental in USA | Triumfo Inc",
+      title: "Trade Show Booth Design & Exhibit Builders | Triumfo Inc.",
       description:"Designing and building trade show booths for national and international exhibitors across the USA. Choose from over 500 booth designs.",
       url: "/",
       siteName: "Triumfo Inc.",
@@ -27,7 +27,7 @@ export const metadata = {
       card: "summary_large_image",
       site: "@triumfoinc",
       creator: "@triumfoinc",
-      title: "Trade Show Booth Design & Exhibit Rental in USA | Triumfo Inc",
+      title: "Trade Show Booth Design & Exhibit Builders | Triumfo Inc.",
       description:"Designing and building trade show booths for national and international exhibitors across the USA. Choose from over 500 booth designs.",
       images: [
         "https://www.triumfo.us/images/booth-design-banner.webp",

@@ -77,15 +77,21 @@ export default function Home() {
                 <h2 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[8rem]">{banner?.title || 'Dream. Build. Belong'}</h2>
                 <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
                 <div className="flex justify-center items-center mt-0">
-                  <img
-                    src="https://www.trustpilot.com/favicon.ico"
-                    alt="Trustpilot"
-                    className="h-8 mr-3"
-                  />   <div className="flex items-center ml-2">
-                  <span className="text-yellow-400">★★★★★</span>
-                </div>
-                  <span className="text-xl font-medium text-white">Trustpilot</span>
-               
+                  <a
+                    href="https://www.trustpilot.com/review/triumfo.us"
+                    target="_blank"
+                    className="flex items-center gap-3 text-xl leading-tight text-white"
+                  >
+                    <span className="text-yellow-400 font-medium">
+                      Checkout our reviews
+                    </span>
+                    <img
+                      src="https://www.trustpilot.com/favicon.ico"
+                      alt="Trustpilot"
+                      className="h-[1em] w-auto flex-shrink-0"
+                    />
+                    <span className="font-medium">Trustpilot</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -124,7 +130,7 @@ export default function Home() {
               <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Custom Trade Show Booth Design & Build Company Since 1999'}</h1>
               <p className="text-xl text-gray-500">{data?.intro?.description || 'Since 1999, we’ve been crafting custom trade show booths that empower exhibitors to create memorable brand experiences. We simplify your entire trade show exhibit journey by eliminating stress and last-minute hassles. With every service managed in-house — no third parties, no surprises — we deliver consistent quality, on time and on budget.'}</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
                 { icon: '/images/industry1.webp', value: '25+', label: 'Years in Industry' },
                 { icon: '/images/projects1.webp', value: '20,900+', label: 'Projects Delivered' },
@@ -137,7 +143,7 @@ export default function Home() {
                   <p className="text-2xl text-gray-500 barlofamilty">{item.label}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
             <div className="flex justify-center gap-x-4 mt-12">
                   <div><a href={data?.cta?.primary?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.cta?.primary?.label || 'Get A Quote'}</a></div>
                   <div><a href={data?.cta?.secondary?.href || "/about-us/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.cta?.secondary?.label || 'About Us'}</a></div>
@@ -148,7 +154,7 @@ export default function Home() {
       <GetRentaldata/>
       
 
-
+{/* 
       <section>
         <div className="bg-[#E9EEF7] py-20">
           <div className="container mx-auto px-4">
@@ -171,7 +177,7 @@ export default function Home() {
                 </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section>
         <div className="contentbg py-36">
           <div className="container mx-auto px-4">
