@@ -53,7 +53,7 @@ export async function generateMetadata({ params }) {
   //console.log(blog.blogimg);
   const nblogimg = blog.blogimg;
   const cleanDescription = blog.metadesc
-    ? blog.metadesc.replace(/<[^>]*>/g, "").slice(0, 150)
+    ? blog.metadesc.replace(/<[^>]*>/g, "").slice(0, 250)
     : "Blog details";
 
   const image = nblogimg
