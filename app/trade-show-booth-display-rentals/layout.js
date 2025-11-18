@@ -5,39 +5,15 @@ import { buildMetadata } from '../../lib/seo';
 export async function generateMetadata() {
   return await buildMetadata({
     title: "Rent Trade Show Booth Any Where in The USA",
-    description:"Trade show booth rental services available in Las Vegas, Chicago, Orlando, Anaheim, San Diego, Los Angeles, Atlanta, New York, and throughout the USA.",
-    alternates: {
-      canonical: "/trade-show-booth-display-rentals/",
-    },
-
+    description:
+      "Trade show booth rental services available in Las Vegas, Chicago, Orlando, Anaheim, San Diego, Los Angeles, Atlanta, New York, and throughout the USA.",
+    pathname: "/trade-show-booth-display-rentals/",
+    image: "https://www.triumfo.us/images/build-rental-booth.webp",
     openGraph: {
-      title: "Rent Trade Show Booth Any Where in The USA",
-      description:"Trade show booth rental services available in Las Vegas, Chicago, Orlando, Anaheim, San Diego, Los Angeles, Atlanta, New York, and throughout the USA.",
-      url: "/trade-show-booth-display-rentals/",
-      siteName: "Triumfo Inc.",
-      locale: "en_US",
       type: "website",
-      images: [
-        {
-          url: "https://www.triumfo.us/images/build-rental-booth.webp",
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      site: "@triumfoinc",
-      creator: "@triumfoinc",
-      title: "Rent Trade Show Booth Any Where in The USA",
-      description:"Trade show booth rental services available in Las Vegas, Chicago, Orlando, Anaheim, San Diego, Los Angeles, Atlanta, New York, and throughout the USA.",
-      images: [
-        "https://www.triumfo.us/images/build-rental-booth.webp",
-      ],
     },
   });
-};
+}
 
 
 export default function Layout({ children }) {
