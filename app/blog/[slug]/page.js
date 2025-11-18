@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { buildMetadata } from '../../lib/seo';
+import { buildMetadata } from '../../../lib/seo';
 
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://triumfous.mobel.us/api';
 
