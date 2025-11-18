@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
-import Script from "next/script";
 import { useEffect, useState } from 'react';
 
 export default function Testimonial()
@@ -56,10 +54,6 @@ export default function Testimonial()
   ];
 	return(
 		<>
-			<Head>
-		        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-		    </Head>
-            
 			<section>
 		    	<div className="bannerbg bg-[#34343C] py-20">
 		    		<div className="container mx-auto px-4">

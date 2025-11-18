@@ -1,7 +1,5 @@
 "use client";
 import Link from "next/link";
-import Head from "next/head";
-import Script from "next/script";
 import { useEffect, useState } from 'react';
 import { get } from "../../lib/apiClient";
 
@@ -99,14 +97,6 @@ export default function Portfolio()
     }, [items]);
 	return(
 		<>
-			<Head>
-				<link 
-  rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" 
-/>
-			</Head>
-		      
-		   
 			<section>
 		    	<div className="bannerbg bg-[#34343C] py-20">
 		    		<div className="container mx-auto px-4">

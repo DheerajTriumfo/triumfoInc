@@ -16,8 +16,6 @@ const barlowCondensed = Barlow_Condensed({
   display: "optional",
 });
 
-
-
 const opensans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
@@ -35,13 +33,12 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   const siteData = true;
   if (!siteData) {
-    notFound(); // triggers 404 page
+    notFound();
   }
 
   return (
     <html lang="en">
       <head>
-      {}
         <link
           rel="preload"
           href="/_next/static/media/5b0229109f6656bb-s.6c710ca8.woff2"
@@ -53,6 +50,8 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+        {/* jQuery + Owl */}
         <Script
           src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
           strategy="beforeInteractive"
@@ -61,58 +60,47 @@ export default function RootLayout({ children }) {
           src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
           strategy="afterInteractive"
         />
+
+        {/* ⭐ GTM (Script) */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-56H86N7');
+          `}
+        </Script>
+
+        {/* ⭐ Google Analytics */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MS6SBPYH3X"></Script>
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MS6SBPYH3X');
+          `}
+        </Script>
       </head>
+
       <body className={`${barlowCondensed.variable} ${opensans.variable} antialiased`}>
+        
+        {/* ⭐ GTM (NoScript) Required */}
         <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=GTM-56H86N7`}
-              height="0"
-              width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
-            ></iframe>
-          </noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-56H86N7"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
+
         <Providers>
           <Navigation />
           {children}
           <Footer />
         </Providers>
-        <Script id="load-gtm" strategy="afterInteractive">
-          {`
-            function loadGTM() {
-              if (window.gtmDidLoad) return;
-              window.gtmDidLoad = true;
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-56H86N7');
-            }
-            window.addEventListener('scroll', loadGTM, { once: true });
-            setTimeout(loadGTM, 3000);
-          `}
-        </Script>
-
-        <Script id="delayed-ga" strategy="afterInteractive">
-          {`
-            function loadGA(){
-              if (window.gaDidLoad) return;
-              window.gaDidLoad = true;
-              var gtagScript = document.createElement('script');
-              gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-MS6SBPYH3X";
-              gtagScript.async = true;
-              document.head.appendChild(gtagScript);
-
-              gtagScript.onload = function() {
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-MS6SBPYH3X');
-              }
-            }
-            window.addEventListener('scroll', loadGA, { once: true });
-            setTimeout(loadGA, 4000);
-          `}
-        </Script>
       </body>
     </html>
   );

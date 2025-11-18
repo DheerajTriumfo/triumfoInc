@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useState } from 'react';
 import { useHomeQuery } from '../../hooks/useHomeQuery';
@@ -128,7 +127,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-2xl text-red-700 text-center font-semibold barlofamilty leading-tight">{data?.intro?.eyebrow || 'Triumfo Inc.'}</p>
               <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Custom Trade Show Booth Design & Build Company Since 1999'}</h1>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'Since 1999, we’ve been crafting custom trade show booths that empower exhibitors to create memorable brand experiences. We simplify your entire trade show exhibit journey by eliminating stress and last-minute hassles. With every service managed in-house — no third parties, no surprises — we deliver consistent quality, on time and on budget.'}</p>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'We have been crafting custom trade show booths that empower exhibitors to create memorable brand experiences since 1999. We simplify your trade show exhibit journey by eliminating last-minute hassles. We deliver turnkey trade show booth services with consistent quality, on time and on budget.'}</p>
             </div>
             {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
@@ -210,7 +209,7 @@ export default function Home() {
     <div className="container mx-auto px-4 text-center text-white pb-20">
       <h2 className="maintitle">Our Work</h2>
       <div className="max-w-3xl mx-auto mt-4">
-        <p className="text-xl text-white leading-relaxed">Browse our recent trade show booth projects that we have delivered to our clients with the assurance of standing out at the respective events.</p>
+        <p className="text-xl text-white leading-relaxed">Browse our recent trade show booth design projects that we have delivered to our esteemed clients.</p>
       </div>
     </div>
     <div className="px-4 sm:px-2 py-2">
@@ -409,16 +408,16 @@ export default function Home() {
               <div className="mb-8 lg:mb-0 text-left lg:text-justify">
                 <h2 className="maintitle mb-4 text-gray-700 text-center">For Exhibitors:</h2>
                 <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">Simplifying Your Exhibit Experience</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">Exhibiting at a trade show is never a simple task—especially if you’re a first-time exhibitor or an international exhibitor participating in a U.S. show. Selecting the right trade show, the right booth partner, and the right booth type that aligns with your goals can feel overwhelming.</p>
-                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">At Triumfo Inc., we simplify the entire exhibiting process by transforming challenges into seamless solutions. Whether you are a local, national, or international exhibitor—whether it’s your first time or you exhibit frequently—our experienced team ensures a smooth and successful show experience.</p>
-                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">We have been designing and building trade show booths since 1999. With 30+ talented 3D booth designers, 80+ skilled booth builders, 10+ creative graphic design & printing experts, and a dedicated installation & dismantling (I&D) team of 40+ professionals, we handle everything in-house. Our 80,000+ sq. ft. production facility, equipped with the latest technology, allows us to deliver exceptional quality and truly turnkey exhibit solutions.</p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">Exhibiting at a trade show is never a simple task, whether it’s your first time or you exhibit frequently. You need the right trade show, booth partner, and booth type to meet your goals. All these can be overwhelming.</p>
+                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">We simplify the entire exhibiting process. Our experts trade show booth designers and booth builders take every measure to ensure a smooth and successful show campaign. You can trust us whether you are a local, national, or international exhibitor.</p>
+                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">As a proud member of <a className="text-blue-500 hover:text-blue-700" href="https://www.ifesnet.com/triumfo-international-gmbh/" target="_blank" rel="noopener noreferrer">IFES (International Federation of Exhibition & Event Services)</a>, Triumfo Inc. adheres to international quality standards, operates with ethical and responsible practices, and brings proven expertise in exhibitions and events. Our global association ensures reliability, consistency, and excellence in every project we deliver worldwide.</p>
               </div>
               <div className="text-left lg:text-justify">
                 <h2 className="maintitle mb-4 text-gray-700 text-center">For Agencies:</h2>
                 <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">End-to-End Services, Under Your Name</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">If you are a trade show agency looking for a reliable exhibition stand builder, we provide end-to-end trade show booth solutions that you can confidently offer to your clients under your own brand name. No matter how large or complex the booth project is, we manage everything with a streamlined and collaborative approach—ensuring your client’s complete satisfaction.</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We operate from our own 80,000 sq. ft. in-house production facility, supported by a highly experienced team of designers, fabricators, and installation experts. No third-party involvement at any stage — which ensures consistent quality, accountability, and cost-efficiency for both of us.</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We currently partner with trade show agencies across 30+ countries, including the USA, Europe, UAE, India, South Korea, Japan, and China. We work for your clients, under your name — contributing to your reputation and success.</p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">You don’t have to look further if you are a trade show agency looking for a reliable exhibition stand builder. We provide end-to-end trade show booth solutions that you can confidently offer to your clients under your brand name. </p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We manage everything in-house with 30+ skilled 3D booth designers, 80+ expert booth builders, and 10+ creative graphic designers and printing specialists. Supported by a 40+ member I&D team and an 80,000+ sq. ft. production facility equipped with advanced technology, we deliver high-quality turnkey exhibit solutions with complete control and precision.</p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We currently partner with trade show agencies across 30+ countries, including the USA, Europe, UAE, India, South Korea, Japan, and China. We work for your clients, under your name, contributing to your reputation and success.</p>
               </div>
             </div>
           </div>

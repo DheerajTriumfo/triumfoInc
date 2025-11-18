@@ -1,7 +1,6 @@
 import Script from 'next/script';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { buildMetadata } from '../../lib/seo';
-32416245
 export async function generateMetadata() {
   return await buildMetadata({
     title: "Don’t Miss These Upcoming Trade Shows in the USA",
