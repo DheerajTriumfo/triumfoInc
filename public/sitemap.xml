@@ -1123,6 +1123,12 @@
 </url>
 
 <url>
+<loc>https://www.triumfo.us/upcoming-trade-show/</loc>
+<lastmod>2025-02-17</lastmod>
+<priority>0.60</priority>
+</url>
+
+<url>
 <loc>https://www.triumfo.us/upcoming-trade-show/aws-reinvent/</loc>
 <lastmod>2025-02-17</lastmod>
 <priority>0.70</priority>
@@ -2517,12 +2523,7 @@
 <priority>0.70</priority>
 <changefreq>daily</changefreq>
 </url>
-<url>
-<loc>https://www.triumfo.us/upcoming-trade-show/premiere-show/</loc>
-<lastmod>2025-08-11</lastmod>
-<priority>0.70</priority>
-<changefreq>daily</changefreq>
-</url>
+
 <url>
 <loc>https://www.triumfo.us/upcoming-trade-show/iddba-show/</loc>
 <lastmod>2025-08-11</lastmod>
