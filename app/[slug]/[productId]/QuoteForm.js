@@ -41,35 +41,16 @@ export default function QuoteForm({ defaultBoothSize = '', defaultEventName = ''
 	return (
 		<form onSubmit={onSubmit} className="grid grid-cols-12 gap-y-4 gap-x-6">
 			<input type="text" name="honeypot" className="hidden" tabIndex={-1} autoComplete="off" />
-			<div className="grid col-span-12 my-4">
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-					<label className="inline-flex items-center space-x-2 cursor-pointer text-gray-700">
-						<input type="checkbox" name="request_types[]" value="rental" className="w-5 h-5 text-green-600 border border-red-500 rounded-sm focus:ring-2 focus:ring-green-500 focus:outline-none" />
-						<span className="text-sm select-none text-gray-700">Rental Quotation</span>
-					</label>
-					<label className="inline-flex items-center space-x-2 cursor-pointer text-gray-700">
-						<input type="checkbox" name="request_types[]" value="purchase" className="w-5 h-5 text-green-600 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:outline-none" />
-						<span className="text-sm select-none text-gray-700">Purchase Request</span>
-					</label>
-					<label className="inline-flex items-center space-x-2 cursor-pointer text-gray-700">
-						<input type="checkbox" name="request_types[]" value="customization" className="w-5 h-5 text-green-600 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:outline-none" />
-						<span className="text-sm select-none text-gray-700">Customization Request</span>
-					</label>
-				</div>
-			</div>
+			<input type="hidden" name="boothsize" placeholder="Booth Size*" defaultValue={defaultBoothSize} required />
 			<div className="grid col-span-12 md:col-span-6 w-full"><input type="text" name="eventname" placeholder="Event Name*" defaultValue={defaultEventName} required className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
-			<div className="grid col-span-12 md:col-span-6 w-full"><input type="text" name="boothsize" placeholder="Booth Size*" defaultValue={defaultBoothSize} required className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
+			<div className="grid col-span-12 md:col-span-6 w-full"><input type="text" name="eventcity" placeholder="Event CIty*"  required className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="text" name="name" placeholder="Your Name" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="email" name="email" placeholder="Email ID" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="tel" name="phone" placeholder="Phone Number" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="text" name="country" placeholder="Country Name" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-12"><textarea name="information" rows={4} placeholder="Your Requirement.." className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"></textarea></div>
 			<div className="grid col-span-12">
-				<div className="flex flex-col md:flex-row justify-between items-center gap-4">
-					<label className="inline-flex items-center space-x-2 cursor-pointer text-gray-700">
-						<input type="checkbox" required className="w-5 h-5 text-green-600 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:outline-none" />
-						<span className="text-sm select-none text-gray-700">I Agree To The Privacy Policy</span>
-					</label>
+				<div className="flex flex-col md:flex-row justify-center items-center gap-4">
 					<button type="submit" disabled={submitting} className="flex flex-wrap gap-x-2 px-8 py-4 bg-[#A02C1C] text-base rounded-xl border border-[#A02C1C] text-white hover:bg-custom hover:text-white transition duration-300">{submitting ? 'SENDING…' : 'CONTACT US'}</button>
 				</div>
 				{message && <p className={`mt-3 text-sm ${isError ? 'text-red-600' : 'text-green-600'}`}>{message}</p>}
