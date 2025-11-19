@@ -5,7 +5,7 @@ const nextConfig = {
   optimizeFonts: true,
 
   images: {
-    domains: ['triumfous.mobel.us'], // ✅ allow this domain
+    domains: ['triumfous.mobel.us', 'cdn.example.com', 'triumfo.us'], // ✅ allow this domain
     formats: ['image/avif', 'image/webp'], // ✅ modern formats
     minimumCacheTTL: 31536000, // ✅ cache images for 1 year
     remotePatterns: [
