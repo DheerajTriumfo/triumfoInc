@@ -73,7 +73,7 @@ export default function GetRentaldata() {
         onLoad={() => console.log("Owl Carousel loaded")}
       />
       <section>
-        <div className="bg-[#34343C] lg:[clip-path:ellipse(90%_100%_at_50%_100%)] relative py-20">
+        <div className="bg-[#34343C]  relative py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="maintitle text-white mb-6 max-w-2xl mx-auto">

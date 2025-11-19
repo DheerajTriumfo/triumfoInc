@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import QuoteForm from './QuoteForm';
+import parse, { domToReact } from 'html-react-parser';
 
 const fallbackBase = 'https://triumfous.mobel.us/api';
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || fallbackBase;
@@ -29,6 +30,60 @@ export default  async function Viewboothdetail(props){
 	const subtitle = `Booth Size: ${selected.boothsize || size}`;
 	const heroCtaHref = '/get-booth-quotation/';
 	const imgSrc = selected.thumbnail ? `${apiBase}/images/uploads/rentalexhibition/${selected.thumbnail}` : '/images/10x20-1.jpg';
+	const descritpionwithTailwind = (html) =>
+    parse(html || '', {
+      replace: (domNode) => {
+        if (domNode.name === 'p') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'mb-4 text-gray-600 text-lg leading-7 text-justify',
+          };
+        }
+        if (domNode.name === 'h2') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'text-3xl lg:text-5xl font-semibold font-heading text-gray-700 mb-6',
+          };
+        }
+        if (domNode.name === 'h3') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'text-3xl lg:text-4xl font-semibold font-heading text-gray-700 mb-6',
+          };
+        }
+        if (domNode.name === 'ul') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'list-none space-y-2 mb-4',
+          };
+        }
+        if (domNode.name === 'li') {
+        return (
+          <li className="flex  gap-2 text-gray-600 font-medium text-lg ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#9A3220"
+              strokeWidth="3"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>{domToReact(domNode.children, { replace: () => null })}</span>
+          </li>
+        );
+      }
+        if (domNode.name === 'a') {
+          domNode.attribs = {
+            ...(domNode.attribs || {}),
+            class: 'text-blue-600  hover:text-blue-800',
+            style: 'color: #2563eb;',
+          };
+        }
+        return domNode;
+      },
+    });
 
 	return(
 		<>
@@ -43,15 +98,19 @@ export default  async function Viewboothdetail(props){
 						<div className="grid grid-cols-12 gap-y-0 lg:gap-y-6 gap-x-8">
 							<div className="col-span-12 md:col-span-8 lg:col-span-9">
 								<div className="block relative mb-4">
-					<div className="owl-carousel owl-theme" id="boothdetailslider">
-						{images.slice(1,7).map((im) => (
-							<div key={im.id} className="item"><img src={`${apiBase}/images/uploads/multiexhibitrental/${im.rentalimg}`} alt={selected.alttag || title} className="w-full h-auto object-contain rounded-md bg-white"/></div>
-						))}
-					</div>
+									<div className="owl-carousel owl-theme" id="boothdetailslider">
+										{images.slice(1,7).map((im) => (
+											<div key={im.id} className="item"><img src={`${apiBase}/images/uploads/multiexhibitrental/${im.rentalimg}`} alt={selected.alttag || title} className="w-full h-auto object-contain rounded-md bg-white"/></div>
+										))}
+									</div>
 								</div>
-					<div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-3 relative scroll-mt-24">
-						<QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
-					</div>
+								<div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-3 relative scroll-mt-24">
+									<QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
+								</div>
+								<div className="mt-8">
+									<h2 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h2>
+									{descritpionwithTailwind(selected.description)}
+								</div>
 							</div>
 							<div className="col-span-12 md:col-span-4 lg:col-span-3">
 					<div className="w-full bg-[#E8EEF7] text-gray-700 mt-6 md:mt-0 p-4 shadow-lg flex flex-col space-y-4 rounded-md sticky top-[10px] z-50 min-h-[20px]">
