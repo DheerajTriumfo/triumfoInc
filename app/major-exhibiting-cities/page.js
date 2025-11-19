@@ -10,9 +10,9 @@ function CitySection({ title, cities }) {
 			<h2 className="maintitle text-gray-700 mb-6 border-b border-gray-300 pb-2">{title}</h2>
 			<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 				{cities.map((c, idx) => (
-					<div key={`${c.url || idx}`}>
-						<Link href={`/${c.url || ''}`} className="w-full block bg-white rounded-lg py-12 md:py-16 px-6 border border-gray-200 border-b-4 border-b-[#943724] color-gray-600 text-xl text-center transition duration-500 hover:bg-gray-700 cursor-pointer hover:text-white">
-							<i className="fa fa-crosshairs text-custom" aria-hidden="true"></i> {c.display_name || c.name}
+					<div key={`${c.url || idx}`}> 
+						<Link href={title === 'Middle East' ? 'https://www.triumfo.ae/' : `/${c.url || ''}`} className="w-full block bg-white rounded-lg py-12 md:py-16 px-6 border border-gray-200 border-b-4 border-b-[#943724] color-gray-600 text-xl text-center transition duration-500 hover:bg-gray-700 cursor-pointer hover:text-white">
+							<i className="fa fa-crosshairs text-custom" aria-hidden="true"></i> {title === 'Middle East' ? 'U.A.E' : c.display_name || c.name}
 						</Link>
 					</div>
 				))}
@@ -34,6 +34,7 @@ export default async function MajorExhibitingCities() {
 	const america = data?.regions?.america?.cities || [];
 	const europe = data?.regions?.europe?.cities || [];
 	const middleEast = data?.regions?.middle_east?.cities || [];
+	console.log(middleEast);
 
 	return (
 		<>

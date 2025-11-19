@@ -81,7 +81,7 @@ export default function GetRentaldata() {
               </h2>
               <p className="text-xl text-[#9A3220] mb-6 font-bold">{totalCount}+ DESIGNS. ANY SIZE. FULLY CUSTOMIZABLE.</p>
               <p className="text-xl text-white">
-                From compact displays to large-scale trade show exhibits, find the ideal trade show booth for your next show. Our extensive collection of booth designs thoughtfully engineered with brand-focused layouts and material planning. 
+              Find the perfect trade show booth design ideas for your next show. Our collection of booth designs is thoughtfully engineered with brand-focused booth layouts and material planning. 
               </p>
             </div>
 
@@ -107,7 +107,7 @@ export default function GetRentaldata() {
                     <div className="caption text-center absolute left-0 bottom-[40px] block w-full">
                       <Link href={r.href || ""}>
                         <div className="captitile text-white font-heading font-bold text-4xl">{r.title}</div>
-                        <div className="eyeebrow text-white text-base font-heading font-semibold">EXPLORE <span className="text-red-600 text-xl">{r.count}</span> BOOTH DESIGN{r.count !== 1 ? 'S' : ''}</div>
+                        <div className="eyeebrow text-white text-base font-heading font-semibold">EXPLORE <span className="text-red-600 text-xl">{r.count}</span> BOOTH DESIGN IDEAS</div>
                       </Link>
                     </div>
                   </div>

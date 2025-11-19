@@ -6,6 +6,11 @@
 <priority>1.00</priority>
 </url>
 <url>
+<loc>https://www.triumfo.us/trade-show-booth-display-rentals/</loc>
+<lastmod>2025-02-17</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
 <loc>https://www.triumfo.us/10x10-trade-show-booth/</loc>
 <lastmod>2025-02-17</lastmod>
 <priority>0.80</priority>
@@ -1114,6 +1119,12 @@
 <url>
 <loc>https://www.triumfo.us/blog/upcoming-trade-shows-in-chicago/</loc>
 <lastmod>2025-08-11</lastmod>
+<priority>0.60</priority>
+</url>
+
+<url>
+<loc>https://www.triumfo.us/upcoming-trade-show/</loc>
+<lastmod>2025-02-17</lastmod>
 <priority>0.60</priority>
 </url>
 
@@ -2512,12 +2523,7 @@
 <priority>0.70</priority>
 <changefreq>daily</changefreq>
 </url>
-<url>
-<loc>https://www.triumfo.us/upcoming-trade-show/premiere-show/</loc>
-<lastmod>2025-08-11</lastmod>
-<priority>0.70</priority>
-<changefreq>daily</changefreq>
-</url>
+
 <url>
 <loc>https://www.triumfo.us/upcoming-trade-show/iddba-show/</loc>
 <lastmod>2025-08-11</lastmod>

@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { buildMetadata } from '../../../lib/seo';
 
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://triumfous.mobel.us/api';
 
@@ -52,42 +53,33 @@ export async function generateMetadata({ params }) {
   //console.log(blog.blogimg);
   const nblogimg = blog.blogimg;
   const cleanDescription = blog.metadesc
-    ? blog.metadesc.replace(/<[^>]*>/g, "").slice(0, 150)
+    ? blog.metadesc.replace(/<[^>]*>/g, "").slice(0, 250)
     : "Blog details";
 
-  return {
-  title: blog.meta_title || blog.blogtitle || "Blog Detail",
-  description: cleanDescription,
-  alternates: {
-    canonical: `https://www.triumfo.us/blog/${slug}/`,
-  },
-  openGraph: {
-    title: blog.meta_title || blog.blogtitle || "Blog Detail",
-    description: cleanDescription,
-    url: `https://www.triumfo.us/blog/${slug}/`,
-    siteName: "Triumfo Inc.",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: `https://triumfous.mobel.us/api/images/uploads/blog/${nblogimg}`,
-        width: 1024,
-        height: 570,
-      },
-    ],
-  },
+  const image = nblogimg
+    ? `https://triumfous.mobel.us/api/images/uploads/blog/${nblogimg}`
+    : undefined;
+  const title = blog.meta_title || blog.blogtitle || "Blog Detail";
 
-  twitter: {
-    card: "summary_large_image",
-    site: "@triumfoinc",
-    creator: "@triumfoinc",
-    title: blog.meta_title || blog.blogtitle || "Blog Detail",
+  return await buildMetadata({
+    title,
     description: cleanDescription,
-    images: [
-      `https://triumfous.mobel.us/api/images/uploads/blog/${blog.blogimg}`,
-    ],
-  },
-};
+    image,
+    pathname: `/blog/${slug}/`,
+    openGraph: {
+      type: "article",
+      images: image
+        ? [
+            {
+              url: image,
+              width: 1024,
+              height: 570,
+              alt: title,
+            },
+          ]
+        : undefined,
+    },
+  });
 }
 
 

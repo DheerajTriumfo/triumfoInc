@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import parse, { domToReact } from 'html-react-parser';
 import BoothGrid from './BoothGrid';
+import { buildMetadata } from '../../lib/seo';
 
 const fallbackBase = 'https://triumfous.mobel.us/api';
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || fallbackBase;
@@ -17,40 +18,30 @@ export async function generateMetadata(props) {
     const res = await fetch(`${apiBase}/meta/${encodeURIComponent(slug)}`, { cache: 'no-store' });
     if (!res.ok) return {};
     const data = await res.json();
-    const rentalimg = data?.banner_img
-    return {
-      title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
-      description: data?.meta_description || 'Explore our trade show displays',
-      alternates: {
-        canonical: `https://www.triumfo.us/${slug}/`,
-      },
-      openGraph: {
-      title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
-      description: data?.meta_description || 'Explore our trade show displays',
-      url: `https://www.triumfo.us/${slug}/`,
-      siteName: "Triumfo Inc.",
-      locale: "en_US",
-      type: "website",
-      images: [
-        {
-          url: `https://triumfous.mobel.us/rentalexhibition/${rentalimg}`,
-          width: 358,
-          height: 443,
-        },
-      ],
-    },
+    const title = data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`;
+    const description = data?.meta_description || 'Explore our trade show displays';
+    const rentalImg = data?.banner_img
+      ? `https://triumfous.mobel.us/rentalexhibition/${data.banner_img}`
+      : undefined;
 
-    twitter: {
-      card: "summary_large_image",
-      site: "@triumfoinc",
-      creator: "@triumfoinc",
-      title: data?.meta_title || `${slug.toUpperCase()} Trade Show Booth`,
-      description: data?.meta_description || 'Explore our trade show displays',
-      images: [
-        `https://triumfous.mobel.us/rentalexhibition/${data?.banner_img}`,
-      ],
-    },
-    };
+    return await buildMetadata({
+      title,
+      description,
+      image: rentalImg,
+      pathname: `/${slug}/`,
+      openGraph: rentalImg
+        ? {
+            images: [
+              {
+                url: rentalImg,
+                width: 358,
+                height: 443,
+                alt: title,
+              },
+            ],
+          }
+        : undefined,
+    });
   } catch (err) {
     return {};
   }
