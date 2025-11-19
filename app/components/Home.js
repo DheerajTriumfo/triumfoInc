@@ -67,17 +67,12 @@ export default function Home() {
     <>
       <section>
         <div className="bannerbg relative">
-          <Image
-  src={banner?.imageUrl || "/images/booth-design-banner.webp"}
-  width={1920}
-  height={813}
-  priority={true}
-  sizes="(max-width: 480px) 100vw,
+          <Image src={banner?.imageUrl || "/images/booth-design-banner.webp"}  width={1920} height={813} priority={true} 
+          sizes="(max-width: 480px) 100vw,
          (max-width: 768px) 100vw,
          (max-width: 1200px) 100vw,
-         1920px"
-  alt="Dream. Build. Belong"
-/>
+         1920px" alt="Dream. Build. Belong"
+        />
           <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.4)] relative md:absolute top-0 left-0 z-20 w-full h-full">
             <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
               <div className="grid grid-cols-1 justify-items-center ">
@@ -225,7 +220,11 @@ export default function Home() {
           <img
             src="images/home-portfolio6.webp" width={767}  height={530}
             alt="Custom Trade Show Booth for Actus at NAB Show 2025"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
+            sizes="(max-width: 480px) 100vw,
+         (max-width: 768px) 100vw,
+         (max-width: 1200px) 100vw,
+         767px"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
@@ -244,7 +243,11 @@ export default function Home() {
           <img
             src="images/pt2.webp" width={767}  height={530}
             alt="Custom Trade Show Booth for AutoStore at Promat 2019"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
+            sizes="(max-width: 480px) 100vw,
+         (max-width: 768px) 100vw,
+         (max-width: 1200px) 100vw,
+         767px"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
@@ -263,7 +266,11 @@ export default function Home() {
           <img
             src="images/home-portfolio2.webp" width={767}  height={530}
             alt="Trade Show Booth for Dexon Systems at InfoComm 2018"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
+            sizes="(max-width: 480px) 100vw,
+         (max-width: 768px) 100vw,
+         (max-width: 1200px) 100vw,
+         767px"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
@@ -282,7 +289,11 @@ export default function Home() {
           <img
             src="images/home-portfolio5.webp" width={767}  height={530}
             alt="Trade Show Booth for ION8 at IHS 2025"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
+            sizes="(max-width: 480px) 100vw,
+         (max-width: 768px) 100vw,
+         (max-width: 1200px) 100vw,
+         767px"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
@@ -301,7 +312,11 @@ export default function Home() {
           <img
             src="images/home-portfolio3.webp" width={767}  height={530}
             alt="Custom Wooden Trade Show Booth for ProtoChips at M&M 2025"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
+            sizes="(max-width: 480px) 100vw,
+         (max-width: 768px) 100vw,
+         (max-width: 1200px) 100vw,
+         767px"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
@@ -320,7 +335,11 @@ export default function Home() {
           <img
             src="images/home-portfolio4.webp" width={767}  height={530}
             alt="Trade Show Booth for FPC at IFAI 2018"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
+            sizes="(max-width: 480px) 100vw,
+         (max-width: 768px) 100vw,
+         (max-width: 1200px) 100vw,
+         767px"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
