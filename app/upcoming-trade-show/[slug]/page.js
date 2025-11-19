@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
       title: tradeshow?.meta_title || 'Trade Show Detail',
       description: tradeshow?.meta_desc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details',
-      url: `https://www.triumfo.us/upcoming-trade-show/${slug}/`,
+      url: `https://www.triumfo.us/upcoming-trade-show/${slug}/,
       siteName: "Triumfo Inc.",
       locale: "en_US",
       type: "website",

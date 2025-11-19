@@ -1784,6 +1784,16 @@ const nextConfig = {
         source: "/blog/top-5-trade-fairs-to-participate-in-las-vegas/",
         destination: "/blog/biggest-trade-shows-las-vegas/",
         permanent: true,
+      },
+      {
+        source: "/exhibition-stand-builders/",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/undefined/",
+        destination: "//",
+        permanent: true,
       }
 
     ];
