@@ -65,8 +65,6 @@ export default function Home() {
 
   return (
     <>
-      
-      
       <section>
         <div className="bannerbg relative">
           <Image src={(banner?.imageUrl) || "/images/booth-design-banner.webp"} width={1920} height={813} priority={true} alt="Dream. Build. Belong" />
@@ -79,8 +77,7 @@ export default function Home() {
                   <a
                     href="https://www.trustpilot.com/review/triumfo.us"
                     target="_blank"
-                    className="flex items-center gap-3 text-xl leading-tight text-white"
-                  >
+                    className="flex items-center gap-3 text-xl leading-tight text-white">
                     <span className="text-yellow-400 font-medium">
                       Checkout our reviews
                     </span>
