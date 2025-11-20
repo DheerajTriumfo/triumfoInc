@@ -71,7 +71,7 @@ export default function Faqtab(){
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
 							    	</svg> How much does a trade show booth cost?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>The cost of a trade show booth depends on its size, materials, and customization. Smaller booth rentals start at a few thousand dollars. Large custom booths with lighting, graphics, and double decks demand a significant budget.</p>
+                    <p>The cost of a trade show booth varies based on size, materials, location, and level of customization. At Triumfo, pricing typically starts at $10,000 for a 10x10 booth, $18,000 for a 10x20, $25,000 for a 10x30, and can go up to $55,000 for a 30x40 exhibit.</p>
                   </div>
                 </div>
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
