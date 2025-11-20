@@ -76,27 +76,11 @@ export default function Home() {
           <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.4)] relative md:absolute top-0 left-0 z-20 w-full h-full">
             <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
               <div className="grid grid-cols-1 justify-items-center ">
-                <h2 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[8rem]">{banner?.title || 'Dream. Build. Belong'}</h2>
+                <p className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[8rem] font-heading">{banner?.title || 'Dream. Build. Belong'}</p>
                 <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
                 <div className="flex justify-center my-6">
                   <div><a href="/trade-show-booth-ideas/" className="px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600  hover:text-white transition duration-300">Browse from over 500 Designs</a></div>
-                </div>  
-                <div className="flex justify-center items-center mt-0">
-                  <a
-                    href="https://www.trustpilot.com/review/triumfo.us"
-                    target="_blank"
-                    className="flex items-center gap-3 text-xl leading-tight text-white">
-                    <span className="text-yellow-400 font-medium">
-                      Checkout our reviews
-                    </span>
-                    <img
-                      src="https://www.trustpilot.com/favicon.ico"
-                      alt="Trustpilot"
-                      className="h-[1em] w-auto flex-shrink-0"
-                    />
-                    <span className="font-medium">Trustpilot</span>
-                  </a>
-                </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -421,11 +405,11 @@ export default function Home() {
 				            </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center">
-              <Link href={data?.testimonialsIntro?.primaryCta?.href || "/contact-us/"} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
-                {data?.testimonialsIntro?.primaryCta?.label || 'Get A Quote'}
+              <Link href={data?.testimonialsIntro?.primaryCta?.href || "/testimonials/"} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+                {data?.testimonialsIntro?.primaryCta?.label || 'View More'}
               </Link>
-              <Link href={data?.testimonialsIntro?.secondaryCta?.href || "/testimonials/"} className="w-full sm:w-auto px-6 py-3 border-2 border-custom rounded-xl text-black text-center hover:bg-custom hover:text-white transition duration-300">
-                {data?.testimonialsIntro?.secondaryCta?.label || 'View More'}
+              <Link href="https://www.trustpilot.com/review/triumfo.us" target="_blank" className="w-full sm:w-auto px-6 py-3 border-2 border-custom rounded-xl text-black text-center hover:bg-custom hover:text-white transition duration-300 flex gap-x-1 items-center">
+                <img src="https://www.trustpilot.com/favicon.ico" alt="Trustpilot" class="h-6"/>Trustpilot
               </Link>
             </div>
           </div>

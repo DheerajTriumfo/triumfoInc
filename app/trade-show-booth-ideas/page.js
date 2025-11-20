@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import TradeFaqtab from './tradefaq.js';
 
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://triumfous.mobel.us/api';
 const API_URL = `${apiBase}/allrentaldata`;
@@ -160,6 +161,67 @@ export default function ViewTradeshowideaData() {
           </div>
         </div>
       </section>
+      <section>
+    	<div className="servicebg bg-[#34343C] py-20">
+    		<div className="container mx-auto px-4">
+    			<div className="max-w-3xl mx-auto text-center">
+					<h1 className="maintitle text-white mb-6">Innovative Trade Show Booth Ideas</h1>
+					<p className="text-white text-lg">Looking for inspiration? Here are some of the top-performing trade show booth display ideas used by leading brands.</p>
+				</div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-4 mt-12 justify-items-center">
+    				<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 className="title text-4xl font-semibold mb-6">Immersive Product Zones</h3>
+    					<p className="text-lg mb-0 pt-6 border-t border-gray-200">Dedicated demo areas allow visitors to touch, explore, and interact with your products.</p>
+    				</div>
+    				<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 className="title text-4xl font-semibold mb-6">Double-Deck <br/>Booths</h3>
+    					<p className="text-lg mb-0 pt-6 border-t border-gray-200">Perfect for maximizing space and hosting private meetings while showcasing products below.</p>
+    				</div>
+    				<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 className="title text-4xl font-semibold mb-6">LED Walls & Motion Graphics</h3>
+    					<p className="text-lg mb-0 pt-6 border-t border-gray-200">Dynamic content instantly enhances visibility and improves brand recall.</p>
+    				</div>
+    				<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 className="title text-4xl font-semibold mb-6">Experience-Driven Concepts</h3>
+    					<p className="text-lg mb-0 pt-6 border-t border-gray-200">Gamification, VR/AR, touchscreens, and sensory engagement create memorable experiences.</p>
+    				</div>
+    				<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 className="title text-4xl font-semibold mb-6">Minimalist & Premium Designs</h3>
+    					<p className="text-lg mb-0 pt-6 border-t border-gray-200">Clean, modern layouts that highlight your brand without overwhelming visitors.</p>
+    				</div>
+    				<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+    					<h3 className="title text-4xl font-semibold mb-6">Experience-Driven Concepts</h3>
+    					<p className="text-lg mb-0 pt-6 border-t border-gray-200">Gamification, VR/AR, touchscreens, and sensory engagement create memorable experiences.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section>
+    	<div className="servicebg bg-white py-20">
+    		<div className="container mx-auto px-4">
+    			<div className="max-w-3xl mx-auto text-center">
+					<h1 className="maintitle text-gray-700 mb-6">Why Choose Our Trade Show Booth Designs?</h1>
+					<p className="text-gray-600 text-lg">We combine creativity, engineering, and brand storytelling to deliver booths that not only look exceptional but also perform exceptionally. Every booth is purpose-built to increase footfall, engagement, and lead generation.</p>
+				</div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
+    				<div className="bg-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-white hover:text-white">
+    					<h3 className="title text-3xl font-semibold mb-3 mt-4">Unique and eye-catching structure</h3>
+    				</div>
+    				<div className="bg-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-white hover:text-white">
+    					<h3 className="title text-3xl font-semibold my-3">Strong brand visibility with custom graphics</h3>
+    				</div>
+    				<div className="bg-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-white hover:text-white">
+    					<h3 className="title text-3xl font-semibold my-3">Smart layouts designed for visitor flow</h3>
+    				</div>
+    				<div className="bg-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-white hover:text-white">
+    					<h3 className="title text-3xl font-semibold my-3">Durable materials and premium finishing</h3>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <TradeFaqtab/>
     </>
   );
 }
