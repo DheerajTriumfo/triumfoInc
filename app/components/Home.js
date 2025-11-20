@@ -128,23 +128,25 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-2xl text-red-700 text-center font-semibold barlofamilty leading-tight">{data?.intro?.eyebrow || 'Triumfo Inc.'}</p>
-              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Custom Trade Show Booth Design & Build Company Since 1999'}</h1>
+              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Trade Show Exhibit Booths Engineered for Engagement, Attraction & ROI'}</h1>
               <p className="text-xl text-gray-500">{data?.intro?.description || 'We have been crafting custom trade show booths that empower exhibitors to create memorable brand experiences since 1999. We simplify your trade show exhibit journey by eliminating last-minute hassles. We deliver turnkey trade show booth services with consistent quality, on time and on budget.'}</p>
             </div>
-            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
-                { icon: '/images/industry1.webp', value: '25+', label: 'Years in Industry' },
-                { icon: '/images/projects1.webp', value: '20,900+', label: 'Projects Delivered' },
-                { icon: '/images/clients1.webp', value: '5,000+', label: 'Happy Clients' },
-                { icon: '/images/support.webp', value: '24/7', label: 'Support' },
+                { icon: '/images/rental-exhibit.webp', value: '25+', label: 'Rental Exhibit', url: '/trade-show-booth-display-rentals/' },
+                { icon: '/images/exhibit-design.webp', value: '20,900+', label: 'Exhibit Designs', url: '/trade-show-booth-ideas/' },
+                { icon: '/images/exhibit-service.webp', value: '5,000+', label: 'Exhibit Services', url: '/services/' },
+                { icon: '/images/exhibit-guide.webp', value: '24/7', label: 'Exhibit Guide', url: '/blog/' },
               ]).map((item, idx) => (
+                <a key={idx} href={item.url}>
                 <div key={idx} className="bg-white rounded-[14px] p-[28px] border border-gray-700 text-center">
-                  <div className="w-[64px] h-[64px] rounded-[12px] bg-[rgba(154,50,32,0.1)] flex items-center justify-center text-[24px] text-[color:var(--teal)] mx-auto"><Image src={item.icon} width={50} height={50} alt="" className="h-12 w-12" /></div>
-                  <h3 className="text-3xl text-gray-600 font-bold mt-4 barlofamilty">{item.value}</h3>
-                  <p className="text-2xl text-gray-500 barlofamilty">{item.label}</p>
+                  <div className="mt-2 w-[64px] h-[64px] rounded-[12px] bg-[rgba(154,50,32,0.1)] flex items-center justify-center text-[24px] text-[color:var(--teal)] mx-auto"><Image src={item.icon} width={50} height={50} alt="" className="h-12 w-12" /></div>
+                  {/*<h3 className="text-3xl text-gray-600 font-bold mt-4 barlofamilty">{item.value}</h3>*/}
+                  <p className="text-2xl text-gray-600 barlofamilty mt-6 font-semibold">{item.label}</p>
                 </div>
+                </a>
               ))}
-            </div> */}
+            </div>
             <div className="flex justify-center gap-x-4 mt-12">
                   <div><a href={data?.cta?.primary?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.cta?.primary?.label || 'Get A Quote'}</a></div>
                   <div><a href={data?.cta?.secondary?.href || "/about-us/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.cta?.secondary?.label || 'About Us'}</a></div>

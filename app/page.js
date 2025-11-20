@@ -4,7 +4,7 @@ import { buildMetadata } from '../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Custom & Rental Trade Show Exhibit Builders | Triumfo Inc",
+    title: "Custom Trade Show Booth Rental Company | Triumfo Inc",
     description:
       "Designing and building trade show booths for national and international exhibitors across the USA. Choose from over 500 booth designs.",
     pathname: "/",
