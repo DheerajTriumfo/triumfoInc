@@ -78,6 +78,9 @@ export default function Home() {
               <div className="grid grid-cols-1 justify-items-center ">
                 <h2 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[8rem]">{banner?.title || 'Dream. Build. Belong'}</h2>
                 <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
+                <div className="flex justify-center my-6">
+                  <div><a href="/trade-show-booth-ideas/" className="px-8 py-3 bg-[#971E05] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600  hover:text-white transition duration-300">Browse from over 500 Designs</a></div>
+                </div>  
                 <div className="flex justify-center items-center mt-0">
                   <a
                     href="https://www.trustpilot.com/review/triumfo.us"
@@ -164,7 +167,7 @@ export default function Home() {
     </div>
     <div className="px-4 sm:px-2 py-2">
       <div className="grid grid-cols-12 gap-2">
-        <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
             src="images/home-portfolio6.webp" width={767}  height={530}
             alt="Custom Trade Show Booth for Actus at NAB Show 2025"
@@ -187,7 +190,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
             src="images/pt2.webp" width={767}  height={530}
             alt="Custom Trade Show Booth for AutoStore at Promat 2019"
@@ -210,7 +213,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
             src="images/home-portfolio2.webp" width={767}  height={530}
             alt="Trade Show Booth for Dexon Systems at InfoComm 2018"
@@ -233,7 +236,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
             src="images/home-portfolio5.webp" width={767}  height={530}
             alt="Trade Show Booth for ION8 at IHS 2025"
@@ -256,7 +259,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
             src="images/home-portfolio3.webp" width={767}  height={530}
             alt="Custom Wooden Trade Show Booth for ProtoChips at M&M 2025"
@@ -279,7 +282,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
           <img
             src="images/home-portfolio4.webp" width={767}  height={530}
             alt="Trade Show Booth for FPC at IFAI 2018"
