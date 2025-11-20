@@ -95,7 +95,7 @@ const fetchData = async () => {
 	                </div>
 	              </div>
 	              <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-	                <h4 className="text-gray-700 font-semibold text-2xl">{item.skucode}</h4>
+	                <h4 className="text-gray-700 font-semibold text-2xl">{item.title}</h4>
 	              </div>
 	            </div>
 	          ))}
