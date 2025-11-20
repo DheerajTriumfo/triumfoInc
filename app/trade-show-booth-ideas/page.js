@@ -132,13 +132,13 @@ export default function ViewTradeshowideaData() {
                       />
                       <div className="absolute bottom-4 left-4">
                         <span className="bg-[#9A3220] text-white px-4 py-2 rounded-md text-sm">
-                          {item.skucode}
+                          {item.boothsize}
                         </span>
                       </div>
                     </div>
                     <div className="card-info py-4 text-center border-b border-gray-300 rounded-xl">
                       <h4 className="text-gray-700 font-semibold text-2xl px-4 lg:px-12 block group-hover:text-[#9A3220] transition-colors">
-                        {item.title || item.skucode}
+                        {item.skucode}
                       </h4>
                       
                     </div>
