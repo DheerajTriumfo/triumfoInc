@@ -47,7 +47,7 @@ export default function TradeFaqtab(){
                     <p>Triumfo creates custom trade show booth designs tailored to your brand, audience, and event goals. Our designs blend creativity, smart layout planning, and high-quality fabrication to deliver booths that attract more visitors and enhance engagement.</p>
                   </div>
                 </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
+                <div className="borbg mb-3 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
@@ -56,7 +56,7 @@ export default function TradeFaqtab(){
                     <p>Yes. We provide a wide range of creative trade show booth ideas and trade booth ideas based on your booth size, industry, and marketing objectives. From interactive setups to premium minimalist designs, we customize everything.</p>
                   </div>
                 </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
+                <div className="borbg mb-3 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
@@ -65,7 +65,7 @@ export default function TradeFaqtab(){
                     <p>Absolutely. We handle the entire trade show display design process—including concept development, fabrication, printing, installation, dismantling, and logistics—so you get a full turnkey solution.</p>
                   </div>
                 </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
+                <div className="borbg mb-3 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
@@ -74,7 +74,7 @@ export default function TradeFaqtab(){
                     <p>Current trending trade show booth display ideas include LED video walls, immersive product demo zones, double-deck structures, digital interactions, and clean, open layouts that improve visitor flow.</p>
                   </div>
                 </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
+                <div className="borbg mb-3 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
@@ -85,7 +85,7 @@ export default function TradeFaqtab(){
                 </div>
                 
               </div>
-              <div className="self-center hidden lg:block"><Image src="/images/faq5.webp" width="602" height="650" alt="Trade Show Booth with large hanging & LED strip" className="w-full h-auto rounded-xl"/></div>
+              <div className="self-center hidden lg:block"><Image src="/images/faq13.webp" width="602" height="650" alt="Trade Show Booth with large hanging & LED strip" className="w-full h-auto rounded-xl"/></div>
             </div>
           </div>
         </div>

@@ -161,7 +161,7 @@ export default function ViewTradeshowideaData() {
           </div>
         </div>
       </section>
-      <section>
+      {/*<section>
     	<div className="servicebg bg-[#34343C] py-20">
     		<div className="container mx-auto px-4">
     			<div className="max-w-3xl mx-auto text-center">
@@ -196,25 +196,25 @@ export default function ViewTradeshowideaData() {
     			</div>
     		</div>
     	</div>
-    </section>
+    </section>*/}
     <section>
-    	<div className="servicebg bg-white py-20">
+    	<div className="servicebg bg-[#EBEFF8] py-20">
     		<div className="container mx-auto px-4">
     			<div className="max-w-3xl mx-auto text-center">
 					<h1 className="maintitle text-gray-700 mb-6">Why Choose Our Trade Show Booth Designs?</h1>
 					<p className="text-gray-600 text-lg">We combine creativity, engineering, and brand storytelling to deliver booths that not only look exceptional but also perform exceptionally. Every booth is purpose-built to increase footfall, engagement, and lead generation.</p>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
-    				<div className="bg-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-white hover:text-white">
+    				<div className="border border-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
     					<h3 className="title text-3xl font-semibold mb-3 mt-4">Unique and eye-catching structure</h3>
     				</div>
-    				<div className="bg-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-white hover:text-white">
+    				<div className="border border-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
     					<h3 className="title text-3xl font-semibold my-3">Strong brand visibility with custom graphics</h3>
     				</div>
-    				<div className="bg-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-white hover:text-white">
+    				<div className="border border-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
     					<h3 className="title text-3xl font-semibold my-3">Smart layouts designed for visitor flow</h3>
     				</div>
-    				<div className="bg-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-white hover:text-white">
+    				<div className="border border-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
     					<h3 className="title text-3xl font-semibold my-3">Durable materials and premium finishing</h3>
     				</div>
     			</div>
