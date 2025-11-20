@@ -79,7 +79,7 @@ export default function Home() {
                 <h2 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[8rem]">{banner?.title || 'Dream. Build. Belong'}</h2>
                 <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
                 <div className="flex justify-center my-6">
-                  <div><a href="/trade-show-booth-ideas/" className="px-8 py-3 bg-[#971E05] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600  hover:text-white transition duration-300">Browse from over 500 Designs</a></div>
+                  <div><a href="/trade-show-booth-ideas/" className="px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600  hover:text-white transition duration-300">Browse from over 500 Designs</a></div>
                 </div>  
                 <div className="flex justify-center items-center mt-0">
                   <a
