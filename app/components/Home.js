@@ -152,61 +152,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <GetRentaldata/>
-      
-
-{/* 
-      <section>
-        <div className="bg-[#E9EEF7] py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="maintitle text-gray-700 mb-4">{data?.locationsIntro?.title || 'End-to-End Trade Show Booth Services'}</h2>
-              <p className="text-xl text-[#9A3220] font-medium mb-4">From Concept to Teardown, We’ve Got You Covered</p>
-              <p className="text-xl text-gray-500">{data?.locationsIntro?.description || 'Our team handles every phase of the trade show journey. Our timelines, quality, and costs stay in our control since we don’t outsource any process. Our complete in-house resources enable us to deliver your trade show booth project exactly as planned. '}</p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-              {(locations.length ? locations : new Array(8).fill({ title: '3D Visualization', href: '' })).map((loc, idx) => (
-                <div key={idx}>
-                  <span   className="bg-white rounded-[14px] py-[68px] px-[36px] lg:px-[68px] border border-gray-300 text-center block"><h3 className="text-3xl text-gray-600  font-heading text-center">{loc.title}</h3></span>
-
-                </div>
-              ))}
-            </div>
-            <div className="flex justify-center gap-x-4 mt-12">
-                  <div><Link href={data?.locationsIntro?.primaryCta?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.locationsIntro?.primaryCta?.label || 'Get A Quote'}</Link></div>
-                  <div><Link href={data?.locationsIntro?.secondaryCta?.href || "/services/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.locationsIntro?.secondaryCta?.label || 'Services'}</Link></div>
-                </div>
-          </div>
-        </div>
-      </section> */}
-      <section>
-        <div className="contentbg py-36">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-24">
-              <div className="mb-8 m:mb-0">
-                <div className="figure relative before:absolute before:content-[''] before:inset-0 before:left-[-10px] before:top-[-7px] before:bg-[#34343C] before:w-[calc(100%-50px)] before:h-[calc(100%+14px)] before:rounded-[8px]">
-                  <Image src={(data?.contentBlock?.imageUrl) || "/images/custom-exhibit-for-your-booth.webp"} width={582} height={474} alt="Custom Trade Show Booth Work At Mine Expo 2024" className="w-full h-auto rounded-xl relative z-10"/>
-                </div>
-              </div>
-              <div className="contents">
-                <div>
-                  <h2 className="maintitle text-gray-700 mb-4">{data?.contentBlock?.title || 'Get Your Free Custom Booth Design Concept in Just 48 Hours.'}</h2>
-                  <p className="text-xl text-gray-500 leading-relaxed">{data?.contentBlock?.description || 'Get a personalized booth design concept tailored to your brand—delivered in just 48 hours, completely free and without commitment.'}</p>
-
-                  <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                    <a href={data?.contentBlock?.primaryCta?.href || '/contact-us/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
-                      {data?.contentBlock?.primaryCta?.label || 'Claim Your Free Design'}
-                    </a>
-                    
-                  </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section>
+     <section>
   <div className="homeportfolio bg-[#34343C] py-20">
     <div className="container mx-auto px-4 text-center text-white pb-20">
       <h2 className="maintitle">Our Work</h2>
@@ -371,7 +317,60 @@ export default function Home() {
       </div>
     </div>
   </div>
-</section>
+</section> 
+
+{/* 
+      <section>
+        <div className="bg-[#E9EEF7] py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="maintitle text-gray-700 mb-4">{data?.locationsIntro?.title || 'End-to-End Trade Show Booth Services'}</h2>
+              <p className="text-xl text-[#9A3220] font-medium mb-4">From Concept to Teardown, We’ve Got You Covered</p>
+              <p className="text-xl text-gray-500">{data?.locationsIntro?.description || 'Our team handles every phase of the trade show journey. Our timelines, quality, and costs stay in our control since we don’t outsource any process. Our complete in-house resources enable us to deliver your trade show booth project exactly as planned. '}</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+              {(locations.length ? locations : new Array(8).fill({ title: '3D Visualization', href: '' })).map((loc, idx) => (
+                <div key={idx}>
+                  <span   className="bg-white rounded-[14px] py-[68px] px-[36px] lg:px-[68px] border border-gray-300 text-center block"><h3 className="text-3xl text-gray-600  font-heading text-center">{loc.title}</h3></span>
+
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-center gap-x-4 mt-12">
+                  <div><Link href={data?.locationsIntro?.primaryCta?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.locationsIntro?.primaryCta?.label || 'Get A Quote'}</Link></div>
+                  <div><Link href={data?.locationsIntro?.secondaryCta?.href || "/services/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.locationsIntro?.secondaryCta?.label || 'Services'}</Link></div>
+                </div>
+          </div>
+        </div>
+      </section> */}
+      <section>
+        <div className="contentbg py-36">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-24">
+              <div className="mb-8 m:mb-0">
+                <div className="figure relative before:absolute before:content-[''] before:inset-0 before:left-[-10px] before:top-[-7px] before:bg-[#34343C] before:w-[calc(100%-50px)] before:h-[calc(100%+14px)] before:rounded-[8px]">
+                  <Image src={(data?.contentBlock?.imageUrl) || "/images/custom-exhibit-for-your-booth.webp"} width={582} height={474} alt="Custom Trade Show Booth Work At Mine Expo 2024" className="w-full h-auto rounded-xl relative z-10"/>
+                </div>
+              </div>
+              <div className="contents">
+                <div>
+                  <h2 className="maintitle text-gray-700 mb-4">{data?.contentBlock?.title || 'Get Your Free Custom Booth Design Concept in Just 48 Hours.'}</h2>
+                  <p className="text-xl text-gray-500 leading-relaxed">{data?.contentBlock?.description || 'Get a personalized booth design concept tailored to your brand—delivered in just 48 hours, completely free and without commitment.'}</p>
+
+                  <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                    <a href={data?.contentBlock?.primaryCta?.href || '/contact-us/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+                      {data?.contentBlock?.primaryCta?.label || 'Claim Your Free Design'}
+                    </a>
+                    
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 
       <section>
         <div className="testimonial bg-[#E9EEF7] py-20">

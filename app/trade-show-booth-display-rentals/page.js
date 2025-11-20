@@ -345,58 +345,6 @@ export default function TradeShowBoothDisplayRentals() {
 				</div>
 			</section>
 			<section>
-				<div className="servicebg bg-[#E9EEF7] py-20">
-					<div className="container mx-auto px-4">
-						<div className="max-w-3xl mx-auto text-center">
-							<h1 className="maintitle text-gray-700 mb-6">Why Rent a Trade Show Booth?</h1>
-							<p className="text-gray-600 text-lg">Renting a trade show booth offers many remarkable advantages. Let us elaborate on the major reasons why you should prefer it over purchasing a booth. </p>
-						</div>
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
-							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">Optimize Trade Show Costs</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">You can reduce overall exhibiting expenses by renting instead of buying a booth. It eliminates huge upfront investment and maintenance liabilities.</p>
-							</div>
-							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">Quick Installation & Dismantling</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">We fabricate the components of booth rentals to ensure quick installation and dismantling. It reduces downtime and on-site labor expenses.</p>
-							</div>
-							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">Flexible <br />Designs</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Modular layouts of booth rentals can be easily modified to match any booth size, branding goal, marketing message, and exhibit environment.</p>
-							</div>
-							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">No Storage <br />Worries</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">You get rid of storage, maintenance, and long-term warehousing needs with display rentals. You simply have to return them after the event.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div className="contentbg py-36">
-					<div className="container mx-auto px-4">
-						<div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-24 items-center">
-							<div className="mb-8 lg:mb-0">
-								<div className="figure relative before:absolute before:content-[''] before:inset-0 before:left-[-10px] before:top-[-7px] before:bg-[#34343C] before:w-[calc(100%-50px)] before:h-[calc(100%+14px)] before:rounded-[8px]">
-									<Image src="/images/build-rental-booth.webp" width={582} height={474} alt="" className="w-full h-auto rounded-xl relative z-10" />
-								</div>
-							</div>
-							<div className="contents self-center">
-								<div>
-									<h2 className="maintitle text-gray-700 mb-4">Let’s Build Your Rental Booth</h2>
-									<p className="text-xl text-gray-500 leading-relaxed">Need a unique design tailored to your brand and goals? Contact us — we’ll create one for free within 48 hours.</p>
-									<div className="flex flex-col sm:flex-row gap-4 mt-12">
-										<Link href="/contact-us/" className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
-											Claim Your Free Design
-										</Link>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
 				<div className="homeportfolio bg-[#34343C] py-20">
 					<div className="container mx-auto px-4 text-center text-white pb-20">
 						<h2 className="maintitle">Our Recent Work</h2>
@@ -431,6 +379,59 @@ export default function TradeShowBoothDisplayRentals() {
 					</div>
 				</div>
 			</section>
+			<section>
+				<div className="contentbg py-36">
+					<div className="container mx-auto px-4">
+						<div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-24 items-center">
+							<div className="mb-8 lg:mb-0">
+								<div className="figure relative before:absolute before:content-[''] before:inset-0 before:left-[-10px] before:top-[-7px] before:bg-[#34343C] before:w-[calc(100%-50px)] before:h-[calc(100%+14px)] before:rounded-[8px]">
+									<Image src="/images/build-rental-booth.webp" width={582} height={474} alt="" className="w-full h-auto rounded-xl relative z-10" />
+								</div>
+							</div>
+							<div className="contents self-center">
+								<div>
+									<h2 className="maintitle text-gray-700 mb-4">Let’s Build Your Rental Booth</h2>
+									<p className="text-xl text-gray-500 leading-relaxed">Need a unique design tailored to your brand and goals? Contact us — we’ll create one for free within 48 hours.</p>
+									<div className="flex flex-col sm:flex-row gap-4 mt-12">
+										<Link href="/contact-us/" className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
+											Claim Your Free Design
+										</Link>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div className="servicebg bg-[#34343C] py-20">
+					<div className="container mx-auto px-4">
+						<div className="max-w-3xl mx-auto text-center">
+							<h1 className="maintitle text-white mb-6">Why Rent a Trade Show Booth?</h1>
+							<p className="text-white text-lg">Renting a trade show booth offers many remarkable advantages. Let us elaborate on the major reasons why you should prefer it over purchasing a booth. </p>
+						</div>
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
+							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+								<h3 className="title text-4xl font-semibold mb-6">Optimize Trade Show Costs</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">You can reduce overall exhibiting expenses by renting instead of buying a booth. It eliminates huge upfront investment and maintenance liabilities.</p>
+							</div>
+							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+								<h3 className="title text-4xl font-semibold mb-6">Quick Installation & Dismantling</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">We fabricate the components of booth rentals to ensure quick installation and dismantling. It reduces downtime and on-site labor expenses.</p>
+							</div>
+							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+								<h3 className="title text-4xl font-semibold mb-6">Flexible <br />Designs</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Modular layouts of booth rentals can be easily modified to match any booth size, branding goal, marketing message, and exhibit environment.</p>
+							</div>
+							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+								<h3 className="title text-4xl font-semibold mb-6">No Storage <br />Worries</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">You get rid of storage, maintenance, and long-term warehousing needs with display rentals. You simply have to return them after the event.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
 
 
 			<section>

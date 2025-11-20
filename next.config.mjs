@@ -66,11 +66,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/trade-show-booth-ideas/",
-        destination: "/",
-        permanent: true,
-      },
-      {
         source: "/trade-show-booth-rental-and-exhibits-las-vegas/",
         destination: "/trade-show-booth-display-rentals/",
         permanent: true,
