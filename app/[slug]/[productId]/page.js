@@ -3,9 +3,50 @@ import Image from 'next/image';
 import Link from 'next/link';
 import QuoteForm from './QuoteForm';
 import parse, { domToReact } from 'html-react-parser';
+import { buildMetadata } from '../../../lib/seo';
 
 const fallbackBase = 'https://triumfous.mobel.us/api';
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || fallbackBase;
+
+
+export async function generateMetadata(props) {
+  const params = await props.params;
+	const slug = params?.slug;
+	const productId = params?.productId;
+	const size = slug.replace('-trade-show-booth', '');
+	//console.log(productId);
+  const res = await fetch(`${apiBase}/rental/booth-size/${encodeURIComponent(size)}/${encodeURIComponent(productId)}`, {
+		cache: 'no-store',
+	});
+    if (!res.ok) throw new Error("Failed to fetch metadata");
+    const payload = await res.json();
+		const list = Array.isArray(payload?.data?.rental_data) ? payload.data.rental_data : [];
+		const images = Array.isArray(payload?.data?.imagedata) ? payload.data.imagedata : [];
+		const selected = list.find(
+		    r => (r.skucode || '').toLowerCase() === productId.toLowerCase()
+		);
+    const title = selected.metatitle || 'Triumfo Inc.';
+    const description = selected.metadesc || 'Exhibit booth details and specifications';
+    const imgSrc = selected.thumbnail ? `${apiBase}/images/uploads/rentalexhibition/${selected.thumbnail}` : '/images/10x20-1.jpg';
+    //console.log(imgSrc);
+    return await buildMetadata({
+      title,
+      description,
+      image: imgSrc,
+      pathname: `10x20-trade-show-booth/${productId}/`,
+      openGraph: {
+        type: "article",
+        images: [
+          {
+            url: imgSrc,
+            width: 350,
+            height: 300,
+            alt: title,
+          },
+        ],
+      },
+    });
+}	
 
 export default  async function Viewboothdetail(props){
 	const params = await props.params;
