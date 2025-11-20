@@ -62,39 +62,12 @@ export default function RootLayout({ children }) {
         />
 
         {/* ⭐ GTM (Script) */}
-        <Script id="gtm-script" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-56H86N7');
-          `}
-        </Script>
-
-        {/* ⭐ Google Analytics */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MS6SBPYH3X"></Script>
-        <Script id="ga-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-MS6SBPYH3X');
-          `}
-        </Script>
+        
       </head>
 
       <body className={`${barlowCondensed.variable} ${opensans.variable} antialiased`}>
         
-        {/* ⭐ GTM (NoScript) Required */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-56H86N7"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          ></iframe>
-        </noscript>
+        
 
         <Providers>
           <Navigation />
