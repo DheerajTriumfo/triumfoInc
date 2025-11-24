@@ -55,7 +55,7 @@ export default function ContactUs(){
 		    						<h3 className=" font-semibold text-4xl mb-4 text-cgray-700">Middle East</h3>
 		    						<div className="flex gap-x-4 mb-2">
 		    							<Image src="/images/addressmarker3.webp" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>
-		    							Al Qouz Industrial Area 1st. No. 5B, Warehouse 14 P.O. Box 128046, Dubai – UA
+		    							Office 201, Sheikha MHRA 2, Al Quesais 2, Dubai, United Arab Amirates
 		    						</div>
 		    						<div className="flex gap-x-4 mb-2">
 		    							<Image src="/images/tele.png" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>
