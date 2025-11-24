@@ -68,12 +68,28 @@ export default function Home() {
       <section>
         <div className="bannerbg relative">
           <a href="/trade-show-booth-ideas/">
-          <Image src={banner?.imageUrl || "/images/booth-designs-banner.webp"}  width={1920} height={813} priority={true} 
-          sizes="(max-width: 480px) 100vw,
-         (max-width: 768px) 100vw,
-         (max-width: 1200px) 100vw,
-         1920px" alt="Dream. Build. Belong"
-        />
+        <Image
+        src={banner?.imageDesktop || "/images/banner-desktop.webp"} width={1920} height={813} 
+        alt="Dream. Build. Belong"
+        priority
+        className="hidden lg:block"
+      />
+
+      {/* Tablet image */}
+      <Image
+        src={banner?.imageTablet || "/images/banner-tablet.webp"} width={1200} height={508} 
+        alt="Dream. Build. Belong"
+        priority
+        className="hidden md:block lg:hidden"
+      />
+
+      {/* Mobile image */}
+      <Image
+        src={banner?.imageMobile || "/images/banner-mobiles.webp"} width={768} height={325} 
+        alt="Dream. Build. Belong"
+        priority
+        className="block md:hidden"
+      />
         </a>
         </div>
       </section>
