@@ -85,7 +85,7 @@ export default function Home() {
 
       {/* Mobile image */}
       <Image
-        src={banner?.imageMobile || "/images/banner-mobiles.webp"} width={768} height={325} 
+        src={banner?.imageMobile || "/images/banner-mobileview.webp"} width={768} height={325} 
         alt="Dream. Build. Belong"
         priority
         className="block md:hidden"
