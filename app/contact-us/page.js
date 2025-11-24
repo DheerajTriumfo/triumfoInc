@@ -6,12 +6,11 @@ export default function ContactUs(){
 	return(
 		<>
 			<section>
-		    	<div className="bannerbg bg-[#34343C] py-32">
+		    	<div className="bannerbg bg-[#34343C] py-20">
 		    		<div className="container mx-auto px-4">
 		    			<div className="max-w-3xl mx-auto">
 		    				<div className="text-center">
-		    					<h1 className="text-white font-semibold text-7xl mb-6">We’d Love to Hear From You!</h1>
-		    					<p className="text-white font-normal text-lg">Have a question, idea, or project in mind? Drop us a message — our team will reach out faster than you expect.</p>
+		    					<h1 className="text-white font-semibold text-7xl mb-6">Contact Us</h1>
 		    				</div>
 		    			</div>
 		    		</div>

@@ -67,23 +67,14 @@ export default function Home() {
     <>
       <section>
         <div className="bannerbg relative">
-          <Image src={banner?.imageUrl || "/images/booth-design-banner.webp"}  width={1920} height={813} priority={true} 
+          <a href="/trade-show-booth-ideas/">
+          <Image src={banner?.imageUrl || "/images/booth-design-banners.webp"}  width={1920} height={813} priority={true} 
           sizes="(max-width: 480px) 100vw,
          (max-width: 768px) 100vw,
          (max-width: 1200px) 100vw,
          1920px" alt="Dream. Build. Belong"
         />
-          <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.4)] relative md:absolute top-0 left-0 z-20 w-full h-full">
-            <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
-              <div className="grid grid-cols-1 justify-items-center ">
-                <p className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[8rem] font-heading">{banner?.title || 'Dream. Build. Belong'}</p>
-                <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
-                <div className="flex justify-center my-6">
-                  <div><a href="/trade-show-booth-ideas/" className="px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600  hover:text-white transition duration-300">Browse from over 500 Designs</a></div>
-                </div> 
-              </div>
-            </div>
-          </div>
+        </a>
         </div>
       </section>
       {isModalOpen && (
@@ -114,7 +105,6 @@ export default function Home() {
         <div className="topsection py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-2xl text-red-700 text-center font-semibold barlofamilty leading-tight">{data?.intro?.eyebrow || 'Triumfo Inc.'}</p>
               <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Your Trusted Custom Trade Show Booth Builder for Maximum ROI'}</h1>
               <p className="text-xl text-gray-500">{data?.intro?.description || 'We have been crafting custom trade show booths that empower exhibitors to create memorable brand experiences since 1999. We simplify your trade show exhibit journey by eliminating last-minute hassles. We deliver turnkey trade show booth services with consistent quality, on time and on budget.'}</p>
             </div>
@@ -122,7 +112,7 @@ export default function Home() {
               {(stats.length ? stats : [
                 { icon: '/images/rental-exhibit.webp', value: '25+', label: 'Rental Exhibit', url: '/trade-show-booth-display-rentals/' },
                 { icon: '/images/exhibit-design.webp', value: '20,900+', label: 'Exhibit Designs', url: '/trade-show-booth-ideas/' },
-                { icon: '/images/exhibit-service.webp', value: '5,000+', label: 'Exhibit Services', url: '/services/' },
+                { icon: '/images/exhibit-service.webp', value: '5,000+', label: 'Our Services', url: '/services/' },
                 { icon: '/images/exhibit-guide.webp', value: '24/7', label: 'Exhibit Guide', url: '/blog/' },
               ]).map((item, idx) => (
                 <a key={idx} href={item.url}>
