@@ -1,0 +1,46 @@
+/* Position nav in the center and stretch full width */
+#boothdetailslider .owl-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none; /* so only buttons are clickable */
+}
+
+/* Style the buttons */
+#boothdetailslider .owl-nav button {
+    pointer-events: auto;
+    background: #9A3220;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px; /* round */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: background 0.2s ease;
+}
+
+/* Hover effect */
+#boothdetailslider .owl-nav button:hover {
+    background: #f3f4f6;
+}
+
+/* Left arrow */
+#boothdetailslider .owl-nav .owl-prev {
+    position: absolute;
+    left: -20px; /* adjust as needed */
+}
+
+/* Right arrow */
+#boothdetailslider .owl-nav .owl-next {
+    position: absolute;
+    right: -20px; /* adjust as needed */
+}

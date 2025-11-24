@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import Script from 'next/script';
-
+import '../../styles/owl-nav.css';
 export default function BoothProductLayoutClient({ children }) {
   useEffect(() => {
     let cancelled = false;
@@ -17,9 +17,9 @@ export default function BoothProductLayoutClient({ children }) {
           $('#boothdetailslider').owlCarousel({
             loop: true,
             margin: 15,
-            nav: false,
-            dots: true,
-            autoplay: true,
+            nav: true,
+            dots: false,
+            autoplay: false,
             autoplayTimeout: 2500,
             smartSpeed: 1000,
             autoplayHoverPause: true,
