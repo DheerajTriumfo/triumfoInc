@@ -68,7 +68,7 @@ export default function Home() {
       <section>
         <div className="bannerbg relative">
           <a href="/trade-show-booth-ideas/">
-          <Image src={banner?.imageUrl || "/images/booth-design-banners.webp"}  width={1920} height={813} priority={true} 
+          <Image src={banner?.imageUrl || "/images/booth-designs-banner.webp"}  width={1920} height={813} priority={true} 
           sizes="(max-width: 480px) 100vw,
          (max-width: 768px) 100vw,
          (max-width: 1200px) 100vw,
