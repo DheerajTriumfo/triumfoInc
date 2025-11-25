@@ -85,10 +85,7 @@ export default function Home() {
 
       {/* Mobile image */}
       <Image
-        src={banner?.imageMobile || "/images/banner-mobileview.webp"} width={768} height={325} 
-        alt="Dream. Build. Belong"
-        priority
-        className="block md:hidden"
+        src={banner?.imageMobile || "/images/banner-mobileview.webp"} width={768} height={325}  alt="Dream. Build. Belong" loading="eager"  priority fetchPriority="high" className="block md:hidden"
       />
         </a>
         </div>
