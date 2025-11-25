@@ -3,8 +3,78 @@ import Image from "next/image";
 
 
 export default function About(){
+	const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.triumfo.us/#organization",
+        name: "Triumfo Inc.",
+        url: "https://www.triumfo.us/",
+        logo:
+          "https://www.triumfo.us/_next/image/?url=%2Fimages%2Flogo.webp&w=256&q=75",
+        description:
+          "Triumfo Inc. is a full-service trade show solutions company, offering design, fabrication, logistics, and in-house production.",
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "Customer Service",
+          email: "enquiry@triumfo.us",
+          telephone: "+1 775-927-6412",
+        },
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "5071 N. Rainbow Blvd, Suite 170",
+          addressLocality: "Las Vegas",
+          addressRegion: "NV",
+          postalCode: "89130",
+          addressCountry: "US",
+        },
+        sameAs: [
+          "https://www.facebook.com/triumfoinc",
+          "https://x.com/triumfoinc",
+          "https://www.youtube.com/channel/UCJyqDSj6grpkbWbnGYWciNw",
+          "https://www.linkedin.com/company/triumfoinc",
+        ],
+        numberOfEmployees: {
+          "@type": "QuantitativeValue",
+          value: 260,
+        },
+      },
+      {
+        "@type": "AboutPage",
+        url: "https://www.triumfo.us/about-us/",
+        name: "About Us — Triumfo Inc.",
+        description:
+          "Since 1999, Triumfo Inc. has been a leader in the trade show industry, delivering over 20,900+ projects with an 80,000+ sq. ft. production facility.",
+        mainEntity: {
+          "@id": "https://www.triumfo.us/#organization",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.triumfo.us/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "About Us",
+            item: "https://www.triumfo.us/about-us/",
+          },
+        ],
+      },
+    ],
+  };
 	return(
 		<>
+			<script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
 			<section>
 		    	<div className="bannerbg bg-[#34343C] py-32">
 		    		<div className="container mx-auto px-4">
