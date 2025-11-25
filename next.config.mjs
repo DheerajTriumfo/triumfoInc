@@ -17,10 +17,13 @@ const nextConfig = {
     ],
   },
   scrollRestoration: true,
+  swcMinify: true,
   experimental: {
     optimizeCss: true, // ✅ reduce blocking CSS
     legacyBrowsers: false,
-    browsersListForServer: true
+    browsersListForServer: true,
+    esmExternals: true,      // <-- ADD THIS
+    forceSwcTransforms: false, // <-- ADD THIS (stops adding polyfills)
   },
 
   async headers() {
