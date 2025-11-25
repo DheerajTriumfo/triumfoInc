@@ -85,7 +85,7 @@ export default function Footer(){
 								<i className="fa fa-facebook"></i>
 							</a>
 							<a href="https://www.twitter.com/triumfoinc" target="_blank" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
-								<i className="fa fa-twitter"></i>
+								<i className="fa-brands fa-x-twitter"></i>
 							</a>
 							<a href="https://www.youtube.com/channel/UCJyqDSj6grpkbWbnGYWciNw" target="_blank" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
 								<i className="fa fa-youtube"></i>
