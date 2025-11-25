@@ -166,7 +166,7 @@ export default function Home() {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="cursor-pointer">
+              <div className="">
                 <h2 className="text-white font-semibold text-4xl mb-4">
                   Actus
                 </h2>
@@ -189,7 +189,7 @@ export default function Home() {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="cursor-pointer">
+              <div className="">
                 <h2 className="text-white font-semibold text-4xl mb-4">
                   Auto Store
                 </h2>
@@ -212,7 +212,7 @@ export default function Home() {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="cursor-pointer">
+              <div className="">
                 <h2 className="text-white font-semibold text-4xl mb-4">
                   Dexon System
                 </h2>
@@ -235,7 +235,7 @@ export default function Home() {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="cursor-pointer">
+              <div className="">
                 <h2 className="text-white font-semibold text-4xl mb-4">
                   ION8
                 </h2>
@@ -258,7 +258,7 @@ export default function Home() {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="cursor-pointer">
+              <div className="">
                 <h2 className="text-white font-semibold text-4xl mb-4">
                   ProtoChips
                 </h2>
@@ -281,7 +281,7 @@ export default function Home() {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="cursor-pointer">
+              <div className="">
                 <h2 className="text-white font-semibold text-4xl mb-4">
                   FPC
                 </h2>
