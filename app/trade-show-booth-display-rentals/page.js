@@ -5,123 +5,14 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { useRouter } from 'next/navigation';
 import $ from 'jquery';
+import GetTradeRentaldata from './tradeshowrentaldata.js';
 
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://triumfous.mobel.us/api';
 
 export default function TradeShowBoothDisplayRentals() {
-	const router = useRouter();
-	const [selectedCity, setSelectedCity] = useState('');
-	const [selectedBoothSize, setSelectedBoothSize] = useState('');
-	const [cities, setCities] = useState([]);
-	const [citySearchQuery, setCitySearchQuery] = useState('');
-	const [loadingCities, setLoadingCities] = useState(true);
-	const [loadingBoothData, setLoadingBoothData] = useState(false);
+	
 
-	// Fetch cities from API
-	useEffect(() => {
-		const fetchCities = async () => {
-			try {
-				setLoadingCities(true);
-				const res = await fetch(`${apiBase}/cities/all`, { cache: 'no-store' });
-				if (res.ok) {
-					const json = await res.json();
-					console.log('Cities API Response:', json); // Debug log
-					if (json.success && json.data && Array.isArray(json.data)) {
-						const cityList = json.data.map(city => ({
-							id: city.id,
-							name: city.name || city.cityname || city.display_name || '',
-							display_name: city.display_name || city.citydisplay || city.name || city.cityname || '',
-							url: city.url || ''
-						})).filter(city => city.name && city.display_name); // Filter out any invalid entries
-						
-						console.log('Processed Cities:', cityList); // Debug log
-						setCities(cityList);
-					} else {
-						console.warn('Unexpected API response structure:', json);
-					}
-				} else {
-					console.error('API response not OK:', res.status, res.statusText);
-				}
-			} catch (error) {
-				console.error('Error fetching cities:', error);
-				// Fallback to static cities if API fails
-				const fallbackCities = ['Las Vegas', 'Chicago', 'Orlando', 'Anaheim', 'San Diego', 'Los Angeles', 'Atlanta', 'New York', 'Noida'];
-				setCities(fallbackCities.map((name, idx) => ({ id: idx, name, display_name: name, url: name.toLowerCase().replace(/\s+/g, '-') })));
-			} finally {
-				setLoadingCities(false);
-			}
-		};
 
-		fetchCities();
-	}, []);
-
-	// Filter cities based on search query
-	const filteredCities = useMemo(() => {
-		if (!citySearchQuery.trim()) {
-			return cities;
-		}
-		const query = citySearchQuery.toLowerCase();
-		return cities.filter(city => 
-			city.name?.toLowerCase().includes(query) || 
-			city.display_name?.toLowerCase().includes(query)
-		);
-	}, [cities, citySearchQuery]);
-
-	const handleSearch = async (e) => {
-		e.preventDefault();
-		if (selectedBoothSize) {
-			setLoadingBoothData(true);
-			try {
-				// Fetch booth size data from API
-				const boothSizeSlug = selectedBoothSize.toLowerCase().replace(/\s+/g, '-');
-				const res = await fetch(`${apiBase}/rental/booth-size/${boothSizeSlug}`, {
-					cache: 'no-store',
-				});
-				
-				if (res.ok) {
-					const json = await res.json();
-					// Navigate to the booth size page
-					router.push(`/${boothSizeSlug}-trade-show-booth/`);
-				} else {
-					// If API fails, still navigate to the booth size page
-					router.push(`/${boothSizeSlug}-trade-show-booth/`);
-				}
-			} catch (error) {
-				console.error('Error fetching booth size data:', error);
-				// Navigate anyway
-				const boothSizeSlug = selectedBoothSize.toLowerCase().replace(/\s+/g, '-');
-				router.push(`/${boothSizeSlug}-trade-show-booth/`);
-			} finally {
-				setLoadingBoothData(false);
-			}
-		}
-	};
-
-	useEffect(() => {
-		const interval = setInterval(() => {
-			if (typeof window !== 'undefined' && window.$ && window.$.fn.owlCarousel) {
-				clearInterval(interval);
-				if ($('#rental').length) {
-					$('#rental').owlCarousel({
-						loop: true,
-						margin: 20,
-						nav: false,
-						dots: true,
-						autoplay: true,
-						autoplayTimeout: 2500,
-						smartSpeed: 1000,
-						autoplayHoverPause: true,
-						responsive: {
-							0: { items: 1 },
-							768: { items: 2 },
-							1200: { items: 4 }
-						}
-					});
-				}
-			}
-		}, 100);
-		return () => clearInterval(interval);
-	}, []);
 
 	useEffect(() => {
 		if (typeof window === 'undefined') return;
@@ -227,129 +118,28 @@ export default function TradeShowBoothDisplayRentals() {
 		<>
 			<Script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" strategy="afterInteractive" />
 			<section>
-				<div className="bannerbg bg-[#34343C] py-16 lg:py-36">
+				<div className="bannerbg bg-[#34343C] py-16 lg:py-20">
 					<div className="container mx-auto px-4">
 						<div className="max-w-3xl mx-auto">
 							<div className="text-center">
-								<h1 className="text-white font-semibold text-7xl mb-4">Find the Right Trade Show Booth Rental</h1>
-								<p className="text-white text-xl">Explore our range of trade show display rentals by size and city to find the perfect exhibit for your brand.</p>
+								<h1 className="text-white font-semibold text-7xl mb-4">Your Nationwide Trade Show Booth Rental Partner</h1>
+								<p className="text-white text-xl">As your nationwide trade show booth rental partner, we deliver reliable, turnkey exhibit solutions in every major U.S. city—ensuring your brand is always show-ready, wherever you exhibit.</p>
 							</div>
-						</div>
-						<div className="searchbar mt-8 mx-auto w-full max-w-4xl px-4">
-							<form onSubmit={handleSearch} className="flex-col md:flex-row flex flex-wrap items-center justify-between border border-gray-500 p-3 rounded-xl">
-								<div className="relative flex-1 min-w-full md:min-w-[200px]">
-									{/* City Search Input */}
-									<input
-										type="text"
-										value={selectedCity || citySearchQuery}
-										onChange={(e) => {
-											const value = e.target.value;
-											setCitySearchQuery(value);
-											if (!value) {
-												setSelectedCity('');
-											}
-										}}
-										onFocus={() => {
-											if (selectedCity) {
-												setCitySearchQuery(selectedCity);
-												setSelectedCity('');
-											}
-										}}
-										placeholder="Search City..."
-										className="w-full bg-transparent text-white font-medium px-4 py-3 pr-10 rounded-md focus:outline-none text-center placeholder-gray-400"
-									/>
-									<svg xmlns="http://www.w3.org/2000/svg"
-										className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white pointer-events-none"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-										strokeWidth="1.5">
-										<path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-									</svg>
-									{/* City Dropdown */}
-									{citySearchQuery && !selectedCity && filteredCities.length > 0 && (
-										<div className="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
-											{filteredCities.map(city => (
-												<div
-													key={city.id}
-													onClick={() => {
-														setSelectedCity(city.display_name || city.name);
-														setCitySearchQuery('');
-													}}
-													className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
-												>
-													{city.display_name || city.name}
-												</div>
-											))}
-										</div>
-									)}
-								</div>
-								<div className="hidden md:block w-px h-8 bg-gray-500 mx-2"></div>
-								<div className="relative flex-1 min-w-full md:min-w-[200px]">
-									<select
-										value={selectedBoothSize}
-										onChange={(e) => setSelectedBoothSize(e.target.value)}
-										className="w-full bg-transparent text-white font-medium px-4 py-3 pr-10 rounded-md focus:outline-none cursor-pointer appearance-none text-center"
-										required
-									>
-										<option value="" disabled style={{ color: '#9ca3af' }}>Select Boothsize</option>
-										{boothSizes.map(size => (
-											<option key={size} value={size} style={{ color: '#374151' }}>{size}</option>
-										))}
-									</select>
-									<svg xmlns="http://www.w3.org/2000/svg"
-										className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white pointer-events-none"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-										strokeWidth="1.5">
-										<path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
-									</svg>
-								</div>
-								<button
-									type="submit"
-									disabled={loadingBoothData || !selectedBoothSize}
-									className="bg-[#9A3220] hover:bg-[#a51f23] disabled:bg-[#9A3220] disabled:cursor-not-allowed text-white font-semibold px-8 py-3 rounded-md transition-colors duration-300 flex-shrink-0 mt-3 md:mt-0 block w-full md:w-auto"
-								>
-									{loadingBoothData ? 'Loading...' : 'Search'}
-								</button>
-							</form>
+							<div className="mt-8 text-center"><Link href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</Link></div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section>
-				<div className="stepbg bg-white py-20">
-					<div className="container mx-auto px-4">
-						<div className="max-w-3xl mx-auto">
-							<div className="text-center">
-								<h1 className="maintitle text-gray-700 mb-6">Rent Your Booth in Just 4 Easy Steps</h1>
-								<p className="text-gray-600 text-lg">Getting booth rentals for trade shows has never been so easy! You just need to follow four steps to tell your brand story at trade shows with an exceptional exhibit rental.</p>
-							</div>
-						</div>
-						<div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-							<div className="rounded-[14px] border border-gray-300 text-center bg-white flex items-center justify-center">
-								<h4 className="text-gray-700 font-semibold text-3xl px-[28px] py-12 lg:py-24">Select Your Rental Booth Size</h4>
-							</div>
-							<div className="rounded-[14px] border border-gray-300 text-center bg-white flex items-center justify-center">
-								<h4 className="text-gray-700 font-semibold text-3xl px-[28px] py-12 lg:py-24">Choose the Perfect Design</h4>
-							</div>
-							<div className="rounded-[14px] border border-gray-300 text-center bg-white flex items-center justify-center">
-								<h4 className="text-gray-700 font-semibold text-3xl px-[28px] py-12 lg:py-24">Customize with Your Branding</h4>
-							</div>
-							<div className="rounded-[14px] border border-gray-300 text-center bg-white flex items-center justify-center">
-								<h4 className="text-gray-700 font-semibold text-3xl px-[28px] py-12 lg:py-24">Finalize and Hit the Floor</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<GetTradeRentaldata/>
+			
 			<section>
 				<div className="homeportfolio bg-[#34343C] py-20">
 					<div className="container mx-auto px-4 text-center text-white pb-20">
-						<h2 className="maintitle">Our Recent Work</h2>
-						<div className="max-w-3xl mx-auto mt-4">
-							<p className="text-xl text-white leading-relaxed">Check out trade show booth rental projects that we have delivered to eminent brands for diverse and internationally-acclaimed business events.</p>
+						<div className="max-w-3xl mx-auto">
+						<h2 className="maintitle">Explore Our Exhibit Booth Rentals That Made a Lasting Impact</h2>
+						<div className="mt-4">
+							<p className="text-xl text-white leading-relaxed">Take a look at our exhibit booth rentals that have helped brands stand out on the show floor. Each design is crafted to attract attention, engage visitors, and leave a memorable impression at major trade shows across the USA.</p>
+						</div>
 						</div>
 					</div>
 					<div className="px-4 sm:px-2 py-2">
