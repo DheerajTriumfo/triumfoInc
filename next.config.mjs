@@ -16,9 +16,11 @@ const nextConfig = {
       },
     ],
   },
+  scrollRestoration: true,
   experimental: {
     optimizeCss: true, // ✅ reduce blocking CSS
-    scrollRestoration: true,
+    legacyBrowsers: false,
+    browsersListForServer: true
   },
 
   async headers() {
