@@ -182,12 +182,12 @@ export default function TradeShowBoothDisplayRentals() {
 	const boothSizes = ['10x10', '10x20', '10x30', '20x20', '20x30', '20x40', '30x30', '30x40', '40x40', '40x50'];
 
 	const portfolioItems = [
-		{ title: 'Tedial', subtitle: 'Rental Booth for Tedial @ Promat 2025', image: '/images/rpt1.webp' },
-		{ title: 'PRECIMETER', subtitle: 'Rental Booth for PRECIMETER @ Aluminum 2025', image: '/images/rpt2.webp' },
-		{ title: 'CRYO Future', subtitle: 'Rental Booth for CRYO Future @ ASRM 2025', image: '/images/rpt3.webp' },
-		{ title: 'Alliance Plast', subtitle: 'Rental Booth for Alliance Plast @ Pack Expo 2025', image: '/images/rpt4.webp' },
-		{ title: 'Felix Schoeller', subtitle: 'Rental Booth for Felix Schoeller @ Printing United 2025', image: '/images/rpt5.webp' },
-		{ title: 'Business France', subtitle: 'Rental Booth for Business France @ Smallast Confrence 2025', image: '/images/rpt6.webp' },
+		{ title: 'Promat 2025 | Chicago | 20x20', subtitle: 'Rental Booth for Tedial @ Promat 2025', image: '/images/rpt1.webp' , alttag: '20x20 Trade Show Booth Rental for Tedial at Promat 2025 Designed and Built by Triumfo Inc. in Chicago, USA'},
+		{ title: 'Aluminum 2025 | Nashville, USA | 10x20', subtitle: 'Rental Booth for PRECIMETER @ Aluminum 2025', image: '/images/rpt2.webp', alttag: '10x20 Exhibit Booth Rental for PRECIMETER at Aluminum 2025 Designed and Built by Triumfo Inc. in Nashville'},
+		{ title: 'ASRM 2025 | 20x20 | San Antonio', subtitle: 'Rental Booth for CRYO Future @ ASRM 2025', image: '/images/rpt3.webp', alttag: '20x20 Exhibition Booth Rental for CRYO Future at ASRM 2025 Designed and Built by Triumfo Inc. in San Antonio, Texas' },
+		{ title: 'Pack Expo 2025 | 30x40 | Las Vegas', subtitle: 'Rental Booth for Alliance Plast @ Pack Expo 2025', image: '/images/rpt4.webp', alttag: '30x40 Trade Show Booth Rental for Alliance Plast at Pack Expo 2025 Designed and Built by Triumfo Inc. in Las Vegas' },
+		{ title: 'Printing United 2025 | 10x30 | Orlando', subtitle: 'Rental Booth for Felix Schoeller @ Printing United 2025', image: '/images/rpt5.webp', alttag: '10x30 Custom Booth Rental for Felix Schoeller at Printing United 2025 Designed and Built by Triumfo Inc. in Orlando' },
+		{ title: 'Small Satellite Conference 2025 | 20x30 | Salt Lake City', subtitle: 'Rental Booth for Business France @ Smallast Confrence 2025', image: '/images/rpt6.webp', alttag: '20x30 trade show booth rental for Business France at Small Satellite Conference 2025 Designed and Built by Triumfo Inc. in Salt Lake City, Utah' },
 	];
 
 	const faqs = [
@@ -355,8 +355,8 @@ export default function TradeShowBoothDisplayRentals() {
 					<div className="px-4 sm:px-2 py-2">
 						<div className="grid grid-cols-12 gap-2">
 							{portfolioItems.map((item, idx) => (
-								<div key={idx} className="group grid col-span-6 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
-									<Image src={item.image} alt={item.title} width={768} height={531} className="w-full h-auto transition-transform duration-500 group-hover:scale-105" />
+								<div key={idx} className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
+									<Image src={item.image} alt={item.alttag} width={768} height={531} className="w-full h-auto transition-transform duration-500 group-hover:scale-105" />
 									<div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 										<div className="flex items-center justify-center w-full h-full text-center">
 											<div className="cursor-pointer">
