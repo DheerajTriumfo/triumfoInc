@@ -71,7 +71,7 @@ export default function Home() {
         <Image
         src={banner?.imageDesktop || "/images/banner-desktop.webp"} width={1920} height={813} 
         alt="Large Trade Show Booth"
-        priority
+        priority={false}
         className="hidden lg:block"
       />
 
@@ -79,13 +79,13 @@ export default function Home() {
       <Image
         src={banner?.imageTablet || "/images/banner-tablet.webp"} width={1200} height={508} 
         alt="Large Trade Show Booth"
-        priority
+        priority={false}
         className="hidden md:block lg:hidden"
       />
 
       {/* Mobile image */}
       <Image
-        src={banner?.imageMobile || "/images/banner-mobileview.webp"} width={768} height={325}  alt="Large Trade Show Booth" loading="eager"  priority fetchPriority="high" className="block md:hidden"
+        src={banner?.imageMobile || "/images/banner-mobileview.webp"} width={768} height={325}  alt="Large Trade Show Booth" loading="eager"  priority={true} fetchPriority="high" className="block md:hidden"
       />
         </a>
         </div>
