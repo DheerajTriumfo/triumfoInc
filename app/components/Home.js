@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 import { useHomeQuery } from '../../hooks/useHomeQuery';
 import { get } from '../../lib/apiClient';
 import Faqtab from './../home/faq.js';
-import GetRentaldata from './../home/rentaldata.js';
 
 
 
@@ -19,17 +18,7 @@ export default function Home() {
 
   
 
-  // fetch 6 random portfolio items from API
-  useEffect(() => {
-    const load = async () => {
-      try {
-        const res = await get('/portfolios', { params: { limit: 6, random: 1 } });
-        const list = Array.isArray(res?.data) ? res.data : [];
-        setHpPortfolio(list);
-      } catch {}
-    };
-    load();
-  }, []);
+  
 
   const openModal = (url) => {
     setVideoUrl(url ? `${url}?autoplay=1` : "");
@@ -74,16 +63,12 @@ export default function Home() {
         priority={false}
         className="hidden lg:block"
       />
-
-      {/* Tablet image */}
       <Image
         src={banner?.imageTablet || "/images/banner-tablet.webp"} width={1200} height={508} 
         alt="Large Trade Show Booth"
         priority={false}
         className="hidden md:block lg:hidden"
       />
-
-      {/* Mobile image */}
       <Image
         src={banner?.imageMobile || "/images/banner-mobileview.webp"} width={768} height={325}  alt="Large Trade Show Booth" loading="eager"  priority={true} fetchPriority="high" className="block md:hidden"
       />
