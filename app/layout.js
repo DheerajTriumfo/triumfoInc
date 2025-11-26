@@ -73,16 +73,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* ⭐ Google Analytics */}
-        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MS6SBPYH3X"></Script> */}
-        <Script id="ga-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-MS6SBPYH3X');
-          `}
-        </Script>
+        
       </head>
 
       <body className={`${barlowCondensed.variable} ${opensans.variable} antialiased`}>
@@ -100,6 +91,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Navigation />
           {children}
+          <SpeedInsights url="https://www.triumfo.us/" />
           <Footer />
         </Providers>
       </body>
