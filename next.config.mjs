@@ -1791,6 +1791,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/display-for-trade-shows/",
+        destination: "/trade-show-booth-ideas/",
+        permanent: true,
+      },
+      {
         source: "/undefined/",
         destination: "//",
         permanent: true,
