@@ -229,12 +229,13 @@ export default function TradeShowBoothDisplayRentals() {
 								<h2 className="text-4xl text-gray-700 font-semibold mb-4">Our Exhibit Rental Solutions</h2>
 								<ul>
 									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> 500+ booth rental options across multiple sizes.</li>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Double-deck and large custom booth solutions.</li>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Large custom booth rental solutions.</li>
 									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> End-to-end support: design to dismantling.</li>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexible rental packages to suit your budget.</li>
 								</ul>
 							</div>
 						</div>
-						<div className="mt-12 text-center"><Link href="/trade-show-booth-ideas/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Explore Trade Show Booth Rentals</Link></div>
+						<div className="mt-12 text-center"><Link href="/trade-show-booth-ideas/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Choose From 500+ Exhibit Booth Rental Options</Link></div>
 					</div>
 				</div>
 			</section>
