@@ -406,7 +406,7 @@ export default function Home() {
                 {data?.testimonialsIntro?.primaryCta?.label || 'View More'}
               </Link>
               <Link href="https://www.trustpilot.com/review/triumfo.us" target="_blank" className="w-full sm:w-auto px-6 py-3 border-2 border-custom rounded-xl text-black text-center hover:bg-custom hover:text-white transition duration-300 flex gap-x-1 items-center">
-                <img src="https://www.trustpilot.com/favicon.ico" alt="Trustpilot" className="h-6"/>Trustpilot
+                <img src="https://www.trustpilot.com/favicon.ico" width="32" height="32" alt="Trustpilot" className="h-6"/>Trustpilot
               </Link>
             </div>
           </div>
