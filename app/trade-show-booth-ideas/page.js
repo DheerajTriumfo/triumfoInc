@@ -197,29 +197,26 @@ export default function ViewTradeshowideaData() {
     		</div>
     	</div>
     </section>*/}
+    
     <section>
-    	<div className="servicebg bg-[#EBEFF8] py-20">
-    		<div className="container mx-auto px-4">
-    			<div className="max-w-3xl mx-auto text-center">
-					<h1 className="maintitle text-gray-700 mb-6">Why Choose Our Trade Show Booth Designs?</h1>
-					<p className="text-gray-600 text-lg">We combine creativity, engineering, and brand storytelling to deliver booths that not only look exceptional but also perform exceptionally. Every booth is purpose-built to increase footfall, engagement, and lead generation.</p>
-				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
-    				<div className="border border-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-    					<h3 className="title text-3xl font-semibold mb-3 mt-4">Unique and eye-catching structure</h3>
-    				</div>
-    				<div className="border border-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-    					<h3 className="title text-3xl font-semibold my-3">Strong brand visibility with custom graphics</h3>
-    				</div>
-    				<div className="border border-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-    					<h3 className="title text-3xl font-semibold my-3">Smart layouts designed for visitor flow</h3>
-    				</div>
-    				<div className="border border-gray-700  rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-    					<h3 className="title text-3xl font-semibold my-3">Durable materials and premium finishing</h3>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+      <div className="contentseo py-20 bg-[#EAEEF7]">
+        <div className="container mx-auto px-4">
+          <div className="">
+          <div className="max-w-6xl mx-auto ">
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4">A Trade Show Booth Design That Shows Compelling Brand Vision</h2>
+            <p className="text-gray-700 text-lg mb-6">Selecting the right trade show booth is a big decision as it directly impacts your brand image. Explore our exceptional portfolio for your booth inspiration, which features thousands of options with different styles and sizes. Select a design that tells your brand story visually and powerfully.</p>
+            <h3 className="text-4xl font-semibold text-gray-700 mb-6">Inspiration for Transformation</h3>
+            <p className="text-gray-700 text-lg mb-4">The best thing about partnering with Triumfo is that you get the services from an organization with over 25  years of experience. We have curated an exceptional portfolio with design ideas created by our experts. The first step of your trade show planning is to take a look at our design and gain a better understanding of what we create, and you can find your next trade booth design.</p>
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6  border-b border-gray-300 pb-4">How Trade Show Booth Design Ideas Can Help You Stand Out?</h2>
+            <p className="text-gray-700 text-lg mb-4">To attract a potential customer during a large show where hundreds of other businesses are competing to get the audience's attention is not an easy task. This is where an attractive trade show display design idea can make a difference. Triumfo provides a wide variety of exhibition booth designs that can help you stand out from the rest. All the designs are customizable according to your brand image.</p>
+            <h3 className="text-4xl font-semibold text-gray-700 mb-6">Where Booth Designs Idea Meets Brand Storytelling</h3>
+            <p className="text-gray-700 text-lg mb-4">The best expo booth design idea is one that communicates your brand story so perfectly visually that it doesn't require any human interruption. At Triumfo, we consider this our top priority, and we make sure that we have an understanding of your business and marketing goals. We apply your brand vision and provide you with a design that resonates with your message to the audience. From the initial design layout, lighting, displayed eye-catching graphics, furniture, and flooring, our design team holds experience and has creativity to transform your brand story into a compelling display, which will surely attract the attention of attendees.</p>
+            <h3 className="text-4xl font-semibold text-gray-700 mb-6">Smart Trade Show Booth Designs for Any Budget</h3>
+            <p className="text-gray-700 text-lg mb-4">Triumfo has one of the largest inventories of trade show display ideas in the industry, which makes it easy for you to rent a booth that fits perfectly in your budget and marketing goals. Whether you’re looking for a modular stand or a double-decker booth, our team makes sure to provide you with the best product according to your budget.</p>
+          </div>
+          </div>
+        </div>
+      </div>
     </section>
     <TradeFaqtab/>
     </>

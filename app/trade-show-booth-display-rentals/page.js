@@ -304,8 +304,8 @@ export default function TradeShowBoothDisplayRentals() {
 				<div className="servicebg bg-[#34343C] py-20">
 					<div className="container mx-auto px-4">
 						<div className="max-w-3xl mx-auto text-center">
-							<h1 className="maintitle text-white mb-6">Why Rent a Trade Show Booth?</h1>
-							<p className="text-white text-lg">Renting a trade show booth offers many remarkable advantages. Let us elaborate on the major reasons why you should prefer it over purchasing a booth. </p>
+							<h1 className="maintitle text-white mb-6">Why Choose Triumfo Inc for Your Trade Show Booth Rentals</h1>
+							<p className="text-white text-lg">With over 25 years of experience, Triumfo Inc delivers expert trade show booth rentals with full turnkey services, local teams for faster execution, and dedicated support to ensure every event is a success.</p>
 						</div>
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
 							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
