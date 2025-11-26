@@ -54,6 +54,15 @@ export default function Home() {
 
   return (
     <>
+      <link
+        rel="preload"
+        href="/_next/static/css/app.css"
+        as="style"
+        onLoad="this.onload=null;this.rel='stylesheet'"
+      />
+      <noscript>
+        <link rel="stylesheet" href="/_next/static/css/app.css" />
+      </noscript>
       <section>
         <div className="bannerbg relative">
           <a href="/trade-show-booth-ideas/">
