@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { useRouter } from 'next/navigation';
 import $ from 'jquery';
-import GetTradeRentaldata from './tradeshowrentaldata.js';
 
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://triumfous.mobel.us/api';
 
@@ -209,13 +208,41 @@ export default function TradeShowBoothDisplayRentals() {
 					</div>
 				</div>
 			</section>
-			<GetTradeRentaldata/>
-			
+			<section>
+				<div className="circlebg py-20 bg-white">
+					<div className="container mx-auto px-4">
+						
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+							<div className="box bg-[#EAEEF7] py-12 px-6">
+								<h2 className="text-4xl text-gray-700 font-semibold mb-4">Why Rent a Trade Show Booth Instead of Buying?</h2>
+								<ul>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Reduced upfront investment and lower total exhibiting costs.</li>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> No storage, maintenance, or warehousing needed.</li>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexibility to change booth size, design, and message for each show.</li>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Quick installation and dismantling with pre-fabricated components.</li>
+								</ul>
+							</div>
+							<div className="box bg-white hidden lg:block">
+								<Image src="/images/build.webp" width={400} height={475} alt="" className="w-full h-auto"/>
+							</div>
+							<div className="box bg-[#EAEEF7] py-12 px-6">
+								<h2 className="text-4xl text-gray-700 font-semibold mb-4">Our Exhibit Rental Solutions</h2>
+								<ul>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> 500+ booth rental options across multiple sizes.</li>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Double-deck and large custom booth solutions.</li>
+									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> End-to-end support: design to dismantling.</li>
+								</ul>
+							</div>
+						</div>
+						<div className="mt-12 text-center"><Link href="/trade-show-booth-ideas/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Explore Trade Show Booth Rentals</Link></div>
+					</div>
+				</div>
+			</section>
 			<section>
 				<div className="homeportfolio bg-[#34343C] py-20">
 					<div className="container mx-auto px-4 text-center text-white pb-20">
 						<div className="max-w-3xl mx-auto">
-						<h2 className="maintitle">Explore Our Exhibit Booth Rentals That Made a Lasting Impact</h2>
+						<h2 className="maintitle">Explore Trade Show Booth Rental Work</h2>
 						<div className="mt-4">
 							<p className="text-xl text-white leading-relaxed">Take a look at our exhibit booth rentals that have helped brands stand out on the show floor. Each design is crafted to attract attention, engage visitors, and leave a memorable impression at major trade shows across the USA.</p>
 						</div>
@@ -281,20 +308,20 @@ export default function TradeShowBoothDisplayRentals() {
 						</div>
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
 							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">Optimize Trade Show Costs</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">You can reduce overall exhibiting expenses by renting instead of buying a booth. It eliminates huge upfront investment and maintenance liabilities.</p>
+								<h3 className="title text-4xl font-semibold mb-6">Our Expertise</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">25+ years of trade show booth rental experience in the U.S.</p>
 							</div>
 							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">Quick Installation & Dismantling</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">We fabricate the components of booth rentals to ensure quick installation and dismantling. It reduces downtime and on-site labor expenses.</p>
+								<h3 className="title text-4xl font-semibold mb-6">Turnkey Services</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">End-to-end service: design, fabrication, logistics, I&D, and on-site support.</p>
 							</div>
 							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">Flexible <br />Designs</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Modular layouts of booth rentals can be easily modified to match any booth size, branding goal, marketing message, and exhibit environment.</p>
+								<h3 className="title text-4xl font-semibold mb-6">We Are Local</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Local teams across major trade show cities for faster response and lower shipping costs.</p>
 							</div>
 							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">No Storage <br />Worries</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">You get rid of storage, maintenance, and long-term warehousing needs with display rentals. You simply have to return them after the event.</p>
+								<h3 className="title text-4xl font-semibold mb-6">24x7 Full Support</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Dedicated project manager for each event.</p>
 							</div>
 						</div>
 					</div>
