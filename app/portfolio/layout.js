@@ -2,9 +2,9 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Trade Show Booth Design Portfolio",
+    title: "Our Work | Triumfo",
     description:
-      "Explore our booth design portfolio featuring projects we’ve designed and built for clients worldwide. Real work for real clients.",
+      "Take a look at the projects we’ve completed and the spaces we’ve transformed. Discover the creativity and attention to detail in every project.",
     pathname: "/portfolio/",
     image: "https://triumfous.mobel.us/api/images/portfolio/1720080379.webp",
     openGraph: {

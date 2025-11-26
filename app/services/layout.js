@@ -2,9 +2,9 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Full Trade Show Services  By Triumfo Inc.",
+    title: "Turnkey Services | Triumfo Inc.",
     description:
-      "From planning and design to installation, execution, and breakdown — everything under one roof for a seamless exhibiting experience.",
+      "Learn more about our turnkey services available in the United States. Request a detailed quotation today.",
     pathname: "/services/",
     image: "https://www.triumfo.us/images/build-rental-booth.webp",
     openGraph: {
