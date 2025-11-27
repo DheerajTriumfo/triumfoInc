@@ -341,7 +341,7 @@ export default function Blog() {
 						)}
 						{loading && (
 							<div className="text-center mt-8 text-gray-500">
-								Loading more posts...
+								Loading  Blogs...
 							</div>
 						)}
 
