@@ -112,21 +112,21 @@ export default function Home() {
         <div className="topsection py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Your Trusted Custom Trade Show Booth Builder for Maximum ROI'}</h1>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'We have been crafting custom trade show booths that empower exhibitors to create memorable brand experiences since 1999. We simplify your trade show exhibit journey by eliminating last-minute hassles. We deliver turnkey trade show booth services with consistent quality, on time and on budget.'}</p>
+              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Trade Show Exhibit Booths and Displays That Make Your Brand Stand Out'}</h1>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'Trade show exhibit booth solutions from Triumfo Inc. combine decades of experience, deep industry expertise, and a strong commitment to reliability. Our proven approach delivers trade show booth displays that captivate audiences and generate measurable results for exhibitors nationwide.'}</p>
             </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
-                { icon: '/images/rental-exhibit.webp', value: '25+', label: 'Rental Exhibit', url: '/trade-show-booth-display-rentals/' },
-                { icon: '/images/exhibit-design.webp', value: '20,900+', label: 'Exhibit Designs', url: '/trade-show-booth-ideas/' },
-                { icon: '/images/exhibit-service.webp', value: '5,000+', label: 'Our Services', url: '/services/' },
-                { icon: '/images/exhibit-guide.webp', value: '24/7', label: 'Exhibit Guide', url: '/blog/' },
+                { icon: '/images/rental-exhibit.webp', value: 'Custom-built exhibits tailored to your brand vision.', label: 'Custom Exhibit', url: '/custom-trade-show-displays/' },
+                { icon: '/images/exhibit-design.webp', value: 'Flexible rental booths designed for any show need.', label: 'Rental Exhibit', url: '/trade-show-booth-display-rentals/' },
+                { icon: '/images/exhibit-service.webp', value: 'End-to-end exhibit solutions for every trade show.', label: 'Our Services', url: '/services/' },
+                { icon: '/images/exhibit-guide.webp', value: 'Explore 500 creative booth designs for your next show.', label: 'Exhibit Designs', url: '/trade-show-booth-ideas/' },
               ]).map((item, idx) => (
                 <a key={idx} href={item.url}>
                 <div key={idx} className="bg-white rounded-[14px] p-[28px] border border-gray-700 text-center">
                   <div className="mt-2 w-[64px] h-[64px] rounded-[12px] bg-[rgba(154,50,32,0.1)] flex items-center justify-center text-[24px] text-[color:var(--teal)] mx-auto"><Image src={item.icon} width={50} height={50} alt="" className="h-12 w-12" /></div>
-                  {/*<h3 className="text-3xl text-gray-600 font-bold mt-4 barlofamilty">{item.value}</h3>*/}
-                  <p className="text-2xl text-gray-600 barlofamilty mt-6 font-semibold">{item.label}</p>
+                  <p className="text-2xl text-gray-600 barlofamilty my-2 font-semibold">{item.label}</p>
+                  <p className="text-md text-gray-700 ">{item.value}</p>
                 </div>
                 </a>
               ))}
@@ -141,9 +141,9 @@ export default function Home() {
      <section>
   <div className="homeportfolio bg-[#34343C] py-20">
     <div className="container mx-auto px-4 text-center text-white pb-20">
-      <h2 className="maintitle">Our Work</h2>
+      <h2 className="maintitle">Our Trade Show Booth Work</h2>
       <div className="max-w-3xl mx-auto mt-4">
-        <p className="text-xl text-white leading-relaxed">Browse our recent trade show booth design projects that we have delivered to our esteemed clients.</p>
+        <p className="text-xl text-white leading-relaxed">Browse our recent trade show booth projects that we have delivered to our esteemed clients.</p>
       </div>
     </div>
     <div className="px-4 sm:px-2 py-2">
@@ -305,30 +305,7 @@ export default function Home() {
   </div>
 </section> 
 
-{/* 
-      <section>
-        <div className="bg-[#E9EEF7] py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="maintitle text-gray-700 mb-4">{data?.locationsIntro?.title || 'End-to-End Trade Show Booth Services'}</h2>
-              <p className="text-xl text-[#9A3220] font-medium mb-4">From Concept to Teardown, We’ve Got You Covered</p>
-              <p className="text-xl text-gray-500">{data?.locationsIntro?.description || 'Our team handles every phase of the trade show journey. Our timelines, quality, and costs stay in our control since we don’t outsource any process. Our complete in-house resources enable us to deliver your trade show booth project exactly as planned. '}</p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-              {(locations.length ? locations : new Array(8).fill({ title: '3D Visualization', href: '' })).map((loc, idx) => (
-                <div key={idx}>
-                  <span   className="bg-white rounded-[14px] py-[68px] px-[36px] lg:px-[68px] border border-gray-300 text-center block"><h3 className="text-3xl text-gray-600  font-heading text-center">{loc.title}</h3></span>
 
-                </div>
-              ))}
-            </div>
-            <div className="flex justify-center gap-x-4 mt-12">
-                  <div><Link href={data?.locationsIntro?.primaryCta?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.locationsIntro?.primaryCta?.label || 'Get A Quote'}</Link></div>
-                  <div><Link href={data?.locationsIntro?.secondaryCta?.href || "/services/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.locationsIntro?.secondaryCta?.label || 'Services'}</Link></div>
-                </div>
-          </div>
-        </div>
-      </section> */}
       <section>
         <div className="contentbg py-36">
           <div className="container mx-auto px-4">
@@ -340,8 +317,8 @@ export default function Home() {
               </div>
               <div className="contents">
                 <div>
-                  <h2 className="maintitle text-gray-700 mb-4">{data?.contentBlock?.title || 'Get Your Free Custom Booth Design Concept in Just 48 Hours.'}</h2>
-                  <p className="text-xl text-gray-500 leading-relaxed">{data?.contentBlock?.description || 'Get a personalized booth design concept tailored to your brand—delivered in just 48 hours, completely free and without commitment.'}</p>
+                  <h2 className="maintitle text-gray-700 mb-4">{data?.contentBlock?.title || 'Get Your Free trade show exhibit Concept in Just 48 Hours.'}</h2>
+                  <p className="text-xl text-gray-500 leading-relaxed">{data?.contentBlock?.description || 'Get a personalized trade show booth concept tailored to your brand—delivered in just 48 hours, completely free and without commitment.'}</p>
 
                   <div className="flex flex-col sm:flex-row gap-4 mt-8">
                     <a href={data?.contentBlock?.primaryCta?.href || '/contact-us/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
@@ -364,7 +341,7 @@ export default function Home() {
             <div className="max-w-3xl text-center mx-auto mb-12">
               <h2 className="maintitle mb-4">{data?.testimonialsIntro?.title || 'Client Testimonials'}</h2>
               <p className="text-xl text-[#9A3220] font-medium mb-4">Your expectation. Our obligation.</p>
-              <p className="text-xl text-gray-500 leading-relaxed">{data?.testimonialsIntro?.description || 'Watch short video testimonials to know how Triumfo Inc. has met or exceeded their expectations in creating memorable, high-performing trade show experiences.'}</p>
+              <p className="text-xl text-gray-500 leading-relaxed">{data?.testimonialsIntro?.description || 'Watch short video testimonials to see how Triumfo Inc. has met or exceeded client expectations in creating memorable, high-performing trade show exhibit booths and impactful show experiences.'}</p>
             </div>
             <div className="grid grid-cols-12 gap-8">
             <div className="video-card rounded-xl relative col-span-12 md:col-span-6 lg:col-span-4">

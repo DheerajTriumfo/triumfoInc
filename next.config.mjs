@@ -66,6 +66,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/index.php', // Also handle trailing slash
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index.php/', // Also handle trailing slash
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: "/custom-exhibit-rental/",
         destination: "/",
         permanent: true,
