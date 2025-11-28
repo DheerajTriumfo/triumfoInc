@@ -4,9 +4,8 @@ import { buildMetadata } from '../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Trade Show Exhibit Booths & Displays | Triumfo Inc.",
-    description:
-      "Designing and building trade show booths for national and international exhibitors across the USA. Choose from over 500 booth designs.",
+    title: "Custom & Rental Trade Show Exhibit Booths | Triumfo Inc.",
+    description:"Triumfo Inc. provides custom and rental trade show exhibit booths & displays nationwide. Get end-to-end service from design to installation. Claim your free concept in 48 hours!",
     pathname: "/",
     image: "https://www.triumfo.us/images/booth-design-banner.webp",
     openGraph: {
