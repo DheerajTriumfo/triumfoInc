@@ -38,7 +38,7 @@ export default function ContactUs(){
 		    			    		</div>
 		    			    		<div className="flex gap-x-4 mb-2 items-center">
 		    			    			<i className="fa-brands fa-whatsapp text-gray-700 text-xl w-5"></i>
-		    			    			<Link href="https://wa.me/17029340798" className="font-semibold">+1 702 9340798</Link>
+		    			    			<Link target="_blank" href="https://wa.me/17029340798" className="font-semibold">+1 702 9340798</Link>
 		    			    		</div>
 		    			    		<div className="flex items-center gap-x-4">
 		    			    			<Image src="/images/emailn.png" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>
