@@ -112,8 +112,8 @@ export default function Home() {
         <div className="topsection py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Trade Show Exhibit Booths and Displays That Make Your Brand Stand Out'}</h1>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'Trade show exhibit booth solutions from Triumfo Inc. combine decades of experience, deep industry expertise, and a strong commitment to reliability. Our proven approach delivers trade show booth displays that captivate audiences and generate measurable results for exhibitors nationwide.'}</p>
+              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Trade Show Exhibit Booths: Custom & Rental Solutions Nationwide'}</h1>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo Inc. is your dedicated, full-service partner for high-impact trade show exhibit booths and custom displays nationwide. As expert exhibition stand builders and designers, we deliver complete turnkey solutions—from trade show booth design and fabrication to logistics and installation—for both custom and rental exhibit options. Contact us today and get your free concept design in just 48 hours!'}</p>
             </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
