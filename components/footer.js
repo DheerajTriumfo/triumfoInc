@@ -64,7 +64,7 @@ export default function Footer(){
 								</div>
 							</div>
 							<div className="flex items-center justify-center gap-x-4 pt-8">
-								<p className="text-white text-base mb-2 leading-[1.6]">5071 N. Rainbow Blvd, Suite 170, Las Vegas, NV 89130, United States</p>
+								<a href ="https://maps.app.goo.gl/QyEbgwm5QRjvhEqw6" target ="_blank"><p className="text-white text-base mb-2 leading-[1.6]">5071 N. Rainbow Blvd, Suite 170, Las Vegas, NV 89130, United States</p></a>
 							</div>
 							<div className="flex-col md:flex-row flex items-center justify-center gap-x-4 pt-2">
 								<div className="flex items-center flex-wrap gap-x-2 mb-4">
