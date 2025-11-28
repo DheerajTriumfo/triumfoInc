@@ -33,7 +33,7 @@ export async function generateMetadata(props) {
       title,
       description,
       image: imgSrc,
-      pathname: `10x20-trade-show-booth/${productId}/`,
+      pathname: `${slug}/${productId}/`,
       openGraph: {
         type: "article",
         images: [
