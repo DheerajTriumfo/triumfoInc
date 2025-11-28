@@ -69,7 +69,11 @@ export default function Footer(){
 							<div className="flex-col md:flex-row flex items-center justify-center gap-x-4 pt-2">
 								<div className="flex items-center flex-wrap gap-x-2 mb-4">
 									<i className="fa fa-phone text-[#9A3220]"></i>
-									<Link href="tel:+1 775 927 6412" className="text-white text-base hover:text-[#9A3220]">+1 775 927 6412</Link>
+									<Link href="tel:+17029920440" className="text-white text-base hover:text-[#9A3220]">+1 702 992 0440</Link>
+								</div>
+								<div className="flex items-center flex-wrap gap-x-2 mb-4">
+									<i className="fa-brands fa-whatsapp text-[#9A3220]"></i>
+									<Link href="https://wa.me/17029340798" className="text-white text-base hover:text-[#9A3220]">+1 702 9340798</Link>
 								</div>
 								<div className="flex items-center flex-wrap gap-x-2 mb-4">
 									<i className="fa fa-envelope text-[#9A3220]"></i>

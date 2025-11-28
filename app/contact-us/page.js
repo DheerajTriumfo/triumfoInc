@@ -20,16 +20,25 @@ export default function ContactUs(){
 		    	<div className="rentallistbg py-10">
 		    		<div className="container mx-auto px-4">
 		    			<div className="grid grid-cols-12 gap-x-0 md:gap-x-12 lg:gap-x-8 items-center">
-		    				<div className="col-span-12 lg:col-span-4">
+								<div className="col-span-12 lg:col-span-8 order-2 lg:order-1">
+		    					<div className="bg-gray-100 rounded-[24px] border border-gray-300 my-8 px-4 lg:px-8 py-12">
+		    						<ContactForm />
+		    					</div>
+		    				</div>
+		    				<div className="col-span-12 lg:col-span-4 order-1 lg:order-2">
 		    					<div className="bg-[#E9EEF7] p-4 rounded-xl text-gray-700 mb-2">
 		    			    		<h3 className=" font-semibold text-4xl mb-4 text-gray-700">America</h3>
 		    			    		<div className="flex gap-x-4 mb-2">
 		    			    			<Image src="/images/addressmarker3.webp" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>
 		    			    			5071 N. Rainbow Blvd, Suite 170, Las Vegas, NV 89130, United States
 		    			    		</div>
-		    			    		<div className="flex gap-x-4 mb-2">
-		    			    			<Image src="/images/tele.png" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>
-		    			    			<Link href="tel:+1 775 927 6412" className="font-semibold">+1 775 927 6412</Link>
+		    			    		<div className="flex gap-x-4 mb-2 items-center">
+		    			    			<i className="fa fa-phone text-gray-700 text-xl w-5"></i>
+		    			    			<Link href="tel:+17029920440" className="font-semibold">+1 702 992 0440</Link>
+		    			    		</div>
+		    			    		<div className="flex gap-x-4 mb-2 items-center">
+		    			    			<i className="fa-brands fa-whatsapp text-gray-700 text-xl w-5"></i>
+		    			    			<Link href="https://wa.me/17029340798" className="font-semibold">+1 702 9340798</Link>
 		    			    		</div>
 		    			    		<div className="flex items-center gap-x-4">
 		    			    			<Image src="/images/emailn.png" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>
@@ -65,11 +74,6 @@ export default function ContactUs(){
 		    							<Image src="/images/emailn.png" width={20} height={20} alt="" className="w-[20px] h-[20px]"/>
 		    							<Link href="mailto:enquiry@triumfo.ae" className="font-semibold">enquiry@triumfo.ae</Link>
 		    						</div>
-		    					</div>
-		    				</div>
-		    				<div className="col-span-12 lg:col-span-8">
-		    					<div className="bg-gray-100 rounded-[24px] border border-gray-300 my-8 px-4 lg:px-8 py-12">
-		    						<ContactForm />
 		    					</div>
 		    				</div>
 		    			</div>
