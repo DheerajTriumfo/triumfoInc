@@ -319,7 +319,7 @@ export default function Contactform() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <div className="mt-4 flex text-sm leading-6 text-gray-600">
+              <div className="mt-4 flex text-sm leading-6 text-gray-600 justify-center items-center">
                 <label className="relative cursor-pointer rounded-md font-semibold text-[#A02C1C] focus-within:outline-none focus-within:ring-2 focus-within:ring-[#A02C1C] focus-within:ring-offset-2">
                   <span>Upload a file</span>
                 </label>

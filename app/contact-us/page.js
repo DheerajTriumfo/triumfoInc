@@ -20,12 +20,12 @@ export default function ContactUs(){
 		    	<div className="rentallistbg py-10">
 		    		<div className="container mx-auto px-4">
 		    			<div className="grid grid-cols-12 gap-x-0 md:gap-x-12 lg:gap-x-8 items-center">
-								<div className="col-span-12 lg:col-span-8 order-2 lg:order-1">
+								<div className="col-span-12 lg:col-span-8 order-1 lg:order-2">
 		    					<div className="bg-gray-100 rounded-[24px] border border-gray-300 my-8 px-4 lg:px-8 py-12">
 		    						<ContactForm />
 		    					</div>
 		    				</div>
-		    				<div className="col-span-12 lg:col-span-4 order-1 lg:order-2">
+		    				<div className="col-span-12 lg:col-span-4 order-2 lg:order-1">
 		    					<div className="bg-[#E9EEF7] p-4 rounded-xl text-gray-700 mb-2">
 		    			    		<h3 className=" font-semibold text-4xl mb-4 text-gray-700">America</h3>
 		    			    		<div className="flex gap-x-4 mb-2">
