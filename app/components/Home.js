@@ -112,8 +112,8 @@ export default function Home() {
         <div className="topsection py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Trade Show Exhibit Booths: Custom & Rental Solutions Nationwide'}</h1>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo Inc. is your dedicated, full-service partner for high-impact trade show exhibit booths and custom displays nationwide. As expert exhibition stand builders and designers, we deliver complete turnkey solutions—from trade show booth design and fabrication to logistics and installation—for both custom and rental exhibit options. Contact us today and get your free concept design in just 48 hours!'}</p>
+              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'End-to-End Trade Show Exhibit Solutions & Stand Builders'}</h1>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo Inc. is your dedicated, full-service partner for high-impact trade show exhibit booths nationwide. For over 25 years, we have mastered the art of exhibition, delivering complete turnkey solutions—from initial trade show booth design to on-site management. Whether you need a bespoke, permanent custom trade show booth or a flexible exhibit rental, we have the expertise to execute your vision flawlessly.'}</p>
             </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
@@ -125,7 +125,7 @@ export default function Home() {
                 <a key={idx} href={item.url}>
                 <div key={idx} className="bg-white rounded-[14px] p-[28px] border border-gray-700 text-center">
                   <div className="mt-2 w-[64px] h-[64px] rounded-[12px] bg-[rgba(154,50,32,0.1)] flex items-center justify-center text-[24px] text-[color:var(--teal)] mx-auto"><Image src={item.icon} width={50} height={50} alt="" className="h-12 w-12" /></div>
-                  <p className="text-2xl text-gray-600 barlofamilty my-2 font-semibold">{item.label}</p>
+                  <h3 className="text-2xl text-gray-600 barlofamilty my-2 font-semibold">{item.label}</h3>
                   <p className="text-md text-gray-700 ">{item.value}</p>
                 </div>
                 </a>
