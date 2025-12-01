@@ -76,8 +76,8 @@ export default function Home() {
               <div className="grid grid-cols-1 justify-items-center ">
                 <h1 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[5.0rem] font-heading text-center">{banner?.title || 'Trade Show Exhibit Booth Experts Bringing Your Vision to Life'}</h1>
                 <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
-                <div className="flex justify-center my-6">
-                  <div><a href="/trade-show-booth-ideas/" className="px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600  hover:text-white transition duration-300">Browse from over 500 Designs</a></div>
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 my-6">
+                  <div><a href="/trade-show-booth-ideas/" className="block w-full sm:w-auto px-6 sm:px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600 hover:text-white transition duration-300 text-center">Browse from over 500 Designs</a></div>
                 </div> 
               </div>
             </div>
@@ -119,7 +119,7 @@ export default function Home() {
             </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
-                { icon: '/images/exhibit-service.webp',label: 'Large Exhibit', value1: '40x40 Exhibits',  url1: '/40x40-trade-show-booth/', value2: '40x50 Exhibits',  url2: '/40x50-trade-show-booth/', value3: 'Custom Exhibit Sizes',  url3: '/40x50-trade-show-booth/', },
+                { icon: '/images/exhibit-service.webp',label: 'Large Exhibit', value1: '40x40 Exhibits',  url1: '/40x40-trade-show-booth/', value2: '40x50 Exhibits',  url2: '/40x50-trade-show-booth/',  },
                 { icon: '/images/exhibit-service.webp',label: 'Island Exhibits', value1: '20x20 Exhibits',  url1: '/20x20-trade-show-booth/', value2: '20x30 Exhibits',  url2: '/20x30-trade-show-booth/', value3: '20x40 Exhibits',  url3: '/20x40-trade-show-booth/',value4: '30x0 Exhibits',  url4: '/30x0-trade-show-booth/', },
                 { icon: '/images/exhibit-service.webp',label: 'Inline Exhibits', value1: '10x10 Exhibits',  url1: '/10x10-trade-show-booth/', value2: '10x20 Exhibits',  url2: '/10x20-trade-show-booth/', value3: '10x30 Exhibits',  url3: '/10x30-trade-show-booth/' },
                 { icon: '/images/exhibit-service.webp',  label: 'Rental Exhibit', value1: 'Flexible rental booths designed for any show need.',  url1: '/30x4-trade-show-booth/' },
@@ -155,9 +155,9 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="flex justify-center gap-x-4 mt-12">
-                  <div><a href={data?.cta?.primary?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.cta?.primary?.label || 'Get a Tailored Booth Design at No Cost'}</a></div>
-                  <div><a href={data?.cta?.secondary?.href || "/services/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.cta?.secondary?.label || 'Exhibit Services'}</a></div>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
+                  <div className="w-full sm:w-auto"><a href={data?.cta?.primary?.href || "/contact-us/"} className="block w-full sm:w-auto px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white hover:text-white transition duration-300 text-center">{data?.cta?.primary?.label || 'Get a Tailored Booth Design at No Cost'}</a></div>
+                  <div className="w-full sm:w-auto"><a href={data?.cta?.secondary?.href || "/services/"} className="block w-full sm:w-auto px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-base sm:text-xl hover:bg-custom hover:text-white transition duration-300 text-center">{data?.cta?.secondary?.label || 'Exhibit Services'}</a></div>
                 </div>
           </div>
         </div>
