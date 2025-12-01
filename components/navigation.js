@@ -23,7 +23,7 @@ export default function Navigation()
 		            <div className="flex items-center justify-center gap-x-4">
 		                <div className="main_menu">
 		                	
-			                <ul>
+						<ul>
 			                    <li><Link href="/">HOME</Link></li>
 			                    <li><Link href="/about-us/">ABOUT US</Link></li>
 			                    <li><Link href="/trade-show-booth-display-rentals/">EXHIBIT RENTAL</Link></li>

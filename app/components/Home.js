@@ -65,25 +65,26 @@ export default function Home() {
       </noscript>
       <section>
         <div className="bannerbg relative">
-          <a href="/trade-show-booth-ideas/">
-        <Image
-        src={banner?.imageDesktop || "/images/banner-desktop.webp"} width={1920} height={813} 
-        alt="Large Trade Show Booth"
-        priority={false}
-        className="hidden lg:block"
-      />
-      <Image
-        src={banner?.imageTablet || "/images/banner-tablet.webp"} width={1200} height={508} 
-        alt="Large Trade Show Booth"
-        priority={false}
-        className="hidden md:block lg:hidden"
-      />
-      <Image
-        src={banner?.imageMobile || "/images/banner-mobileview.webp"} width={768} height={325}  alt="Large Trade Show Booth" loading="eager"  priority={true} fetchPriority="high" className="block md:hidden"
-      />
-        </a>
+          <Image src={banner?.imageUrl || "/images/booth-design-banner.webp"}  width={1920} height={813} priority={true} 
+          sizes="(max-width: 480px) 100vw,
+         (max-width: 768px) 100vw,
+         (max-width: 1200px) 100vw,
+         1920px" alt="Dream. Build. Belong"
+        />
+          <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.4)] relative md:absolute top-0 left-0 z-20 w-full h-full">
+            <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
+              <div className="grid grid-cols-1 justify-items-center ">
+                <h1 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[5.0rem] font-heading text-center">{banner?.title || 'Trade Show Exhibit Booth Experts Bringing Your Vision to Life'}</h1>
+                <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
+                <div className="flex justify-center my-6">
+                  <div><a href="/trade-show-booth-ideas/" className="px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600  hover:text-white transition duration-300">Browse from over 500 Designs</a></div>
+                </div> 
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+  
       {isModalOpen && (
         <div
           id="videoModal"
@@ -108,32 +109,55 @@ export default function Home() {
           </div>
         </div>
       )}
+  
       <section>
         <div className="topsection py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'End-to-End Trade Show Exhibit Solutions & Stand Builders'}</h1>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo Inc. is your dedicated, full-service partner for high-impact trade show exhibit booths nationwide. For over 25 years, we have mastered the art of exhibition, delivering complete turnkey solutions—from initial trade show booth design to on-site management. Whether you need a bespoke, permanent custom trade show booth or a flexible exhibit rental, we have the expertise to execute your vision flawlessly.'}</p>
+              <h2 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'End-to-End Trade Show Exhibit Solutions'}</h2>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'We have been crafting custom trade show booths that empower exhibitors to create memorable brand experiences since 1999. We simplify your trade show exhibit journey by eliminating last-minute hassles. We deliver turnkey trade show booth services with consistent quality, on time and on budget.'}</p>
             </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
-                { icon: '/images/rental-exhibit.webp', value: 'Custom-built exhibits tailored to your brand vision.', label: 'Custom Exhibit', url: '/custom-trade-show-displays/' },
-                { icon: '/images/exhibit-design.webp', value: 'Flexible rental booths designed for any show need.', label: 'Rental Exhibit', url: '/trade-show-booth-display-rentals/' },
-                { icon: '/images/exhibit-service.webp', value: 'End-to-end exhibit solutions for every trade show.', label: 'Our Services', url: '/services/' },
-                { icon: '/images/exhibit-guide.webp', value: 'Explore 500 creative booth designs for your next show.', label: 'Exhibit Designs', url: '/trade-show-booth-ideas/' },
+                { icon: '/images/exhibit-service.webp',label: 'Large Exhibit', value1: '40x40 Exhibits',  url1: '/40x40-trade-show-booth/', value2: '40x50 Exhibits',  url2: '/40x50-trade-show-booth/', value3: 'Custom Exhibit Sizes',  url3: '/40x50-trade-show-booth/', },
+                { icon: '/images/exhibit-service.webp',label: 'Island Exhibits', value1: '20x20 Exhibits',  url1: '/20x20-trade-show-booth/', value2: '20x30 Exhibits',  url2: '/20x30-trade-show-booth/', value3: '20x40 Exhibits',  url3: '/20x40-trade-show-booth/',value4: '30x0 Exhibits',  url4: '/30x0-trade-show-booth/', },
+                { icon: '/images/exhibit-service.webp',label: 'Inline Exhibits', value1: '10x10 Exhibits',  url1: '/10x10-trade-show-booth/', value2: '10x20 Exhibits',  url2: '/10x20-trade-show-booth/', value3: '10x30 Exhibits',  url3: '/10x30-trade-show-booth/' },
+                { icon: '/images/exhibit-service.webp',  label: 'Rental Exhibit', value1: 'Flexible rental booths designed for any show need.',  url1: '/30x4-trade-show-booth/' },
               ]).map((item, idx) => (
-                <a key={idx} href={item.url}>
-                <div key={idx} className="bg-white rounded-[14px] p-[28px] border border-gray-700 text-center">
-                  <div className="mt-2 w-[64px] h-[64px] rounded-[12px] bg-[rgba(154,50,32,0.1)] flex items-center justify-center text-[24px] text-[color:var(--teal)] mx-auto"><Image src={item.icon} width={50} height={50} alt="" className="h-12 w-12" /></div>
-                  <h3 className="text-2xl text-gray-600 barlofamilty my-2 font-semibold">{item.label}</h3>
-                  <p className="text-md text-gray-700 ">{item.value}</p>
+                <div key={idx} className="bg-white rounded-[14px] p-[28px] border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
+                  <h3 className="text-3xl text-gray-600 font-bold mt-4 barlofamilty group-hover:text-gray-900 transition-colors">
+                    {item.label}
+                  </h3> 
+
+                  <div className="h-1 w-full bg-gray-200 my-4"></div>
+                  <div className="mt-6 space-y-2">
+                    {item.value1 && (
+                      <Link href={item.url1 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        {item.value1}
+                      </Link>
+                    )}
+                    {item.value2 && (
+                      <Link href={item.url2 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        {item.value2}
+                      </Link>
+                    )}
+                    {item.value3 && (
+                      <Link href={item.url3 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        {item.value3}
+                      </Link>
+                    )}
+                    {item.value4 && (
+                      <Link href={item.url4 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        {item.value4}
+                      </Link>
+                    )}
+                  </div>
                 </div>
-                </a>
               ))}
             </div>
             <div className="flex justify-center gap-x-4 mt-12">
-                  <div><a href={data?.cta?.primary?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.cta?.primary?.label || 'Get A Quote'}</a></div>
-                  <div><a href={data?.cta?.secondary?.href || "/about-us/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.cta?.secondary?.label || 'About Us'}</a></div>
+                  <div><a href={data?.cta?.primary?.href || "/contact-us/"} className="px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white  hover:text-white transition duration-300">{data?.cta?.primary?.label || 'Get a Tailored Booth Design at No Cost'}</a></div>
+                  <div><a href={data?.cta?.secondary?.href || "/services/"} className="px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-custom hover:text-white transition duration-300">{data?.cta?.secondary?.label || 'Exhibit Services'}</a></div>
                 </div>
           </div>
         </div>
@@ -425,8 +449,11 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
-                  <Link href="tel:+1 775 927 6412" className="px-5 py-4 rounded-md bg-white text-gray-900 text-l font-medium hover:bg-gray-100 transition">
-                    Call Us
+                  <Link href="https://wa.me/17029340798" target="_blank" rel="noopener noreferrer" className="px-5 py-4 rounded-md text-white text-l font-medium hover:opacity-90 transition flex items-center justify-center gap-2" style={{ backgroundColor: '#0CC143' }}>
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    <span>WhatsApp</span>
                   </Link>
                   <Link href={data?.ctaBottom?.secondary?.href || '/contact-us/'} className="px-5 py-4 rounded-md bg-custom text-white text-l font-medium hover:bg-red-600 transition">
                     {data?.ctaBottom?.secondary?.label || 'Get A Quote'}
