@@ -330,7 +330,7 @@ export default function Home() {
 </section> 
 
 
-      <section>
+      {/* <section>
         <div className="contentbg py-36">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-24">
@@ -356,7 +356,78 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+       */}
+
+
+<section>
+	        <div className="contentbg py-20">
+	          <div className="container mx-auto px-4">
+	            <div className="max-w-3xl mx-auto mb-12">
+					<div className="text-center mb-8">
+						<h1 className="text-gray-700 maintitle mb-4">Featured Case Studies</h1>
+						<p className="text-gray-700 text-lg mb-4">Explore real projects where our custom exhibit booths and custom trade show displays engaged audiences and boosted brand impact.</p>
+					</div>
+				</div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+					<a href="/case-study/countr/">
+					<div className="video-card rounded-xl">
+		                <div className="video-thumb shadow-lg bg-black rounded-xl relative">
+		                    <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
+		                        <Image src="/images/case1.avif" width="768" height="531" alt="IMAX" className="w-full h-full object-cover rounded-xl" />
+		                    </div>
+		                <div className="absolute bottom-4 left-4 z-20">
+		                    	<span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
+		                    </div>
+		                </div>
+		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
+		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - CountR</h4>
+		                    <div className="flex items-center pt-2 justify-center">
+		                        <span className="text-sm text-gray-500">Amusement Expo</span>
+		                    </div>
+		                </div>
+		            </div>
+					</a>
+					<a href="/case-study/tedial/">
+		            <div className="video-card rounded-xl">
+		                <div className="video-thumb shadow-lg bg-black rounded-xl relative">
+		                    <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
+		                        <Image src="/images/case2.avif" width="768" height="531" alt="" className="w-full h-full object-cover rounded-xl" />
+		                    </div>
+		                    <div className="absolute bottom-4 left-4 z-20">
+		                    	<span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
+		                    </div>
+		                </div>
+		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
+		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - Tedial</h4>
+		                    <div className="flex items-center pt-2 justify-center">
+		                        <span className="text-sm text-gray-500">Nab Show</span>
+		                    </div>
+		                </div>
+		            </div>
+					</a>
+					<a href="/case-study/saier">
+		            	<div className="video-card rounded-xl">
+		                <div className="video-thumb shadow-lg bg-black rounded-xl relative">
+		                    <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
+		                        <Image src="/images/case3.avif" width="768" height="531" alt="" className="w-full h-full object-cover rounded-xl" />
+		                    </div>
+		                    <div className="absolute bottom-4 left-4 z-20">
+		                    	<span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
+		                    </div>
+		                </div>
+		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
+		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - Saier</h4>
+		                    <div className="flex items-center pt-2 justify-center">
+		                        <span className="text-sm text-gray-500">ISSA Show</span>
+		                    </div>
+		                </div>
+		            </div>
+					</a>
+				</div>
+				<div className="mt-12 text-center"><Link href="/case-study/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">View All Case Studies</Link></div>
+	          </div>
+	        </div>
+	    </section>
       
 
       <section>

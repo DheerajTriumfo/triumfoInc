@@ -21,8 +21,8 @@ export default async function Casestudy(){
 					<div className="container mx-auto px-4">
 						<div className="max-w-3xl mx-auto">
 							<div className="text-center">
-								<h1 className="text-white font-semibold text-7xl mb-4">Our Success Stories</h1>
-								<p className="text-white text-lg">Your essential guide to planning, designing, and running a successful trade show booth.</p>
+								<h1 className="text-white font-semibold text-7xl mb-4">Trade Show Booth Case Studies</h1>
+								<p className="text-white text-lg">Explore our collection of trade show booth case studies showcasing custom exhibits, modular rentals, island displays, and turnkey booth builds delivered for global brands. Each case study highlights our design approach, fabrication quality, installation expertise, and overall project success.</p>
 								<div className="mt-8"><Link href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</Link></div>
 							</div>
 						</div>
