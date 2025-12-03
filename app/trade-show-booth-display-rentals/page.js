@@ -350,7 +350,7 @@ export default function TradeShowBoothDisplayRentals() {
 		            	<div className="video-card rounded-xl">
 		                <div className="video-thumb shadow-lg bg-black rounded-xl relative">
 		                    <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
-		                        <Image src="/images/case3.avif" width="768" height="531" alt="" className="w-full h-full object-cover rounded-xl" />
+		                        <Image src="/images/case4.avif" width="768" height="531" alt="" className="w-full h-full object-cover rounded-xl" />
 		                    </div>
 		                    <div className="absolute bottom-4 left-4 z-20">
 		                    	<span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
