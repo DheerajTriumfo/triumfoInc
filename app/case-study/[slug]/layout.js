@@ -16,16 +16,22 @@ const caseStudyMetadata = {
     twitterDescription: 'Triumfo created a clean, branded 20×20 ft booth for Securden, enhancing visibility and visitor engagement at RSAC.',
   },
   'tedial': {
-    title: 'Case Study — Tedial Booth by Triumfo Inc.',
+    title: 'Case Study – Tedial Booth by Triumfo Inc.',
     description: 'Discover Triumfo\'s custom 20×20 ft exhibit for Tedial at NAB Show — with smart design, clean aesthetics, and high visitor engagement.',
+    ogDescription: 'Discover how Triumfo designed a sleek 20×20 ft booth for Tedial at NAB Show, combining clean aesthetics, tech ready layout, and high visitor engagement.',
+    twitterDescription: 'Triumfo created a modern 20×20 ft booth for Tedial, enhancing brand visibility, visitor flow, and interactive engagement at NAB Show.',
   },
   'vahdam': {
-    title: 'Case Study — VAHDAM Booth by Triumfo Inc.',
+    title: 'Case Study – VAHDAM Booth by Triumfo Inc.',
     description: 'Explore how Triumfo built a 10×20 ft booth for VAHDAM, combining efficient layout, strong branding and great expo-floor impact.',
+    ogDescription: 'Explore how Triumfo built a 10×20 ft booth for VAHDAM, combining smart layout, bold branding, and strong expo floor impact.',
+    twitterDescription: 'Triumfo created a modern 10×20 ft booth for VAHDAM, enhancing brand visibility, visitor flow, and interactive engagement at trade shows.',
   },
   'saier': {
-    title: 'Case Study — Saier Booth by Triumfo Inc.',
+    title: 'Case Study – Saier Booth by Triumfo Inc.',
     description: 'See Triumfo\'s design for Saier\'s 20×20 ft booth at ISSA Show — blending professional layout, brand clarity and visitor-friendly space.',
+    ogDescription: 'See how Triumfo designed a 20×20 ft booth for Saier at ISSA Show, featuring professional layout, clear branding, and a visitor-friendly experience.',
+    twitterDescription: 'Triumfo created a professional 20×20 ft booth for Saier, combining effective layout, clear branding, and high visitor engagement at ISSA Show.',
   },
 };
 
