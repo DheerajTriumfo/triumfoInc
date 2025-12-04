@@ -149,7 +149,7 @@ export default  async function Viewboothdetail(props){
 									<QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
 								</div>
 								<div className="mt-8">
-									<h2 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h2>
+									<h1 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h1>
 									{descritpionwithTailwind(selected.description)}
 								</div>
 							</div>
