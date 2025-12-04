@@ -77,7 +77,7 @@ const nextConfig = {
       },
       {
         source: "/custom-exhibit-rental/",
-        destination: "/",
+        destination: "/custom-trade-show-displays/",
         permanent: true,
       },
       {
