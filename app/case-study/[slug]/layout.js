@@ -6,8 +6,10 @@ const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://triumfous.mobel
 // Case study specific metadata
 const caseStudyMetadata = {
   'countr': {
-    title: 'Case Study — CountR Payment Systems Booth by Triumfo Inc.',
+    title: 'Case Study – CountR Booth by Triumfo Inc.',
     description: 'Triumfo designed a sleek island booth for CountR with live demos, smart layout, and bold branding, boosting visibility and engagement at Amusement Expo.',
+    ogDescription: 'See how Triumfo built a sleek, demo-ready island booth for CountR, with live demos, smart layout, and standout expo presence.',
+    twitterDescription: 'Triumfo created a modern demo-ready island booth for CountR, enhancing visibility and engagement at the expo.',
   },
   'securden': {
     title: 'Case Study – Securden Booth by Triumfo Inc.',
