@@ -332,12 +332,7 @@ export default function ViewTradeshowideaData() {
               >
                 Request a Free Booth Concept
               </Link>
-              <Link
-                href="#"
-                className="px-8 py-4 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-[#9A3220] hover:text-white transition duration-300 text-center"
-              >
-                Download Design Catalog
-              </Link>
+           
           </div>
           </div>
         </div>

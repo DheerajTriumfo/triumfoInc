@@ -42,45 +42,45 @@ export default function TradeFaqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> What makes Triumfo’s trade show booth designs unique?</div>
+							    	</svg> What makes Triumfo's trade show booth unique?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Triumfo creates custom trade show booth designs tailored to your brand, audience, and event goals. Our designs blend creativity, smart layout planning, and high-quality fabrication to deliver booths that attract more visitors and enhance engagement.</p>
+                    <p>Triumfo creates a custom trade show booth tailored to your brand, audience, and event goals. Our designs blend creativity, smart layout planning, and high-quality fabrication to deliver booths that attract more visitors and enhance engagement. From creative small booths to big ones, we provide solutions to your every exhibition need.</p>
                   </div>
                 </div>
                 <div className="borbg mb-3 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> Can you help us with new trade show booth ideas for our event?</div>
+							    	</svg> Can you help us with a new trade show booth for our event?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. We provide a wide range of creative trade show booth ideas and trade booth ideas based on your booth size, industry, and marketing objectives. From interactive setups to premium minimalist designs, we customize everything.</p>
+                    <p>Yes. We provide a wide range of creative trade show booth ideas based on your booth size, industry, and marketing objectives. From interactive setups to premium minimalist designs, we customize everything.</p>
                   </div>
                 </div>
                 <div className="borbg mb-3 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> Do you offer complete trade show display design and build services?</div>
+							    	</svg> Do you offer complete trade show services?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Absolutely. We handle the entire trade show display design process—including concept development, fabrication, printing, installation, dismantling, and logistics—so you get a full turnkey solution.</p>
+                    <p>Absolutely. We handle the entire trade show booth manufacturing process, including concept development, fabrication, printing, installation, dismantling, and logistics, so you get a full turnkey solution.</p>
                   </div>
                 </div>
                 <div className="borbg mb-3 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> What are some popular trade show booth display ideas right now?</div>
+							    	</svg> What are some popular trade show booth layouts right now?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Current trending trade show booth display ideas include LED video walls, immersive product demo zones, double-deck structures, digital interactions, and clean, open layouts that improve visitor flow.</p>
+                    <p>Current trending display ideas include LED video walls, immersive product demo zones, double-deck structures, digital interactions, and clean, open layouts that improve visitor flow.</p>
                   </div>
                 </div>
                 <div className="borbg mb-3 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> Can you provide trade show exhibit ideas for international events?</div>
+							    	</svg> Can you provide a booth for international events?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. Triumfo offers creative trade show exhibit ideas and trade fair display ideas for global exhibitions, ensuring consistent quality and on-time delivery across Europe, the USA, Middle East, and Asia.</p>
+                    <p>Yes. Triumfo offers creative trade fair exhibits for global exhibitions, ensuring consistent quality and on-time delivery across Europe, the USA, the Middle East, and Asia.</p>
                   </div>
                 </div>
                 
