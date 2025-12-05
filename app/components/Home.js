@@ -119,10 +119,10 @@ export default function Home() {
             </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
-                { icon: '/images/exhibit-service.webp',label: 'Large Exhibit', value1: '40x40 Exhibits',  url1: '/40x40-trade-show-booth/', value2: '40x50 Exhibits',  url2: '/40x50-trade-show-booth/',  },
-                { icon: '/images/exhibit-service.webp',label: 'Island Exhibits', value1: '20x20 Exhibits',  url1: '/20x20-trade-show-booth/', value2: '20x30 Exhibits',  url2: '/20x30-trade-show-booth/', value3: '20x40 Exhibits',  url3: '/20x40-trade-show-booth/',value4: '30x30 Exhibits',  url4: '/30x30-trade-show-booth/', },
-                { icon: '/images/exhibit-service.webp',label: 'Inline Exhibits', value1: '10x10 Exhibits',  url1: '/10x10-trade-show-booth/', value2: '10x20 Exhibits',  url2: '/10x20-trade-show-booth/', value3: '10x30 Exhibits',  url3: '/10x30-trade-show-booth/' },
-                { icon: '/images/exhibit-service.webp',  label: 'Rental Exhibit', value1: 'Flexible rental booths designed for any show need.',  url1: '/30x40-trade-show-booth/' },
+                { icon: '/images/exhibit-service.webp',label: 'Large Exhibit Booths', value1: '40x40 Exhibits',  url1: '/40x40-trade-show-booth/', value2: '40x50 Exhibits',  url2: '/40x50-trade-show-booth/',  },
+                { icon: '/images/exhibit-service.webp',label: 'Island Exhibit Booths', value1: '20x20 Exhibits',  url1: '/20x20-trade-show-booth/', value2: '20x30 Exhibits',  url2: '/20x30-trade-show-booth/', value3: '20x40 Exhibits',  url3: '/20x40-trade-show-booth/',value4: '30x30 Exhibits',  url4: '/30x30-trade-show-booth/', },
+                { icon: '/images/exhibit-service.webp',label: 'Inline Exhibit Booths', value1: '10x10 Exhibits',  url1: '/10x10-trade-show-booth/', value2: '10x20 Exhibits',  url2: '/10x20-trade-show-booth/', value3: '10x30 Exhibits',  url3: '/10x30-trade-show-booth/' },
+                { icon: '/images/exhibit-service.webp',  label: 'Rental Exhibit Booths', value1: 'Flexible rental booths designed for any show need.',  url1: '/30x40-trade-show-booth/' },
               ]).map((item, idx) => (
                 <div key={idx} className="bg-white rounded-[14px] p-[28px] border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
                   <h3 className="text-3xl text-gray-600 font-bold mt-4 barlofamilty group-hover:text-gray-900 transition-colors">
