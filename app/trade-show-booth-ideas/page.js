@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import TradeFaqtab from './tradefaq.js';
 
@@ -201,18 +202,142 @@ export default function ViewTradeshowideaData() {
     <section>
       <div className="contentseo py-20 bg-[#EAEEF7]">
         <div className="container mx-auto px-4">
-          <div className="">
-          <div className="max-w-6xl mx-auto ">
-            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4">A Trade Show Booth Design That Shows Compelling Brand Vision</h2>
-            <p className="text-gray-700 text-lg mb-6">Selecting the right trade show booth is a big decision as it directly impacts your brand image. Explore our exceptional portfolio for your booth inspiration, which features thousands of options with different styles and sizes. Select a design that tells your brand story visually and powerfully.</p>
-            <h3 className="text-4xl font-semibold text-gray-700 mb-6">Inspiration for Transformation</h3>
-            <p className="text-gray-700 text-lg mb-4">The best thing about partnering with Triumfo is that you get the services from an organization with over 25  years of experience. We have curated an exceptional portfolio with design ideas created by our experts. The first step of your trade show planning is to take a look at our design and gain a better understanding of what we create, and you can find your next trade booth design.</p>
-            <h2 className="text-6xl font-semibold text-gray-700 mb-6  border-b border-gray-300 pb-4">How Trade Show Booth Design Ideas Can Help You Stand Out?</h2>
-            <p className="text-gray-700 text-lg mb-4">To attract a potential customer during a large show where hundreds of other businesses are competing to get the audience's attention is not an easy task. This is where an attractive trade show display design idea can make a difference. Triumfo provides a wide variety of exhibition booth designs that can help you stand out from the rest. All the designs are customizable according to your brand image.</p>
-            <h3 className="text-4xl font-semibold text-gray-700 mb-6">Where Booth Designs Idea Meets Brand Storytelling</h3>
-            <p className="text-gray-700 text-lg mb-4">The best expo booth design idea is one that communicates your brand story so perfectly visually that it doesn't require any human interruption. At Triumfo, we consider this our top priority, and we make sure that we have an understanding of your business and marketing goals. We apply your brand vision and provide you with a design that resonates with your message to the audience. From the initial design layout, lighting, displayed eye-catching graphics, furniture, and flooring, our design team holds experience and has creativity to transform your brand story into a compelling display, which will surely attract the attention of attendees.</p>
-            <h3 className="text-4xl font-semibold text-gray-700 mb-6">Smart Trade Show Booth Designs for Any Budget</h3>
-            <p className="text-gray-700 text-lg mb-4">Triumfo has one of the largest inventories of trade show display ideas in the industry, which makes it easy for you to rent a booth that fits perfectly in your budget and marketing goals. Whether you’re looking for a modular stand or a double-decker booth, our team makes sure to provide you with the best product according to your budget.</p>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4">What are the Popular Trends for Trade Fair Booth Ideas?</h2>
+            <p className="text-gray-700 text-lg mb-6">The trade show colour palette is progressing, and to stand out from the rest, your booth needs to be visually stunning, interactive, and creatively designed. Here are the key trends everyone is following:</p>
+            <ul className="text-gray-700 text-lg mb-8 space-y-3">
+              <li>• <strong>Interactive Technology:</strong> AR, VR, and LED displays to keep visitors engaged.</li>
+              <li>• <strong>Green structure:</strong> Using eco-friendly materials with a modern setup and recycled waste.</li>
+              <li>• <strong>Open Layouts:</strong> Open spaces that encourage free movement and open conversations.</li>
+              <li>• <strong>Demonstration Areas:</strong> Areas for demo, lounging, and storytelling</li>
+              <li>• <strong>Modern Branding:</strong> Use of LED panels and creative graphics.</li>
+            </ul>
+            <p className="text-gray-700 text-lg mb-8">Following these trends can make your booth functional, memorable, and visually appealing.</p>
+
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4 mt-12">What are the New Booth Layout Concepts that are Trending in 2026?</h2>
+            <p className="text-gray-700 text-lg mb-8">Here are the top 10 interactive trade show booth ideas to consider for your next event:</p>
+            
+            <div className="space-y-6 mb-8">
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Double-Deck Booths</h3>
+                <p className="text-gray-700 text-lg">This booth can help you make a bold statement on the exhibition floor and maximize floor space.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Captivating LED Walls</h3>
+                <p className="text-gray-700 text-lg">With LED walls, you can showcase your products and messaging dynamically on digital displays.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Product Zones</h3>
+                <p className="text-gray-700 text-lg">You can provide firsthand experience to your visitors. Let them touch and feel the products.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Modular Booth Layouts</h3>
+                <p className="text-gray-700 text-lg">An adaptive booth with you can attend multiple events while saving cost and time.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Interactive Themes</h3>
+                <p className="text-gray-700 text-lg">Increase the visitors' engagement by telling your brand story creatively.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Eco-friendly Exhibits</h3>
+                <p className="text-gray-700 text-lg">Use eco-conscious materials and lighting to show your business values.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Minimalist Design</h3>
+                <p className="text-gray-700 text-lg">Keeping design sleek and functional while keeping focus on key brand elements.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Tech-Engagement</h3>
+                <p className="text-gray-700 text-lg">Inculcate AR/VR, touchscreens, and smart technology to get your audience's attention.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Productive Lounges</h3>
+                <p className="text-gray-700 text-lg">Accessible lounge area for meetings, networking, and lead conversions.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Lighting and Spacing</h3>
+                <p className="text-gray-700 text-lg">Create a bright space with elegance using new lighting and fabric panels</p>
+              </div>
+            </div>
+
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4 mt-12">Smart Booth Sizes in 2026</h2>
+            
+            <div className="space-y-6 mb-8">
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Small Booths (10x10, 10x20)</h3>
+                <p className="text-gray-700 text-lg">These are creative small trade show booth ideas that leave a high impact. It is ideal for high-traffic exhibitions.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Medium Booths (20x20)</h3>
+                <p className="text-gray-700 text-lg">This is a balanced layout that provides a space for communication, product presentations, and graphics.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Large Booths (30x30+)</h3>
+                <p className="text-gray-700 text-lg">These are premium booth layouts that provide multiple zones, double decks, and captivating experiences.</p>
+              </div>
+            </div>
+
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4 mt-12">Sector-Specific Trade Show Booth Display Ideas for 2026</h2>
+            
+            <div className="space-y-6 mb-8">
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Technology & Electronics</h3>
+                <p className="text-gray-700 text-lg">Use of high-tech equipment that highlights innovation</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Healthcare & Pharma</h3>
+                <p className="text-gray-700 text-lg">A professional, clean, and highly functional structure.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">FMCG & Lifestyle</h3>
+                <p className="text-gray-700 text-lg">Product-centric exhibit with high visitor engagement.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Industrial & Manufacturing</h3>
+                <p className="text-gray-700 text-lg">The layout should be practical to showcase heavy machinery and equipment.</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-semibold text-gray-700 mb-3">Automotive & EV</h3>
+                <p className="text-gray-700 text-lg">Trade show booth ideas that attract visitors should be bold to showcase vehicles and brand technology.</p>
+              </div>
+            </div>
+
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4 mt-12">How can Triumfo help you bring your imagination to life?</h2>
+            <p className="text-gray-700 text-lg mb-6">At Triumfo, our process involves creativity and expertise in bringing trade show display ideas to life:</p>
+            <ul className="text-gray-700 text-lg mb-8 space-y-3">
+              <li>• <strong>Concept Development:</strong> We customize the idea according to your brand vision.</li>
+              <li>• <strong>3D Booth Design:</strong> A 3D strategy for the visualization of every detail before production.</li>
+              <li>• <strong>Custom Fabrication:</strong> An in-house manufacturing unit to ensure quality and consistency.</li>
+              <li>• <strong>Graphics & Printing:</strong> Adding stunning visuals and printing.</li>
+              <li>• <strong>Shipping & Installation:</strong> On-time delivery and setting up without any stress.</li>
+              <li>• <strong>On-Site Support:</strong> Supervised exhibition for flawless execution.</li>
+            </ul>
+
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4 mt-12">Why choose Triumfo as your 2026 Trade Show partner?</h2>
+            <ul className="text-gray-700 text-lg mb-8 space-y-3">
+              <li>• We have over 25 years of experience in booth setup and fabrication</li>
+              <li>• We have delivered more than 5,000 booths worldwide</li>
+              <li>• An expert in-house team for designing, building, and installing</li>
+              <li>• 500+ extensive portfolio for trade show exhibit ideas</li>
+              <li>• Local presence in Las Vegas, Chicago, and Orlando</li>
+            </ul>
+
+            <h2 className="text-6xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-4 mt-12">Customise Trade Show Booth Ideas with Us</h2>
+            <p className="text-gray-700 text-lg mb-8">Take your trade show to the next level. Request a free 3D design concept today or download our 500+ trade fair display ideas catalog to explore more ideas.</p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+              <Link
+                href="#"
+                className="px-8 py-4 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-gray-700 hover:text-white transition duration-300 text-center"
+              >
+                Request a Free Booth Concept
+              </Link>
+              <Link
+                href="#"
+                className="px-8 py-4 border-2 border-[#9A3220] rounded-xl text-black text-xl hover:bg-[#9A3220] hover:text-white transition duration-300 text-center"
+              >
+                Download Design Catalog
+              </Link>
           </div>
           </div>
         </div>
