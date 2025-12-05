@@ -1,9 +1,9 @@
 import { buildMetadata, fetchPageSEO } from '../../lib/seo';
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Innovative Trade Show Booth Designs & Display Ideas",
+    title: "500+ Modern Trade Show Booth Ideas to Attract Crowed",
     description:
-      "Explore creative trade show booth designs, display ideas, and exhibit concepts. Get unique trade booth ideas and trade fair display ideas tailored for your brand.",
+      "Looking for booth inspiration? Discover 500+ modern trade show booth ideas designed to attract crowds, boost visibility, and elevate your exhibition presence.",
     pathname: "/trade-show-booth-ideas/",
     image: "https://www.triumfo.us/images/tradeshow-detail2.webp",
     openGraph: {

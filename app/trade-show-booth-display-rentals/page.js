@@ -201,7 +201,7 @@ export default function TradeShowBoothDisplayRentals() {
 						<div className="max-w-3xl mx-auto">
 							<div className="text-center">
 								<h1 className="text-white font-semibold text-7xl mb-4">Your Nationwide Trade Show Booth Rental Partner</h1>
-								<p className="text-white text-xl">As your nationwide trade show booth rental partner, we deliver reliable, turnkey exhibit solutions in every major U.S. city—ensuring your brand is always show-ready, wherever you exhibit.</p>
+								<p className="text-white text-xl">We are a Las Vegas–based trade show booth rental company offering full turnkey booth services across all major U.S. cities. Whether you search for Las Vegas trade show booth rentals, Orlando trade show booth rentals, Chicago booth rentals, San Diego booth rentals, San Francisco booth rentals, or Atlanta trade show booth rentals—we deliver custom-designed, ready-to-install exhibit rentals nationwide.</p>
 							</div>
 							<div className="mt-8 text-center"><Link href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</Link></div>
 						</div>

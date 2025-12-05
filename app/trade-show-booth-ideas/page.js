@@ -82,10 +82,10 @@ export default function ViewTradeshowideaData() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-white font-semibold text-7xl mb-2">
-                Creative Trade Show Booth Designs & Display Ideas for Every Brand
+                Modern Trade Show Booth Ideas to Inspire Your Next Trade Fair Exhibit
               </h1>
               <p className="text-white  text-lg">
-                Discover a collection of innovative trade show booth designs, trade show display design concepts, and inspiring trade show booth ideas to elevate your brand presence. From modern trade booth ideas to high-impact trade show exhibit ideas and trade fair display ideas, we help you create displays that stand out, attract visitors, and drive real engagement.
+                Explore interactive trade show booth ideas designed to attract visitors, increase engagement, and transform your trade fair display into a crowd-pulling experience.
               </p>
             </div>
 
