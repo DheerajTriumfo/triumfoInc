@@ -1,6 +1,5 @@
 'use client';
-import { useEffect } from 'react';
-import $ from 'jquery';
+import { useEffect, useCallback } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -8,39 +7,56 @@ import Script from "next/script";
 export default function GetImageCarousel() {
   
   // helper: safely init OwlCarousel
-  const initCarousel = () => {
-    if (typeof window !== "undefined" && window.$ && window.$.fn && window.$.fn.owlCarousel) {
-      if (!$('#tradeshwoslider').hasClass('owl-loaded')) {
-        console.log('Initializing Owl Carousel...');
-        window.$('#tradeshwoslider').owlCarousel({
-          lazyLoad: true,
-          loop: true,
-          margin: 0,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          smartSpeed: 1000,
-          dots: true,
-          autoplayHoverPause: true,
-          responsive: {
-            0: { items: 1 },
-            600: { items: 1 },
-            1000: { items: 1 },
-          },
-        });
-      }
-    } else {
-      // plugin not ready yet — retry in 300ms
-      setTimeout(initCarousel, 300);
+  const initCarousel = useCallback(() => {
+    if (typeof window === "undefined") return;
+    
+    const $ = window.$ || window.jQuery;
+    if (!$ || !$.fn || !$.fn.owlCarousel) {
+      // jQuery or OwlCarousel not ready yet — retry in 200ms
+      setTimeout(initCarousel, 200);
+      return;
     }
-  };
+
+    const $slider = $('#tradeshwoslider');
+    if ($slider.length && !$slider.hasClass('owl-loaded')) {
+      console.log('Initializing Owl Carousel...');
+      $slider.owlCarousel({
+        lazyLoad: true,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        smartSpeed: 1000,
+        dots: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 1 },
+          1000: { items: 1 },
+        },
+      });
+    }
+  }, []);
 
   useEffect(() => {
+    // Try to initialize after component mounts
     initCarousel();
-  }, []);
+  }, [initCarousel]);
 
   return (
     <>
-      {/* ✅ Load OwlCarousel script globally once */}
+      {/* ✅ Load jQuery first */}
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        strategy="afterInteractive"
+        onLoad={() => {
+          if (typeof window !== 'undefined') {
+            window.$ = window.jQuery = window.$ || window.jQuery;
+            console.log("jQuery loaded ✅");
+          }
+        }}
+      />
+      {/* ✅ Load OwlCarousel script after jQuery */}
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         strategy="afterInteractive"
