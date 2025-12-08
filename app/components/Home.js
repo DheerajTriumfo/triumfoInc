@@ -75,7 +75,7 @@ export default function Home() {
             <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
               <div className="grid grid-cols-1 justify-items-center ">
                 <h1 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[5.0rem] font-heading text-center">{banner?.title || 'Trade Show Exhibit Booth Experts Bringing Your Vision to Life'}</h1>
-                <p className="text-xl text-white md:text-2xl leading-relaxed max-w-3xl mb-6 text-center">{banner?.subtitle || '25+ Years of Building Trust.'}</p>
+                <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 my-6">
                   <div><a href="/trade-show-booth-ideas/" className="block w-full sm:w-auto px-6 sm:px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600 hover:text-white transition duration-300 text-center">Browse from over 500 Designs</a></div>
                 </div> 
@@ -119,10 +119,10 @@ export default function Home() {
             </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {(stats.length ? stats : [
-                { icon: '/images/exhibit-service.webp',label: 'Large Exhibit Booths', value1: '40x40 Booth Designs',  url1: '/40x40-trade-show-booth/', value2: '40x50 Booth Designs',  url2: '/40x50-trade-show-booth/', value3: '50x50 Booth Designs',  url3: '/50x50-trade-show-booth/',  },
-                { icon: '/images/exhibit-service.webp',label: 'Island Exhibit Booths', value1: '20x20 Booth Designs',  url1: '/20x20-trade-show-booth/', value2: '20x30 Booth Designs',  url2: '/20x30-trade-show-booth/', value3: '30x30 Booth Designs',  url3: '/30x30-trade-show-booth/', },
-                { icon: '/images/exhibit-service.webp',label: 'Inline Exhibit Booths', value1: '10x10 Booth Designs',  url1: '/10x10-trade-show-booth/', value2: '10x20 Booth Designs',  url2: '/10x20-trade-show-booth/', value3: '10x30 Booth Designs',  url3: '/10x30-trade-show-booth/' },
-                { icon: '/images/exhibit-service.webp',  label: 'Rental Exhibit Booths', value1: 'Custom Rental Booths',  url1: '/30x40-trade-show-booth/', value2: 'Budget-Friendly Rental Options',  url2: '/trade-show-booth-display-rentals/' },
+                { icon: '/images/exhibit-service.webp',label: 'Large Exhibit Booths', value1: '40x40 Exhibits',  url1: '/40x40-trade-show-booth/', value2: '40x50 Exhibits',  url2: '/40x50-trade-show-booth/',  },
+                { icon: '/images/exhibit-service.webp',label: 'Island Exhibit Booths', value1: '20x20 Exhibits',  url1: '/20x20-trade-show-booth/', value2: '20x30 Exhibits',  url2: '/20x30-trade-show-booth/', value3: '20x40 Exhibits',  url3: '/20x40-trade-show-booth/',value4: '30x30 Exhibits',  url4: '/30x30-trade-show-booth/', },
+                { icon: '/images/exhibit-service.webp',label: 'Inline Exhibit Booths', value1: '10x10 Exhibits',  url1: '/10x10-trade-show-booth/', value2: '10x20 Exhibits',  url2: '/10x20-trade-show-booth/', value3: '10x30 Exhibits',  url3: '/10x30-trade-show-booth/' },
+                { icon: '/images/exhibit-service.webp',  label: 'Rental Exhibit Booths', value1: 'Flexible rental booths designed for any show need.',  url1: '/30x40-trade-show-booth/' },
               ]).map((item, idx) => (
                 <div key={idx} className="bg-white rounded-[14px] p-[28px] border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
                   <h3 className="text-3xl text-gray-600 font-bold mt-4 barlofamilty group-hover:text-gray-900 transition-colors">
@@ -132,32 +132,24 @@ export default function Home() {
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
                   <div className="mt-6 space-y-2">
                     {item.value1 && (
-                      <h4 className="text-lg text-gray-700 font-medium barlofamilty mb-2">
-                        <Link href={item.url1 || '#'} className="hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 block py-2 px-3">
-                          {item.value1}
-                        </Link>
-                      </h4>
+                      <Link href={item.url1 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        {item.value1}
+                      </Link>
                     )}
                     {item.value2 && (
-                      <h4 className="text-lg text-gray-700 font-medium barlofamilty mb-2">
-                        <Link href={item.url2 || '#'} className="hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 block py-2 px-3">
-                          {item.value2}
-                        </Link>
-                      </h4>
+                      <Link href={item.url2 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        {item.value2}
+                      </Link>
                     )}
                     {item.value3 && (
-                      <h4 className="text-lg text-gray-700 font-medium barlofamilty mb-2">
-                        <Link href={item.url3 || '#'} className="hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 block py-2 px-3">
-                          {item.value3}
-                        </Link>
-                      </h4>
+                      <Link href={item.url3 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        {item.value3}
+                      </Link>
                     )}
                     {item.value4 && (
-                      <h4 className="text-lg text-gray-700 font-medium barlofamilty mb-2">
-                        <Link href={item.url4 || '#'} className="hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 block py-2 px-3">
-                          {item.value4}
-                        </Link>
-                      </h4>
+                      <Link href={item.url4 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        {item.value4}
+                      </Link>
                     )}
                   </div>
                 </div>
@@ -193,9 +185,12 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
               <div className="">
-                <h3 className="text-white font-semibold text-4xl mb-4">
-                  Actus – NAB Show 2025
-                </h3>
+                <h2 className="text-white font-semibold text-4xl mb-4">
+                  Actus
+                </h2>
+                <p className="text-white text-base">
+                  NAB Show 2025 Trade Show Booth
+                </p>
               </div>
             </div>
           </div>
@@ -213,9 +208,12 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
               <div className="">
-                <h3 className="text-white font-semibold text-4xl mb-4">
-                  AutoStore – Promat 2019
-                </h3>
+                <h2 className="text-white font-semibold text-4xl mb-4">
+                  Auto Store
+                </h2>
+                <p className="text-white text-base">
+                  Promat 2019 Custom Booth
+                </p>
               </div>
             </div>
           </div>
@@ -233,9 +231,12 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
               <div className="">
-                <h3 className="text-white font-semibold text-4xl mb-4">
-                  Dexon Systems – InfoComm 2018
-                </h3>
+                <h2 className="text-white font-semibold text-4xl mb-4">
+                  Dexon System
+                </h2>
+                <p className="text-white text-base">
+                  InfoComm 2018 Exhibit
+                </p>
               </div>
             </div>
           </div>
@@ -253,9 +254,12 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
               <div className="">
-                <h3 className="text-white font-semibold text-4xl mb-4">
-                  ION8 – IHS 2025
-                </h3>
+                <h2 className="text-white font-semibold text-4xl mb-4">
+                  ION8
+                </h2>
+                <p className="text-white text-base">
+                  IHS 2025 Booth Design
+                </p>
               </div>
             </div>
           </div>
@@ -273,9 +277,12 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
               <div className="">
-                <h3 className="text-white font-semibold text-4xl mb-4">
-                  ProtoChips – M&M 2025
-                </h3>
+                <h2 className="text-white font-semibold text-4xl mb-4">
+                  ProtoChips
+                </h2>
+                <p className="text-white text-base">
+                  M&M 2025 Exhibit
+                </p>
               </div>
             </div>
           </div>
@@ -293,9 +300,12 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="flex items-center justify-center w-full h-full text-center">
               <div className="">
-                <h3 className="text-white font-semibold text-4xl mb-4">
-                  FPC – IFAI 2018
-                </h3>
+                <h2 className="text-white font-semibold text-4xl mb-4">
+                  FPC
+                </h2>
+                <p className="text-white text-base">
+                  IFAI 2018 Island Booth
+                </p>
               </div>
             </div>
           </div>
@@ -354,7 +364,7 @@ export default function Home() {
 	          <div className="container mx-auto px-4">
 	            <div className="max-w-3xl mx-auto mb-12">
 					<div className="text-center mb-8">
-						<h2 className="text-gray-700 maintitle mb-4">Featured Case Studies</h2>
+						<h1 className="text-gray-700 maintitle mb-4">Featured Case Studies</h1>
 						<p className="text-gray-700 text-lg mb-4">Explore real projects where our custom exhibit booths and custom trade show displays engaged audiences and boosted brand impact.</p>
 					</div>
 				</div>
@@ -370,7 +380,10 @@ export default function Home() {
 		                    </div>
 		                </div>
 		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h3 className="text-gray-700 font-semibold text-3xl">20×20 ft Booth – CountR Case Study</h3>
+		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - CountR</h4>
+		                    <div className="flex items-center pt-2 justify-center">
+		                        <span className="text-sm text-gray-500">Amusement Expo</span>
+		                    </div>
 		                </div>
 		            </div>
 					</a>
@@ -385,7 +398,10 @@ export default function Home() {
 		                    </div>
 		                </div>
 		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h3 className="text-gray-700 font-semibold text-3xl">20×20 ft Booth – Tedial Case Study</h3>
+		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - Tedial</h4>
+		                    <div className="flex items-center pt-2 justify-center">
+		                        <span className="text-sm text-gray-500">Nab Show</span>
+		                    </div>
 		                </div>
 		            </div>
 					</a>
@@ -400,7 +416,10 @@ export default function Home() {
 		                    </div>
 		                </div>
 		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h3 className="text-gray-700 font-semibold text-3xl">20×20 ft Booth – Saier Case Study</h3>
+		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - Saier</h4>
+		                    <div className="flex items-center pt-2 justify-center">
+		                        <span className="text-sm text-gray-500">ISSA Show</span>
+		                    </div>
 		                </div>
 		            </div>
 					</a>
@@ -415,7 +434,7 @@ export default function Home() {
         <div className="testimonial bg-[#E9EEF7] py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl text-center mx-auto mb-12">
-              <h2 className="maintitle mb-4">{data?.testimonialsIntro?.title || 'What Our Clients Say'}</h2>
+              <h2 className="maintitle mb-4">{data?.testimonialsIntro?.title || 'Client Testimonials'}</h2>
               <p className="text-xl text-[#9A3220] font-medium mb-4">Your expectation. Our obligation.</p>
               <p className="text-xl text-gray-500 leading-relaxed">{data?.testimonialsIntro?.description || 'Watch short video testimonials to see how Triumfo Inc. has met or exceeded client expectations in creating memorable, high-performing trade show exhibit booths and impactful show experiences.'}</p>
             </div>
@@ -430,7 +449,6 @@ export default function Home() {
 				                        <div className="thumb-duration bg-[rgba(0,0,0,0.85)] absolute top-4 right-4 text-white rounded-md text-center py-1 px-3 z-20">0:17</div>
 				                    </div>
 				                </div>
-				                <h3 className="text-center mt-4 text-lg font-semibold text-gray-700">Testimonial 1 – Client Name</h3>
               </div>
               <div className="video-card rounded-xl relative col-span-12 md:col-span-6 lg:col-span-4">
 				                <div className="video-thumb relative overflow-hidden cursor-pointer shadow-lg bg-black rounded-xl" onClick={() => openModal('https://www.youtube.com/embed/fTs64_NWdUw')}>
@@ -442,7 +460,6 @@ export default function Home() {
 				                        <div className="thumb-duration bg-[rgba(0,0,0,0.85)] absolute top-4 right-4 text-white rounded-md text-center py-1 px-3 z-20">0:20</div>
 				                    </div>
 				                </div>
-				                <h3 className="text-center mt-4 text-lg font-semibold text-gray-700">Testimonial 2 – Client Name</h3>
               </div>
               <div className="video-card rounded-xl relative col-span-12 md:col-span-6 lg:col-span-4">
 				                <div className="video-thumb relative overflow-hidden cursor-pointer shadow-lg bg-black rounded-xl" onClick={() => openModal('https://www.youtube.com/embed/U28Z9Kr90uE')}>
@@ -454,14 +471,13 @@ export default function Home() {
 				                        <div className="thumb-duration bg-[rgba(0,0,0,0.85)] absolute top-4 right-4 text-white rounded-md text-center py-1 px-3 z-20">0:47</div>
 				                    </div>
 				                </div>
-				                <h3 className="text-center mt-4 text-lg font-semibold text-gray-700">Testimonial 3 – Client Name</h3>
 				            </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center">
               <Link href={data?.testimonialsIntro?.primaryCta?.href || "/testimonials/"} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
                 {data?.testimonialsIntro?.primaryCta?.label || 'View More'}
               </Link>
-              <Link href="https://www.trustpilot.com/review/triumfo.us" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-6 py-3 border-2 border-custom rounded-xl text-black text-center hover:bg-custom hover:text-white transition duration-300 flex gap-x-1 items-center">
+              <Link href="https://www.trustpilot.com/review/triumfo.us" target="_blank" className="w-full sm:w-auto px-6 py-3 border-2 border-custom rounded-xl text-black text-center hover:bg-custom hover:text-white transition duration-300 flex gap-x-1 items-center">
                 <img src="https://www.trustpilot.com/favicon.ico" width="32" height="32" alt="Trustpilot" className="h-6"/>Trustpilot
               </Link>
             </div>
@@ -473,18 +489,16 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6 lg:px-12 leading-normal">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
               <div className="mb-8 lg:mb-0 text-left lg:text-justify">
-                <h2 className="maintitle mb-4 text-gray-700 text-center">For Exhibitors</h2>
-                <h3 className="text-xl text-[#9A3220] font-medium mb-4 text-center">Simplifying Your Exhibit Experience</h3>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">Exhibiting at a trade show is never a simple task, whether it's your first time or you exhibit frequently. You need the right trade show, booth partner, and booth type to meet your goals. All these can be overwhelming.</p>
-                <h3 className="text-xl text-[#9A3220] font-medium mb-4 text-center mt-6">Comprehensive Design-to-Build Services</h3>
+                <h2 className="maintitle mb-4 text-gray-700 text-center">For Exhibitors:</h2>
+                <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">Simplifying Your Exhibit Experience</p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">Exhibiting at a trade show is never a simple task, whether it’s your first time or you exhibit frequently. You need the right trade show, booth partner, and booth type to meet your goals. All these can be overwhelming.</p>
                 <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">We simplify the entire exhibiting process. Our experts trade show booth designers and booth builders take every measure to ensure a smooth and successful show campaign. You can trust us whether you are a local, national, or international exhibitor.</p>
                 <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">As a proud member of <a className="text-blue-500 hover:text-blue-700" href="https://www.ifesnet.com/triumfo-international-gmbh/" target="_blank" rel="noopener noreferrer">IFES (International Federation of Exhibition & Event Services)</a>, Triumfo Inc. adheres to international quality standards, operates with ethical and responsible practices, and brings proven expertise in exhibitions and events. Our global association ensures reliability, consistency, and excellence in every project we deliver worldwide.</p>
               </div>
               <div className="text-left lg:text-justify">
-                <h2 className="maintitle mb-4 text-gray-700 text-center">For Agencies</h2>
-                <h3 className="text-xl text-[#9A3220] font-medium mb-4 text-center">End-to-End Services Under Your Name</h3>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">You don't have to look further if you are a trade show agency looking for a reliable exhibition stand builder. We provide end-to-end trade show booth solutions that you can confidently offer to your clients under your brand name. </p>
-                <h3 className="text-xl text-[#9A3220] font-medium mb-4 text-center mt-6">White-Label Exhibit Solutions</h3>
+                <h2 className="maintitle mb-4 text-gray-700 text-center">For Agencies:</h2>
+                <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">End-to-End Services, Under Your Name</p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">You don’t have to look further if you are a trade show agency looking for a reliable exhibition stand builder. We provide end-to-end trade show booth solutions that you can confidently offer to your clients under your brand name. </p>
                 <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We manage everything in-house with 30+ skilled 3D booth designers, 80+ expert booth builders, and 10+ creative graphic designers and printing specialists. Supported by a 40+ member I&D team and an 80,000+ sq. ft. production facility equipped with advanced technology, we deliver high-quality turnkey exhibit solutions with complete control and precision.</p>
                 <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We currently partner with trade show agencies across 30+ countries, including the USA, Europe, UAE, India, South Korea, Japan, and China. We work for your clients, under your name, contributing to your reputation and success.</p>
               </div>

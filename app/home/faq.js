@@ -33,7 +33,7 @@ export default function Faqtab(){
         <div className="faqbg bg-[#34343C] py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mb-12 text-center mx-auto">
-                <h2 className="text-white text-6xl font-bold mb-4">Frequently Asked Questions</h2>
+                <h2 className="text-white text-6xl font-bold mb-4">FAQs</h2>
                 <p className="text-white mb-6 text-base">Explore the following FAQs to get answers to your queries about our trade show services and approach.</p>
               </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-12">
@@ -42,42 +42,34 @@ export default function Faqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> 
-                    <h3 className="text-xl font-medium">How long does it take to build a trade show booth?</h3>
-                  </div>
+							    	</svg> How early should I start planning my trade show booth?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Typically, a custom trade show booth takes 6 to 12 weeks to build from concept approval to completion. This includes design, fabrication, graphics, and quality control. For rental booths, the timeline can be shorter, usually 2 to 4 weeks. We recommend starting the planning process 3 to 6 months before your event to ensure adequate time for revisions and logistics.</p>
+                    <p>It’s recommended to start planning your trade show booth 3 to 6 months before the event. This timeline ensures adequate allowance for concept development, booth design, revisions, fabrication, logistics, approvals, and unexpected last-minute changes. </p>
                   </div>
                 </div>
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> 
-                    <h3 className="text-xl font-medium">Do you offer turnkey services?</h3>
-                  </div>
+							    	</svg> Do you manage everything on-site during the trade show?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. We offer complete turnkey services that handle everything from initial concept and design to fabrication, logistics, installation, on-site management, and dismantling. Our team manages the entire process, including coordination with show organizers, ensuring a seamless experience from start to finish.</p>
+                    <p>Yes. We provide complete on-site management, including professional supervision during booth installation and dismantling, technical adjustments, and coordination with show organizers to ensure smooth execution. </p>
                   </div>
                 </div>
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> 
-                    <h3 className="text-xl font-medium">Can I rent or buy custom booths?</h3>
-                  </div>
+							    	</svg> What are the most common booth sizes at U.S. trade shows?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes, absolutely. We offer both custom-built booths for purchase and flexible rental options. Custom booths are ideal for companies that exhibit frequently, while rental booths provide a cost-effective solution for occasional exhibitors. Both options include full design, fabrication, and installation services.</p>
+                    <p>The most common booth sizes in the U.S. include 10x10, 10x20, 20x20, and 30x30 ft. Larger island exhibits such as 40x40 ft and above are also frequently used at major national expos.</p>
                   </div>
                 </div>
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> 
-                    <h3 className="text-xl font-medium">How much does a trade show booth cost?</h3>
-                  </div>
+							    	</svg> How much does a trade show booth cost?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
                     <p>Trade show booth pricing depends on factors such as size, materials, customization, and location. At Triumfo, typical pricing starts at:</p>
                     <ul className="list-disc list-inside mt-3 space-y-1">
@@ -93,9 +85,7 @@ export default function Faqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> 
-                    <h3 className="text-xl font-medium">What's included in your trade show booth services?</h3>
-                  </div>
+							    	</svg> What's included in your trade show booth services?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
                     <p>We provide complete end-to-end exhibit services, including:</p>
                     <ul className="list-disc list-inside mt-3 space-y-1">
@@ -113,9 +103,7 @@ export default function Faqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> 
-                    <h3 className="text-xl font-medium">Can you support trade shows outside the U.S.?</h3>
-                  </div>
+							    	</svg> Can you support trade shows outside the U.S.?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
                     <p>Absolutely. We manage global trade show projects through our international network of reliable partners. Our team ensures consistent quality, timely execution, and seamless coordination at exhibition venues across Europe, UAE, Asia, and other global destinations.</p>
                   </div>
