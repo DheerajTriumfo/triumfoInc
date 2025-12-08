@@ -85,19 +85,19 @@ export default function Footer(){
 							© Copyright 2025. <a href="/" className="text-white">Triumfo Inc.</a> All Right Reserved. <Link href="/privacy-policy/" className="text-white">Privacy Policy</Link>
 						</div>
 						<div className="social flex flex-wrap gap-4 items-center justify-center">
-							<a href="https://www.facebook.com/triumfoinc" target="_blank" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
+							<a href="https://www.facebook.com/triumfoinc" target="_blank" rel="noopener noreferrer" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
 								<i className="fa fa-facebook"></i>
 							</a>
-							<a href="https://www.twitter.com/triumfoinc" target="_blank" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
+							<a href="https://www.twitter.com/triumfoinc" target="_blank" rel="noopener noreferrer" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
 								<i className="fa-brands fa-x-twitter"></i>
 							</a>
-							<a href="https://www.youtube.com/channel/UCJyqDSj6grpkbWbnGYWciNw" target="_blank" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
+							<a href="https://www.youtube.com/channel/UCJyqDSj6grpkbWbnGYWciNw" target="_blank" rel="noopener noreferrer" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
 								<i className="fa fa-youtube"></i>
 							</a>
-							<a href="https://www.linkedin.com/company/triumfoinc" target="_blank" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
+							<a href="https://www.linkedin.com/company/triumfoinc" target="_blank" rel="noopener noreferrer" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
 								<i className="fa fa-linkedin"></i>
 							</a>
-							<a href="https://www.pinterest.com/triumfoinc" target="_blank" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
+							<a href="https://www.pinterest.com/triumfoinc" target="_blank" rel="noopener noreferrer" className="w-[36px] h-[36px] rounded-full border border-gray-400 text-lg  text-white flex items-center justify-center cursor-pointer">
 								<i className="fa fa-pinterest"></i>
 							</a>
 						</div>
