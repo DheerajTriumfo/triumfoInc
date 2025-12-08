@@ -2,10 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
-  optimizeFonts: true,
 
   images: {
-    domains: ['triumfous.mobel.us', 'cdn.example.com', 'triumfo.us'], // ✅ allow this domain
     formats: ['image/avif', 'image/webp'], // ✅ modern formats
     minimumCacheTTL: 31536000, // ✅ cache images for 1 year
     remotePatterns: [
@@ -14,15 +12,21 @@ const nextConfig = {
         hostname: 'triumfous.mobel.us',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'triumfo.us',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.example.com',
+        pathname: '/**',
+      },
     ],
   },
-  scrollRestoration: true,
-  swcMinify: true,
   experimental: {
     optimizeCss: true, // ✅ reduce blocking CSS
-    legacyBrowsers: false,
-    browsersListForServer: true,
-    esmExternals: true,      // <-- ADD THIS
+    esmExternals: true,
     forceSwcTransforms: false, // <-- ADD THIS (stops adding polyfills)
   },
 
