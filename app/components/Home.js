@@ -118,33 +118,33 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
-                <div className="figure"><Image src="/images/large-booth.webp" width="767" height="530" alt="large booth" className="w-full h-auto rounded-md"/></div>
+                <div className="figure"><Image src="/images/large-booth.webp" width="767" height="530" alt="Custom Trade Show Booth Design" className="w-full h-auto rounded-md"/></div>
                 <a href="/custom-trade-show-displays/">
                   <div className="p-4">
                     <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Custom Trade Show Booth Design</h3>
                     <div className="h-1 w-full bg-gray-200 my-4"></div>
-                    <p className="text-base text-gray-500 mb-8">Bring your vision to life with a completely tailored exhibit. Our designers create immersive 3D concepts based on your goals, brand guidelines, and event rules. Whether you need a simple product showcase or a multi level experiential booth, we build for impact.</p>
+                    <p className="text-base text-gray-500 mb-8">Bring your vision to life with a completely tailored exhibit. Our designers create immersive 3D concepts based on your goals, brand guidelines, and event rules. </p>
                   </div>
                 </a>
               </div>
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
-                <div className="figure"><Image src="/images/rental-booth.webp" width="767" height="530" alt="large booth" className="w-full h-auto rounded-md"/></div>
+                <div className="figure"><Image src="/images/rental-booth.webp" width="767" height="530" alt="Rental Booth Solutions" className="w-full h-auto rounded-md"/></div>
                 <a href="/trade-show-booth-display-rentals/">
                 <div className="p-4">
                   <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Modular & Rental Booth Solutions</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
-                  <p className="text-base text-gray-500 mb-8">Looking for flexibility or a cost effective alternative? Our modular and rental booths are fully customizable, lightweight, and versatile — perfect for brands attending multiple shows or exploring new event markets without a large upfront investment.</p>
+                  <p className="text-base text-gray-500 mb-8">Looking for flexibility or a cost effective alternative? Our modular and rental booths are fully customizable, lightweight, and versatile.</p>
                 </div>
                 </a>
               </div>
               
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
-                <div className="figure"><Image src="/images/inline-booth.webp" width="767" height="530" alt="large booth" className="w-full h-auto rounded-md"/></div>
+                <div className="figure"><Image src="/images/inline-booth.webp" width="767" height="530" alt="Turnkey Trade Show Booth Services" className="w-full h-auto rounded-md"/></div>
                 <a href="/services/">
                 <div className="p-4">
                   <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Turnkey Project <br/>Management</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
-                  <p className="text-base text-gray-500 mb-8">From venue coordination to logistics and on site supervision, we manage every step so your team can focus on marketing and sales. Our project managers ensure timely delivery, compliance with show regulations, and seamless installation.</p>
+                  <p className="text-base text-gray-500 mb-8">From venue coordination to logistics and on site supervision, we manage every step so your team can focus on marketing and sales.</p>
                 </div>
                 </a>
               </div>
@@ -390,7 +390,7 @@ export default function Home() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl text-center mx-auto mb-12">
           <h2 className="maintitle mb-4 text-gray-700">Why Choose Triumfo for Your Trade Show Booth?</h2>
-          <p className="text-xl text-gray-600 leading-relaxed">Tell us what your brand stands for, and we’ll turn it into a booth that commands attention.</p>
+          <p className="text-xl text-gray-600 leading-relaxed">Triumfo Inc. delivers creative, high-quality trade show booths with fast production, reliable execution, and a seamless end-to-end experience—helping your brand stand out effortlessly.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
