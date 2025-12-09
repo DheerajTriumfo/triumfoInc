@@ -74,8 +74,8 @@ export default function Home() {
           <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.4)] relative md:absolute top-0 left-0 z-20 w-full h-full">
             <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
               <div className="grid grid-cols-1 justify-items-center ">
-                <h1 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[5.0rem] font-heading text-center">{banner?.title || 'Trade Show Exhibit Booth Experts Bringing Your Vision to Life'}</h1>
-                <div className="font-semibold text-2xl text-white md:text-4xl leading-tight max-w-2xl mb-2 font-heading">{banner?.subtitle || '25+ Years of Building Trust.'}</div>
+                <h1 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[5.0rem] font-heading text-center">{banner?.title || 'Trade Show Booth Design, Build & Project Management'}</h1>
+                <div className="text-lg text-white max-w-5xl mb-2 text-center font-medium">Stand out at your next event with high impact trade show booth designs that attract visitors, increase engagement, and deliver measurable ROI. From custom exhibits to modular rentals, Triumfo provides complete solutions for brands across industries.</div>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 my-6">
                   <div><a href="/trade-show-booth-ideas/" className="block w-full sm:w-auto px-6 sm:px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600 hover:text-white transition duration-300 text-center">Browse from over 500 Designs</a></div>
                 </div> 
@@ -109,59 +109,56 @@ export default function Home() {
           </div>
         </div>
       )}
-  
       <section>
         <div className="topsection py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'End-to-End Trade Show Exhibit Solutions'}</h2>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'We have been crafting custom trade show booths that empower exhibitors to create memorable brand experiences since 1999. We simplify your trade show exhibit journey by eliminating last-minute hassles. We deliver turnkey trade show booth services with consistent quality, on time and on budget.'}</p>
+              <h2 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Our Trade Show Booth Services'}</h2>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo provides end-to-end exhibit solutions designed to simplify your event preparation and elevate your brand presence on the show floor. Our in house team manages design, fabrication, printing, shipping, installation, dismantle, and storage.'}</p>
             </div>
-           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-              {(stats.length ? stats : [
-                { icon: '/images/exhibit-service.webp',label: 'Large Exhibit Booths', value1: '40x40 Exhibits',  url1: '/40x40-trade-show-booth/', value2: '40x50 Exhibits',  url2: '/40x50-trade-show-booth/',  },
-                { icon: '/images/exhibit-service.webp',label: 'Island Exhibit Booths', value1: '20x20 Exhibits',  url1: '/20x20-trade-show-booth/', value2: '20x30 Exhibits',  url2: '/20x30-trade-show-booth/', value3: '20x40 Exhibits',  url3: '/20x40-trade-show-booth/',value4: '30x30 Exhibits',  url4: '/30x30-trade-show-booth/', },
-                { icon: '/images/exhibit-service.webp',label: 'Inline Exhibit Booths', value1: '10x10 Exhibits',  url1: '/10x10-trade-show-booth/', value2: '10x20 Exhibits',  url2: '/10x20-trade-show-booth/', value3: '10x30 Exhibits',  url3: '/10x30-trade-show-booth/' },
-                { icon: '/images/exhibit-service.webp',  label: 'Rental Exhibit Booths', value1: 'Flexible rental booths designed for any show need.',  url1: '/30x40-trade-show-booth/' },
-              ]).map((item, idx) => (
-                <div key={idx} className="bg-white rounded-[14px] p-[28px] border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
-                  <h3 className="text-3xl text-gray-600 font-bold mt-4 barlofamilty group-hover:text-gray-900 transition-colors">
-                    {item.label}
-                  </h3> 
-
-                  <div className="h-1 w-full bg-gray-200 my-4"></div>
-                  <div className="mt-6 space-y-2">
-                    {item.value1 && (
-                      <Link href={item.url1 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        {item.value1}
-                      </Link>
-                    )}
-                    {item.value2 && (
-                      <Link href={item.url2 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        {item.value2}
-                      </Link>
-                    )}
-                    {item.value3 && (
-                      <Link href={item.url3 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        {item.value3}
-                      </Link>
-                    )}
-                    {item.value4 && (
-                      <Link href={item.url4 || '#'} className="block py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        {item.value4}
-                      </Link>
-                    )}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+              <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
+                <div className="figure"><Image src="/images/large-booth.webp" width="767" height="530" alt="large booth" className="w-full h-auto rounded-md"/></div>
+                <a href="/custom-trade-show-displays/">
+                  <div className="p-4">
+                    <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Custom Trade Show Booth Design</h3>
+                    <div className="h-1 w-full bg-gray-200 my-4"></div>
+                    <p className="text-base text-gray-500 mb-8">Bring your vision to life with a completely tailored exhibit. Our designers create immersive 3D concepts based on your goals, brand guidelines, and event rules. Whether you need a simple product showcase or a multi level experiential booth, we build for impact.</p>
                   </div>
+                </a>
+              </div>
+              <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
+                <div className="figure"><Image src="/images/rental-booth.webp" width="767" height="530" alt="large booth" className="w-full h-auto rounded-md"/></div>
+                <a href="/trade-show-booth-display-rentals/">
+                <div className="p-4">
+                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Modular & Rental Booth Solutions</h3>
+                  <div className="h-1 w-full bg-gray-200 my-4"></div>
+                  <p className="text-base text-gray-500 mb-8">Looking for flexibility or a cost effective alternative? Our modular and rental booths are fully customizable, lightweight, and versatile — perfect for brands attending multiple shows or exploring new event markets without a large upfront investment.</p>
                 </div>
-              ))}
+                </a>
+              </div>
+              
+              <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
+                <div className="figure"><Image src="/images/inline-booth.webp" width="767" height="530" alt="large booth" className="w-full h-auto rounded-md"/></div>
+                <a href="/services/">
+                <div className="p-4">
+                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Turnkey Project <br/>Management</h3>
+                  <div className="h-1 w-full bg-gray-200 my-4"></div>
+                  <p className="text-base text-gray-500 mb-8">From venue coordination to logistics and on site supervision, we manage every step so your team can focus on marketing and sales. Our project managers ensure timely delivery, compliance with show regulations, and seamless installation.</p>
+                </div>
+                </a>
+              </div>
+              
+              
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
-                  <div className="w-full sm:w-auto"><a href={data?.cta?.primary?.href || "/contact-us/"} className="block w-full sm:w-auto px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white hover:text-white transition duration-300 text-center">{data?.cta?.primary?.label || 'Get a Tailored Booth Design at No Cost'}</a></div>
-                  <div className="w-full sm:w-auto"><a href={data?.cta?.secondary?.href || "/services/"} className="block w-full sm:w-auto px-6 py-3 border-2 border-[#9A3220] rounded-xl text-black text-base sm:text-xl hover:bg-custom hover:text-white transition duration-300 text-center">{data?.cta?.secondary?.label || 'Exhibit Services'}</a></div>
-                </div>
+              <div className="w-full sm:w-auto"><a href={data?.cta?.primary?.href || "/contact-us/"} className="block w-full sm:w-auto px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white hover:text-white transition duration-300 text-center">{data?.cta?.primary?.label || 'Get a Tailored Booth Design at No Cost'}</a></div>
+            </div>
           </div>
         </div>
       </section>
+
+      
      <section>
   <div className="homeportfolio bg-[#34343C] py-20">
     <div className="container mx-auto px-4 text-center text-white pb-20">
@@ -358,14 +355,121 @@ export default function Home() {
       </section>
        */}
 
-
-<section>
-	        <div className="contentbg py-20">
+      {/*<section>
+        <div className="designbuild py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl text-center mx-auto mb-12">
+              <h2 className="maintitle mb-4">Custom Exhibits <br/>Built for Your Brand</h2>
+              <p className="text-xl text-gray-500 leading-relaxed">Tell us what your brand stands for, and we’ll turn it into a booth that commands attention.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-[#EAEEF7] rounded-md border border-gray-300 p-6 text-center">
+                <div className="icon mx-auto w-[100px] bg-white rounded-[60px] p-4"><Image src="/images/design-icon.webp" width="120" height="120" alt="" className="w-full h-auto"/></div>
+                <h3 className="my-2 text-gray-700 font-bold text-4xl">We Design</h3>
+                <p className="text-lg text-gray-500">We have been crafting custom trade show booths that empower.</p>
+              </div>
+              <div className="bg-[#EAEEF7] rounded-md border border-gray-300 p-6 text-center">
+                <div className="icon mx-auto w-[100px] bg-white rounded-[60px] p-4"><Image src="/images/build-icon.webp" width="120" height="120" alt="" className="w-full h-auto"/></div>
+                <h3 className="my-2 text-gray-700 font-bold text-4xl">We Build</h3>
+                <p className="text-lg text-gray-500">We have been crafting custom trade show booths that empower.</p>
+              </div>
+              <div className="bg-[#EAEEF7] rounded-md border border-gray-300 p-6 text-center">
+                <div className="icon mx-auto w-[100px] bg-white rounded-[60px] p-4"><Image src="/images/deliver-icon.webp" width="120" height="120" alt="" className="w-full h-auto"/></div>
+                <h3 className="my-2 text-gray-700 font-bold text-4xl">We Deliver</h3>
+                <p className="text-lg text-gray-500">We have been crafting custom trade show booths that empower.</p>
+              </div>
+            </div>
+            <div className="mt-12 text-center">
+              <Link href="" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">View Services</Link>
+            </div>
+          </div>
+        </div>
+      </section>*/}
+      <section>
+    <div className="whychoose py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl text-center mx-auto mb-12">
+          <h2 className="maintitle mb-4 text-gray-700">Why Choose Triumfo for Your Trade Show Booth?</h2>
+          <p className="text-xl text-gray-600 leading-relaxed">Tell us what your brand stands for, and we’ll turn it into a booth that commands attention.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
+            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div className="">
+              <h3 className="text-4xl font-semibold text-gray-700 mb-4">25+ years of expertise</h3>
+              <p className="text-lg text-gray-600 leading-[1.7rem]">
+                Trusted by global brands for reliable design, build, and execution.
+              </p>
+            </div>
+          </div>
+          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
+            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div className="">
+              <h3 className="text-4xl font-semibold text-gray-700 mb-4">End to end capabilities</h3>
+              <p className="text-lg text-gray-600 leading-[1.7rem]">
+                All services handled in house — no third party dependencies.
+              </p>
+            </div>
+          </div>
+          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
+            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div className="">
+              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Global presence</h3>
+              <p className="text-lg text-gray-600 leading-[1.7rem]">
+                Support in major trade show hubs across the US, Europe, and Asia.
+              </p>
+            </div>
+          </div>
+          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
+            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div className="">
+              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Quality craftsmanship</h3>
+              <p className="text-lg text-gray-600 leading-[1.7rem]">
+                Durable materials, precision engineering, and premium finishing.
+              </p>
+            </div>
+          </div>
+          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
+            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div className="">
+              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Stress free experience</h3>
+              <p className="text-lg text-gray-600 leading-[1.7rem]">
+                Dedicated project managers, timeline tracking, and show compliant designs.
+              </p>
+            </div>
+          </div>
+          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
+            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div className="">
+              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Member of IFES</h3>
+              <p className="text-lg text-gray-600 leading-[1.7rem]">
+                Triumfo Inc. ensures global quality, ethical practices, and expert exhibition solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <section>
+	        <div className="contentbg py-20 bg-[#34343C]">
 	          <div className="container mx-auto px-4">
 	            <div className="max-w-3xl mx-auto mb-12">
 					<div className="text-center mb-8">
-						<h1 className="text-gray-700 maintitle mb-4">Featured Case Studies</h1>
-						<p className="text-gray-700 text-lg mb-4">Explore real projects where our custom exhibit booths and custom trade show displays engaged audiences and boosted brand impact.</p>
+						<h1 className="text-white maintitle mb-4">Featured Case Studies</h1>
+						<p className="text-white text-lg mb-4">Explore real projects where our custom exhibit booths and custom trade show displays engaged audiences and boosted brand impact.</p>
 					</div>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -380,9 +484,9 @@ export default function Home() {
 		                    </div>
 		                </div>
 		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - CountR</h4>
-		                    <div className="flex items-center pt-2 justify-center">
-		                        <span className="text-sm text-gray-500">Amusement Expo</span>
+		                    <h4 className="text-white font-semibold text-3xl">Case Study - CountR</h4>
+		                    <div className="flex items-center py-2 justify-center">
+		                        <span className="text-sm text-white">Amusement Expo</span>
 		                    </div>
 		                </div>
 		            </div>
@@ -398,9 +502,9 @@ export default function Home() {
 		                    </div>
 		                </div>
 		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - Tedial</h4>
-		                    <div className="flex items-center pt-2 justify-center">
-		                        <span className="text-sm text-gray-500">Nab Show</span>
+		                    <h4 className="text-white font-semibold text-3xl">Case Study - Tedial</h4>
+		                    <div className="flex items-center py-2 justify-center">
+		                        <span className="text-sm text-white">Nab Show</span>
 		                    </div>
 		                </div>
 		            </div>
@@ -416,9 +520,9 @@ export default function Home() {
 		                    </div>
 		                </div>
 		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h4 className="text-gray-700 font-semibold text-3xl">Case Study - Saier</h4>
-		                    <div className="flex items-center pt-2 justify-center">
-		                        <span className="text-sm text-gray-500">ISSA Show</span>
+		                    <h4 className="text-white font-semibold text-3xl">Case Study - Saier</h4>
+		                    <div className="flex items-center py-2 justify-center">
+		                        <span className="text-sm text-white">ISSA Show</span>
 		                    </div>
 		                </div>
 		            </div>
