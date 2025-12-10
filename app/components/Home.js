@@ -121,32 +121,26 @@ export default function Home() {
                 <div className="figure"><Image src="/images/large-booth.webp" width="767" height="530" alt="Custom Trade Show Booth Design" className="w-full h-auto rounded-md"/></div>
                 <a href="/custom-trade-show-displays/">
                   <div className="p-4">
-                    <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Large Exhibits</h3>
-                    <div className="h-1 w-full bg-gray-200 my-4"></div>
-                    <p className="text-base text-gray-500 mb-8">Bring your vision to life with fully tailored trade show displays. Our expert designers create immersive 3D concepts aligned with your brand, goals, and event regulations. Whether it’s a conference booth or a trade fair stand, we craft exhibits that captivate your audience.</p>
-                  </div>
-                </a>
-              </div>
-              <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
-                <div className="figure"><Image src="/images/rental-booth.webp" width="767" height="530" alt="Rental Booth Solutions" className="w-full h-auto rounded-md"/></div>
-                <a href="/trade-show-booth-display-rentals/">
-                <div className="p-4">
-                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Island Exhibits</h3>
+                    <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Island Exhibits</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
                   <div className="grid grid-cols-2 gap-4">
                     <Link href="/20x20-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         20x20 Exhibits</Link>
                     <Link href="/20x30-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         20x30 Exhibits</Link>
-                    <Link href="/20x40-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        20x40 Exhibits</Link>
+                    
                     <Link href="/30x30-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         30x30 Exhibits</Link>
+                    <Link href="/30x40-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        30x40 Exhibits</Link>
+                    <Link href="/40x40-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        40x40 Exhibits</Link>
+                    <Link href="/40x50-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        40x50 Exhibits</Link>
                   </div>
-                </div>
+                  </div>
                 </a>
               </div>
-              
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
                 <div className="figure"><Image src="/images/inline-booth.webp" width="767" height="530" alt="Turnkey Trade Show Booth Services" className="w-full h-auto rounded-md"/></div>
                 <a href="/services/">
@@ -164,6 +158,21 @@ export default function Home() {
                 </div>
                 </a>
               </div>
+              <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
+                <div className="figure"><Image src="/images/rental-booth.webp" width="767" height="530" alt="Rental Booth Solutions" className="w-full h-auto rounded-md"/></div>
+                <a href="/trade-show-booth-display-rentals/">
+                <div className="p-4">
+                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Rental Exhibit</h3>
+                  <div className="h-1 w-full bg-gray-200 my-4"></div>
+                  <div className="grid grid-cols-1 gap-4">
+                    <Link href="/30x40-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                       Flexible rental booths designed for any show need</Link>
+                  </div>
+                </div>
+                </a>
+              </div>
+              
+              
               
               
             </div>
@@ -625,7 +634,6 @@ export default function Home() {
                 <p class="text-gray-700 text-base"><span class="font-semibold">•  10+ graphic designers and printing specialists</span></p>
                 <p class="text-gray-700 text-base"><span class="font-semibold">•  40+ member I&D team</span></p>
                 <p className="text-gray-700 text-base my-4 leading-[1.8rem]">Supported by our 80,000+ sq. ft. production facility, we deliver high-quality modular exhibition booths with complete precision and control.</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We currently partner with agencies across 30+ countries, including the USA, Europe, UAE, India, South Korea, Japan, and China—supporting your clients’ trade show booth needs globally.</p>
               </div>
             </div>
           </div>
