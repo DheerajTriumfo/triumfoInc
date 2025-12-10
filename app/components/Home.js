@@ -122,19 +122,20 @@ export default function Home() {
                   <div className="p-4">
                     <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Island Exhibits</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
+                  <p className="text-slate-600 text-base mb-4">Island exhibits provide full 360° visibility for impactful brand experiences.</p>
                   <div className="grid grid-cols-2 gap-4">
-                    <Link href="/20x20-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/20x20-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         20x20 Exhibits</Link>
-                    <Link href="/20x30-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/20x30-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         20x30 Exhibits</Link>
                     
-                    <Link href="/30x30-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/30x30-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         30x30 Exhibits</Link>
-                    <Link href="/30x40-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/30x40-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         30x40 Exhibits</Link>
-                    <Link href="/40x40-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/40x40-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         40x40 Exhibits</Link>
-                    <Link href="/40x50-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/40x50-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         40x50 Exhibits</Link>
                   </div>
                   </div>
@@ -144,12 +145,13 @@ export default function Home() {
                 <div className="p-4">
                   <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Inline Exhibits</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
+                  <p className="text-slate-600 text-base mb-4">Inline exhibits showcase your brand efficiently along a single aisle.</p>
                   <div className="grid grid-cols-1 gap-4">
-                 <Link href="/10x10-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                 <Link href="/10x10-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         10x10 Exhibits</Link>
-                 <Link href="/10x20-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                 <Link href="/10x20-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         10x20 Exhibits</Link>
-                 <Link href="/10x30-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                 <Link href="/10x30-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                         10x30 Exhibits</Link>
                  </div>
                 </div>
@@ -159,12 +161,13 @@ export default function Home() {
                 <div className="p-4">
                   <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Exhibit Services</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
+                  <p className="text-slate-600 text-base mb-4">Exhibit services ensure smooth design, setup, and support for your booth.</p>
                   <div className="grid grid-cols-1 gap-4">
-                    <Link href="/services/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/services/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                        We Design</Link>
-                    <Link href="/services/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/services/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                        We Build</Link>
-                    <Link href="/services/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                    <Link href="/services/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
                        We Deliver</Link>
                   </div>
                 </div>
