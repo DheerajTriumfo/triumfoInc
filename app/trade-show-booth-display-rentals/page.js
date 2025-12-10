@@ -235,7 +235,7 @@ export default function TradeShowBoothDisplayRentals() {
 								</ul>
 							</div>
 						</div>
-						<div className="mt-12 text-center"><Link href="/trade-show-booth-ideas/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Choose From 500+ Exhibit Booth Rental Options</Link></div>
+						<div className="mt-12 text-center"><Link href="/trade-show-booth-ideas/" className="block md:inline px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Choose From 500+ Exhibit Booth Rental Options</Link></div>
 					</div>
 				</div>
 			</section>
