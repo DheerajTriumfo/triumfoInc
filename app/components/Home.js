@@ -71,11 +71,11 @@ export default function Home() {
          (max-width: 1200px) 100vw,
          1920px" alt="Dream. Build. Belong"
         />
-          <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.4)] relative md:absolute top-0 left-0 z-20 w-full h-full">
+          <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.6)] relative md:absolute top-0 left-0 z-20 w-full h-full">
             <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
               <div className="grid grid-cols-1 justify-items-center ">
                 <h1 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[5.0rem] font-heading text-center">{banner?.title || 'Trade Show Booth Design, Build & Project Management'}</h1>
-                <div className="text-lg text-white max-w-5xl mb-2 text-center font-medium">Stand out at your next event with high impact trade show booth designs that attract visitors, increase engagement, and deliver measurable ROI. From custom exhibits to modular rentals, Triumfo provides complete solutions for brands across industries.</div>
+                <div className="text-lg text-white max-w-5xl mb-2 text-center font-medium leading-[2rem]">Stand out at your next event with high-impact trade show booths that attract visitors, increase engagement, and deliver measurable ROI. From custom exhibition booths to modular expo booths, Triumfo provides complete solutions for brands across industries. Our trade show displays are designed to elevate your brand presence and create memorable experiences for your audience.</div>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 my-6">
                   <div><a href="/trade-show-booth-ideas/" className="block w-full sm:w-auto px-6 sm:px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600 hover:text-white transition duration-300 text-center">Browse from over 500 Designs</a></div>
                 </div> 
@@ -114,16 +114,16 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Our Trade Show Booth Services'}</h2>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo provides end-to-end exhibit solutions designed to simplify your event preparation and elevate your brand presence on the show floor. Our in house team manages design, fabrication, printing, shipping, installation, dismantle, and storage.'}</p>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo offers end-to-end exhibition stand solutions to simplify your event preparation. Our in-house team manages trade show booth design, fabrication, printing, shipping, installation, dismantling, and storage—ensuring a seamless experience from start to finish.'}</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
                 <div className="figure"><Image src="/images/large-booth.webp" width="767" height="530" alt="Custom Trade Show Booth Design" className="w-full h-auto rounded-md"/></div>
                 <a href="/custom-trade-show-displays/">
                   <div className="p-4">
-                    <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Custom Trade Show Booth Design</h3>
+                    <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Large Exhibits</h3>
                     <div className="h-1 w-full bg-gray-200 my-4"></div>
-                    <p className="text-base text-gray-500 mb-8">Bring your vision to life with a completely tailored exhibit. Our designers create immersive 3D concepts based on your goals, brand guidelines, and event rules. </p>
+                    <p className="text-base text-gray-500 mb-8">Bring your vision to life with fully tailored trade show displays. Our expert designers create immersive 3D concepts aligned with your brand, goals, and event regulations. Whether it’s a conference booth or a trade fair stand, we craft exhibits that captivate your audience.</p>
                   </div>
                 </a>
               </div>
@@ -131,9 +131,18 @@ export default function Home() {
                 <div className="figure"><Image src="/images/rental-booth.webp" width="767" height="530" alt="Rental Booth Solutions" className="w-full h-auto rounded-md"/></div>
                 <a href="/trade-show-booth-display-rentals/">
                 <div className="p-4">
-                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Modular & Rental Booth Solutions</h3>
+                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Island Exhibits</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
-                  <p className="text-base text-gray-500 mb-8">Looking for flexibility or a cost effective alternative? Our modular and rental booths are fully customizable, lightweight, and versatile.</p>
+                  <div className="grid grid-cols-2 gap-4">
+                    <Link href="/20x20-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        20x20 Exhibits</Link>
+                    <Link href="/20x30-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        20x30 Exhibits</Link>
+                    <Link href="/20x40-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        20x40 Exhibits</Link>
+                    <Link href="/30x30-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        30x30 Exhibits</Link>
+                  </div>
                 </div>
                 </a>
               </div>
@@ -142,9 +151,16 @@ export default function Home() {
                 <div className="figure"><Image src="/images/inline-booth.webp" width="767" height="530" alt="Turnkey Trade Show Booth Services" className="w-full h-auto rounded-md"/></div>
                 <a href="/services/">
                 <div className="p-4">
-                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Turnkey Project <br/>Management</h3>
+                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Inline Exhibits</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
-                  <p className="text-base text-gray-500 mb-8">From venue coordination to logistics and on site supervision, we manage every step so your team can focus on marketing and sales.</p>
+                  <div className="grid grid-cols-1 gap-4">
+                 <Link href="/10x10-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        10x10 Exhibits</Link>
+                 <Link href="/10x20-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        10x20 Exhibits</Link>
+                 <Link href="/10x30-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                        10x30 Exhibits</Link>
+                 </div>
                 </div>
                 </a>
               </div>
@@ -390,7 +406,7 @@ export default function Home() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl text-center mx-auto mb-12">
           <h2 className="maintitle mb-4 text-gray-700">Why Choose Triumfo for Your Trade Show Booth?</h2>
-          <p className="text-xl text-gray-600 leading-relaxed">Triumfo Inc. delivers creative, high-quality trade show booths with fast production, reliable execution, and a seamless end-to-end experience—helping your brand stand out effortlessly.</p>
+          <p className="text-xl text-gray-600 leading-relaxed">Triumfo delivers creative, high-quality trade show booths with fast production, reliable execution, and a seamless end-to-end experience—helping your brand stand out effortlessly.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
@@ -400,7 +416,7 @@ export default function Home() {
             <div className="">
               <h3 className="text-4xl font-semibold text-gray-700 mb-4">25+ years of expertise</h3>
               <p className="text-lg text-gray-600 leading-[1.7rem]">
-                Trusted by global brands for reliable design, build, and execution.
+                Trusted by global brands for design, build, and execution of exhibit booths.
               </p>
             </div>
           </div>
@@ -411,7 +427,7 @@ export default function Home() {
             <div className="">
               <h3 className="text-4xl font-semibold text-gray-700 mb-4">End to end capabilities</h3>
               <p className="text-lg text-gray-600 leading-[1.7rem]">
-                All services handled in house — no third party dependencies.
+                All services handled in-house—no third-party dependencies.
               </p>
             </div>
           </div>
@@ -444,7 +460,7 @@ export default function Home() {
             <div className="">
               <h3 className="text-4xl font-semibold text-gray-700 mb-4">Stress free experience</h3>
               <p className="text-lg text-gray-600 leading-[1.7rem]">
-                Dedicated project managers, timeline tracking, and show compliant designs.
+                Dedicated project managers, timeline tracking, and show-compliant designs.
               </p>
             </div>
           </div>
@@ -455,7 +471,7 @@ export default function Home() {
             <div className="">
               <h3 className="text-4xl font-semibold text-gray-700 mb-4">Member of IFES</h3>
               <p className="text-lg text-gray-600 leading-[1.7rem]">
-                Triumfo Inc. ensures global quality, ethical practices, and expert exhibition solutions.
+                Ensuring international quality standards, ethical practices, and professional trade show display solutions.
               </p>
             </div>
           </div>
@@ -469,7 +485,7 @@ export default function Home() {
 	            <div className="max-w-3xl mx-auto mb-12">
 					<div className="text-center mb-8">
 						<h1 className="text-white maintitle mb-4">Featured Case Studies</h1>
-						<p className="text-white text-lg mb-4">Explore real projects where our custom exhibit booths and custom trade show displays engaged audiences and boosted brand impact.</p>
+						<p className="text-white text-lg mb-4">Explore real projects where our custom exhibition booths and trade show displays engaged audiences, boosted brand impact, and delivered measurable ROI.</p>
 					</div>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -540,7 +556,7 @@ export default function Home() {
             <div className="max-w-3xl text-center mx-auto mb-12">
               <h2 className="maintitle mb-4">{data?.testimonialsIntro?.title || 'Client Testimonials'}</h2>
               <p className="text-xl text-[#9A3220] font-medium mb-4">Your expectation. Our obligation.</p>
-              <p className="text-xl text-gray-500 leading-relaxed">{data?.testimonialsIntro?.description || 'Watch short video testimonials to see how Triumfo Inc. has met or exceeded client expectations in creating memorable, high-performing trade show exhibit booths and impactful show experiences.'}</p>
+              <p className="text-xl text-gray-500 leading-relaxed">{data?.testimonialsIntro?.description || 'Your expectation. Our obligation. Watch video testimonials to see how Triumfo exceeded client expectations in creating memorable trade show booths, expo booths, and exhibition stands.'}</p>
             </div>
             <div className="grid grid-cols-12 gap-8">
             <div className="video-card rounded-xl relative col-span-12 md:col-span-6 lg:col-span-4">
@@ -595,16 +611,21 @@ export default function Home() {
               <div className="mb-8 lg:mb-0 text-left lg:text-justify">
                 <h2 className="maintitle mb-4 text-gray-700 text-center">For Exhibitors:</h2>
                 <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">Simplifying Your Exhibit Experience</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">Exhibiting at a trade show is never a simple task, whether it’s your first time or you exhibit frequently. You need the right trade show, booth partner, and booth type to meet your goals. All these can be overwhelming.</p>
-                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">We simplify the entire exhibiting process. Our experts trade show booth designers and booth builders take every measure to ensure a smooth and successful show campaign. You can trust us whether you are a local, national, or international exhibitor.</p>
-                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">As a proud member of <a className="text-blue-500 hover:text-blue-700" href="https://www.ifesnet.com/triumfo-international-gmbh/" target="_blank" rel="noopener noreferrer">IFES (International Federation of Exhibition & Event Services)</a>, Triumfo Inc. adheres to international quality standards, operates with ethical and responsible practices, and brings proven expertise in exhibitions and events. Our global association ensures reliability, consistency, and excellence in every project we deliver worldwide.</p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">Exhibiting at a trade fair can be complex. You need the right trade show booth, partner, and exhibition stand type to meet your goals.</p>
+                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">We simplify the entire process. Our experienced trade show booth designers and booth builders ensure a smooth and successful show campaign, whether you are a local, national, or international exhibitor.</p>
+                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">As a proud  <a className="text-blue-500 hover:text-blue-700" href="https://www.ifesnet.com/triumfo-international-gmbh/" target="_blank" rel="noopener noreferrer">IFES</a> member, Triumfo adheres to international standards and brings proven expertise in expo booths, conference booths, and trade show displays worldwide.</p>
               </div>
               <div className="text-left lg:text-justify">
                 <h2 className="maintitle mb-4 text-gray-700 text-center">For Agencies:</h2>
-                <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">End-to-End Services, Under Your Name</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">You don’t have to look further if you are a trade show agency looking for a reliable exhibition stand builder. We provide end-to-end trade show booth solutions that you can confidently offer to your clients under your brand name. </p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We manage everything in-house with 30+ skilled 3D booth designers, 80+ expert booth builders, and 10+ creative graphic designers and printing specialists. Supported by a 40+ member I&D team and an 80,000+ sq. ft. production facility equipped with advanced technology, we deliver high-quality turnkey exhibit solutions with complete control and precision.</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We currently partner with trade show agencies across 30+ countries, including the USA, Europe, UAE, India, South Korea, Japan, and China. We work for your clients, under your name, contributing to your reputation and success.</p>
+                <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">End-to-End Services Under Your Brand</p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">If you are a trade show agency, we provide turnkey trade show booth solutions that you can confidently offer to your clients under your name.</p>
+                <p className="text-gray-700 text-base mb-2 leading-[1.8rem]">We manage everything in-house with:</p>
+                <p class="text-gray-700 text-base"><span class="font-semibold">•  30+ skilled 3D designers</span></p>
+                <p class="text-gray-700 text-base"><span class="font-semibold">•  80+ expert booth builders</span></p>
+                <p class="text-gray-700 text-base"><span class="font-semibold">•  10+ graphic designers and printing specialists</span></p>
+                <p class="text-gray-700 text-base"><span class="font-semibold">•  40+ member I&D team</span></p>
+                <p className="text-gray-700 text-base my-4 leading-[1.8rem]">Supported by our 80,000+ sq. ft. production facility, we deliver high-quality modular exhibition booths with complete precision and control.</p>
+                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">We currently partner with agencies across 30+ countries, including the USA, Europe, UAE, India, South Korea, Japan, and China—supporting your clients’ trade show booth needs globally.</p>
               </div>
             </div>
           </div>
@@ -620,7 +641,7 @@ export default function Home() {
                     {data?.ctaBottom?.title || 'Let’s Plan Your Next Show'}
                   </h2>
                   <p className="text-lg text-gray-500">
-                    {data?.ctaBottom?.subtitle || 'Share your trade show goals, and we will suggest the finest booth approach according to your budget and booth size. Let’s create a memorable brand experience for your next show.'}
+                    {data?.ctaBottom?.subtitle || 'Share your goals, and we’ll suggest the best trade show booth approach according to your budget and booth size. Let’s create a memorable brand experience with expo booths, conference booths, or custom exhibition booths at your next event.'}
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
