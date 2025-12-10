@@ -119,7 +119,6 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
                 <div className="figure"><Image src="/images/large-booth.webp" width="767" height="530" alt="Custom Trade Show Booth Design" className="w-full h-auto rounded-md"/></div>
-                <a href="/custom-trade-show-displays/">
                   <div className="p-4">
                     <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Island Exhibits</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
@@ -139,11 +138,9 @@ export default function Home() {
                         40x50 Exhibits</Link>
                   </div>
                   </div>
-                </a>
               </div>
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
                 <div className="figure"><Image src="/images/inline-booth.webp" width="767" height="530" alt="Turnkey Trade Show Booth Services" className="w-full h-auto rounded-md"/></div>
-                <a href="/services/">
                 <div className="p-4">
                   <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Inline Exhibits</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
@@ -156,20 +153,21 @@ export default function Home() {
                         10x30 Exhibits</Link>
                  </div>
                 </div>
-                </a>
               </div>
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
                 <div className="figure"><Image src="/images/rental-booth.webp" width="767" height="530" alt="Rental Booth Solutions" className="w-full h-auto rounded-md"/></div>
-                <a href="/trade-show-booth-display-rentals/">
                 <div className="p-4">
-                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Rental Exhibit</h3>
+                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Exhibit Services</h3>
                   <div className="h-1 w-full bg-gray-200 my-4"></div>
                   <div className="grid grid-cols-1 gap-4">
-                    <Link href="/30x40-trade-show-booth/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                       Flexible rental booths designed for any show need</Link>
+                    <Link href="/services/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                       We Design</Link>
+                    <Link href="/services/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                       We Build</Link>
+                    <Link href="/services/" className="block bg-gray-100 py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
+                       We Deliver</Link>
                   </div>
                 </div>
-                </a>
               </div>
               
               
