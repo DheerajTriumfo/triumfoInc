@@ -327,7 +327,7 @@ export default function ViewTradeshowideaData() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
               <Link
-                href="#"
+                href="/contact-us/"
                 className="px-8 py-4 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-xl text-white hover:bg-gray-700 hover:border-gray-700 hover:text-white transition duration-300 text-center"
               >
                 Request a Free Booth Concept
