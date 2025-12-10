@@ -27,6 +27,17 @@ export async function generateMetadata() {
   const siteUrl = await resolveSiteUrl();
   return {
     metadataBase: new URL(siteUrl),
+    other: {
+      "viewport": "width=device-width, initial-scale=1",
+      "preconnect": "https://cdnjs.cloudflare.com",
+      "preconnect2": "https://www.googletagmanager.com",
+      "preconnect3": "https://fonts.gstatic.com",
+      "preconnect4": "https://triumfo.us",
+      "preconnect5": "https://triumfous.mobel.us",
+      "stylesheet": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css",
+      "stylesheet2": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/v4-shims.min.css",
+      "icon": "/favicon.png",
+    },
   };
 }
 
@@ -38,21 +49,21 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="true" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link rel="preconnect" href="https://triumfo.us" />
-        <link rel="preconnect" href="https://triumfous.mobel.us" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/v4-shims.min.css" />
-
-        {/* jQuery + Owl */}
+      <head/>
         
 
-        {/* ⭐ GTM (Script) */}
+      <body className={`${barlowCondensed.variable} ${opensans.variable} antialiased`}>
+        
+        {/* ⭐ GTM (NoScript) Required */}
+        
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-56H86N7"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
         <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -62,22 +73,6 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-56H86N7');
           `}
         </Script>
-          
-        
-      </head>
-
-      <body className={`${barlowCondensed.variable} ${opensans.variable} antialiased`}>
-        
-        {/* ⭐ GTM (NoScript) Required */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-56H86N7"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          ></iframe>
-        </noscript>
-
         <Providers>
           <Navigation />
           {children}
