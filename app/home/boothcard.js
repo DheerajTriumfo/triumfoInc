@@ -14,7 +14,7 @@ export default function BoothGrid() {
     },
     {
       number: "40x50",
-      title: "40x50",
+      title: "40x40",
       text: "Explore 40x40 Island trade show booths",
       image: "/images/40x40-booth.webp",
       url : "/40x40-trade-show-booth/",
