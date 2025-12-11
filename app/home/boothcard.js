@@ -7,70 +7,70 @@ export default function BoothGrid() {
   const cards = [
     {
       number: "40x50",
-      title: "Island Exhibits",
+      title: "40x50",
       text: "Explore 40x50 Island trade show booths",
       image: "/images/40x50-booth.webp",
       url : "/40x50-trade-show-booth/",
     },
     {
-      number: "40x40",
-      title: "Island Exhibits",
+      number: "40x50",
+      title: "40x50",
       text: "Explore 40x40 Island trade show booths",
       image: "/images/40x40-booth.webp",
       url : "/40x40-trade-show-booth/",
     },
     {
       number: "30x40",
-      title: "Island Exhibits",
+      title: "30x40",
       text: "Explore 30x40 Island trade show booths",
       image: "/images/30x40-booth.webp",
       url : "/30x40-trade-show-booth/",
     },
     {
       number: "30x30",
-      title: "Island Exhibits",
+      title: "30x30",
       text: "Explore 30x30 Island trade show booths",
       image: "/images/30x30-booth.webp",
       url : "/30x30-trade-show-booth/",
     },
     {
       number: "20x40",
-      title: "Island Exhibits",
+      title: "20x40",
       text: "Explore 20x40 Island trade show booths",
       image: "/images/20x40-booth.webp",
       url : "/20x40-trade-show-booth/",
     },
     {
       number: "20x30",
-      title: "Island Exhibits",
+      title: "20x30",
       text: "Explore 20x30 Island trade show booths",
       image: "/images/20x30-booth.webp",
       url : "/20x30-trade-show-booth/",
     },
     {
       number: "20x20",
-      title: "Island Exhibits",
+      title: "20x20",
       text: "Explore 20x20 Island trade show booths",
       image: "/images/20x20-booth.webp",
       url : "/20x20-trade-show-booth/",
     },
     {
       number: "10x30",
-      title: "Inline Exhibits",
+      title: "10x30",
       text: "Explore 10x30 Inline trade show booths",
       image: "/images/10x30-booth.webp",
       url : "/10x30-trade-show-booth/",
     },
     {
       number: "10x20",
-      title: "Inline Exhibits",
+      title: "10x20",
       text: "Explore 10x20 Inline trade show booths",
       image: "/images/10x20-booth.webp",
       url : "/10x20-trade-show-booth/",
     },
     {
       number: "10x10",
-      title: "Inline Exhibits",
+      title: "10x10",
       text: "Explore 10x10 Inline trade show booths",
       image: "/images/10x10-booth.webp",
       url : "/10x10-trade-show-booth/",
@@ -81,7 +81,10 @@ export default function BoothGrid() {
 
   // Show only 3 cards unless "Show more" is clicked
   const visibleCards = showAll ? cards : cards.slice(0, 6);
-
+  const handleShowLessClick = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior (scroll to top)
+    setShowAll(false);  // Set state to hide extra cards
+  };
   return (
     <>
       {/* Cards Grid */}
@@ -105,10 +108,7 @@ export default function BoothGrid() {
         {showAll && (
           <a
             href="/contact-us/"
-            onClick={(e) => {
-              e.preventDefault();
-              setShowAll(false);
-            }}
+            onClick={handleShowLessClick} 
             className="px-8 py-3 bg-[#8E2614] text-xl text-white rounded-lg hover:bg-[#722011] transition cursor-pointer"
           >
             Get A Quote
@@ -138,13 +138,10 @@ function BoothCard({ number, title, text, image, url }) {
 
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_40%,#0f0f0f_85%)] z-20 p-6 flex flex-col justify-end">
         
-        {/* Number */}
-        <span className="text-white text-sm bg-[#882B19] w-[60px] py-1 rounded-md text-center  mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">
-          {number}
-        </span>
+        
 
         {/* Title */}
-        <h3 className="text-white text-3xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">
+        <h3 className="text-white text-3xl font-semibold mb-2 translate-y-6 transition-transform duration-500 ease-out group-hover:-translate-y-4">
           {title}
         </h3>
 

@@ -119,7 +119,7 @@ export default function Home() {
         <div className="topsection py-10 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-6xl font-semibold text-gray-700 mb-6">{data?.intro?.title || 'Trade Show Booth Options by Size'}</h2>
+              <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Trade Show Booth Options by Size'}</h2>
               <p className="text-xl text-gray-500">{data?.intro?.description || 'Explore booth solutions in every size—crafted to match your goals and maximize your presence on the show floor.'}</p>
             </div>
             <BoothGrid/>
