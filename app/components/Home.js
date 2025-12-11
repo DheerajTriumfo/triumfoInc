@@ -122,67 +122,39 @@ export default function Home() {
               <h2 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Our Trade Show Booth Services'}</h2>
               <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo offers end-to-end exhibition stand solutions to simplify your event preparation. Our in-house team manages trade show booth design, fabrication, printing, shipping, installation, dismantling, and storage—ensuring a seamless experience from start to finish.'}</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
-              <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
-                <div className="figure"><Image src="/images/large-booth.webp" width="767" height="530" alt="Custom Trade Show Booth Design" className="w-full h-auto rounded-md"/></div>
-                  <div className="p-4">
-                    <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Island Exhibits</h3>
-                  <div className="h-1 w-full bg-gray-200 my-4"></div>
-                  <p className="text-slate-600 text-base mb-4">Island exhibits provide full 360° visibility for impactful brand experiences.</p>
-                  <div className="grid grid-cols-2 gap-4">
-                    <Link href="/20x20-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        20x20 Exhibits</Link>
-                    <Link href="/20x30-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        20x30 Exhibits</Link>
-                    
-                    <Link href="/30x30-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        30x30 Exhibits</Link>
-                    <Link href="/30x40-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        30x40 Exhibits</Link>
-                    <Link href="/40x40-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        40x40 Exhibits</Link>
-                    <Link href="/40x50-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        40x50 Exhibits</Link>
-                  </div>
-                  </div>
-              </div>
-              <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
-                <div className="figure"><Image src="/images/inline-booth.webp" width="767" height="530" alt="Turnkey Trade Show Booth Services" className="w-full h-auto rounded-md"/></div>
-                <div className="p-4">
-                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Inline Exhibits</h3>
-                  <div className="h-1 w-full bg-gray-200 my-4"></div>
-                  <p className="text-slate-600 text-base mb-4">Inline exhibits showcase your brand efficiently along a single aisle.</p>
-                  <div className="grid grid-cols-1 gap-4">
-                 <Link href="/10x10-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        10x10 Exhibits</Link>
-                 <Link href="/10x20-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        10x20 Exhibits</Link>
-                 <Link href="/10x30-trade-show-booth/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                        10x30 Exhibits</Link>
-                 </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
-                <div className="figure"><Image src="/images/rental-booth.webp" width="767" height="530" alt="Rental Booth Solutions" className="w-full h-auto rounded-md"/></div>
-                <div className="p-4">
-                  <h3 className="text-3xl text-gray-600 font-bold mt-4 group-hover:text-gray-900 transition-colors mb-4">Exhibit Services</h3>
-                  <div className="h-1 w-full bg-gray-200 my-4"></div>
-                  <p className="text-slate-600 text-base mb-4">Exhibit services ensure smooth design, setup, and support for your booth.</p>
-                  <div className="grid grid-cols-1 gap-4">
-                    <Link href="/services/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                       We Design</Link>
-                    <Link href="/services/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                       We Build</Link>
-                    <Link href="/services/" className="block bg-[#EAEEF7] py-2 px-3 text-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 hover:translate-x-1 font-medium barlofamilty">
-                       We Deliver</Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+              <div className="group relative w-full max-w-md overflow-hidden rounded-md">
+                <Image src="/images/large-booth.webp" width="767" height="530" alt="Island Exhibits" className="w-full h-auto rounded-md" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_40%,#0f0f0f_85%)] z-20 p-6 flex flex-col justify-end">
+                  <span className="text-white text-2xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">01</span>
+                  <h3 className="text-white text-3xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">Island Exhibits</h3>
+                  <div className="opacity-0 translate-y-24 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0">
+                    <p className="text-white text-base leading-relaxed">Island exhibits provide full 360° visibility for impactful brand experiences.</p>
                   </div>
                 </div>
               </div>
-              
-              
-              
-              
+              <div className="group relative w-full max-w-md overflow-hidden rounded-md">
+                <Image src="/images/inline-booth.webp" width="767" height="530" alt="Inline Exhibits" className="w-full h-auto rounded-md" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_40%,#0f0f0f_85%)] z-20 p-6 flex flex-col justify-end">
+                  <span className="text-white text-2xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">02</span>
+                  <h3 className="text-white text-3xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">Inline Exhibits</h3>
+                  <div className="opacity-0 translate-y-24 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0">
+                    <p className="text-white text-base leading-relaxed">Inline exhibits showcase your brand efficiently along a single aisle.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="group relative w-full max-w-md overflow-hidden rounded-md">
+                <Image src="/images/rental-booth.webp" width="767" height="530" alt="Exhibit Services" className="w-full h-auto rounded-md"/>
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_40%,#0f0f0f_85%)] z-20 p-6 flex flex-col justify-end">
+                  <span className="text-white text-2xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">03</span>
+                  <h3 className="text-white text-3xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">Exhibit Services</h3>
+                  <div className="opacity-0 translate-y-24 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0">
+                    <p className="text-white text-base leading-relaxed">Exhibit services ensure smooth design, setup, and support for your booth.</p>
+                  </div>
+                </div>
+              </div>
             </div>
+            
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
               <div className="w-full sm:w-auto"><a href={data?.cta?.primary?.href || "/contact-us/"} className="block w-full sm:w-auto px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white hover:text-white transition duration-300 text-center">{data?.cta?.primary?.label || 'Get a Tailored Booth Design at No Cost'}</a></div>
             </div>
