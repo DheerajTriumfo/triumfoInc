@@ -54,36 +54,42 @@ export default function Home() {
 
   return (
     <>
-      <link
-        rel="preload"
-        href="/_next/static/css/app.css"
-        as="style"
-        onLoad="this.onload=null;this.rel='stylesheet'"
-      />
-      <noscript>
-        <link rel="stylesheet" href="/_next/static/css/app.css" />
-      </noscript>
-      <section>
-        <div className="bannerbg relative">
-          <Image src={banner?.imageUrl || "/images/booth-design-banner.webp"}  width={1920} height={813} priority={true} 
-          sizes="(max-width: 480px) 100vw,
-         (max-width: 768px) 100vw,
-         (max-width: 1200px) 100vw,
-         1920px" alt="Dream. Build. Belong"
-        />
-          <div className="bg-[#34343C] md:bg-[rgba(0,0,0,0.6)] relative md:absolute top-0 left-0 z-20 w-full h-full">
-            <div className="container mx-auto relative p-6 md:p-0 top:0 md:top-1/2 transform-0 md:transform-[translateY(-50%)]">
-              <div className="grid grid-cols-1 justify-items-center ">
-                <h1 className="text-white mb-4 font-bold leading-tight max-w-6xl text-4xl lg:text-[5.0rem] font-heading text-center">{banner?.title || 'Trade Show Booth Designs That Bring Your Brand to Life'}</h1>
-                <div className="text-lg text-white max-w-5xl mb-2 text-center font-medium leading-[2rem]">Stand out at your next event with high-impact trade show booths that attract visitors, increase engagement, and deliver measurable ROI. From custom exhibition booths to modular expo booths, Triumfo provides complete solutions for brands across industries. Our trade show displays are designed to elevate your brand presence and create memorable experiences for your audience.</div>
-                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 my-6">
-                  <div><a href="/trade-show-booth-ideas/" className="block w-full sm:w-auto px-6 sm:px-8 py-3 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-700 hover:border-2 hover:border-gray-600 hover:text-white transition duration-300 text-center">Browse from over 500 Designs</a></div>
-                </div> 
-              </div>
-            </div>
-          </div>
+      
+      <section className="relative w-full h-[500px] md:h-[813px]">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src={banner?.imageUrl || "/images/booth-design-banner.webp"}
+            alt="Dream. Build. Belong"
+            fill
+            className="object-cover object-center"
+            priority
+            sizes="(max-width: 480px) 100vw,
+                   (max-width: 768px) 100vw,
+                   (max-width: 1200px) 100vw,
+                   1920px"
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0  bg-black/60"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 md:px-0 text-center">
+          <h1 className="text-white font-bold leading-tight max-w-6xl text-3xl sm:text-4xl lg:text-[5rem] font-heading mb-4">
+            {banner?.title || 'Trade Show Booth Designs That Bring Your Brand to Life'}
+          </h1>
+          <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
+            Stand out at your next event with high-impact trade show booths that attract visitors, increase engagement, and deliver measurable ROI. From custom exhibition booths to modular expo booths, Triumfo provides complete solutions for brands across industries. Our trade show displays are designed to elevate your brand presence and create memorable experiences for your audience.
+          </p>
+          <a
+            href="/trade-show-booth-ideas/"
+            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-white text-base sm:text-xl hover:bg-gray-700 hover:border-gray-600 transition duration-300"
+          >
+            Browse from over 500 Designs
+          </a>
         </div>
       </section>
+
   
       {isModalOpen && (
         <div
