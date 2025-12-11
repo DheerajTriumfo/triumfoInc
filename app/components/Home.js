@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { useHomeQuery } from '../../hooks/useHomeQuery';
 import { get } from '../../lib/apiClient';
 import Faqtab from './../home/faq.js';
-
+import BoothGrid from './../home/boothcard.js';
 
 
 
@@ -76,10 +76,10 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 md:px-0 text-center">
           <h1 className="text-white font-bold leading-tight max-w-6xl text-3xl sm:text-4xl lg:text-[5rem] font-heading mb-4">
-            {banner?.title || 'Trade Show Booth Designs That Bring Your Brand to Life'}
+            {banner?.title || 'Custom Trade Show Booth Design, Build & Exhibit Services in the US'}
           </h1>
           <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
-            Stand out at your next event with high-impact trade show booths that attract visitors, increase engagement, and deliver measurable ROI. From custom exhibition booths to modular expo booths, Triumfo provides complete solutions for brands across industries. Our trade show displays are designed to elevate your brand presence and create memorable experiences for your audience.
+            We are your one-stop partner for all your trade show and exhibit needs.
           </p>
           <a
             href="/trade-show-booth-ideas/"
@@ -116,14 +116,14 @@ export default function Home() {
         </div>
       )}
       <section>
-        <div className="topsection py-20">
+        <div className="topsection py-10 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="maintitle text-gray-700 mb-6">{data?.intro?.title || 'Our Trade Show Booth Services'}</h2>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo offers end-to-end exhibition stand solutions to simplify your event preparation. Our in-house team manages trade show booth design, fabrication, printing, shipping, installation, dismantling, and storage—ensuring a seamless experience from start to finish.'}</p>
+              <h2 className="text-3xl md:text-6xl font-semibold text-gray-700 mb-6">{data?.intro?.title || 'Trade Show Booth Options by Size'}</h2>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'Explore booth solutions in every size—crafted to match your goals and maximize your presence on the show floor.'}</p>
             </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+            <BoothGrid/>
+            {/*<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
               <div className="bg-white rounded-[14px]  border border-gray-700 text-center hover:border-gray-900 hover:shadow-xl transition-all duration-300 group">
                 <div className="figure"><Image src="/images/large-booth.webp" width="767" height="530" alt="Custom Trade Show Booth Design" className="w-full h-auto rounded-md"/></div>
                   <div className="p-4">
@@ -184,9 +184,10 @@ export default function Home() {
               
               
             </div>
+            
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
               <div className="w-full sm:w-auto"><a href={data?.cta?.primary?.href || "/contact-us/"} className="block w-full sm:w-auto px-6 py-3 bg-[#9A3220] border-2 border-[#9A3220] rounded-xl text-base sm:text-xl text-white hover:bg-gray-500 hover:border-2 hover:border-white hover:text-white transition duration-300 text-center">{data?.cta?.primary?.label || 'Get a Tailored Booth Design at No Cost'}</a></div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
