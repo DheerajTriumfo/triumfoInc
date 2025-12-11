@@ -15,7 +15,7 @@ export default function Home() {
   const [hpPortfolio, setHpPortfolio] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");
-
+  const [showText, setShowText] = useState(false);
   
 
   
@@ -123,12 +123,16 @@ export default function Home() {
               <p className="text-xl text-gray-500">{data?.intro?.description || 'Triumfo offers end-to-end exhibition stand solutions to simplify your event preparation. Our in-house team manages trade show booth design, fabrication, printing, shipping, installation, dismantling, and storage—ensuring a seamless experience from start to finish.'}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
-              <div className="group relative w-full max-w-md overflow-hidden rounded-md">
+              <div className="group relative w-full max-w-md overflow-hidden rounded-md onClick={() => setShowText(!showText)}">
                 <Image src="/images/large-booth.webp" width="767" height="530" alt="Island Exhibits" className="w-full h-auto rounded-md" />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_40%,#0f0f0f_85%)] z-20 p-6 flex flex-col justify-end">
                   <span className="text-white text-2xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">01</span>
                   <h3 className="text-white text-3xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">Island Exhibits</h3>
-                  <div className="opacity-0 translate-y-24 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0">
+                  <div className={`transition-all duration-500 ease-out ${
+            showText
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-6"
+          } md:group-hover:opacity-100 md:group-hover:translate-y-0`}>
                     <p className="text-white text-base leading-relaxed">Island exhibits provide full 360° visibility for impactful brand experiences.</p>
                   </div>
                 </div>
@@ -138,7 +142,11 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_40%,#0f0f0f_85%)] z-20 p-6 flex flex-col justify-end">
                   <span className="text-white text-2xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">02</span>
                   <h3 className="text-white text-3xl font-semibold mb-2 translate-y-12 transition-transform duration-500 ease-out group-hover:-translate-y-4">Inline Exhibits</h3>
-                  <div className="opacity-0 translate-y-24 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0">
+                  <div className={`transition-all duration-500 ease-out ${
+            showText
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-6"
+          } md:group-hover:opacity-100 md:group-hover:translate-y-0`}>
                     <p className="text-white text-base leading-relaxed">Inline exhibits showcase your brand efficiently along a single aisle.</p>
                   </div>
                 </div>
