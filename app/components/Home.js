@@ -64,7 +64,7 @@ export default function Home() {
             fill
             className="object-cover object-center"
             priority
-            fetchpriority="high"
+            fetchPriority="high"
             sizes="(max-width: 480px) 100vw,
                    (max-width: 768px) 100vw,
                    (max-width: 1200px) 100vw,

@@ -84,9 +84,9 @@ export default function RootLayout({ children }) {
         <Providers>
           <Navigation />
           {children}
-          <SpeedInsights url="https://www.triumfo.us/" />
           <Footer />
         </Providers>
+        <SpeedInsights/>
       </body>
     </html>
   );
