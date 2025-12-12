@@ -140,16 +140,13 @@ function BoothCard({ number, title, text, image, url }) {
         
 
         {/* Title */}
-        <h3 className="text-white text-3xl font-semibold mb-2 translate-y-6 transition-transform duration-500 ease-out group-hover:-translate-y-4">
+        <h3 className="text-white text-3xl font-semibold mb-0 translate-y-0 lg:translate-y-6 transition-transform duration-500 ease-out group-hover:-translate-y-4">
           {title}
         </h3>
 
         {/* Text animation for mobile + desktop */}
         <div
-          className={`transition-all duration-500 ease-out
-            ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
-            md:opacity-0 md:translate-y-6 md:group-hover:opacity-100 md:group-hover:translate-y-0
-          `}
+          className="opacity-100 lg:opacity-0 translate-y-0 lg:translate-y-24 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0"
         >
           <p className="text-white text-base leading-relaxed">{text}</p>
         </div>
