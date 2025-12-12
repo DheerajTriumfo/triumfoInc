@@ -4,9 +4,9 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Trade Show Booth Rentals In USA | Turnkey Exhibit Services",
+    title: "Las Vegas Trade Show Booth Rentals | Turnkey Exhibit Services",
     description:
-      "We offer creative trade show booth rentals for every industry. Our exhibit rentals attract, engage, and convert at any event across the USA.",
+      "We offer creative trade show booth rentals in Las Vegas. Our exhibit rentals attract, engage, and convert at any event across the USA.",
     pathname: "/trade-show-booth-display-rentals/",
     image: "https://www.triumfo.us/images/build-rental-booth.webp",
     openGraph: {

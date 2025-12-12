@@ -198,12 +198,12 @@ export default function TradeShowBoothDisplayRentals() {
 			<section>
 				<div className="bannerbg bg-[#34343C] py-16 lg:py-20">
 					<div className="container mx-auto px-4">
-						<div className="max-w-3xl mx-auto">
+						<div className="max-w-5xl mx-auto">
 							<div className="text-center">
-								<h1 className="text-white font-semibold text-7xl mb-4">Your Nationwide Trade Show Booth Rental Partner</h1>
-								<p className="text-white text-xl">We are a Las Vegas–based trade show booth rental company offering full turnkey booth services across all major U.S. cities. Whether you search for Las Vegas trade show booth rentals, Orlando trade show booth rentals, Chicago booth rentals, San Diego booth rentals, San Francisco booth rentals, or Atlanta trade show booth rentals—we deliver custom-designed, ready-to-install exhibit rentals nationwide.</p>
+								<h1 className="text-white font-semibold text-7xl mb-4">Your Las Vegas Trade Show Booth Rental Partner</h1>
+								<p className="text-white text-xl">We are a Las Vegas–based trade show booth rental company providing complete turnkey solutions—from booth design, fabrication, and graphics to flooring, lighting, furniture, AV equipment, shipping, installation, and dismantling.</p>
 							</div>
-							<div className="mt-8 text-center"><Link href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Free Quote</Link></div>
+							<div className="mt-8 text-center"><Link href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Your Rental Booth Design in Just 48 Hours</Link></div>
 						</div>
 					</div>
 				</div>
@@ -243,9 +243,9 @@ export default function TradeShowBoothDisplayRentals() {
 				<div className="homeportfolio bg-[#34343C] py-20">
 					<div className="container mx-auto px-4 text-center text-white pb-20">
 						<div className="max-w-3xl mx-auto">
-						<h2 className="maintitle">Explore Trade Show Booth Rental Work</h2>
+						<h2 className="maintitle">Our Recent Trade Show Booth Work in Las Vegas</h2>
 						<div className="mt-4">
-							<p className="text-xl text-white leading-relaxed">Take a look at our exhibit booth rentals that have helped brands stand out on the show floor. Each design is crafted to attract attention, engage visitors, and leave a memorable impression at major trade shows across the USA.</p>
+							<p className="text-xl text-white leading-relaxed">Take a look at our latest trade show booth builds in Las Vegas, where we deliver impactful designs, quality fabrication, and seamless turnkey services for every brand.</p>
 						</div>
 						</div>
 					</div>
@@ -305,8 +305,8 @@ export default function TradeShowBoothDisplayRentals() {
 	          <div className="container mx-auto px-4">
 	            <div className="max-w-3xl mx-auto mb-12">
 					<div className="text-center mb-8">
-						<h1 className="text-gray-700 maintitle mb-4">Featured Case Studies</h1>
-						<p className="text-gray-700 text-lg mb-4">Explore real projects where our custom exhibit booths and custom trade show displays engaged audiences and boosted brand impact.</p>
+						<h1 className="text-gray-700 maintitle mb-4">Case Studies</h1>
+						<p className="text-gray-700 text-lg mb-4">Learn in depth how we helped our clients with their Las Vegas trade show exhibit rental projects—their challenges, our solutions, and the final results.</p>
 					</div>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -378,6 +378,14 @@ export default function TradeShowBoothDisplayRentals() {
 						</div>
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
 							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+								<h3 className="title text-4xl font-semibold mb-6">500+ Booths</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Explore 500+ booth designs, all fully customizable to your needs.</p>
+							</div>
+							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+								<h3 className="title text-4xl font-semibold mb-6">Free 3D Design</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Receive a free 3D booth design to see your setup in realistic detail.</p>
+							</div>
+							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
 								<h3 className="title text-4xl font-semibold mb-6">Our Expertise</h3>
 								<p className="text-lg mb-0 pt-6 border-t border-gray-200">25+ years of trade show booth rental experience in the U.S.</p>
 							</div>
@@ -385,13 +393,22 @@ export default function TradeShowBoothDisplayRentals() {
 								<h3 className="title text-4xl font-semibold mb-6">Turnkey Services</h3>
 								<p className="text-lg mb-0 pt-6 border-t border-gray-200">End-to-end service: design, fabrication, logistics, I&D, and on-site support.</p>
 							</div>
+
 							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">We Are Local</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Local teams across major trade show cities for faster response and lower shipping costs.</p>
+								<h3 className="title text-4xl font-semibold mb-6">We Are <br/>Local</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Our exhibit house is located in Las Vegas for faster response times and lower shipping costs.</p>
 							</div>
 							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-								<h3 className="title text-4xl font-semibold mb-6">24x7 Full Support</h3>
-								<p className="text-lg mb-0 pt-6 border-t border-gray-200">Dedicated project manager for each event.</p>
+								<h3 className="title text-4xl font-semibold mb-6">Transparent Pricing</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">We provide detailed, itemized quotations for full transparency and easy comparison.</p>
+							</div>
+							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+								<h3 className="title text-4xl font-semibold mb-6">In-House Production</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">We produce your rental booth in-house for faster turnaround and superior quality.</p>
+							</div>
+							<div className="bg-white rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+								<h3 className="title text-4xl font-semibold mb-6">24×7 Full <br/>Support</h3>
+								<p className="text-lg mb-0 pt-6 border-t border-gray-200">We provide a dedicated project manager for each event to ensure smooth & easy communication.</p>
 							</div>
 						</div>
 					</div>
