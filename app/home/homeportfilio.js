@@ -58,32 +58,32 @@ function HomeportFolio({ img, title, text }) {
 export default function PortfolioGrid() {
   const cards = [
     {
-      img: "images/home-portfolio6.webp",
+      img: "/images/home-portfolio6.webp",
       title: "Actus",
       text: "NAB Show 2025 Trade Show Booth",
     },
     {
-      img: "images/pt2.webp",
+      img: "/images/pt2.webp",
       title: "Auto Store",
       text: "Promat 2019 Custom Booth",
     },
     {
-      img: "images/home-portfolio2.webp",
+      img: "/images/home-portfolio2.webp",
       title: "Dexon System",
       text: "InfoComm 2018 Exhibit",
     },
     {
-      img: "images/home-portfolio5.webp",
+      img: "/images/home-portfolio5.webp",
       title: "ION8",
       text: "IHS 2025 Booth Design",
     },
     {
-      img: "images/home-portfolio3.webp",
+      img: "/images/home-portfolio3.webp",
       title: "ProtoChips",
       text: "M&M 2025 Exhibit",
     },
     {
-      img: "images/home-portfolio4.webp",
+      img: "/images/home-portfolio4.webp",
       title: "FPC",
       text: "IFAI 2018 Island Booth",
     },
