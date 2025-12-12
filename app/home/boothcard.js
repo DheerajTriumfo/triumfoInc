@@ -82,8 +82,7 @@ export default function BoothGrid() {
   // Show only 3 cards unless "Show more" is clicked
   const visibleCards = showAll ? cards : cards.slice(0, 6);
   const handleShowLessClick = (e) => {
-    e.preventDefault(); // Prevent default anchor behavior (scroll to top)
-    setShowAll(false);  // Set state to hide extra cards
+    setShowAll(false);
   };
   return (
     <>

@@ -7,7 +7,7 @@ import { useHomeQuery } from '../../hooks/useHomeQuery';
 import { get } from '../../lib/apiClient';
 import Faqtab from './../home/faq.js';
 import BoothGrid from './../home/boothcard.js';
-
+import HomeportFolio from './../home/homeportfilio.js';
 
 
 export default function Home() {
@@ -202,146 +202,7 @@ export default function Home() {
       </div>
     </div>
     <div className="px-4 sm:px-2 py-2">
-      <div className="grid grid-cols-12 gap-2">
-        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
-          <img
-            src="images/home-portfolio6.webp" width={767}  height={530}
-            alt="Custom Trade Show Booth for Actus at NAB Show 2025"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
-            sizes="(max-width: 480px) 100vw,
-         (max-width: 768px) 100vw,
-         (max-width: 1200px) 100vw,
-         767px"
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="">
-                <h2 className="text-white font-semibold text-4xl mb-4">
-                  Actus
-                </h2>
-                <p className="text-white text-base">
-                  NAB Show 2025 Trade Show Booth
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
-          <img
-            src="images/pt2.webp" width={767}  height={530}
-            alt="Custom Trade Show Booth for AutoStore at Promat 2019"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
-            sizes="(max-width: 480px) 100vw,
-         (max-width: 768px) 100vw,
-         (max-width: 1200px) 100vw,
-         767px"
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="">
-                <h2 className="text-white font-semibold text-4xl mb-4">
-                  Auto Store
-                </h2>
-                <p className="text-white text-base">
-                  Promat 2019 Custom Booth
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
-          <img
-            src="images/home-portfolio2.webp" width={767}  height={530}
-            alt="Trade Show Booth for Dexon Systems at InfoComm 2018"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
-            sizes="(max-width: 480px) 100vw,
-         (max-width: 768px) 100vw,
-         (max-width: 1200px) 100vw,
-         767px"
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="">
-                <h2 className="text-white font-semibold text-4xl mb-4">
-                  Dexon System
-                </h2>
-                <p className="text-white text-base">
-                  InfoComm 2018 Exhibit
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
-          <img
-            src="images/home-portfolio5.webp" width={767}  height={530}
-            alt="Trade Show Booth for ION8 at IHS 2025"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
-            sizes="(max-width: 480px) 100vw,
-         (max-width: 768px) 100vw,
-         (max-width: 1200px) 100vw,
-         767px"
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="">
-                <h2 className="text-white font-semibold text-4xl mb-4">
-                  ION8
-                </h2>
-                <p className="text-white text-base">
-                  IHS 2025 Booth Design
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
-          <img
-            src="images/home-portfolio3.webp" width={767}  height={530}
-            alt="Custom Wooden Trade Show Booth for ProtoChips at M&M 2025"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
-            sizes="(max-width: 480px) 100vw,
-         (max-width: 768px) 100vw,
-         (max-width: 1200px) 100vw,
-         767px"
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="">
-                <h2 className="text-white font-semibold text-4xl mb-4">
-                  ProtoChips
-                </h2>
-                <p className="text-white text-base">
-                  M&M 2025 Exhibit
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="group grid col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden">
-          <img
-            src="images/home-portfolio4.webp" width={767}  height={530}
-            alt="Trade Show Booth for FPC at IFAI 2018"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105" 
-            sizes="(max-width: 480px) 100vw,
-         (max-width: 768px) 100vw,
-         (max-width: 1200px) 100vw,
-         767px"
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-[rgba(57,65,81,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <div className="flex items-center justify-center w-full h-full text-center">
-              <div className="">
-                <h2 className="text-white font-semibold text-4xl mb-4">
-                  FPC
-                </h2>
-                <p className="text-white text-base">
-                  IFAI 2018 Island Booth
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HomeportFolio/>
       <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center">
         <a
           href={data?.portfolioIntro?.primaryCta?.href || "/contact-us/"}
@@ -638,10 +499,10 @@ export default function Home() {
                 <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">End-to-End Services Under Your Brand</p>
                 <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">If you are a trade show agency, we provide turnkey trade show booth solutions that you can confidently offer to your clients under your name.</p>
                 <p className="text-gray-700 text-base mb-2 leading-[1.8rem]">We manage everything in-house with:</p>
-                <p class="text-gray-700 text-base"><span class="font-semibold">•  30+ skilled 3D designers</span></p>
-                <p class="text-gray-700 text-base"><span class="font-semibold">•  80+ expert booth builders</span></p>
-                <p class="text-gray-700 text-base"><span class="font-semibold">•  10+ graphic designers and printing specialists</span></p>
-                <p class="text-gray-700 text-base"><span class="font-semibold">•  40+ member I&D team</span></p>
+                <p className="text-gray-700 text-base"><span className="font-semibold">•  30+ skilled 3D designers</span></p>
+                <p className="text-gray-700 text-base"><span className="font-semibold">•  80+ expert booth builders</span></p>
+                <p className="text-gray-700 text-base"><span className="font-semibold">•  10+ graphic designers and printing specialists</span></p>
+                <p className="text-gray-700 text-base"><span className="font-semibold">•  40+ member I&D team</span></p>
                 <p className="text-gray-700 text-base my-4 leading-[1.8rem]">Supported by our 80,000+ sq. ft. production facility, we deliver high-quality modular exhibition booths with complete precision and control.</p>
               </div>
             </div>
