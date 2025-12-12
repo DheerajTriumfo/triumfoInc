@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
-
   images: {
+    minimumCacheTTL: 31536000,
     formats: ['image/avif', 'image/webp'], // ✅ modern formats
     minimumCacheTTL: 31536000, // ✅ cache images for 1 year
     remotePatterns: [
