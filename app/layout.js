@@ -23,12 +23,7 @@ const opensans = Open_Sans({
   display: "optional",
 });
 
-export async function generateMetadata() {
-  const siteUrl = await resolveSiteUrl();
-  return {
-    metadataBase: new URL(siteUrl),
-  };
-}
+
 
 export default function RootLayout({ children }) {
   const siteData = true;
