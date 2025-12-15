@@ -184,6 +184,8 @@ export default  async function Viewboothdetail(props){
 								      </li>
 								    ))}
 								  </ul>
+								  <h2 className="text-xl text-custom font-semibold my-1">Note:</h2>
+	    					  <p className="text-md text-gray-700">{selected.note}</p>
 								</div>
 							</div>
 						</div>
