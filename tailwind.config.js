@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-const config = {
+module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}", // scans your App Router files
-    "./components/**/*.{js,ts,jsx,tsx}", // scans your components
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridColumn: {
+        '7': 'span 7 / span 7', // ✅ correct placement
+      },
+    },
   },
   plugins: [],
 };
-
-module.exports = config;
