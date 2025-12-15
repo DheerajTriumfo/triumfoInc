@@ -12,7 +12,6 @@ export default function ThankYouPage() {
     					<h1 className="text-white font-semibold text-7xl mb-4">Thank You! for connecting with us.</h1>
     					<p className="text-white text-lg">We have received your message and our expert will soon get back to you.</p>
     				</div>
-    				
     			</div>
     		</div>
     	</div>

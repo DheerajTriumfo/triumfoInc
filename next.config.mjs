@@ -34,7 +34,7 @@ const nextConfig = {
     return [
       {
         // Cache static assets aggressively
-        source: "/:all*(svg|jpg|jpeg|png|webp|ico|css|js|woff2|ttf|eot|otf)"},
+        source: "/:all*(svg|jpg|jpeg|png|webp|ico|css|js|woff2|ttf|eot|otf)",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
