@@ -6,74 +6,40 @@ export default function BoothGrid() {
 
   const cards = [
     {
-      number: "40x50",
-      title: "40x50",
-      text: "Explore 40x50 Island trade show booths",
+      title: "Custom Exhibits",
+      text: "Personalized exhibits that stand out",
       image: "/images/40x50-booth.webp",
-      url : "/40x50-trade-show-booth/",
+      url : "/custom-exhibit-rental/",
     },
     {
-      number: "40x50",
-      title: "40x40",
-      text: "Explore 40x40 Island trade show booths",
+      title: "Rental Exhibits",
+      text: "Cost-effective rental exhibits solutions",
       image: "/images/40x40-booth.webp",
-      url : "/40x40-trade-show-booth/",
+      url : "/trade-show-booth-display-rentals/",
     },
     {
-      number: "30x40",
-      title: "30x40",
-      text: "Explore 30x40 Island trade show booths",
+      title: "Exhibit Services",
+      text: "Complete exhibit services for events",
       image: "/images/30x40-booth.webp",
-      url : "/30x40-trade-show-booth/",
+      url : "",
     },
     {
-      number: "30x30",
-      title: "30x30",
-      text: "Explore 30x30 Island trade show booths",
+      title: "Exhibit Designs",
+      text: "Choose from 500+ exhibit designs",
       image: "/images/30x30-booth.webp",
-      url : "/30x30-trade-show-booth/",
+      url : "",
     },
     {
-      number: "20x40",
-      title: "20x40",
-      text: "Explore 20x40 Island trade show booths",
+      title: "About Company",
+      text: "Company overview and expertise",
       image: "/images/20x40-booth.webp",
-      url : "/20x40-trade-show-booth/",
+      url : "/about-us/",
     },
     {
-      number: "20x30",
-      title: "20x30",
-      text: "Explore 20x30 Island trade show booths",
+      title: "Exhibit Guide",
+      text: "Smart guide for successful exhibits",
       image: "/images/20x30-booth.webp",
-      url : "/20x30-trade-show-booth/",
-    },
-    {
-      number: "20x20",
-      title: "20x20",
-      text: "Explore 20x20 Island trade show booths",
-      image: "/images/20x20-booth.webp",
-      url : "/20x20-trade-show-booth/",
-    },
-    {
-      number: "10x30",
-      title: "10x30",
-      text: "Explore 10x30 Inline trade show booths",
-      image: "/images/10x30-booth.webp",
-      url : "/10x30-trade-show-booth/",
-    },
-    {
-      number: "10x20",
-      title: "10x20",
-      text: "Explore 10x20 Inline trade show booths",
-      image: "/images/10x20-booth.webp",
-      url : "/10x20-trade-show-booth/",
-    },
-    {
-      number: "10x10",
-      title: "10x10",
-      text: "Explore 10x10 Inline trade show booths",
-      image: "/images/10x10-booth.webp",
-      url : "/10x10-trade-show-booth/",
+      url : "",
     },
     
     
@@ -92,28 +58,7 @@ export default function BoothGrid() {
           <BoothCard key={i} {...card} />
         ))}
       </div>
-
-      {/* Show more / Show less Button */}
-      <div className="flex justify-center mt-8">
-        {!showAll && (
-          <button
-            onClick={() => setShowAll(true)}
-            className="px-8 py-3 bg-[#8E2614] text-xl text-white rounded-lg hover:bg-[#722011] transition cursor-pointer"
-          >
-            Show More
-          </button>
-        )}
-
-        {showAll && (
-          <a
-            href="/contact-us/"
-            onClick={handleShowLessClick} 
-            className="px-8 py-3 bg-[#8E2614] text-xl text-white rounded-lg hover:bg-[#722011] transition cursor-pointer"
-          >
-            Get A Quote
-          </a>
-        )}
-      </div>
+      
     </>
   );
 }

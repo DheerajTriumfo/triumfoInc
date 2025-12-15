@@ -97,11 +97,11 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
-      {
-        source: "/custom-exhibit-rental/",
-        destination: "/",
-        permanent: true,
-      },
+      // {
+      //   source: "/custom-exhibit-rental/",
+      //   destination: "/",
+      //   permanent: true,
+      // },
       {
         source: "/custom-trade-show-displays/",
         destination: "/",

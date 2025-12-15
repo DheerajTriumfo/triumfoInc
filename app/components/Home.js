@@ -76,11 +76,11 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 md:px-0 text-center">
-          <h1 className="text-white font-bold leading-tight max-w-6xl text-3xl sm:text-4xl lg:text-[5rem] font-heading mb-4">
-            {banner?.title || 'Custom Trade Show Booth Design, Build & Exhibit Services in the US'}
+          <h1 className="text-white font-bold leading-tight max-w-6xl text-3xl sm:text-4xl lg:text-[7rem] font-heading mb-4">
+            {banner?.title || 'Crafting Trade Show Booths That Impress'}
           </h1>
           <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
-            We are your one-stop partner for all your trade show and exhibit needs.
+            We design and build trade show booths that captivate, engage, and leave a lasting impression.
           </p>
           <a
             href="/trade-show-booth-ideas/"
@@ -120,8 +120,8 @@ export default function Home() {
         <div className="topsection py-10 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Trade Show Booth Options by Size'}</h2>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'Explore booth solutions in every size—crafted to match your goals and maximize your presence on the show floor.'}</p>
+              <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Complete Trade Show Exhibit Booth Solutions in The USA'}</h2>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'End-to-end trade show booth services designed to make your brand stand out nationwide.'}</p>
             </div>
             <BoothGrid/>
           </div>
@@ -419,32 +419,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="seosection py-20">
-          <div className="container mx-auto px-4 md:px-6 lg:px-12 leading-normal">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
-              <div className="mb-8 lg:mb-0 text-left lg:text-justify">
-                <h2 className="maintitle mb-4 text-gray-700 text-center">For Exhibitors:</h2>
-                <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">Simplifying Your Exhibit Experience</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">Exhibiting at a trade fair can be complex. You need the right trade show booth, partner, and exhibition stand type to meet your goals.</p>
-                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">We simplify the entire process. Our experienced trade show booth designers and booth builders ensure a smooth and successful show campaign, whether you are a local, national, or international exhibitor.</p>
-                <p className="text-gray-600 text-base mb-4 leading-[1.8rem]">As a proud  <a className="text-blue-500 hover:text-blue-700" href="https://www.ifesnet.com/triumfo-international-gmbh/" target="_blank" rel="noopener noreferrer">IFES</a> member, Triumfo adheres to international standards and brings proven expertise in expo booths, conference booths, and trade show displays worldwide.</p>
-              </div>
-              <div className="text-left lg:text-justify">
-                <h2 className="maintitle mb-4 text-gray-700 text-center">For Agencies:</h2>
-                <p className="text-xl text-[#9A3220] font-medium mb-4 text-center">End-to-End Services Under Your Brand</p>
-                <p className="text-gray-700 text-base mb-4 leading-[1.8rem]">If you are a trade show agency, we provide turnkey trade show booth solutions that you can confidently offer to your clients under your name.</p>
-                <p className="text-gray-700 text-base mb-2 leading-[1.8rem]">We manage everything in-house with:</p>
-                <p className="text-gray-700 text-base"><span className="font-semibold">•  30+ skilled 3D designers</span></p>
-                <p className="text-gray-700 text-base"><span className="font-semibold">•  80+ expert booth builders</span></p>
-                <p className="text-gray-700 text-base"><span className="font-semibold">•  10+ graphic designers and printing specialists</span></p>
-                <p className="text-gray-700 text-base"><span className="font-semibold">•  40+ member I&D team</span></p>
-                <p className="text-gray-700 text-base my-4 leading-[1.8rem]">Supported by our 80,000+ sq. ft. production facility, we deliver high-quality modular exhibition booths with complete precision and control.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       <Faqtab/>
       <div className="ctaction bg-[#E9EEF7] py-6">
         <div className="container mx-auto px-4">
