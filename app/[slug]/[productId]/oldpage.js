@@ -5,7 +5,7 @@ import QuoteForm from './QuoteForm';
 import parse, { domToReact } from 'html-react-parser';
 import { buildMetadata } from '../../../lib/seo';
 import BoothDetailContent from './BoothDetailContent';
-import OwlInit from './OwlInit';
+
 
 
 const fallbackBase = 'https://triumfous.mobel.us/api';
@@ -66,7 +66,6 @@ export default  async function Viewboothdetail(props){
 	const list = Array.isArray(payload?.data?.rental_data) ? payload.data.rental_data : [];
 	const images = Array.isArray(payload?.data?.imagedata) ? payload.data.imagedata : [];
 	const rentalInclude = Array.isArray(payload?.data?.includedata) ? payload.data.includedata : [];
-	const relateddata = Array.isArray(payload?.data?.relatedbooth) ? payload.data.relatedbooth : [];
 	console.log(images);
 	console.log(rentalInclude);
 
@@ -154,7 +153,10 @@ export default  async function Viewboothdetail(props){
 									</div>
 								</div>
 								<BoothDetailContent defaultBoothSize={selected.boothsize || size} />
-								
+								<div className="mt-8">
+									<h1 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h1>
+									{descritpionwithTailwind(selected.description)}
+								</div>
 							</div>
 							<div className="col-span-12 md:col-span-5 lg:col-span-5">
 							<div className="w-full bg-white text-gray-700 mt-6 md:mt-0 p-4  flex flex-col space-y-4 rounded-md sticky top-[10px] z-50 min-h-[20px]">
@@ -184,8 +186,6 @@ export default  async function Viewboothdetail(props){
 								      </li>
 								    ))}
 								  </ul>
-								  <h2 className="text-xl text-custom font-semibold my-1">Note:</h2>
-	    					  <p className="text-md text-gray-700">{selected.note}</p>
 								</div>
 							</div>
 						</div>
@@ -193,48 +193,7 @@ export default  async function Viewboothdetail(props){
 					</div>
 				</div>
 			</section>
-			<section>
-				<div className="rentalbg  relative bg-white py-12">
-					<div className="container mx-auto px-4">
-						<div className="max-w-3xl mx-auto text-center">
-							<h2 className="maintitle text-gray-700 mb-6 max-w-2xl mx-auto">Similar Booth Designs</h2>
-						</div>
-						<div className="owl-carousel owl-theme mt-12" id="rental">
-							{relateddata.map((item, index) => (
-							<div key={item.id || index} className="column relative">
-					      <div className="figure relative block">
-					        <img
-					          src={`${apiBase}/images/uploads/rentalexhibition/${item.thumbnail}`}
-					          width={350}
-					          height={300}
-					          alt={item.alttag || item.skucode}
-					          loading="lazy"
-					          className="w-full h-auto rounded-md"
-					        />
-					      </div>
-								<div className="colloverlay block [background-image:linear-gradient(180deg,rgba(32,32,32,0)_75%,#0f0f0f_96%)] absolute w-full h-full top-0 left-0">
-									<div className="absolute text-center bottom-[40px] left-1/2 -translate-x-1/2 inline-block font-[Barlow_Condensed,sans-serif]">
-										<a href={`/${item.boothsize}-trade-show-booth/${item.skucode}`}>
-											<div className="captitile text-white font-semibold text-4xl">{item.skucode}</div>
-											<div className="eyeebrow text-white text-lg">{item.boothsize}</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							))}
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div className="contentsec py-10">
-					<div className="container mx-auto px-4">
-						<h1 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h1>
-						{descritpionwithTailwind(selected.description)}
-					</div>
-				</div>
-			</section>
-			 <OwlInit />
+
 		</>
 	);
 }

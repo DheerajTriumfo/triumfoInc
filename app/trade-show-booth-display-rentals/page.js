@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { useRouter } from 'next/navigation';
 import $ from 'jquery';
-
+import BoothGrid from './boothcard.js';
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://triumfous.mobel.us/api';
 
 export default function TradeShowBoothDisplayRentals() {
@@ -200,8 +200,8 @@ export default function TradeShowBoothDisplayRentals() {
 					<div className="container mx-auto px-4">
 						<div className="max-w-5xl mx-auto">
 							<div className="text-center">
-								<h1 className="text-white font-semibold text-7xl mb-4">Your Las Vegas Trade Show Booth Rental Partner</h1>
-								<p className="text-white text-xl">We are a Las Vegas–based trade show booth rental company providing complete turnkey solutions—from booth design, fabrication, and graphics to flooring, lighting, furniture, AV equipment, shipping, installation, and dismantling.</p>
+								<h1 className="text-white font-semibold text-7xl mb-4">Your Nationwide Trade Show Booth Rental Partner</h1>
+								<p className="text-white text-xl">We provide businesses across the country with high-quality, customizable trade show booths for rent. From design to setup, we handle every detail so you can make a lasting impression at your next event.</p>
 							</div>
 							<div className="mt-8 text-center"><Link href="/contact-us/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Get Your Rental Booth Design in Just 48 Hours</Link></div>
 						</div>
@@ -209,29 +209,40 @@ export default function TradeShowBoothDisplayRentals() {
 				</div>
 			</section>
 			<section>
-				<div className="circlebg py-20 bg-white">
+        <div className="topsection py-10 md:py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">Choose Trade Show Exhibit Rentals by Booth Size</h2>
+              <p className="text-xl text-gray-500">Find the perfect trade show booth to fit your space and needs. Browse our wide range of exhibit rentals organized by booth size for a hassle-free selection.</p>
+            </div>
+            <BoothGrid/>
+          </div>
+        </div>
+      </section>
+			<section>
+				<div className="circlebg py-20 bg-[#EAEEF7]">
 					<div className="container mx-auto px-4">
 						
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-							<div className="box bg-[#EAEEF7] py-12 px-6">
-								<h2 className="text-4xl text-gray-700 font-semibold mb-4">Why Rent a Trade Show Booth Instead of Buying?</h2>
+							<div className="box bg-[#34343C] py-12 px-6">
+								<h2 className="text-4xl text-white font-semibold mb-4">Why Rent a Trade Show Booth Instead of Buying?</h2>
 								<ul>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Reduced upfront investment and lower total exhibiting costs.</li>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> No storage, maintenance, or warehousing needed.</li>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexibility to change booth size, design, and message for each show.</li>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Quick installation and dismantling with pre-fabricated components.</li>
+									<li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Reduced upfront investment and lower total exhibiting costs.</li>
+									<li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> No storage, maintenance, or warehousing needed.</li>
+									<li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexibility to change booth size, design, and message for each show.</li>
+									<li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Quick installation and dismantling with pre-fabricated components.</li>
 								</ul>
 							</div>
 							<div className="box bg-white hidden lg:block">
 								<Image src="/images/build.webp" width={400} height={475} alt="" className="w-full h-auto"/>
 							</div>
-							<div className="box bg-[#EAEEF7] py-12 px-6">
-								<h2 className="text-4xl text-gray-700 font-semibold mb-4">Our Exhibit Rental Solutions</h2>
+							<div className="box bg-[#34343C] py-12 px-6">
+								<h2 className="text-4xl text-white font-semibold mb-4">Our Exhibit Rental Solutions</h2>
 								<ul>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> 500+ booth rental options across multiple sizes.</li>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Large custom booth rental solutions.</li>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> End-to-end support: design to dismantling.</li>
-									<li className="flex  gap-x-2 text-gray-700 text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexible rental packages to suit your budget.</li>
+									<li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> 500+ booth rental options across multiple sizes.</li>
+									<li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Large custom booth rental solutions.</li>
+									<li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> End-to-end support: design to dismantling.</li>
+									<li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexible rental packages to suit your budget.</li>
 								</ul>
 							</div>
 						</div>
@@ -243,9 +254,9 @@ export default function TradeShowBoothDisplayRentals() {
 				<div className="homeportfolio bg-[#34343C] py-20">
 					<div className="container mx-auto px-4 text-center text-white pb-20">
 						<div className="max-w-3xl mx-auto">
-						<h2 className="maintitle">Our Recent Trade Show Booth Work in Las Vegas</h2>
+						<h2 className="maintitle">Showcasing Our Recent Trade Show Booth Rentals</h2>
 						<div className="mt-4">
-							<p className="text-xl text-white leading-relaxed">Take a look at our latest trade show booth builds in Las Vegas, where we deliver impactful designs, quality fabrication, and seamless turnkey services for every brand.</p>
+							<p className="text-xl text-white leading-relaxed">Explore our latest trade show booth rentals from across the USA. See how we combine innovative design, quality craftsmanship, and turnkey services to create booths that make an impact.</p>
 						</div>
 						</div>
 					</div>
