@@ -34,7 +34,7 @@ const nextConfig = {
     return [
       {
         // Cache static assets aggressively
-        source: "/:all*(svg|jpg|jpeg|png|webp|ico|css|js|woff2|ttf|eot|otf)",
+        source: "/:all*(svg|jpg|jpeg|png|webp|ico|css|js|woff2|ttf|eot|otf)"},
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
@@ -59,7 +59,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com",
               "img-src 'self' data: https: blob:",
               "font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com",
-              "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://triumfous.mobel.us https://triumfo.us https://wa.me",
+              "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://triumfous.mobel.us https://triumfo.us https://wa.me https://www.google.com",
               "frame-src 'self' https://www.youtube.com https://www.googletagmanager.com",
               "media-src 'self' https://www.youtube.com",
               "object-src 'none'",
