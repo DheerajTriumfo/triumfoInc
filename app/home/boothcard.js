@@ -21,13 +21,13 @@ export default function BoothGrid() {
       title: "Exhibit Services",
       text: "Complete exhibit services for events",
       image: "/images/30x40-booth.webp",
-      url : "",
+      url : "/services/",
     },
     {
       title: "Exhibit Designs",
       text: "Choose from 500+ exhibit designs",
       image: "/images/30x30-booth.webp",
-      url : "",
+      url : "/trade-show-booth-ideas/",
     },
     {
       title: "About Company",
@@ -39,7 +39,7 @@ export default function BoothGrid() {
       title: "Exhibit Guide",
       text: "Smart guide for successful exhibits",
       image: "/images/20x30-booth.webp",
-      url : "",
+      url : "/blog/",
     },
     
     
