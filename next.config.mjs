@@ -97,16 +97,16 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: "/custom-exhibit-rental/",
+        destination: "/custom-trade-show-displays/",
+        permanent: true,
+      },
       // {
-      //   source: "/custom-exhibit-rental/",
+      //   source: "/custom-trade-show-displays/",
       //   destination: "/",
       //   permanent: true,
       // },
-      {
-        source: "/custom-trade-show-displays/",
-        destination: "/",
-        permanent: true,
-      },
       {
         source: "/trade-show-booth-rental-and-exhibits-las-vegas/",
         destination: "/trade-show-booth-display-rentals/",

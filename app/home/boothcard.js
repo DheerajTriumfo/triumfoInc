@@ -9,7 +9,7 @@ export default function BoothGrid() {
       title: "Custom Exhibits",
       text: "Personalized exhibits that stand out",
       image: "/images/40x50-booth.webp",
-      url : "/custom-exhibit-rental/",
+      url : "/custom-trade-show-displays/",
     },
     {
       title: "Rental Exhibits",
