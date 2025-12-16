@@ -4,8 +4,8 @@ import { buildMetadata } from '../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Triumfo Inc: Trade Show Booth Design & Build Company USA",
-    description:"Triumfo Inc. provides custom and rental trade show exhibit booths & displays nationwide. Get end-to-end service from design to installation. Claim your free concept in 48 hours!",
+    title: "Trade Show Exhibit Design & Booth Builders |Triumfo Inc",
+    description:"Triumfo Inc delivers innovative trade show booth design and build solutions across the USA, creating engaging exhibits that showcase your brand with impact.",
     pathname: "/",
     
   });
