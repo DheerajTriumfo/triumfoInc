@@ -4,9 +4,9 @@ import { buildMetadata } from '../../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Las Vegas Trade Show Booth Rentals | Turnkey Exhibit Services",
+    title: "Rent Trade Show Booths Anywhere in the USA | Turnkey Services",
     description:
-      "We offer creative trade show booth rentals in Las Vegas. Our exhibit rentals attract, engage, and convert at any event across the USA.",
+      "Rent high-quality trade show booths anywhere in the USA. Triumfo offers custom designs, fabrication, logistics, installation, and dismantling—end-to-end turnkey solutions.",
     pathname: "/trade-show-booth-display-rentals/",
     image: "https://www.triumfo.us/images/build-rental-booth.webp",
     openGraph: {

@@ -89,24 +89,13 @@ export default function BoothGrid() {
 
       {/* Show more / Show less Button */}
       <div className="flex justify-center mt-8">
-        {!showAll && (
-          <button
-            onClick={() => setShowAll(true)}
-            className="px-8 py-3 bg-[#8E2614] text-xl text-white rounded-lg hover:bg-[#722011] transition cursor-pointer"
-          >
-            Show More
-          </button>
-        )}
-
-        {showAll && (
-          <a
+        <a
             href="/contact-us/"
             onClick={handleShowLessClick} 
             className="px-8 py-3 bg-[#8E2614] text-xl text-white rounded-lg hover:bg-[#722011] transition cursor-pointer"
           >
             Get A Quote
           </a>
-        )}
       </div>
     </>
   );
