@@ -92,7 +92,7 @@ export default function Home() {
       if (charIndex < texts[textIndex].length) {
         el.textContent += texts[textIndex].charAt(charIndex);
         charIndex++;
-        timeoutId = setTimeout(typeText, 100);
+        timeoutId = setTimeout(typeText, 150);
       } else {
         timeoutId = setTimeout(() => {
           el.textContent = "";
