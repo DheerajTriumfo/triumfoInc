@@ -22,7 +22,7 @@ export default function()
 					<div className="container mx-auto px-4">
 						<div className="max-w-3xl mx-auto">
 							<div className="text-center">
-								<h1 className="text-white font-semibold text-7xl mb-4">Custom Trade Show Exhibits That Elevate Your Brand</h1>
+								<h1 className="text-white font-semibold text-5xl md:text-7xl mb-4">Custom Trade Show Exhibits That Elevate Your Brand</h1>
 								<p className="text-white text-xl mb-4">Triumfo Inc. designs and delivers custom trade show exhibits that captivate audiences, showcase your brand, and drive measurable results at every event.</p>
 							</div>
 						</div>
@@ -108,7 +108,7 @@ export default function()
 							</ul>
 						</div>
 					</div>
-					<div className="mt-12 text-center"><Link href="/trade-show-booth-ideas/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Choose From 500+ Exhibit Booth Rental Options</Link></div>
+					<div className="mt-12 text-center"><Link href="/trade-show-booth-ideas/" className="inline-block px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">Choose From 500+ Exhibit Booth Rental Options</Link></div>
 				</div>
 			</div>
 		</section>
