@@ -206,9 +206,17 @@ export default async function BlogDetail(props) {
 				    content: "";
 				    transform: rotate(145deg);
 				}
+				.blog-content .table-responsive {
+				  width: 100%;
+				  overflow-x: auto;
+				  -webkit-overflow-scrolling: touch;
+				}
 				 .blog-content table{
 				    width: auto;
 				    margin-bottom: 10px;
+				    border-collapse: collapse;
+				    cell-padding:0 !important;
+				    cell-spacing:0 !important;
 				}
 				.blog-content table tr:nth-child(odd) {
 				    background: #f4f4f4;
@@ -223,6 +231,14 @@ export default async function BlogDetail(props) {
 				th {
 				    border: 1px solid #000;
 				    padding:0.4rem 0.8rem;
+				}
+				@media (max-width: 768px) {
+				  .blog-content table {
+				    display: block;
+				    overflow-x: auto;
+				    white-space: nowrap;
+				    max-width: 100%;
+				  }
 				}
 			`}
 			</style>

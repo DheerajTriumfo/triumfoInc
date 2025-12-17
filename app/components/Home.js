@@ -74,6 +74,40 @@ export default function Home() {
       $('.moreless-button').off('click.moreless');
     };
   }, []);
+
+  useEffect(() => {
+    const texts = [
+      "Impress", "Engage", "Convert"
+    ];
+
+    let textIndex = 0;
+    let charIndex = 0;
+    const el = document.getElementById("fadeText");
+
+    if (!el) return;
+
+    let timeoutId;
+
+    function typeText() {
+      if (charIndex < texts[textIndex].length) {
+        el.textContent += texts[textIndex].charAt(charIndex);
+        charIndex++;
+        timeoutId = setTimeout(typeText, 100);
+      } else {
+        timeoutId = setTimeout(() => {
+          el.textContent = "";
+          charIndex = 0;
+          textIndex = (textIndex + 1) % texts.length;
+          typeText();
+        }, 1500);
+      }
+    }
+
+    typeText();
+
+    // cleanup (important!)
+    return () => clearTimeout(timeoutId);
+  }, []);
   return (
     <>
       
@@ -99,16 +133,16 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 md:px-0 text-center">
           <h1 className="text-white font-bold leading-tight max-w-6xl text-3xl sm:text-4xl lg:text-[7rem] font-heading mb-4">
-            {banner?.title || 'Crafting Trade Show Booths That Impress'}
+            Crafting Trade Show Booths That <span id="fadeText" className="text-red-700"></span>
           </h1>
           <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
             We design and build trade show booths that captivate, engage, and leave a lasting impression.
           </p>
           <a
             href="/trade-show-booth-ideas/"
-            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-white text-base sm:text-xl hover:bg-gray-700 hover:border-gray-600 transition duration-300"
+            className="inline-block font-medium px-6 sm:px-8 py-3 sm:py-4 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-white text-base sm:text-xl hover:bg-gray-700 hover:border-gray-600 transition duration-300"
           >
-            Get Your Rental Booth Design in Just 48 Hours
+            Receive Your Free Custom Booth Design Within 48 Hours.
           </a>
         </div>
       </section>
