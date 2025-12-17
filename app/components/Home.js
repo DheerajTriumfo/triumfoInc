@@ -379,7 +379,7 @@ export default function Home() {
             <div className="max-w-3xl text-center mx-auto mb-12">
               <h2 className="maintitle mb-4">{data?.testimonialsIntro?.title || 'Client Testimonials'}</h2>
               <p className="text-xl text-[#9A3220] font-medium mb-4">Your expectation. Our obligation.</p>
-              <p className="text-xl text-gray-500 leading-relaxed">{data?.testimonialsIntro?.description || 'Your expectation. Our obligation. Watch video testimonials to see how Triumfo exceeded client expectations in creating memorable trade show booths, expo booths, and exhibition stands.'}</p>
+              <p className="text-xl text-gray-500 leading-relaxed">{data?.testimonialsIntro?.description || 'Watch video testimonials to see how Triumfo exceeded client expectations in creating memorable trade show booths, expo booths, and exhibition stands.'}</p>
             </div>
             <div className="grid grid-cols-12 gap-8">
             <div className="video-card rounded-xl relative col-span-12 md:col-span-6 lg:col-span-4">
