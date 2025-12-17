@@ -276,25 +276,26 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-4 mt-12">
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-                <a href="https://www.ifesnet.com/triumfo-international-gmbh/" target="_blank"><h3 className="title text-4xl font-semibold mb-6">Proud Member Of IFES</h3></a>
-                <p className="text-lg mb-0 pt-6 border-t border-gray-200">Being an IFES member, we are committed to delivering top-quality, professional trade show exhibit solutions.</p>
+                <h3 className="title text-4xl font-semibold mb-6">Proud Member Of IFES</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">Being an <a href="https://www.ifesnet.com/triumfo-international-gmbh/" target="_blank" className="text-blue-500">IFES member</a>, we are committed to delivering top-quality, professional trade show exhibit solutions.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
                 <h3 className="title text-4xl font-semibold mb-6">500+ Booth Options</h3>
-                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We offer 500+ exhibit rental options in a variety of sizes, ready to match your brand and space needs.</p>
+
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We offer <a href="/trade-show-booth-ideas/" className="text-blue-500">500+ exhibit rental options</a> in a variety of sizes, ready to match your brand and space needs.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
                 <h3 className="title text-4xl font-semibold mb-6">Free Custom Design</h3>
-                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We offer custom booth design concepts tailored to your brand, goals, and budget—free, and with no commitment.</p>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We offer <a href="/get-free-3d-design/" className="text-blue-500">free custom booth design concepts</a> tailored to your brand, goals, and budget with no commitment.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
                 <h3 className="title text-4xl font-semibold mb-6">Turnkey Booth Services</h3>
-                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We are a full-service trade show booth design and building company. From design to dismantling, we manage all.</p>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We are a <a href="/services/" className="text-blue-500">full-service</a> trade show booth design and building company. From design to dismantling, we manage all.</p>
               </div>
 
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
                 <h3 className="title text-4xl font-semibold mb-6">In-House  Production</h3>
-                <p className="text-lg mb-0 pt-6 border-t border-gray-200">In-house production in our 80,000+ sq. ft. facility ensures quality, speed, and complete control.</p>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">In-house production in our <a href="/about-us/" className="text-blue-500">80,000+ sq. ft. facility</a> ensures quality, speed, and complete control.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
                 <h3 className="title text-4xl font-semibold mb-6">Transparent Pricing</h3>

@@ -60,32 +60,32 @@ export default function PortfolioGrid() {
     {
       img: "/images/home-portfolio7.webp",
       title: "Invest Saudi",
-      text: "NAB Show 2025 Trade Show Booth",
+      text: "MINE EXPO 2024 Las Vegas",
     },
     {
       img: "/images/pt2.webp",
       title: "Auto Store",
-      text: "Promat 2019 Custom Booth",
+      text: "Promat 2019  Chicago",
     },
     {
       img: "/images/home-portfolio2.webp",
       title: "Dexon System",
-      text: "InfoComm 2018 Exhibit",
+      text: "InfoComm 2018 Las Vegas",
     },
     {
       img: "/images/home-portfolio5.webp",
       title: "ION8",
-      text: "IHS 2025 Booth Design",
+      text: "IHS 2025 Indianapolis",
     },
     {
       img: "/images/home-portfolio3.webp",
       title: "ProtoChips",
-      text: "M&M 2025 Exhibit",
+      text: "M&M 2025 Milwaukee",
     },
     {
       img: "/images/home-portfolio6.webp",
       title: "Actus",
-      text: "NAB Show 2025 Trade Show Booth",
+      text: "NAB Show 2025 New York",
     },
   ];
 
