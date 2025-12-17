@@ -26,9 +26,11 @@ export default function Navigation()
 						<ul>
 			                    <li><Link href="/">HOME</Link></li>
 			                    <li><Link href="/about-us/">ABOUT US</Link></li>
-			                    <li><Link href="/custom-trade-show-displays/">CUSTOM EXHIBITS</Link></li>
 			                    <li><Link href="/services/">FULL SERVICES</Link></li>
 			                    <li><Link href="/portfolio/">OUR WORK</Link></li>
+			                    <li><Link href="/testimonials/">TESTIMONIALS</Link></li>
+			                    <li><Link href="/case-study/">CASE STUDIES</Link></li>
+			                    <li><Link href="/blog/">BLOG</Link></li>
 			                    <li><Link href="/contact-us/">CONTACT US</Link></li>
 			                </ul>
 		                </div>

@@ -15,10 +15,11 @@ export default function Footer(){
 						<div className="flex flex-wrap items-center justify-center gap-y-6 lg:gap-y-0 gap-x-8 mb-6">
 							<Link href="/" className="text-white text-lg font-medium hover:text-red-700">Home</Link>
 							<Link href="/about-us/" className="text-white text-lg font-medium hover:text-red-700">About Us</Link>
-							<Link href="/custom-trade-show-displays/" className="text-white text-lg font-medium hover:text-red-700">Custom Exhibits</Link>
 							<Link href="/services/" className="text-white text-lg font-medium hover:text-red-700">Full Services</Link>
 							<Link href="/portfolio/" className="text-white text-lg font-medium hover:text-red-700">Our Work</Link>
 							<Link href="/testimonials/" className="text-white text-lg font-medium hover:text-red-700">Testimonials</Link>
+							<Link href="/case-study/" className="text-white text-lg font-medium hover:text-red-700">Case Studies</Link>
+							<Link href="/blog/" className="text-white text-lg font-medium hover:text-red-700">Blog</Link>
 							<Link href="/upcoming-trade-show/" className="text-white text-lg font-medium hover:text-red-700">Trade Shows</Link>
 							<Link href="/blog/" className="text-white text-lg font-medium hover:text-red-700">Blog</Link>
 							
