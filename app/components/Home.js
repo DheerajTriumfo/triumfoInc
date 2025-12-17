@@ -293,7 +293,7 @@ export default function Home() {
               </div>
 
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-                <h3 className="title text-4xl font-semibold mb-6">In-House Booth Production</h3>
+                <h3 className="title text-4xl font-semibold mb-6">In-House  Production</h3>
                 <p className="text-lg mb-0 pt-6 border-t border-gray-200">In-house production in our 80,000+ sq. ft. facility ensures quality, speed, and complete control.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
@@ -572,14 +572,14 @@ export default function Home() {
       <Faqtab/>
       <div className="ctaction bg-[#E9EEF7] py-6">
         <div className="container mx-auto px-4">
-          <div className="text-gray-700 rounded-xl max-w-5xl mx-auto py-16">
+          <div className="text-gray-700 rounded-xl  py-16">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div>
                   <h2 className="text-5xl md:text-5xl font-semibold mb-3 font-heading">
                     {data?.ctaBottom?.title || 'Let’s Plan Your Next Show'}
                   </h2>
                   <p className="text-lg text-gray-500">
-                    {data?.ctaBottom?.subtitle || 'Share your goals, and we’ll suggest the best trade show booth approach according to your budget and booth size. Let’s create a memorable brand experience with expo booths, conference booths, or custom exhibition booths at your next event.'}
+                    {data?.ctaBottom?.subtitle || 'Share your trade show booth needs of any size—rental, custom, double-deck, or pavilion—and we’ll provide a tailored proposal with a complete solution for your event.'}
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 shrink-0 text-center">
