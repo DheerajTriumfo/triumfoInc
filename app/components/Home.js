@@ -162,7 +162,7 @@ export default function Home() {
             href="/trade-show-booth-ideas/"
             className="inline-block font-medium px-6 sm:px-8 py-3 sm:py-4 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-white text-base sm:text-xl hover:bg-gray-700 hover:border-gray-600 transition duration-300"
           >
-            Receive Your Free Custom Booth Design Within 48 Hours.
+            Get Your Rental Booth Design in Just 48 Hours
           </a>
         </div>
       </section>
@@ -271,7 +271,7 @@ export default function Home() {
         <div className="servicebg bg-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="maintitle text-gray-700 mb-6">Your Custom Trade Show Booth Rental Partner In The USA</h2>
+              <h2 className="maintitle text-gray-700 mb-6">Why Choose Triumfo Inc for Your Trade Show Booth Rentals</h2>
               <p className="text-gray-500 text-lg">With over 25 years of experience, Triumfo Inc delivers expert trade show booth rentals with full turnkey services, local teams for faster execution, and dedicated support to ensure every event is a success.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-4 mt-12">
@@ -309,7 +309,7 @@ export default function Home() {
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto mb-12">
           <div className="text-center mb-8">
-            <h1 className="text-white maintitle mb-4">Featured Case Studies</h1>
+            <h1 className="text-white maintitle mb-4">Case Studies</h1>
             <p className="text-white text-lg mb-4">Explore real projects where our custom exhibition booths and trade show displays engaged audiences, boosted brand impact, and delivered measurable ROI.</p>
           </div>
         </div>
@@ -431,9 +431,7 @@ export default function Home() {
   <div className="bg-[#E9EEF7] py-20">
     <div className="container mx-auto px-4">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="maintitle text-gray-700 mb-6">
-         End-to-End Exhibit Rental Solutions In the USA
-        </h2>
+        <h2 className="maintitle text-gray-700 mb-6">End-to-End Exhibit Rental Solutions Across the USA</h2>
         <p className="text-xl text-gray-500">
          Triumfo Inc. is a trusted name in trade show booth rentals with 25+ years of experience. We deliver fully managed rental exhibits across major U.S. trade show cities—simple, seamless, and stress-free.
         </p>

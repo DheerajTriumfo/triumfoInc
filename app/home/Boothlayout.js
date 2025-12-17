@@ -92,9 +92,9 @@ export default function Boothlayout() {
         <a
             href="/contact-us/"
             onClick={handleShowLessClick} 
-            className="px-8 py-3 bg-[#8E2614] text-xl text-white rounded-lg hover:bg-[#722011] transition cursor-pointer"
+            className="px-8 py-3 sm:py-4 bg-[#8E2614] text-xl text-white rounded-lg hover:bg-[#722011] transition cursor-pointer"
           >
-            Get A Quote
+            Receive Your Free Custom Booth Design Within 48 Hours.
           </a>
       </div>
     </>
