@@ -13,7 +13,7 @@ export default function OwlInit() {
             loop: true,
             margin: 15,
             nav: false,
-            dots: false,
+            dots: true,
             autoplay: true,
             autoplayTimeout: 2500,
             smartSpeed: 1000,

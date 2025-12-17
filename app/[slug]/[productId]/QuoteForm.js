@@ -39,15 +39,13 @@ export default function QuoteForm({ defaultBoothSize = '', defaultEventName = ''
 	}
 
 	return (
-		<form onSubmit={onSubmit} className="grid grid-cols-12 gap-y-4 gap-x-6">
+		<form onSubmit={onSubmit} className="grid grid-cols-12 gap-y-2 gap-x-4">
 			<input type="text" name="honeypot" className="hidden" tabIndex={-1} autoComplete="off" />
 			<input type="hidden" name="boothsize" placeholder="Booth Size*" defaultValue={defaultBoothSize} required />
 			<div className="grid col-span-12 md:col-span-6 w-full"><input type="text" name="eventname" placeholder="Event Name*" defaultValue={defaultEventName} required className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
-			<div className="grid col-span-12 md:col-span-6 w-full"><input type="text" name="eventcity" placeholder="Event CIty*"  required className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="text" name="name" placeholder="Your Name" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="email" name="email" placeholder="Email ID" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="tel" name="phone" placeholder="Phone Number" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
-			<div className="grid col-span-12 md:col-span-6"><input type="text" name="country" placeholder="Country Name" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-12"><textarea name="information" rows={4} placeholder="Your Requirement.." className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"></textarea></div>
 			<div className="grid col-span-12">
 				<div className="flex flex-col md:flex-row justify-center items-center gap-4">

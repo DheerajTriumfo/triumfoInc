@@ -157,7 +157,7 @@ export default  async function Viewboothdetail(props){
 								
 							</div>
 							<div className="col-span-12 md:col-span-5 lg:col-span-5">
-							<div className="w-full bg-white text-gray-700 mt-6 md:mt-0 p-4  flex flex-col space-y-4 rounded-md sticky top-[10px] z-50 min-h-[20px]">
+							<div className="w-full bg-white text-gray-700 mt-6 md:mt-0   flex flex-col space-y-4 rounded-md sticky top-[10px] z-50 min-h-[20px]">
 									<h2 className="text-3xl text-gray-700 font-semibold mb-4">Rental Package Includes:</h2>
 									<ul>
 								    {rentalInclude.map((item, index) => (

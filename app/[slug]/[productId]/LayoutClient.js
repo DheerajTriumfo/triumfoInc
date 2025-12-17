@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import Script from 'next/script';
-import '../../styles/owl-nav.css';
+//import '../../styles/owl-nav.css';
 export default function BoothProductLayoutClient({ children }) {
   useEffect(() => {
     let cancelled = false;
@@ -17,13 +17,16 @@ export default function BoothProductLayoutClient({ children }) {
           $('#boothdetailslider').owlCarousel({
             loop: true,
             margin: 15,
-            nav: true,
+            nav: false,
             dots: false,
             autoplay: false,
             autoplayTimeout: 2500,
             smartSpeed: 1000,
             autoplayHoverPause: true,
-            responsive: { 0: { items: 1 }, 768: { items: 1 }, 1200: { items: 1 } },
+            responsive: { 
+              0: { items: 1, dots:true }, 
+              768: { items: 1 }, 
+              1200: { items: 1 } },
           });
         }
       } catch (err) {
