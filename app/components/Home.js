@@ -80,30 +80,48 @@ export default function Home() {
       "Impress", "Engage", "Convert"
     ];
 
-    let textIndex = 0;
-    let charIndex = 0;
-    const el = document.getElementById("fadeText");
+    const typingSpeed = 200;   // typing speed (ms)
+  const deletingSpeed = 50; // deleting speed (ms)
+  const pauseAfterWord = 2000; // pause after full word (ms)
 
-    if (!el) return;
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
 
-    let timeoutId;
+  const el = document.getElementById("fadeText");
+  if (!el) return;
 
-    function typeText() {
-      if (charIndex < texts[textIndex].length) {
-        el.textContent += texts[textIndex].charAt(charIndex);
-        charIndex++;
-        timeoutId = setTimeout(typeText, 150);
-      } else {
-        timeoutId = setTimeout(() => {
-          el.textContent = "";
-          charIndex = 0;
-          textIndex = (textIndex + 1) % texts.length;
-          typeText();
-        }, 1500);
+  let timeoutId;
+
+  function typeEffect() {
+    const currentText = texts[textIndex];
+
+    if (!isDeleting) {
+      // Typing
+      el.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentText.length) {
+        timeoutId = setTimeout(() => (isDeleting = true), pauseAfterWord);
+      }
+    } else {
+      // Deleting
+      el.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
       }
     }
 
-    typeText();
+    timeoutId = setTimeout(
+      typeEffect,
+      isDeleting ? deletingSpeed : typingSpeed
+    );
+  }
+
+  typeEffect();
 
     // cleanup (important!)
     return () => clearTimeout(timeoutId);
@@ -133,7 +151,9 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 md:px-0 text-center">
           <h1 className="text-white font-bold leading-tight max-w-6xl text-5xl sm:text-4xl lg:text-[7rem] font-heading mb-4">
-            Crafting Trade Show Booths That <span id="fadeText" className="text-red-700"></span>
+            Crafting Trade Show Booths That  <span className="typewriter">
+               <span id="fadeText" className="text-red-700"></span> <span className="cursor font-light text-5xl sm:text-4xl lg:text-8xl text-red-700">|</span>
+            </span>
           </h1>
           <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
             We design and build trade show booths that captivate, engage, and leave a lasting impression.
