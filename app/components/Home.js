@@ -156,7 +156,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
-            We design and build trade show booths that captivate, engage, and leave a lasting impression.
+            We specialize in designing, building, and managing high-quality custom and rental trade show booths for brands nationwide.
           </p>
           <a
             href="/trade-show-booth-ideas/"
