@@ -111,16 +111,16 @@ export default function Portfolio()
 		    	</div>
 		    </section>
             <section>
-			  <div className="w-full p-3">
+			        <div className="w-full p-3">
                 <div className="columns-1 sm:columns-2 md:columns-2 lg:columns-3 gap-3 space-y-3">
                   {(items.length ? items : []).map((p) => (
                     <div key={p.id} className="break-inside-avoid">
                       <a href={p.image_url} data-fancybox="triumfoinc"><img src={p.image_url} width="1200" height="900" alt={p.alttag || ''} className="w-full h-auto rounded-lg" /></a>
                     </div>
                   ))}
-			    </div>
-			  </div>
-			</section>
+			          </div>
+			        </div>
+			     </section>
 
 		</>
 		);

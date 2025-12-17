@@ -75,7 +75,7 @@ export default function About(){
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-			<section>
+				<section>
 		    	<div className="bannerbg bg-[#34343C] py-32">
 		    		<div className="container mx-auto px-4">
 		    			<div className="max-w-3xl text-center mx-auto">

@@ -103,9 +103,9 @@ export default function Faqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> Do you offer booth rental options?</div>
+                    </svg> How long has Triumfo been in business, and why choose you?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. Triumfo provides cost-effective rental exhibits, ideal for temporary needs or multiple events. Rentals include setup, dismantling, and storage, offering flexibility without compromising quality.</p>
+                    <p>With over 25 years of expertise, Triumfo has delivered high-quality, creative trade show booths for global brands. Our end-to-end capabilities, attention to detail, and stress-free approach ensure your brand stands out at every event.</p>
                   </div>
                 </div>
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
@@ -148,8 +148,6 @@ export default function Faqtab(){
                     <p>Engagement comes from interactive displays, digital demos, lighting, and well-placed branded elements. Triumfo’s designs are crafted to attract attention, encourage interaction, and leave a lasting impression.</p>
                   </div>
                 </div>
-                
-                
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
@@ -190,11 +188,12 @@ export default function Faqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> How long has Triumfo been in business, and why choose you?</div>
+                    </svg> Do you offer booth rental options?</div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>With over 25 years of expertise, Triumfo has delivered high-quality, creative trade show booths for global brands. Our end-to-end capabilities, attention to detail, and stress-free approach ensure your brand stands out at every event.</p>
+                    <p>Yes. Triumfo provides cost-effective rental exhibits, ideal for temporary needs or multiple events. Rentals include setup, dismantling, and storage, offering flexibility without compromising quality.</p>
                   </div>
                 </div>
+                
                 
               </div>
             </div>

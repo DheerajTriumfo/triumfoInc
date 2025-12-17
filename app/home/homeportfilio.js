@@ -58,8 +58,8 @@ function HomeportFolio({ img, title, text }) {
 export default function PortfolioGrid() {
   const cards = [
     {
-      img: "/images/home-portfolio6.webp",
-      title: "Actus",
+      img: "/images/home-portfolio7.webp",
+      title: "Invest Saudi",
       text: "NAB Show 2025 Trade Show Booth",
     },
     {
@@ -83,9 +83,9 @@ export default function PortfolioGrid() {
       text: "M&M 2025 Exhibit",
     },
     {
-      img: "/images/home-portfolio4.webp",
-      title: "FPC",
-      text: "IFAI 2018 Island Booth",
+      img: "/images/home-portfolio6.webp",
+      title: "Actus",
+      text: "NAB Show 2025 Trade Show Booth",
     },
   ];
 

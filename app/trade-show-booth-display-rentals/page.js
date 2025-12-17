@@ -15,7 +15,6 @@ export default function TradeShowBoothDisplayRentals() {
 
 	useEffect(() => {
 		if (typeof window === 'undefined') return;
-		
 		const initFAQ = () => {
 			if (window.$ && window.$.fn) {
 				$(".faqbg").each(function () {

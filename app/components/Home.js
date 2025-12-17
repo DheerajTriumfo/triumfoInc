@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { useHomeQuery } from '../../hooks/useHomeQuery';
 import { get } from '../../lib/apiClient';
 import Faqtab from './../home/faq.js';
-import BoothGrid from './../home/boothcard.js';
+import Boothlayout from './../home/Boothlayout.js';
 import HomeportFolio from './../home/homeportfilio.js';
 
 
@@ -52,6 +52,28 @@ export default function Home() {
   const portfolio = data?.portfolio || [];
   const testimonials = data?.testimonials || [];
 
+  useEffect(() => {
+    // ensure jQuery is available
+    if (typeof window === 'undefined' || !window.$) return;
+    const $ = window.$;
+
+    $(document).ready(function () {
+      $('.moreless-button').off('click.moreless').on('click.moreless', function () {
+        $('.moretext').slideDown();
+
+        if ($(this).text().trim() === "Read more") {
+          $(this).text("Load More");
+        } else {
+          $(this).html('<a href="/contact-us/" class="less-link" style="color:#fff;">Contact For Turnkey Services</a>');
+        }
+      });
+    });
+
+    // cleanup on unmount
+    return () => {
+      $('.moreless-button').off('click.moreless');
+    };
+  }, []);
   return (
     <>
       
@@ -86,7 +108,7 @@ export default function Home() {
             href="/trade-show-booth-ideas/"
             className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-white text-base sm:text-xl hover:bg-gray-700 hover:border-gray-600 transition duration-300"
           >
-            Browse from over 500 Designs
+            Get Your Rental Booth Design in Just 48 Hours
           </a>
         </div>
       </section>
@@ -120,14 +142,14 @@ export default function Home() {
         <div className="topsection py-10 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Complete Trade Show Exhibit Booth Solutions in The USA'}</h2>
-              <p className="text-xl text-gray-500">{data?.intro?.description || 'End-to-end trade show booth services designed to make your brand stand out nationwide.'}</p>
+              <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Choose Trade Show Exhibit Rentals by Booth Size'}</h2>
+              <p className="text-xl text-gray-500">{data?.intro?.description || 'Find the perfect trade show booth to fit your space and needs. Browse our wide range of exhibit rentals organized by booth size for a hassle-free selection.'}</p>
             </div>
-            <BoothGrid/>
+            <Boothlayout/>
           </div>
         </div>
       </section>
-
+      
       
      <section>
   <div className="homeportfolio bg-[#34343C] py-20">
@@ -156,217 +178,157 @@ export default function Home() {
     </div>
   </div>
 </section> 
-
-
-      {/* <section>
-        <div className="contentbg py-36">
+    <section>
+        <div className="circlebg py-20 bg-[#EAEEF7]">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-24">
-              <div className="mb-8 m:mb-0">
-                <div className="figure relative before:absolute before:content-[''] before:inset-0 before:left-[-10px] before:top-[-7px] before:bg-[#34343C] before:w-[calc(100%-50px)] before:h-[calc(100%+14px)] before:rounded-[8px]">
-                  <Image src={(data?.contentBlock?.imageUrl) || "/images/custom-exhibit-for-your-booth.webp"} width={582} height={474} alt="Custom Trade Show Booth Work At Mine Expo 2024" className="w-full h-auto rounded-xl relative z-10"/>
-                </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="box bg-[#34343C] py-12 px-6">
+                <h2 className="text-4xl text-white font-semibold mb-4">Why Rent a Trade Show Booth Instead of Buying?</h2>
+                <ul>
+                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Reduced upfront investment and lower total exhibiting costs.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> No storage, maintenance, or warehousing needed.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexibility to change booth size, design, and message for each show.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Quick installation and dismantling with pre-fabricated components.</li>
+                </ul>
               </div>
-              <div className="contents">
-                <div>
-                  <h2 className="maintitle text-gray-700 mb-4">{data?.contentBlock?.title || 'Get Your Free trade show exhibit Concept in Just 48 Hours.'}</h2>
-                  <p className="text-xl text-gray-500 leading-relaxed">{data?.contentBlock?.description || 'Get a personalized trade show booth concept tailored to your brand—delivered in just 48 hours, completely free and without commitment.'}</p>
-
-                  <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                    <a href={data?.contentBlock?.primaryCta?.href || '/contact-us/'} className="w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300">
-                      {data?.contentBlock?.primaryCta?.label || 'Claim Your Free Design'}
-                    </a>
-                    
-                  </div>
-                  </div>
+              <div className="box bg-white hidden lg:block">
+                <Image src="/images/build.webp" width={400} height={475} alt="" className="w-full h-auto"/>
+              </div>
+              <div className="box bg-[#34343C] py-12 px-6">
+                <h2 className="text-4xl text-white font-semibold mb-4">Our Exhibit Rental Solutions</h2>
+                <ul>
+                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> 500+ booth rental options across multiple sizes.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Large custom booth rental solutions.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> End-to-end support: design to dismantling.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexible rental packages to suit your budget.</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-       */}
 
-      {/*<section>
-        <div className="designbuild py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl text-center mx-auto mb-12">
-              <h2 className="maintitle mb-4">Custom Exhibits <br/>Built for Your Brand</h2>
-              <p className="text-xl text-gray-500 leading-relaxed">Tell us what your brand stands for, and we’ll turn it into a booth that commands attention.</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-[#EAEEF7] rounded-md border border-gray-300 p-6 text-center">
-                <div className="icon mx-auto w-[100px] bg-white rounded-[60px] p-4"><Image src="/images/design-icon.webp" width="120" height="120" alt="" className="w-full h-auto"/></div>
-                <h3 className="my-2 text-gray-700 font-bold text-4xl">We Design</h3>
-                <p className="text-lg text-gray-500">We have been crafting custom trade show booths that empower.</p>
-              </div>
-              <div className="bg-[#EAEEF7] rounded-md border border-gray-300 p-6 text-center">
-                <div className="icon mx-auto w-[100px] bg-white rounded-[60px] p-4"><Image src="/images/build-icon.webp" width="120" height="120" alt="" className="w-full h-auto"/></div>
-                <h3 className="my-2 text-gray-700 font-bold text-4xl">We Build</h3>
-                <p className="text-lg text-gray-500">We have been crafting custom trade show booths that empower.</p>
-              </div>
-              <div className="bg-[#EAEEF7] rounded-md border border-gray-300 p-6 text-center">
-                <div className="icon mx-auto w-[100px] bg-white rounded-[60px] p-4"><Image src="/images/deliver-icon.webp" width="120" height="120" alt="" className="w-full h-auto"/></div>
-                <h3 className="my-2 text-gray-700 font-bold text-4xl">We Deliver</h3>
-                <p className="text-lg text-gray-500">We have been crafting custom trade show booths that empower.</p>
-              </div>
-            </div>
-            <div className="mt-12 text-center">
-              <Link href="" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">View Services</Link>
-            </div>
-          </div>
-        </div>
-      </section>*/}
-      <section>
-    <div className="whychoose py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl text-center mx-auto mb-12">
-          <h2 className="maintitle mb-4 text-gray-700">Why Choose Triumfo for Your Trade Show Booth?</h2>
-          <p className="text-xl text-gray-600 leading-relaxed">Triumfo delivers creative, high-quality trade show booths with fast production, reliable execution, and a seamless end-to-end experience—helping your brand stand out effortlessly.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
-            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
-            </div>
-            <div className="">
-              <h3 className="text-4xl font-semibold text-gray-700 mb-4">25+ years of expertise</h3>
-              <p className="text-lg text-gray-600 leading-[1.7rem]">
-                Trusted by global brands for design, build, and execution of exhibit booths.
-              </p>
-            </div>
-          </div>
-          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
-            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
-            </div>
-            <div className="">
-              <h3 className="text-4xl font-semibold text-gray-700 mb-4">End to end capabilities</h3>
-              <p className="text-lg text-gray-600 leading-[1.7rem]">
-                All services handled in-house—no third-party dependencies.
-              </p>
-            </div>
-          </div>
-          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
-            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
-            </div>
-            <div className="">
-              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Global presence</h3>
-              <p className="text-lg text-gray-600 leading-[1.7rem]">
-                Support in major trade show hubs across the US, Europe, and Asia.
-              </p>
-            </div>
-          </div>
-          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
-            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
-            </div>
-            <div className="">
-              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Quality craftsmanship</h3>
-              <p className="text-lg text-gray-600 leading-[1.7rem]">
-                Durable materials, precision engineering, and premium finishing.
-              </p>
-            </div>
-          </div>
-          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
-            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
-            </div>
-            <div className="">
-              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Stress free experience</h3>
-              <p className="text-lg text-gray-600 leading-[1.7rem]">
-                Dedicated project managers, timeline tracking, and show-compliant designs.
-              </p>
-            </div>
-          </div>
-          <div className="flex bg-[#EAEEF7] rounded-md gap-x-6 p-4">
-            <div className="w-[30px] h-[50px] bg-[#943724] rounded-full p-1 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
-            </div>
-            <div className="">
-              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Member of IFES</h3>
-              <p className="text-lg text-gray-600 leading-[1.7rem]">
-                Ensuring international quality standards, ethical practices, and professional trade show display solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-      <section>
-	        <div className="contentbg py-20 bg-[#34343C]">
-	          <div className="container mx-auto px-4">
-	            <div className="max-w-3xl mx-auto mb-12">
-					<div className="text-center mb-8">
-						<h1 className="text-white maintitle mb-4">Featured Case Studies</h1>
-						<p className="text-white text-lg mb-4">Explore real projects where our custom exhibition booths and trade show displays engaged audiences, boosted brand impact, and delivered measurable ROI.</p>
-					</div>
-				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-					<a href="/case-study/countr/">
-					<div className="video-card rounded-xl">
-		                <div className="video-thumb shadow-lg bg-black rounded-xl relative">
-		                    <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
-		                        <Image src="/images/case1.avif" width="768" height="531" alt="IMAX" className="w-full h-full object-cover rounded-xl" />
-		                    </div>
-		                <div className="absolute bottom-4 left-4 z-20">
-		                    	<span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
-		                    </div>
-		                </div>
-		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h4 className="text-white font-semibold text-3xl">Case Study - CountR</h4>
-		                    <div className="flex items-center py-2 justify-center">
-		                        <span className="text-sm text-white">Amusement Expo</span>
-		                    </div>
-		                </div>
-		            </div>
-					</a>
-					<a href="/case-study/tedial/">
-		            <div className="video-card rounded-xl">
-		                <div className="video-thumb shadow-lg bg-black rounded-xl relative">
-		                    <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
-		                        <Image src="/images/case2.avif" width="768" height="531" alt="" className="w-full h-full object-cover rounded-xl" />
-		                    </div>
-		                    <div className="absolute bottom-4 left-4 z-20">
-		                    	<span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
-		                    </div>
-		                </div>
-		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h4 className="text-white font-semibold text-3xl">Case Study - Tedial</h4>
-		                    <div className="flex items-center py-2 justify-center">
-		                        <span className="text-sm text-white">Nab Show</span>
-		                    </div>
-		                </div>
-		            </div>
-					</a>
-					<a href="/case-study/saier">
-		            	<div className="video-card rounded-xl">
-		                <div className="video-thumb shadow-lg bg-black rounded-xl relative">
-		                    <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
-		                        <Image src="/images/case4.avif" width="768" height="531" alt="" className="w-full h-full object-cover rounded-xl" />
-		                    </div>
-		                    <div className="absolute bottom-4 left-4 z-20">
-		                    	<span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
-		                    </div>
-		                </div>
-		                <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
-		                    <h4 className="text-white font-semibold text-3xl">Case Study - Saier</h4>
-		                    <div className="flex items-center py-2 justify-center">
-		                        <span className="text-sm text-white">ISSA Show</span>
-		                    </div>
-		                </div>
-		            </div>
-					</a>
-				</div>
-				<div className="mt-12 text-center"><Link href="/case-study/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">View All Case Studies</Link></div>
-	          </div>
-	        </div>
-	    </section>
       
-
+      
+      
+      
       <section>
-        <div className="testimonial bg-[#E9EEF7] py-20">
+        <div className="servicebg bg-white py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="maintitle text-gray-700 mb-6">Why Choose Triumfo Inc for Your Trade Show Booth Rentals</h2>
+              <p className="text-gray-500 text-lg">With over 25 years of experience, Triumfo Inc delivers expert trade show booth rentals with full turnkey services, local teams for faster execution, and dedicated support to ensure every event is a success.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-12">
+              <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+                <h3 className="title text-4xl font-semibold mb-6">500+ Booths</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">Explore 500+ booth designs, all fully customizable to your needs.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+                <h3 className="title text-4xl font-semibold mb-6">Free 3D Design</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">Receive a free 3D booth design to see your setup in realistic detail.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+                <h3 className="title text-4xl font-semibold mb-6">Our Expertise</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">25+ years of trade show booth rental experience in the U.S.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+                <h3 className="title text-4xl font-semibold mb-6">Turnkey Services</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">End-to-end service: design, fabrication, logistics, I&D, and on-site support.</p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+                <h3 className="title text-4xl font-semibold mb-6">We Are <br/>Local</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">Our exhibit house is located in Las Vegas for faster response times and lower shipping costs.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+                <h3 className="title text-4xl font-semibold mb-6">Transparent Pricing</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We provide detailed, itemized quotations for full transparency and easy comparison.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+                <h3 className="title text-4xl font-semibold mb-6">In-House Production</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We produce your rental booth in-house for faster turnaround and superior quality.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
+                <h3 className="title text-4xl font-semibold mb-6">24×7 Full <br/>Support</h3>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We provide a dedicated project manager for each event to ensure smooth & easy communication.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+          <div className="contentbg py-20 bg-[#34343C]">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mx-auto mb-12">
+          <div className="text-center mb-8">
+            <h1 className="text-white maintitle mb-4">Featured Case Studies</h1>
+            <p className="text-white text-lg mb-4">Explore real projects where our custom exhibition booths and trade show displays engaged audiences, boosted brand impact, and delivered measurable ROI.</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a href="/case-study/countr/">
+          <div className="video-card rounded-xl">
+                    <div className="video-thumb shadow-lg bg-black rounded-xl relative">
+                        <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
+                            <Image src="/images/case1.avif" width="768" height="531" alt="IMAX" className="w-full h-full object-cover rounded-xl" />
+                        </div>
+                    <div className="absolute bottom-4 left-4 z-20">
+                          <span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
+                        </div>
+                    </div>
+                    <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
+                        <h4 className="text-white font-semibold text-3xl">Case Study - CountR</h4>
+                        <div className="flex items-center py-2 justify-center">
+                            <span className="text-sm text-white">Amusement Expo</span>
+                        </div>
+                    </div>
+                </div>
+          </a>
+          <a href="/case-study/tedial/">
+                <div className="video-card rounded-xl">
+                    <div className="video-thumb shadow-lg bg-black rounded-xl relative">
+                        <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
+                            <Image src="/images/case2.avif" width="768" height="531" alt="" className="w-full h-full object-cover rounded-xl" />
+                        </div>
+                        <div className="absolute bottom-4 left-4 z-20">
+                          <span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
+                        </div>
+                    </div>
+                    <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
+                        <h4 className="text-white font-semibold text-3xl">Case Study - Tedial</h4>
+                        <div className="flex items-center py-2 justify-center">
+                            <span className="text-sm text-white">Nab Show</span>
+                        </div>
+                    </div>
+                </div>
+          </a>
+          <a href="/case-study/saier">
+                  <div className="video-card rounded-xl">
+                    <div className="video-thumb shadow-lg bg-black rounded-xl relative">
+                        <div className="thumb-wrapper rounded-xl overflow-hidden aspect-[768/531]">
+                            <Image src="/images/case4.avif" width="768" height="531" alt="" className="w-full h-full object-cover rounded-xl" />
+                        </div>
+                        <div className="absolute bottom-4 left-4 z-20">
+                          <span className="rounded-md font-semibold py-1 px-2 text-sm bg-[#9A3220] text-white px-4 py-2">20×20 ft</span>
+                        </div>
+                    </div>
+                    <div className="card-info pt-4 pb-2 text-center border-b border-gray-300 rounded-xl">
+                        <h4 className="text-white font-semibold text-3xl">Case Study - Saier</h4>
+                        <div className="flex items-center py-2 justify-center">
+                            <span className="text-sm text-white">ISSA Show</span>
+                        </div>
+                    </div>
+                </div>
+          </a>
+        </div>
+        <div className="mt-12 text-center"><Link href="/case-study/" className="px-7 py-3 bg-custom rounded-md border-2 border-custom text-white hover:bg-transparent hover:border-2 hover:border-white  hover:text-white transition duration-300 text-xl">View All Case Studies</Link></div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div className="testimonial bg-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl text-center mx-auto mb-12">
               <h2 className="maintitle mb-4">{data?.testimonialsIntro?.title || 'Client Testimonials'}</h2>
@@ -419,7 +381,148 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+      <section>
+  <div className="bg-[#E9EEF7] py-20">
+    <div className="container mx-auto px-4">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="maintitle text-gray-700 mb-6">
+         End-to-End Exhibit Rental Solutions In the USA
+        </h2>
+        <p className="text-xl text-gray-500">
+         Triumfo Inc. is a trusted name in trade show booth rentals with 25+ years of experience. We deliver fully managed rental exhibits across major U.S. trade show cities—simple, seamless, and stress-free.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+    <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Las Vegas
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Chicago
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Orlando
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+             Anaheim
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              San Diego
+            </h3>
+          </div>
+        </div>
+        <div className="flex">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Los Angeles
+            </h3>
+          </div>
+        </div>
+        <div className="flex flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+             Atlanta
+            </h3>
+          </div>
+        </div>
+        <div className="flex flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              New York
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div className="moretext hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+    
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Washington DC
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Seattle
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              San Francisco
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Miami
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Denever
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Utah
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              Baltimore
+            </h3>
+          </div>
+        </div>
+        <div className="flex w-full flex-shrink-0">
+          <div className="bg-white rounded-[14px] p-16 lg:p-[68px] border border-gray-300 text-center block flex w-full">
+            <h3 className="text-3xl text-gray-600  barlofamilty flex items-center justify-center w-full">
+              South Carolina
+            </h3>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center px-4">
+    <button
+      type="button"
+      onClick={() => {}}
+      className="moreless-button w-full sm:w-auto px-6 py-3 bg-custom border-2 border-white rounded-xl text-xl text-white text-center hover:bg-gray-500 hover:text-white transition duration-300 cursor-pointer"
+    >
+      View More
+    </button>
+  </div>
+  </div>
+</section>
       <Faqtab/>
       <div className="ctaction bg-[#E9EEF7] py-6">
         <div className="container mx-auto px-4">
