@@ -4,8 +4,8 @@ import { buildMetadata } from '../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Your Nationwide Trade Show Booth Rental Partner | Triumfo Inc",
-    description:"Rent high-quality trade show booths anywhere in the USA. Triumfo offers custom designs, fabrication, logistics, installation, and dismantling—end-to-end turnkey solutions.",
+    title: "Full-Service Trade Show Booth Rentals & Custom Exhibits USA",
+    description:"Triumfo Inc offers full-service trade show booth rentals and custom exhibits in the USA. Choose from 500+ customizable booth designs and get a detailed quote.",
     pathname: "/",
     
   });
