@@ -132,7 +132,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 md:px-0 text-center">
-          <h1 className="text-white font-bold leading-tight max-w-6xl text-3xl sm:text-4xl lg:text-[7rem] font-heading mb-4">
+          <h1 className="text-white font-bold leading-tight max-w-6xl text-5xl sm:text-4xl lg:text-[7rem] font-heading mb-4">
             Crafting Trade Show Booths That <span id="fadeText" className="text-red-700"></span>
           </h1>
           <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
