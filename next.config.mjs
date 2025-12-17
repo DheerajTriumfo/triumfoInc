@@ -102,11 +102,11 @@ const nextConfig = {
         destination: "/custom-trade-show-displays/",
         permanent: true,
       },
-      // {
-      //   source: "/custom-trade-show-displays/",
-      //   destination: "/",
-      //   permanent: true,
-      // },
+      {
+        source: "/trade-show-booth-display-rentals/",
+        destination: "/",
+        permanent: true,
+      },
       {
         source: "/trade-show-booth-rental-and-exhibits-las-vegas/",
         destination: "/trade-show-booth-display-rentals/",
