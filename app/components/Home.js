@@ -276,7 +276,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-4 mt-12">
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
-                <h3 className="title text-4xl font-semibold mb-6">Proud Member Of IFES</h3>
+                <a href="ifesnet.com/triumfo-international-gmbh/" target="_blank"><h3 className="title text-4xl font-semibold mb-6">Proud Member Of IFES</h3></a>
                 <p className="text-lg mb-0 pt-6 border-t border-gray-200">Being an IFES member, we are committed to delivering top-quality, professional trade show exhibit solutions.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
