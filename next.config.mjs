@@ -19,7 +19,17 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'cdn.example.com',
+        hostname: 'cdnjs.cloudflare.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'fonts.gstatic.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'googletagmanager.com',
         pathname: '/**',
       },
     ],
