@@ -4,7 +4,7 @@ import { buildMetadata } from '../lib/seo';
 
 export async function generateMetadata() {
   return await buildMetadata({
-    title: "Full-Service Trade Show Booth Rentals & Custom Exhibits USA",
+    title: "Custom Trade Show Booths for Rent & Purchase | Triumfo Inc",
     description:"Triumfo Inc offers full-service trade show booth rentals and custom exhibits in the USA. Choose from 500+ customizable booth designs and get a detailed quote.",
     pathname: "/",
     
