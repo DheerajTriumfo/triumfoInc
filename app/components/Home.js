@@ -200,7 +200,7 @@ export default function Home() {
       <div className="topsection py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Choose Trade Show Exhibit Rentals by Booth Size'}</h2>
+            <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Trade Show Exhibits Designed to Elevate Your Brand'}</h2>
             <p className="text-xl text-gray-500">{data?.intro?.description || 'Find the perfect trade show booth to fit your space and needs. Browse over 500 exhibit rentals, organized by booth size, for a hassle-free selection.'}</p>
           </div>
           <Boothlayout/>
