@@ -22,10 +22,10 @@ export default function GetFreeDesign() {
 				</div>
 			</section>
 			<section>
-				<div className="videosection bg-white py-20">
+				<div className="videosection bg-white py-8">
 					<div className="container mx-auto px-4">
 						<div className="max-w-4xl mx-auto">
-							<div className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6">
+							<div className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 md:px-8 py-8">
 								<DesignForm />
 							</div>
 						</div>
