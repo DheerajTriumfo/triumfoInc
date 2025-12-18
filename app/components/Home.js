@@ -239,25 +239,25 @@ export default function Home() {
           <div className="container mx-auto px-4">
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="box bg-[#34343C] py-12 px-6">
-                <h2 className="text-4xl text-white font-semibold mb-4">Why Rent a Trade Show Booth Instead of Buying?</h2>
+              <div className="box bg-[#34343C] py-4 px-6">
+                <h2 className="text-3xl text-white font-semibold mb-4">Why Choose Custom Trade Show Booths?</h2>
                 <ul>
-                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Reduced upfront investment and lower total exhibiting costs.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> No storage, maintenance, or warehousing needed.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexibility to change booth size, design, and message for each show.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Quick installation and dismantling with pre-fabricated components.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Showcase Your Brand: Every booth is designed to reflect your unique brand identity.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Engage Visitors: Eye-catching designs that attract attention and leave lasting impressions.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Flexible & Scalable: Booths that adapt to different spaces or future events with ease.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Maximize ROI: Stand out from competitors and get the most from every show.</li>
                 </ul>
               </div>
               <div className="box bg-white hidden lg:block">
                 <Image src="/images/build.webp" width={400} height={475} alt="" className="w-full h-auto"/>
               </div>
-              <div className="box bg-[#34343C] py-12 px-6">
-                <h2 className="text-4xl text-white font-semibold mb-4">Our Exhibit Rental Solutions</h2>
+              <div className="box bg-[#34343C] py-4 px-6">
+                <h2 className="text-3xl text-white font-semibold mb-4">Our Step-by-Step Exhibit Creation Process</h2>
                 <ul>
-                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> 500+ booth rental options across multiple sizes.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Large custom booth rental solutions.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> End-to-end support: design to dismantling.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-3 items-center"><i className="fa fa-angle-right"></i> Flexible rental packages to suit your budget.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Concept & Design: We craft a booth that truly represents your brand.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> 3D Preview: See detailed renderings of your booth before production begins.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> In-House Fabrication: Built with precision at our 80,000 sq. ft. facility.</li>
+                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Setup & Support: Delivered, installed, and ready for your event.</li>
                 </ul>
               </div>
             </div>
