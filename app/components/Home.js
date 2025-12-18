@@ -5,9 +5,20 @@ import Script from "next/script";
 import { useEffect, useState } from 'react';
 import { useHomeQuery } from '../../hooks/useHomeQuery';
 import { get } from '../../lib/apiClient';
-import Faqtab from './../home/faq.js';
-import Boothlayout from './../home/Boothlayout.js';
-import HomeportFolio from './../home/homeportfilio.js';
+import dynamic from 'next/dynamic';
+
+const Boothlayout = dynamic(() => import('./../home/Boothlayout'), {
+  loading: () => <div className="py-20 text-center">Loading...</div>,
+});
+
+const HomeportFolio = dynamic(() => import('./../home/homeportfilio'), {
+  ssr: false, // 🔥 big win if it uses DOM / sliders / effects
+  loading: () => <div className="py-20 text-center">Loading portfolio...</div>,
+});
+
+const Faqtab = dynamic(() => import('./../home/faq'), {
+  loading: () => <div className="py-20 text-center">Loading FAQ...</div>,
+});
 
 
 export default function Home() {
