@@ -19,7 +19,6 @@ export default function Footer(){
 							<Link href="/portfolio/" className="text-white text-lg font-medium hover:text-red-700">Our Work</Link>
 							<Link href="/testimonials/" className="text-white text-lg font-medium hover:text-red-700">Testimonials</Link>
 							<Link href="/case-study/" className="text-white text-lg font-medium hover:text-red-700">Case Studies</Link>
-							<Link href="/blog/" className="text-white text-lg font-medium hover:text-red-700">Blog</Link>
 							<Link href="/upcoming-trade-show/" className="text-white text-lg font-medium hover:text-red-700">Trade Shows</Link>
 							<Link href="/blog/" className="text-white text-lg font-medium hover:text-red-700">Blog</Link>
 							
