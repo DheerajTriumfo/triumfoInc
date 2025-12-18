@@ -13,9 +13,7 @@ export default function ThankYouPage() {
       </svg>
     </div>
 
-    <p className="text-gray-700 text-xl  mb-2">
-     You are one step closer to a
-    </p>
+    
     <h2 className="text-[#943724] text-3xl font-semibold leading-relaxed">
       Thank You! for connecting with us.
     </h2>
