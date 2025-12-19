@@ -134,39 +134,37 @@ export default  async function Viewboothdetail(props){
 	    		</div>
 	    	</section>
 			<section>
-				<div className="detailbg py-8">
+  <div className="detailbg py-8">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-12">
+        <div className="col-span-12 md:col-span-8 lg:col-span-9 mx-auto">
+          <div className="block relative mb-4">
+            <div className="owl-carousel owl-theme" id="boothdetailslider">
+              {images.slice(1, 7).map((im) => (
+                <div key={im.id} className="item flex justify-center">
+                  <img
+                    src={`${apiBase}/images/uploads/multiexhibitrental/${im.rentalimg}`}
+                    alt={selected.alttag || title}
+                    className="w-full h-auto object-contain rounded-md bg-white"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-8 relative scroll-mt-24">
+            <QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+			<section>
+				<div className="contentsec py-10">
 					<div className="container mx-auto px-4">
-						<div className="grid grid-cols-12 gap-y-0 lg:gap-y-6 gap-x-8">
-							<div className="col-span-12 md:col-span-8 lg:col-span-9">
-								<div className="block relative mb-4">
-									<div className="owl-carousel owl-theme" id="boothdetailslider">
-										{images.slice(1,7).map((im) => (
-											<div key={im.id} className="item"><img src={`${apiBase}/images/uploads/multiexhibitrental/${im.rentalimg}`} alt={selected.alttag || title} className="w-full h-auto object-contain rounded-md bg-white"/></div>
-										))}
-									</div>
-								</div>
-								<div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-8 relative scroll-mt-24">
-									<QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
-								</div>
-								<div className="mt-8">
-									<h1 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h1>
-									{descritpionwithTailwind(selected.description)}
-								</div>
-							</div>
-							<div className="col-span-12 md:col-span-4 lg:col-span-3">
-								<div className="w-full bg-[#E8EEF7] text-gray-700 mt-6 md:mt-0 p-4 shadow-lg flex flex-col space-y-4 rounded-md sticky top-[10px] z-50 min-h-[20px]">
-									<h2 className="text-2xl font-bold tracking-wide mb-2 border-b border-white/70 pb-2">Exhibit Rental</h2>
-									<div className="flex flex-col space-y-2">
-										{['10x10','10x20','10x30','20x20','20x30','20x40','30x30','30x40','40x40','40x50'].map(sz => (
-											<Link key={sz} href={`/${sz.toLowerCase()}-trade-show-booth/`} className="flex items-center space-x-2 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition">
-												<svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="#943724"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7h18M3 12h18m-9 5h9" /></svg>
-												<span className="text-lg font-medium">{sz} Booth Rental</span>
-											</Link>
-										))}
-									</div>
-								</div>
-							</div>
-						</div>
+						<h1 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h1>
+						{descritpionwithTailwind(selected.description)}
 					</div>
 				</div>
 			</section>
