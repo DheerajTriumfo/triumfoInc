@@ -131,7 +131,7 @@ export default  async function Viewboothdetail(props){
 	return(
 		<>
 			<section>
-				<div className="bannerbg bg-[#E8EEF7] py-5">
+				<div className="bannerbg bg-[#E8EEF7] py-5 hidden md:block">
 					<div className="flex flex-wrap gap-x-1 items-center justify-center"><Link href="/" className="hover:text-[#9A3220]">Home</Link><span className="text-custom">|</span><Link href={`/${size.toLowerCase()}-trade-show-booth`} className="hover:text-[#9A3220]">{size} Trade Show Booth</Link><span className="text-custom">|</span><span className="text-gray-800 font-medium">{title}</span></div>
 	    	</div>
 	    </section>
@@ -175,6 +175,7 @@ export default  async function Viewboothdetail(props){
 						<div className="owl-carousel owl-theme mt-12" id="rental">
 							{relateddata.map((item, index) => (
 							<div key={item.id || index} className="column relative">
+								<a href={`/${item.boothsize}-trade-show-booth/${item.skucode}`} className="mb-4">
 					      <div className="figure relative block">
 					        <img
 					          src={`${apiBase}/images/uploads/rentalexhibition/${item.thumbnail}`}
@@ -188,12 +189,11 @@ export default  async function Viewboothdetail(props){
 								<div className="colloverlay block [background-image:linear-gradient(180deg,rgba(32,32,32,0)_75%,#0f0f0f_96%)] absolute w-full h-full top-0 left-0">
 									<div className="absolute text-center bottom-0 mb-4 w-full">
 										<div className="relative">
-										<a href={`/${item.boothsize}-trade-show-booth/${item.skucode}`} className="mb-4">
 											<div className="eyeebrow text-white text-xl font-semibold ">{item.boothsize}</div>
-										</a>
 										</div>
 									</div>
 								</div>
+								</a>
 							</div>
 							))}
 						</div>
