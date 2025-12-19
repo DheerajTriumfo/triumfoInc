@@ -190,7 +190,7 @@ export default  async function Viewboothdetail(props){
 					      </div>
 								<div className="colloverlay block [background-image:linear-gradient(180deg,rgba(32,32,32,0)_75%,#0f0f0f_96%)] absolute w-full h-full top-0 left-0">
 									<div className="absolute text-center bottom-0 mb-4 w-full">
-										<div className="relative top-50">
+										<div className="relative">
 										<a href={`/${item.boothsize}-trade-show-booth/${item.skucode}`} className="mb-4">
 											<div className="captitile text-white font-semibold text-3xl">{item.skucode}</div>
 											<div className="eyeebrow text-white text-lg">{item.boothsize}</div>
