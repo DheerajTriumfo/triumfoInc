@@ -239,7 +239,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">Why Renting a Trade Show Booth Makes Sense</h2>
-              <p className="text-xl text-gray-500">Here are the top 6 reasons why renting a trade show booth is a smarter choice than buying.</p>
+              <p className="text-xl text-gray-500">Here are the top 5 reasons why renting a trade show booth is a smarter choice than buying.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
               <div className="box bg-[#34343C] py-4 px-6">
@@ -281,7 +281,7 @@ export default function Home() {
         <div className="servicebg bg-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="maintitle text-gray-700 mb-6">Why Choose Triumfo Inc for Your Trade Show Booth Rentals</h2>
+              <h2 className="maintitle text-gray-700 mb-6">Why Choose us for Your Trade Show Booth Rentals</h2>
               <p className="text-gray-500 text-lg">With over 25 years of experience, Triumfo Inc delivers expert trade show booth rentals with full turnkey services, local teams for faster execution, and dedicated support to ensure every event is a success.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-4 mt-12">
