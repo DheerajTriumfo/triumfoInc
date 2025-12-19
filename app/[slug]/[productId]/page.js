@@ -156,19 +156,16 @@ export default  async function Viewboothdetail(props){
 			          <div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-8 relative scroll-mt-24">
 			            <QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
 			          </div>
+			          <div className="mt-12">
+			          <h1 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h1>
+								{descritpionwithTailwind(selected.description)}
+								</div>
 			    		</div>
 			    	</div>
 			    </div>
 			  </div>
 			</section>
-			<section>
-				<div className="contentsec py-10">
-					<div className="container mx-auto px-4">
-						<h1 className="text-5xl md:text-6xl  text-gray-700 font-semibold mb-6">{selected.title}</h1>
-						{descritpionwithTailwind(selected.description)}
-					</div>
-				</div>
-			</section>
+			
 			<section>
 				<div className="rentalbg  relative bg-white py-12">
 					<div className="container mx-auto px-4">
@@ -192,8 +189,7 @@ export default  async function Viewboothdetail(props){
 									<div className="absolute text-center bottom-0 mb-4 w-full">
 										<div className="relative">
 										<a href={`/${item.boothsize}-trade-show-booth/${item.skucode}`} className="mb-4">
-											<div className="captitile text-white font-semibold text-3xl">{item.skucode}</div>
-											<div className="eyeebrow text-white text-lg">{item.boothsize}</div>
+											<div className="eyeebrow text-white text-xl font-semibold ">{item.boothsize}</div>
 										</a>
 										</div>
 									</div>

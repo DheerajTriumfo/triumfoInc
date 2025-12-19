@@ -42,6 +42,22 @@ export default function QuoteForm({ defaultBoothSize = '', defaultEventName = ''
 		<form onSubmit={onSubmit} className="grid grid-cols-12 gap-y-2 gap-x-4">
 			<input type="text" name="honeypot" className="hidden" tabIndex={-1} autoComplete="off" />
 			<input type="hidden" name="boothsize" placeholder="Booth Size*" defaultValue={defaultBoothSize} required />
+			<div className="grid col-span-12 my-4">
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+					<label className="inline-flex items-center space-x-2 cursor-pointer text-gray-700">
+						<input type="checkbox" name="request_types[]" value="rental" className="w-5 h-5 text-green-600 border border-red-500 rounded-sm focus:ring-2 focus:ring-green-500 focus:outline-none" />
+						<span className="text-sm select-none text-gray-700">Rental Quotation</span>
+					</label>
+					<label className="inline-flex items-center space-x-2 cursor-pointer text-gray-700">
+						<input type="checkbox" name="request_types[]" value="purchase" className="w-5 h-5 text-green-600 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:outline-none" />
+						<span className="text-sm select-none text-gray-700">Purchase Request</span>
+					</label>
+					<label className="inline-flex items-center space-x-2 cursor-pointer text-gray-700">
+						<input type="checkbox" name="request_types[]" value="customization" className="w-5 h-5 text-green-600 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:outline-none" />
+						<span className="text-sm select-none text-gray-700">Customization Request</span>
+					</label>
+				</div>
+			</div>
 			<div className="grid col-span-12 md:col-span-6 w-full"><input type="text" name="eventname" placeholder="Event Name*" defaultValue={defaultEventName} required className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="text" name="name" placeholder="Your Name" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
 			<div className="grid col-span-12 md:col-span-6"><input type="email" name="email" placeholder="Email ID" className="w-full px-3 mb-4 py-4 bg-[#ffffff] border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-base"/></div>
