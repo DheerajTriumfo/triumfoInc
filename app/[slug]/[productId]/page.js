@@ -138,7 +138,7 @@ export default  async function Viewboothdetail(props){
 			<section>
 			  <div className="detailbg py-8">
 			    <div className="container mx-auto px-4">
-			    	<div className="max-w-4xl bg-red-800 mx-auto">
+			    	<div className="max-w-4xl mx-auto">
 			    		<div className="grid grid-cols-1">
 			    			<div className="block relative mb-4">
 			            <div className="owl-carousel owl-theme" id="boothdetailslider">
