@@ -168,7 +168,7 @@ export default function Home() {
             href="/trade-show-booth-ideas/"
             className="inline-block font-medium px-6 sm:px-8 py-3 sm:py-4 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-white text-base sm:text-xl hover:bg-gray-700 hover:border-gray-600 transition duration-300"
           >
-            Get Your Rental Booth Design in Just 48 Hours
+            Get Your Booth Design in Just 48 Hours
           </a>
         </div>
       </section>
@@ -200,8 +200,8 @@ export default function Home() {
       <div className="topsection py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Trade Show Exhibits Designed to Elevate Your Brand'}</h2>
-            <p className="text-xl text-gray-500">{data?.intro?.description || 'Find the perfect trade show booth to fit your space and needs. Browse over 500 exhibit rentals, organized by booth size, for a hassle-free selection.'}</p>
+            <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">{data?.intro?.title || 'Trade Show Exhibit Rentals Designed to Elevate Your Brand'}</h2>
+            <p className="text-xl text-gray-500">{data?.intro?.description || 'Find the perfect trade show booth rental to match your space and requirements. Choose from over 500 exhibit rentals, organized by booth size for a hassle-free selection. All designs are fully customizable.'}</p>
           </div>
           <Boothlayout/>
         </div>
@@ -246,7 +246,7 @@ export default function Home() {
                 <ul>
                    <li className="mb-3">
                       <h3 className="text-white text-3xl font-semibold">Lower Upfront Costs</h3>
-                      <p className="text-white text-base mt-2">Renting eliminates the high initial investment of purchasing a custom booth, making it a budget-friendly option—especially for first-time exhibitors.</p>
+                      <p className="text-white text-base mt-2">Renting eliminates the high initial investment of purchasing a custom booth, making it a budget-friendly option.</p>
                    </li>
                    <li className="mb-3">
                       <h3 className="text-white text-3xl font-semibold">Flexibility for Different Shows</h3>
@@ -259,7 +259,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="box  hidden lg:block">
-                <Image src="/images/whyrents.webp" width={367} height={595} alt="" className="w-full h-auto"/>
+                <Image src="/images/rentalbg.webp" width={367} height={595} alt="" className="w-full h-auto"/>
               </div>
               <div className="box bg-[#34343C] py-4 px-6">
                 <ul>
@@ -270,10 +270,6 @@ export default function Home() {
                    <li className="mb-3">
                       <h3 className="text-white text-3xl font-semibold">Access to the Latest Design Trends</h3>
                       <p className="text-white text-base mt-2">Renting lets you use modern, up-to-date booth designs and technology without the expense of upgrading an owned exhibit every few years.</p>
-                   </li>
-                   <li className="mb-3">
-                      <h3 className="text-white text-3xl font-semibold">Ideal for Occasional or New Exhibitors</h3>
-                      <p className="text-white text-base mt-2">If you participate in only a few trade shows each year or are testing new markets, renting is more practical than investing in a permanent booth.</p>
                    </li>
                 </ul>
               </div>

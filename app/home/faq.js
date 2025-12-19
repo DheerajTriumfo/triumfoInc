@@ -42,56 +42,28 @@ export default function Faqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> How early should I start planning my trade show booth?</div>
+							    	</svg> <h3 className="text-3xl">What is included in a trade show booth rental package?</h3></div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>We recommend starting 3–6 months before your event. This allows time for booth design, approvals, fabrication, logistics, and any last-minute adjustments, ensuring a seamless experience.</p>
+                    <p>Our trade show booth rental packages are designed to be fully turnkey, giving you everything you need for a professional and hassle-free exhibit. </p>
+                    <p>Our Each rental package typically includes:</p>
+                    <ul className="list-disc list-inside mt-3 space-y-1">
+                      <li><strong>Booth structure</strong>: Frames, panels, and modular walls tailored to your space.</li>
+                      <li><strong>Custom-printed graphics</strong>: High-resolution backdrops, banners, and signage featuring your brand.</li>
+                      <li><strong>Furniture</strong>: Counters, seating, display cases, and demo stations.</li>
+                      <li><strong>Lighting</strong>: Spotlights, LED fixtures, and electrical installations.</li>
+                      <li><strong>Flooring</strong>: Carpet or modular flooring to define your booth area.</li>
+                      <li><strong>Logistics & labor</strong>: Delivery, installation, dismantling, storage, and on-site support.</li>
+                    </ul>
                   </div>
                 </div>
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                   	<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-							    	</svg> What size trade show booth should I choose?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Popular booth sizes include 10x10, 10x20, 20x20, 30x30, and larger island booths like 40x40 ft. The right size depends on your display needs, visitor engagement goals, and the type of event you’re attending.</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> Can I customize my trade show booth?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. Triumfo specializes in custom exhibits, providing personalized booth designs, graphics, lighting, and interactive elements to reflect your brand and create a memorable visitor experience.</p>
-                  </div>
-                </div>
-                
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> How long does it take to design and build a trade show exhibit?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Simple modular designs can take 2–3 weeks, while fully custom booths typically require 6–8 weeks. Triumfo manages the entire process, ensuring timely delivery and quality craftsmanship.</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> What is included in Triumfo’s trade show booth services?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Our end-to-end services include concept and 3D booth design, custom fabrication, graphics and printing, logistics and transportation, on-site installation and dismantling, and storage services. All services are handled in-house for quality control.</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> How much does a trade show booth cost?</div>
+							    	</svg> <h3 className="text-3xl">How much does a rental booth typically cost?</h3></div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
                     <p>Pricing depends on size, materials, customization, and location. Typical ranges are:</p>
-                    <ul className="list-disc list-inside mt-3 space-y-1">
+                    <ul>
                       <li>• $10,000 for a 10x10 booth</li>
                       <li>• $18,000 for a 10x20 booth</li>
                       <li>• $25,000 for a 10x30 booth</li>
@@ -103,18 +75,9 @@ export default function Faqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> How long has Triumfo been in business, and why choose you?</div>
+                    </svg> <h3 className="text-3xl">Are rental booths suitable for high-end or premium brands?</h3></div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>With over 25 years of expertise, Triumfo has delivered high-quality, creative trade show booths for global brands. Our end-to-end capabilities, attention to detail, and stress-free approach ensure your brand stands out at every event.</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> Can I reuse my booth for multiple shows?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. Many of our modular and custom booths are designed for reuse. Durable materials and flexible layouts ensure your investment can be deployed across multiple events.</p>
+                    <p>Yes—today’s rental booths are an excellent choice for premium and high-end brands. At Triumfo, our rental exhibits are fully customizable, allowing us to tailor the design, materials, finishes, lighting, and graphics to reflect a luxury brand image.</p>
                   </div>
                 </div>
                 
@@ -125,72 +88,28 @@ export default function Faqtab(){
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> Do you manage everything on-site during the trade show?</div>
+                    </svg> <h3 className="text-3xl">Do you offer a nationwide rental inventory and services?</h3></div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. We provide full on-site management, including supervision of installation, dismantling, technical adjustments, and coordination with show organizers, giving you a stress-free experience.</p>
+                    <p>Yes. Triumfo offers a nationwide trade show booth rental inventory with 500+ exhibit designs available in multiple sizes and configurations. We support exhibitors across all major U.S. trade show cities, including Las Vegas, Orlando, Chicago, New York, Los Angeles, Atlanta, and more.</p>
                   </div>
                 </div>
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> Can you support trade shows outside the U.S.?</div>
+                    </svg> <h3 className="text-3xl">Are your rental booths compliant with show regulations?</h3></div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Absolutely. Triumfo manages global trade show projects, delivering consistent quality and timely execution across Europe, Asia, UAE, and other international locations.</p>
+                    <p>Absolutely. All Triumfo rental booths are designed and built to comply with U.S. trade show regulations and venue requirements. We use certified flame-retardant materials, adhere to height and layout restrictions, and follow electrical and safety guidelines set by show organizers and convention centers.</p>
+                    <p>Our team reviews each exhibitor manual in advance and adjusts the booth design as needed to meet show-specific rules. From fire safety certificates to union labor coordination, we manage compliance proactively—helping you avoid last-minute issues, delays, or additional costs.</p>
                   </div>
                 </div>
                 <div className="borbg mb-4 rounded-xl overflow-hidden">
                   <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> How can I make my booth more engaging for visitors?</div>
+                    </svg> <h3 className="text-3xl">Can I fully customize a rental booth?</h3></div>
                   <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Engagement comes from interactive displays, digital demos, lighting, and well-placed branded elements. Triumfo’s designs are crafted to attract attention, encourage interaction, and leave a lasting impression.</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> How do I measure the ROI of a trade show booth?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>ROI is measured by tracking leads, conversions, visitor engagement, and overall brand exposure. Our booths are designed to maximize interaction and create measurable impact for your participation.</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> Are eco-friendly or sustainable booth options available?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. Triumfo offers sustainable solutions using recycled materials and energy-efficient components, allowing you to reduce environmental impact while maintaining high-quality design and presentation.</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> How do I transport my booth safely?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>We provide secure packaging, custom crates, and logistics coordination to ensure your booth and displays arrive intact and ready for setup.</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> Can you store my booth for future shows?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. Triumfo provides secure storage services, keeping your booths protected between events and ready for reuse</p>
-                  </div>
-                </div>
-                <div className="borbg mb-4 rounded-xl overflow-hidden">
-                  <div className="tab-button text-xl font-medium px-4 bg-[#943724] py-4 text-white cursor-pointer flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#ffffff" strokeWidth="3">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                    </svg> Do you offer booth rental options?</div>
-                  <div className="tab-caption px-6 py-4 bg-white text-base text-gray-600">
-                    <p>Yes. Triumfo provides cost-effective rental exhibits, ideal for temporary needs or multiple events. Rentals include setup, dismantling, and storage, offering flexibility without compromising quality.</p>
+                    <p>Yes. Our Modern booth rentals are highly modular—we can change finishes, lighting, signage, and layout to match your brand. If you need a unique structural concept, we’ll propose hybrid solutions that combine rental modules with a few custom elements to stay cost-effective.</p>
                   </div>
                 </div>
                 
