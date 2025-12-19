@@ -4,7 +4,7 @@ import Link from 'next/link';
 import QuoteForm from './QuoteForm';
 import parse, { domToReact } from 'html-react-parser';
 import { buildMetadata } from '../../../lib/seo';
-
+import OwlInit from './OwlInit';
 const fallbackBase = 'https://triumfous.mobel.us/api';
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || fallbackBase;
 
@@ -22,6 +22,7 @@ export async function generateMetadata(props) {
     const payload = await res.json();
 		const list = Array.isArray(payload?.data?.rental_data) ? payload.data.rental_data : [];
 		const images = Array.isArray(payload?.data?.imagedata) ? payload.data.imagedata : [];
+
 		const selected = list.find(
 		    r => (r.skucode || '').toLowerCase() === productId.toLowerCase()
 		);
@@ -62,6 +63,7 @@ export default  async function Viewboothdetail(props){
 	const payload = await res.json();
 	const list = Array.isArray(payload?.data?.rental_data) ? payload.data.rental_data : [];
 	const images = Array.isArray(payload?.data?.imagedata) ? payload.data.imagedata : [];
+	const relateddata = Array.isArray(payload?.data?.relatedbooth) ? payload.data.relatedbooth : [];
 	const selected = list.find(
 	    r => (r.skucode || '').toLowerCase() === productId.toLowerCase()
 	);
@@ -131,35 +133,34 @@ export default  async function Viewboothdetail(props){
 			<section>
 				<div className="bannerbg bg-[#E8EEF7] py-5">
 					<div className="flex flex-wrap gap-x-1 items-center justify-center"><Link href="/" className="hover:text-[#9A3220]">Home</Link><span className="text-custom">|</span><Link href={`/${size.toLowerCase()}-trade-show-booth`} className="hover:text-[#9A3220]">{size} Trade Show Booth</Link><span className="text-custom">|</span><span className="text-gray-800 font-medium">{title}</span></div>
-	    		</div>
-	    	</section>
+	    	</div>
+	    </section>
 			<section>
-  <div className="detailbg py-8">
-    <div className="container mx-auto px-4">
-      <div className="grid grid-cols-12">
-        <div className="col-span-12 md:col-span-8 lg:col-span-9 mx-auto">
-          <div className="block relative mb-4">
-            <div className="owl-carousel owl-theme" id="boothdetailslider">
-              {images.slice(1, 7).map((im) => (
-                <div key={im.id} className="item flex justify-center">
-                  <img
-                    src={`${apiBase}/images/uploads/multiexhibitrental/${im.rentalimg}`}
-                    alt={selected.alttag || title}
-                    className="w-full h-auto object-contain rounded-md bg-white"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-          <div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-8 relative scroll-mt-24">
-            <QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+			  <div className="detailbg py-8">
+			    <div className="container mx-auto px-4">
+			    	<div className="max-w-4xl bg-red-800 mx-auto">
+			    		<div className="grid grid-cols-1">
+			    			<div className="block relative mb-4">
+			            <div className="owl-carousel owl-theme" id="boothdetailslider">
+			              {images.slice(1, 7).map((im) => (
+			                <div key={im.id} className="item flex justify-center">
+			                  <img
+			                    src={`${apiBase}/images/uploads/multiexhibitrental/${im.rentalimg}`}
+			                    alt={selected.alttag || title}
+			                    className="w-full h-auto object-contain rounded-md bg-white"
+			                  />
+			                </div>
+			              ))}
+			            </div>
+			          </div>
+			          <div id="quote-form" className="bg-[#E8EEF7] rounded-xl border border-gray-300 px-4 py-6 mt-8 relative scroll-mt-24">
+			            <QuoteForm defaultBoothSize={selected.boothsize || size} defaultEventName="" />
+			          </div>
+			    		</div>
+			    	</div>
+			    </div>
+			  </div>
+			</section>
 			<section>
 				<div className="contentsec py-10">
 					<div className="container mx-auto px-4">
@@ -168,6 +169,42 @@ export default  async function Viewboothdetail(props){
 					</div>
 				</div>
 			</section>
+			<section>
+				<div className="rentalbg  relative bg-white py-12">
+					<div className="container mx-auto px-4">
+						<div className="max-w-3xl mx-auto text-center">
+							<h2 className="maintitle text-gray-700 mb-6 max-w-2xl mx-auto">Similar Booth Designs</h2>
+						</div>
+						<div className="owl-carousel owl-theme mt-12" id="rental">
+							{relateddata.map((item, index) => (
+							<div key={item.id || index} className="column relative">
+					      <div className="figure relative block">
+					        <img
+					          src={`${apiBase}/images/uploads/rentalexhibition/${item.thumbnail}`}
+					          width={350}
+					          height={300}
+					          alt={item.alttag || item.skucode}
+					          loading="lazy"
+					          className="w-full h-auto rounded-md"
+					        />
+					      </div>
+								<div className="colloverlay block [background-image:linear-gradient(180deg,rgba(32,32,32,0)_75%,#0f0f0f_96%)] absolute w-full h-full top-0 left-0">
+									<div className="absolute text-center bottom-0 mb-4 w-full">
+										<div className="relative top-50">
+										<a href={`/${item.boothsize}-trade-show-booth/${item.skucode}`} className="mb-4">
+											<div className="captitile text-white font-semibold text-3xl">{item.skucode}</div>
+											<div className="eyeebrow text-white text-lg">{item.boothsize}</div>
+										</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							))}
+						</div>
+					</div>
+				</div>
+			</section>
+			<OwlInit />
 		</>
 	);
 }

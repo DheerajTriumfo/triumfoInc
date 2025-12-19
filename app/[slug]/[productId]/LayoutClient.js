@@ -15,8 +15,9 @@ export default function BoothProductLayoutClient({ children }) {
         const $ = window.$;
         if ($('#boothdetailslider').length) {
           $('#boothdetailslider').owlCarousel({
+            items: 1,
             loop: true,
-            margin: 15,
+            margin: 0,
             nav: true,
             dots: false,
             autoplay: false,
