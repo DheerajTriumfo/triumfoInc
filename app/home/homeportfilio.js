@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";  // Import useEffect
 import Image from "next/image";  // Import Image (for Next.js)
 
-function HomeportFolio({ img, title, text }) {
+function HomeportFolio({ img, title, text, alttag }) {
   const [show, setShow] = useState(false);
   const [isTouch, setIsTouch] = useState(false);
 
@@ -27,7 +27,7 @@ function HomeportFolio({ img, title, text }) {
         src={img}
         width={767}
         height={530}
-        alt={title}
+        alt={alttag}
         className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
       />
 
@@ -61,31 +61,37 @@ export default function PortfolioGrid() {
       img: "/images/home-portfolio7.webp",
       title: "Invest Saudi",
       text: "Large Custom Designed Booth Rental at MINE EXPO 2024 Las Vegas",
+      alttag: "Large custom-designed booth rental for Invest Saudi at MINE EXPO 2024 in Las Vegas",
     },
     {
       img: "/images/pt2.webp",
       title: "Auto Store",
       text: "Custom Booth Rental at Promat 2019, Chicago",
+      alttag: "Custom trade show booth rental for AutoStore at ProMat 2019 in Chicago",
     },
     {
       img: "/images/home-portfolio2.webp",
       title: "Dexon System",
       text: "20x20 Booth Rental at InfoComm 2018, Las Vegas",
+      alttag: "20x20 trade show booth rental for Dexon System at InfoComm 2018 in Las Vegas",
     },
     {
       img: "/images/home-portfolio5.webp",
       title: "ION8",
       text: "20x20 Booth Rental at IHS 2025, Indianapolis",
+      alttag: "20x20 exhibition booth rental for ION8 at IHS 2025 in Indianapolis",
     },
     {
       img: "/images/home-portfolio3.webp",
       title: "ProtoChips",
       text: "30x30 Custom Booth Rental At M&M 2025, Milwaukee",
+      alttag: "30x30 custom trade show booth rental for ProtoChips at M&M 2025 in Milwaukee",
     },
     {
       img: "/images/home-portfolio6.webp",
       title: "Actus",
       text: "20x20 Booth Rental at NAB Show 2025, New York",
+      alttag: "20x20 custom booth rental for Actus at NAB Show 2025 in New York",
     },
   ];
 
