@@ -46,7 +46,7 @@ function HomeportFolio({ img, title, text }) {
       >
         <div className="flex items-center justify-center w-full h-full text-center">
           <div>
-            <h2 className="text-white font-semibold text-4xl mb-4">{title}</h2>
+            <h3 className="text-white font-semibold text-4xl mb-4">{title}</h3>
             <p className="text-white text-base">{text}</p>
           </div>
         </div>
@@ -60,32 +60,32 @@ export default function PortfolioGrid() {
     {
       img: "/images/home-portfolio7.webp",
       title: "Invest Saudi",
-      text: "MINE EXPO 2024 Las Vegas",
+      text: "Large Custom Designed Booth Rental at MINE EXPO 2024 Las Vegas",
     },
     {
       img: "/images/pt2.webp",
       title: "Auto Store",
-      text: "Promat 2019  Chicago",
+      text: "Custom Booth Rental at Promat 2019, Chicago",
     },
     {
       img: "/images/home-portfolio2.webp",
       title: "Dexon System",
-      text: "InfoComm 2018 Las Vegas",
+      text: "20x20 Booth Rental at InfoComm 2018, Las Vegas",
     },
     {
       img: "/images/home-portfolio5.webp",
       title: "ION8",
-      text: "IHS 2025 Indianapolis",
+      text: "20x20 Booth Rental at IHS 2025, Indianapolis",
     },
     {
       img: "/images/home-portfolio3.webp",
       title: "ProtoChips",
-      text: "M&M 2025 Milwaukee",
+      text: "30x30 Custom Booth Rental At M&M 2025, Milwaukee",
     },
     {
       img: "/images/home-portfolio6.webp",
       title: "Actus",
-      text: "NAB Show 2025 New York",
+      text: "20x20 Booth Rental at NAB Show 2025, New York",
     },
   ];
 

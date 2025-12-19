@@ -237,27 +237,44 @@ export default function Home() {
     <section>
         <div className="circlebg py-20 bg-[#EAEEF7]">
           <div className="container mx-auto px-4">
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-[3.5rem] md:text-6xl font-semibold text-gray-700 mb-6 leading-[1]">Why Renting a Trade Show Booth Makes Sense</h2>
+              <p className="text-xl text-gray-500">Here are the top 6 reasons why renting a trade show booth is a smarter choice than buying.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
               <div className="box bg-[#34343C] py-4 px-6">
-                <h2 className="text-3xl text-white font-semibold mb-4">Why Choose Custom Trade Show Booths?</h2>
                 <ul>
-                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Showcase Your Brand: Every booth is designed to reflect your unique brand identity.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Engage Visitors: Eye-catching designs that attract attention and leave lasting impressions.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Flexible & Scalable: Booths that adapt to different spaces or future events with ease.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Maximize ROI: Stand out from competitors and get the most from every show.</li>
+                   <li className="mb-3">
+                      <h3 className="text-white text-3xl font-semibold">Lower Upfront Costs</h3>
+                      <p className="text-white text-base mt-2">Renting eliminates the high initial investment of purchasing a custom booth, making it a budget-friendly option—especially for first-time exhibitors.</p>
+                   </li>
+                   <li className="mb-3">
+                      <h3 className="text-white text-3xl font-semibold">Flexibility for Different Shows</h3>
+                      <p className="text-white text-base mt-2">Booth rentals allow you to change layouts, sizes, and designs for different trade shows without being tied to one fixed structure.</p>
+                   </li>
+                   <li className="mb-3">
+                      <h3 className="text-white text-3xl font-semibold">No Storage or Maintenance Hassles</h3>
+                      <p className="text-white text-base mt-2">When you rent, you don’t have to worry about storage, repairs, or long-term maintenance—everything is handled for you.</p>
+                   </li>
                 </ul>
               </div>
-              <div className="box bg-white hidden lg:block">
-                <Image src="/images/build.webp" width={400} height={475} alt="" className="w-full h-auto"/>
+              <div className="box  hidden lg:block">
+                <Image src="/images/whyrents.webp" width={367} height={595} alt="" className="w-full h-auto"/>
               </div>
               <div className="box bg-[#34343C] py-4 px-6">
-                <h2 className="text-3xl text-white font-semibold mb-4">Our Step-by-Step Exhibit Creation Process</h2>
                 <ul>
-                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Concept & Design: We craft a booth that truly represents your brand.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> 3D Preview: See detailed renderings of your booth before production begins.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> In-House Fabrication: Built with precision at our 80,000 sq. ft. facility.</li>
-                  <li className="flex  gap-x-2 text-white text-base mb-2 items-center text-base"><i className="fa fa-angle-right"></i> Setup & Support: Delivered, installed, and ready for your event.</li>
+                   <li className="mb-3">
+                      <h3 className="text-white text-3xl font-semibold">Quick Turnaround & Easy Setup</h3>
+                      <p className="text-white text-base mt-2">Rental booths are show-ready and can be deployed quickly, making them ideal for tight timelines or last-minute exhibit needs.</p>
+                   </li>
+                   <li className="mb-3">
+                      <h3 className="text-white text-3xl font-semibold">Access to the Latest Design Trends</h3>
+                      <p className="text-white text-base mt-2">Renting lets you use modern, up-to-date booth designs and technology without the expense of upgrading an owned exhibit every few years.</p>
+                   </li>
+                   <li className="mb-3">
+                      <h3 className="text-white text-3xl font-semibold">Ideal for Occasional or New Exhibitors</h3>
+                      <p className="text-white text-base mt-2">If you participate in only a few trade shows each year or are testing new markets, renting is more practical than investing in a permanent booth.</p>
+                   </li>
                 </ul>
               </div>
             </div>

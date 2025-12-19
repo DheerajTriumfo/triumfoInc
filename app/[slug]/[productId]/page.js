@@ -18,35 +18,35 @@ export async function generateMetadata(props) {
   const res = await fetch(`${apiBase}/rental/booth-size/${encodeURIComponent(size)}/${encodeURIComponent(productId)}`, {
 		cache: 'no-store',
 	});
-    if (!res.ok) throw new Error("Failed to fetch metadata");
-    const payload = await res.json();
-		const list = Array.isArray(payload?.data?.rental_data) ? payload.data.rental_data : [];
-		const images = Array.isArray(payload?.data?.imagedata) ? payload.data.imagedata : [];
+  if (!res.ok) throw new Error("Failed to fetch metadata");
+  const payload = await res.json();
+	const list = Array.isArray(payload?.data?.rental_data) ? payload.data.rental_data : [];
+	const images = Array.isArray(payload?.data?.imagedata) ? payload.data.imagedata : [];
 
-		const selected = list.find(
-		    r => (r.skucode || '').toLowerCase() === productId.toLowerCase()
-		);
-    const title = selected.metatitle || 'Triumfo Inc.';
-    const description = selected.metadesc || 'Exhibit booth details and specifications';
-    const imgSrc = selected.thumbnail ? `${apiBase}/images/uploads/rentalexhibition/${selected.thumbnail}` : '/images/10x20-1.jpg';
-    //console.log(imgSrc);
-    return await buildMetadata({
-      title,
-      description,
-      image: imgSrc,
-      pathname: `${slug}/${productId}/`,
-      openGraph: {
-        type: "article",
-        images: [
-          {
-            url: imgSrc,
-            width: 350,
-            height: 300,
-            alt: title,
-          },
-        ],
-      },
-    });
+	const selected = list.find(
+	    r => (r.skucode || '').toLowerCase() === productId.toLowerCase()
+	);
+  const title = selected.metatitle || 'Triumfo Inc.';
+  const description = selected.metadesc || 'Exhibit booth details and specifications';
+  const imgSrc = selected.thumbnail ? `${apiBase}/images/uploads/rentalexhibition/${selected.thumbnail}` : '/images/10x20-1.jpg';
+  //console.log(imgSrc);
+  return await buildMetadata({
+    title,
+    description,
+    image: imgSrc,
+    pathname: `${slug}/${productId}/`,
+    openGraph: {
+      type: "article",
+      images: [
+        {
+          url: imgSrc,
+          width: 350,
+          height: 300,
+          alt: title,
+        },
+      ],
+    },
+  });
 }	
 
 export default  async function Viewboothdetail(props){
