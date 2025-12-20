@@ -320,7 +320,7 @@ export default function Blog() {
 											</div>
 										</div>
 										<div className="card-info pt-4 pb-4 text-center border-b border-gray-300 rounded-xl flex flex-col flex-grow justify-between">
-											<Link href={p.slug ? `/blog/${p.slug}` : '#'}><h4 className="text-gray-700 font-semibold text-3xl">{p.title}</h4></Link>
+											<Link href={p.slug ? `/blog/${p.slug}` : '#'}><h4 className="text-gray-700 font-semibold text-3xl block">{p.title}</h4></Link>
 											<div className="flex items-center pt-2 justify-center">
 												<span className="text-sm text-gray-500">{formatDate(p.date)} • Triumfo Inc.</span>
 											</div>

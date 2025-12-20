@@ -32,7 +32,7 @@ export default async function BlogDetail(props) {
 
   const title = casestudy.title;
   const bannerdesc = casestudy.bannerdesc;
-  const bannerImg = `https://triumfous.mobel.us//uploads/casestudy/${casestudy.bannerimage}`;
+  const bannerImg = `https://triumfous.mobel.us/uploads/casestudy/${casestudy.bannerimage}`;
   const boothsize = casestudy.boothsize;
   const fairname = casestudy.fairname;
   const challengedesc = casestudy.challangedesc;
