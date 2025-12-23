@@ -109,14 +109,14 @@ const nextConfig = {
       },
       {
         source: "/custom-exhibit-rental/",
-        destination: "/",
+        destination: "/custom-trade-show-displays/",
         permanent: true,
       },
-      {
-        source: "/custom-trade-show-displays/",
-        destination: "/",
-        permanent: true,
-      },
+      // {
+      //   source: "/custom-trade-show-displays/",
+      //   destination: "/",
+      //   permanent: true,
+      // },
       {
         source: "/trade-show-booth-display-rentals/",
         destination: "/",
