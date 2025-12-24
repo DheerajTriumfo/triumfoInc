@@ -157,7 +157,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 md:px-0 text-center">
           <h1 className="text-white font-bold leading-tight max-w-6xl text-[2.8rem] sm:text-4xl lg:text-[7rem] font-heading mb-4">
-            Crafting Trade Show Booth Rentals That  <span className="typewriter">
+            Trade Show Booth Rentals That  <span className="typewriter">
                <span id="fadeText" className="text-red-700"></span> <span className="cursor font-light text-5xl sm:text-4xl lg:text-8xl text-red-700">|</span>
             </span>
           </h1>
