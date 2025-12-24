@@ -162,13 +162,13 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
-            We specialize in designing, building, and managing high-quality custom and rental trade show booths for brands nationwide.
+            Affordable and Flexible Trade Show Booth Rentals with End-to-End Services Nationwide.
           </p>
           <a
-            href="/trade-show-booth-ideas/"
+            href="/contact-us/"
             className="inline-block font-medium px-6 sm:px-8 py-3 sm:py-4 bg-[#8E2614] border-2 border-[#9A3220] rounded-xl text-white text-base sm:text-xl hover:bg-gray-700 hover:border-gray-600 transition duration-300"
           >
-            Get Your Booth Design in Just 48 Hours
+            Rent Your Trade Show Booth Today
           </a>
         </div>
       </section>
