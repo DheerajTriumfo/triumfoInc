@@ -83,7 +83,7 @@ export default function Faqtab(){
 							      	<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
 							    	</svg> <h3 className="text-3xl">How much does a rental booth typically cost?</h3></div>
                   <div className="tab-caption px-6 py-4 bg-gray-100 text-lg text-gray-600">
-                    <p>Pricing depends on size, materials, customization, and location. Typical ranges are:</p>
+                    <p className="mb-2">Pricing depends on size, materials, customization, and location. Typical ranges are:</p>
                     <ul>
                       <li>• $10,000 for a 10x10 booth</li>
                       <li>• $18,000 for a 10x20 booth</li>
@@ -120,7 +120,7 @@ export default function Faqtab(){
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
                     </svg> <h3 className="text-3xl">Are your rental booths compliant with show regulations?</h3></div>
                   <div className="tab-caption px-6 py-4 bg-gray-100 text-lg text-gray-600">
-                    <p>Absolutely. All Triumfo rental booths are designed and built to comply with U.S. trade show regulations and venue requirements. We use certified flame-retardant materials, adhere to height and layout restrictions, and follow electrical and safety guidelines set by show organizers and convention centers.</p>
+                    <p className="mb-2">Absolutely. All Triumfo rental booths are designed and built to comply with U.S. trade show regulations and venue requirements. We use certified flame-retardant materials, adhere to height and layout restrictions, and follow electrical and safety guidelines set by show organizers and convention centers.</p>
                     <p>Our team reviews each exhibitor manual in advance and adjusts the booth design as needed to meet show-specific rules. From fire safety certificates to union labor coordination, we manage compliance proactively—helping you avoid last-minute issues, delays, or additional costs.</p>
                   </div>
                 </div>
