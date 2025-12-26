@@ -321,7 +321,7 @@ export default function Home() {
               <div className="max-w-3xl mx-auto mb-12">
           <div className="text-center mb-8">
             <h1 className="text-white maintitle mb-4">Case Studies</h1>
-            <p className="text-white text-lg mb-4">Explore real projects where our custom exhibition booths and trade show displays engaged audiences, boosted brand impact, and delivered measurable ROI.</p>
+            <p className="text-white text-lg mb-4">Explore real projects where our rental booths engaged audiences, strengthened brand impact, and delivered measurable ROI.</p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
