@@ -90,11 +90,11 @@ export default function Boothlayout() {
       {/* Show more / Show less Button */}
       <div className="flex justify-center mt-8">
         <a
-            href="/custom-trade-show-displays/"
+            href="/get-free-3d-design/"
             onClick={handleShowLessClick} 
             className="px-8 py-3 sm:py-4 bg-[#8E2614] text-xl text-white rounded-lg hover:bg-[#722011] transition cursor-pointer"
           >
-            Looking for Large Custom Trade Show Exhibits?
+            Looking for Large Custom Exhibit Rental?
           </a>
       </div>
     </>

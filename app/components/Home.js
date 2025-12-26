@@ -296,7 +296,7 @@ export default function Home() {
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
                 <h3 className="title text-4xl font-semibold mb-6">Free Custom Design</h3>
-                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We offer <a href="/get-free-3d-design/" className="text-blue-500">free custom booth design concepts</a> tailored to your brand, goals, and budget with no commitment.</p>
+                <p className="text-lg mb-0 pt-6 border-t border-gray-200">We offer <a href="/get-free-3d-design/" className="text-blue-500">free custom booth rental concepts</a> tailored to your brand, goals, and budget with no commitment.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl px-6 py-12 transition-colors duration-500 ease-in-out hover:bg-gray-700 text-gray-700 hover:text-white">
                 <h3 className="title text-4xl font-semibold mb-6">Turnkey Booth Services</h3>
