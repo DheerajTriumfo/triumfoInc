@@ -34,10 +34,8 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    optimizeCss: true, // ✅ reduce blocking CSS
-    esmExternals: true,
-    forceSwcTransforms: false, // <-- ADD THIS (stops adding polyfills)
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
   },
 
   async headers() {

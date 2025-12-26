@@ -29,12 +29,13 @@
   },
   "browserslist": {
     "production": [
-      "last 2 Chrome versions",
-      "last 2 Edge versions",
-      "last 2 Firefox versions",
-      "last 2 Safari versions",
-      "not dead",
-      "not IE 11"
+      // "last 2 Chrome versions",
+      // "last 2 Edge versions",
+      // "last 2 Firefox versions",
+      // "last 2 Safari versions",
+      // "not dead",
+      // "not IE 11"
+      "supports es6-module"
     ],
     "development": [
       "last 1 Chrome version"
