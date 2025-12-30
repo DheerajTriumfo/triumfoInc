@@ -157,12 +157,12 @@ export default function Home() {
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 md:px-0 text-center">
           <h1 className="text-white font-bold leading-tight max-w-6xl text-[2.3rem] sm:text-4xl lg:text-[7rem] font-heading mb-4">
-            Trade Show Booth Rentals That  <span className="typewriter">
+            Crafting Trade Show Booths That  <span className="typewriter">
                <span id="fadeText" className="text-red-700"></span> <span className="cursor font-light text-5xl sm:text-4xl lg:text-8xl text-red-700">|</span>
             </span>
           </h1>
           <p className="text-white max-w-5xl text-base sm:text-lg md:text-xl leading-relaxed mb-6">
-            Affordable and Flexible Trade Show Booth Rentals with End-to-End Services Nationwide.
+            We specialize in designing, building, and managing high-quality custom and rental trade show booths for brands nationwide.
           </p>
           <a
             href="/contact-us/"
